@@ -2,12 +2,13 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <!-- Đảm bảo trang web hiển thị tốt trên các thiết bị -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Tra Cứu - Nguyễn Văn Đạo</title>
-  <!-- CSS của Select2 để hỗ trợ gợi ý cho ô lọc -->
+  <!-- CSS của Select2 để hỗ trợ ô lọc -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
   <style>
-    /* Sắp xếp toàn trang với flex */
+    /* Cài đặt cơ bản cho trang */
     html, body {
       height: 100%;
       margin: 0;
@@ -19,20 +20,20 @@
       color: #333;
       display: flex;
       flex-direction: column;
-      overflow: hidden; /* Chỉ vùng nội dung sẽ cuộn */
+      overflow: auto;
     }
-    /* Container toàn trang */
     .page-container {
       display: flex;
       flex-direction: column;
       height: 100%;
     }
-    /* Top Container cố định, bao gồm Header, Filter Bar, Download, Zoom, Results Count */
+    /* Phần tiêu chí lọc */
     .top-container {
       flex: 0 0 auto;
       background: rgba(0, 0, 0, 0.85);
       padding: 10px;
       overflow-y: auto;
+      max-height: 40vh; /* Chiếm tối đa 40% chiều cao màn hình */
     }
     .header {
       text-align: center;
@@ -48,7 +49,7 @@
       font-size: 16px;
       color: #ddd;
     }
-    /* Filter Bar & các khối lọc */
+    /* Cài đặt khối lọc */
     .filter-bar {
       display: flex;
       flex-wrap: wrap;
@@ -75,7 +76,7 @@
       margin-bottom: 3px;
       font-size: 12px;
     }
-    /* Các nhóm nút */
+    /* Nút và thông tin kết quả */
     .filter-actions, .download-container, .zoom-controls, .results-count {
       text-align: center;
       margin: 5px;
@@ -113,12 +114,12 @@
       font-size: 14px;
       color: white;
     }
-    /* Table Container: chiếm phần còn lại của trang */
+    /* Phần bảng kết quả */
     .table-container {
       flex: 1 1 auto;
       margin: 5px auto;
       width: 98%;
-      max-height: calc(100vh - 260px); /* 260px = chiều cao Top Container + khoảng cách */
+      max-height: calc(100vh - 260px); /* 260px = chiều cao phần tiêu chí + khoảng cách */
       overflow-y: auto;
       overflow-x: auto;
       background: rgba(255, 255, 255, 0.9);
@@ -128,14 +129,14 @@
     table {
       width: auto;
       border-collapse: collapse;
-      table-layout: auto;
+      table-layout: fixed;
     }
-    /* Giảm kích thước chữ, padding cho bảng kết quả */
     th, td {
-      padding: 4px 6px;
+      padding: 6px 8px; /* Giảm padding để cột hiển thị sát nhau */
       border: 1px solid #ccc;
       font-size: 12px;
       text-align: center;
+      white-space: nowrap;
     }
     th {
       background: #4a76a8;
@@ -144,28 +145,40 @@
       top: 0;
       z-index: 2;
     }
-    /* Zebra striping và hover */
-    tbody tr:nth-child(even) {
-      background-color: #f2f2f2;
+    /* Cố định 3 cột đầu với kích thước nhỏ gọn */
+    .sticky-col-1 {
+      position: sticky;
+      left: 0;
+      width: 40px;
+      min-width: 40px;
+      background: #4a76a8;
+      z-index: 3;
     }
-    tbody tr:nth-child(odd) {
-      background-color: #ffffff;
+    .sticky-col-2 {
+      position: sticky;
+      left: 40px;
+      width: 100px;
+      min-width: 100px;
+      background: #4a76a8;
+      z-index: 3;
     }
-    tbody tr:hover {
-      background-color: #d9e1f2;
+    .sticky-col-3 {
+      position: sticky;
+      left: 140px;
+      width: 50px;
+      min-width: 50px;
+      background: #4a76a8;
+      z-index: 3;
     }
-    /* Sticky left columns: Cố định 5 cột đầu tiên (STT, PO Number, Project, Part Number, REV) */
-    .sticky-col-1 { position: sticky; left: 0; background: #4a76a8; color: white; z-index: 3; }
-    .sticky-col-2 { position: sticky; left: 40px; background: #4a76a8; color: white; z-index: 3; }
-    .sticky-col-3 { position: sticky; left: 140px; background: #4a76a8; color: white; z-index: 3; }
-    .sticky-col-4 { position: sticky; left: 240px; background: #4a76a8; color: white; z-index: 3; }
-    .sticky-col-5 { position: sticky; left: 340px; background: #4a76a8; color: white; z-index: 3; }
-    td.sticky-col-1, td.sticky-col-2, td.sticky-col-3, td.sticky-col-4, td.sticky-col-5 {
+    td.sticky-col-1, td.sticky-col-2, td.sticky-col-3 {
       background: #e6e6e6;
       color: #333;
       z-index: 1;
     }
-    /* Footer luôn hiển thị cuối trang */
+    /* Highlight dòng được chọn */
+    tr.selected {
+      background-color: #ffeb99 !important;
+    }
     .footer {
       flex: 0 0 auto;
       text-align: center;
@@ -174,18 +187,59 @@
       background: #333;
       color: white;
     }
+    @media (max-width: 768px) {
+      .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .filter-block {
+        width: 100%;
+        margin: 5px 0;
+      }
+      .header h1 {
+        font-size: 24px;
+      }
+      .header p {
+        font-size: 14px;
+      }
+      .filter-actions button, .download-container button, .zoom-controls button {
+        padding: 8px 12px;
+        font-size: 12px;
+      }
+      table, th, td {
+        font-size: 10px;
+      }
+      .table-container {
+        max-height: calc(100vh - 320px);
+      }
+    }
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 20px;
+      }
+      .header p {
+        font-size: 12px;
+      }
+      .filter-actions button, .download-container button, .zoom-controls button {
+        padding: 6px 10px;
+        font-size: 10px;
+      }
+      table, th, td {
+        font-size: 9px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="page-container">
-    <!-- Top Container: Header, Filter Bar, Download, Zoom, Results Count -->
+    <!-- Phần tiêu chí lọc -->
     <div class="top-container">
       <div class="header">
         <h1>Web Tra Cứu</h1>
         <p>Lọc &amp; Sắp xếp dữ liệu theo nhiều tiêu chí</p>
       </div>
       <div class="filter-bar">
-        <!-- Filter Block cho Sheet -->
+        <!-- Filter Block Sheet -->
         <div class="filter-block" id="filter-block-sheet">
           <label for="filter-sheet">Chọn Sheet:</label>
           <select id="filter-sheet" class="value-select" multiple="multiple"></select>
@@ -376,40 +430,29 @@
           <select id="filter-value-5" class="value-select" multiple="multiple"></select>
         </div>
       </div>
-      
-      <!-- Filter Actions -->
       <div class="filter-actions">
         <button id="apply-filters">Áp Dụng Lọc</button>
         <button id="clear-filters">Xóa Lọc</button>
       </div>
-      
-      <!-- Nút Download Excel -->
       <div class="download-container">
         <button id="download-excel">Tải xuống Excel</button>
       </div>
-      
-      <!-- Zoom Controls -->
       <div class="zoom-controls">
         <button id="zoom-in">Phóng to</button>
         <button id="zoom-out">Thu nhỏ</button>
       </div>
-      
-      <!-- Results Count -->
       <div class="results-count" id="results-count">Tổng số dòng: 0</div>
-    </div> <!-- End top-container -->
-    
-    <!-- Table Container -->
+    </div>
+    <!-- Phần bảng kết quả -->
     <div class="table-container">
       <table id="results-table">
         <thead>
           <tr>
-            <!-- Cố định 5 cột đầu tiên: STT, PO Number, Project, Part Number, REV -->
             <th class="sticky-col-1">STT</th>
-            <th class="sticky-col-2" data-column="PO Number">PO Number</th>
-            <th class="sticky-col-3" data-column="Project">Project</th>
-            <th class="sticky-col-4" data-column="Part Number" style="white-space:normal;">Part Number</th>
-            <th class="sticky-col-5" data-column="REV">REV</th>
-            <!-- Các cột còn lại -->
+            <th class="sticky-col-2">Part Number</th>
+            <th class="sticky-col-3">REV</th>
+            <th data-column="PO Number">PO Number</th>
+            <th data-column="Project">Project</th>
             <th data-column="Discription">Discription</th>
             <th data-column="Note Number">Note Number</th>
             <th data-column="Critical">Critical</th>
@@ -438,15 +481,13 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Dữ liệu sẽ được chèn tại đây -->
+          <!-- Dữ liệu kết quả sẽ được chèn tại đây -->
         </tbody>
       </table>
     </div>
-    
     <div class="footer">Người phát triển: Nguyễn Văn Đạo</div>
-  </div> <!-- End page-container -->
-
-  <!-- Scripts: jQuery, Select2, SheetJS (XLSX) và colResizable -->
+  </div>
+  <!-- Các thư viện JS cần thiết -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -454,7 +495,7 @@
   <script>
     let distinctValues = {};
     let currentData = [];
-
+    
     function loadDistinctValues() {
       $.getJSON('/filters', function(data) {
         distinctValues = data;
@@ -464,7 +505,7 @@
         }
       });
     }
-
+    
     function updateFilterValues(blockNumber) {
       const column = $(`#filter-column-${blockNumber}`).val();
       const selectElem = $(`#filter-value-${blockNumber}`);
@@ -477,7 +518,7 @@
       }
       selectElem.trigger('change');
     }
-
+    
     function updateSheetFilterValues() {
       const selectElem = $('#filter-sheet');
       selectElem.empty();
@@ -489,7 +530,7 @@
       }
       selectElem.trigger('change');
     }
-
+    
     function applyFilters() {
       let queryParams = {};
       const sheetValues = $('#filter-sheet').val();
@@ -509,19 +550,18 @@
         updateTable(data);
       });
     }
-
+    
     function updateTable(data) {
       const tbody = $('#results-table tbody');
       tbody.empty();
       data.forEach(function(row, index) {
         const tr = $('<tr>');
-        // Cột cố định: STT, PO Number, Project, Part Number và REV
+        // Sắp xếp theo thứ tự: STT, Part Number, REV, sau đó các cột khác
         tr.append(`<td class="sticky-col-1">${index + 1}</td>`);
-        tr.append(`<td class="sticky-col-2">${row['PO Number'] || ''}</td>`);
-        tr.append(`<td class="sticky-col-3">${row['Project'] || ''}</td>`);
-        tr.append(`<td class="sticky-col-4">${row['Part Number'] || ''}</td>`);
-        tr.append(`<td class="sticky-col-5">${row['REV'] || ''}</td>`);
-        // Các cột khác
+        tr.append(`<td class="sticky-col-2">${row['Part Number'] || ''}</td>`);
+        tr.append(`<td class="sticky-col-3">${row['REV'] || ''}</td>`);
+        tr.append(`<td>${row['PO Number'] || ''}</td>`);
+        tr.append(`<td>${row['Project'] || ''}</td>`);
         tr.append(`<td>${row['Discription'] || ''}</td>`);
         tr.append(`<td>${row['Note Number'] || ''}</td>`);
         tr.append(`<td>${row['Critical'] || ''}</td>`);
@@ -552,7 +592,7 @@
       $('#results-count').text(`Tổng số dòng: ${data.length}`);
       $('#results-table').colResizable({ liveDrag: true });
     }
-
+    
     function sortTable(column, order) {
       currentData.sort(function(a, b) {
         let aVal = (a[column] || "").toString().toLowerCase();
@@ -561,7 +601,7 @@
       });
       updateTable(currentData);
     }
-
+    
     $(document).on('click', '#results-table th', function() {
       const col = $(this).data('column');
       if (!col) return;
@@ -570,13 +610,13 @@
       $(this).data('order', newOrder);
       sortTable(col, newOrder);
     });
-
+    
     function downloadExcel() {
       var wb = XLSX.utils.table_to_book(document.getElementById('results-table'), {sheet:"Sheet1"});
       XLSX.writeFile(wb, 'ketqua.xlsx');
     }
-
-    // Zoom Controls sử dụng thuộc tính CSS zoom để phóng to/thu nhỏ bảng
+    
+    // Zoom controls sử dụng CSS zoom
     let currentZoom = 1;
     $('#zoom-in').on('click', function() {
       currentZoom += 0.1;
@@ -588,7 +628,13 @@
         $('#results-table').css('zoom', currentZoom);
       }
     });
-
+    
+    // Xử lý click vào dòng để highlight
+    $(document).on('click', '#results-table tbody tr', function() {
+      $('#results-table tbody tr').removeClass('selected');
+      $(this).addClass('selected');
+    });
+    
     $(document).ready(function() {
       $('.value-select').select2({
         placeholder: 'Chọn giá trị...',
@@ -605,12 +651,22 @@
       $('#filter-column-3').on('change', function() { updateFilterValues(3); });
       $('#filter-column-4').on('change', function() { updateFilterValues(4); });
       $('#filter-column-5').on('change', function() { updateFilterValues(5); });
-      $('#apply-filters').on('click', function() { applyFilters(); });
+      
+      // Khi nhấn "Áp Dụng Lọc": áp dụng bộ lọc và tự động cuộn xuống bảng kết quả
+      $('#apply-filters').on('click', function() {
+        applyFilters();
+        $('html, body').animate({
+          scrollTop: $('.table-container').offset().top
+        }, 500);
+      });
+      
       $('#clear-filters').on('click', function() {
         $('.value-select').val(null).trigger('change');
         applyFilters();
       });
+      
       $('#download-excel').on('click', function() { downloadExcel(); });
+      
       loadDistinctValues();
       applyFilters();
       $('#results-table').colResizable({ liveDrag: true });
