@@ -1,73 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to search</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Tra Cứu - Nguyễn Văn Đạo</title>
   <style>
     body {
       background: url('background.jpg') no-repeat center center/cover;
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
-      margin: 0;
-      padding: 0;
+      overflow: hidden;
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 0;
+      padding: 0;
     }
-    /* CSS cho hiệu ứng nhấp nháy */
+    /* Hiệu ứng nhấp nháy (blink) */
     @keyframes blink {
       0% { opacity: 1; }
       50% { opacity: 0; }
       100% { opacity: 1; }
     }
-    /* Phần hiển thị tiêu đề */
-    .blinking {
-      font-size: clamp(20px, 8vw, 60px);
-      animation: blink 1s infinite;
-      margin: 0 20px;
-      /* Đảm bảo dòng chữ không vượt quá khung màn hình */
+    /* Hiệu ứng fade out/in khi chuyển trang */
+    @keyframes fadePage {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+    .fade-out {
+      animation: fadePage 1s ease-in-out forwards;
+    }
+    .text-wrapper {
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       max-width: 90vw;
-      word-wrap: break-word;
+      margin: 0 auto;
+    }
+    /* Các phần tử hiển thị tiêu đề */
+    .typing-container, .glow-text {
+      position: relative;
+      overflow: hidden;
+      border-right: 3px solid white;
+      font-size: clamp(20px, 8vw, 60px);
+      max-width: 90vw;
+      margin: 0 auto;
+      white-space: nowrap;
+    }
+    /* Khi ở màn hình nhỏ, để cho dòng chữ wrap xuống nếu cần (nếu muốn) */
+    @media (max-width: 480px) {
+      .typing-container, .glow-text {
+        white-space: normal;
+        line-height: 1.2;
+      }
     }
     .btn-container {
-      margin-top: 50px;
+      margin-top: 80px;
     }
     .btn {
       background: linear-gradient(45deg, #ff8c00, #ff4500);
       color: white;
-      padding: 15px 30px;
+      padding: 18px 36px;
       border: none;
-      border-radius: 8px;
-      font-size: 20px;
+      border-radius: 12px;
+      font-size: 26px;
       cursor: pointer;
       transition: 0.3s;
       box-shadow: 0 8px 20px rgba(255, 69, 0, 0.6);
     }
     .btn:hover {
       background: linear-gradient(45deg, #ff6500, #ff0000);
-      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(255, 0, 0, 0.8);
+      transform: scale(1.1);
     }
     .footer {
       position: absolute;
       bottom: 10px;
-      font-size: 16px;
+      font-size: 18px;
       opacity: 0.7;
+      transition: opacity 0.3s;
+    }
+    .footer:hover {
+      opacity: 1;
+    }
+    /* Responsive adjustments */
+    @media only screen and (max-width: 768px) {
+      .typing-container, .glow-text {
+        font-size: 40px;
+      }
+      .btn {
+        font-size: 20px;
+        padding: 14px 28px;
+      }
+      .btn-container {
+        margin-top: 60px;
+      }
+    }
+    @media only screen and (max-width: 480px) {
+      .typing-container, .glow-text {
+        font-size: 30px;
+      }
+      .btn {
+        font-size: 18px;
+        padding: 12px 24px;
+      }
+      .btn-container {
+        margin-top: 40px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="text-wrapper">
-      <h1 class="blinking">Welcome to search</h1>
+      <h1 id="welcome-text" class="typing-container">Chào mừng đến với Web Tra Cứu</h1>
+      <h1 id="glow-text" class="glow-text" style="display: none;">Chào mừng đến với Web Tra Cứu</h1>
     </div>
     <div class="btn-container">
-      <button class="btn" onclick="window.location.href='home.html'">Bắt Đầu</button>
+      <button class="btn" id="startBtn">Bắt Đầu</button>
     </div>
   </div>
   <div class="footer">Người phát triển: Nguyễn Văn Đạo</div>
+  <script>
+    // Hàm cập nhật nội dung tiêu đề dựa trên kích thước màn hình
+    function updateWelcomeText() {
+      const welcomeEl = document.getElementById('welcome-text');
+      const glowEl = document.getElementById('glow-text');
+      if (window.innerWidth <= 480) {
+        // Trên màn hình nhỏ, hiển thị "Welcome to search"
+        welcomeEl.textContent = "Welcome to search";
+        glowEl.textContent = "Welcome to search";
+      } else {
+        // Trên màn hình lớn, hiển thị văn bản tiếng Việt
+        welcomeEl.textContent = "Chào mừng đến với Web Tra Cứu";
+        glowEl.textContent = "Chào mừng đến với Web Tra Cứu";
+      }
+    }
+    // Gọi hàm ngay khi trang load
+    updateWelcomeText();
+    window.addEventListener("resize", updateWelcomeText);
+
+    // Hiệu ứng chuyển đổi chữ nhấp nháy
+    setTimeout(() => {
+      document.getElementById('welcome-text').style.animation = "fadeOut 1.5s ease-in-out forwards";
+      setTimeout(() => {
+        document.getElementById('welcome-text').style.display = 'none';
+        const glowEl = document.getElementById('glow-text');
+        glowEl.style.display = 'block';
+        // Thêm hiệu ứng nhấp nháy
+        glowEl.style.animation = "blink 1s infinite";
+      }, 1500);
+    }, 4000);
+
+    document.getElementById("startBtn").addEventListener("click", function() {
+      document.body.classList.add("fade-out");
+      setTimeout(() => {
+        window.location.href = "home.html";
+      }, 1000);
+    });
+  </script>
 </body>
 </html>
