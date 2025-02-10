@@ -16,71 +16,69 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 0;
+      padding: 0;
     }
-
-    /* Hiệu ứng gõ chữ */
+    
+    /* Hiệu ứng gõ chữ và các hiệu ứng liên quan */
     @keyframes typing {
       from { width: 0; }
-      to { width: 60%; }
+      to { width: 100%; }
     }
-
-    /* Hiệu ứng làm mờ dần */
     @keyframes fadeOut {
       from { opacity: 1; }
       to { opacity: 0; }
     }
-
-    /* Hiệu ứng hiện dần */
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
-
-    /* Hiệu ứng phát sáng */
     @keyframes glow {
       0% { text-shadow: 0 0 5px white; }
       50% { text-shadow: 0 0 20px white; }
       100% { text-shadow: 0 0 5px white; }
     }
-
-    /* Hiệu ứng mờ dần khi chuyển trang */
     @keyframes fadePage {
       from { opacity: 1; }
       to { opacity: 0; }
     }
-
     .fade-out {
       animation: fadePage 1s ease-in-out forwards;
     }
-
+    
     .text-wrapper {
       height: auto;
       display: flex;
       justify-content: center;
       align-items: center;
-      white-space: nowrap;
+      /* Giới hạn chiều rộng để dòng chữ không vượt quá khung */
+      max-width: 90vw;
+      margin: 0 auto;
     }
-
-    .typing-container {
-      position: absolute;
+    
+    /* Sử dụng clamp() và vw để font-size thay đổi theo kích thước màn hình */
+    .typing-container, .glow-text {
+      position: relative; /* Thay đổi thành relative để dễ kiểm soát vị trí */
       overflow: hidden;
       border-right: 3px solid white;
-      font-size: 60px;
-      animation: typing 3s steps(29, end) forwards;
-      white-space: nowrap;
+      font-size: clamp(20px, 8vw, 60px);
+      max-width: 90vw;
+      margin: 0 auto;
+      white-space: nowrap; /* Mặc định trên màn hình lớn giữ trên 1 dòng */
     }
-
-    .glow-text {
-      position: absolute;
-      font-size: 60px;
-      opacity: 0;
-      white-space: nowrap;
+    
+    /* Khi thiết bị ở chế độ portrait, cho phép dòng chữ wrap xuống nếu cần */
+    @media (orientation: portrait) {
+      .typing-container, .glow-text {
+        white-space: normal;
+        line-height: 1.2;
+      }
     }
-
+    
     .btn-container {
       margin-top: 80px;
     }
-
+    
     .btn {
       background: linear-gradient(45deg, #ff8c00, #ff4500);
       color: white;
@@ -97,7 +95,7 @@
       box-shadow: 0 10px 30px rgba(255, 0, 0, 0.8);
       transform: scale(1.1);
     }
-
+    
     .footer {
       position: absolute;
       bottom: 10px;
@@ -113,7 +111,6 @@
 <body>
   <div class="container">
     <div class="text-wrapper">
-      <!-- Chỉ sử dụng một cặp phần tử để hiển thị dòng chữ chào mừng -->
       <h1 id="typing-text" class="typing-container">Chào mừng đến với Web Tra Cứu</h1>
       <h1 id="glow-text" class="glow-text">Chào mừng đến với Web Tra Cứu</h1>
     </div>
@@ -126,28 +123,22 @@
   <div class="footer">Người phát triển: Nguyễn Văn Đạo</div>
 
   <script>
-    // Hàm cập nhật văn bản dựa trên orientation
+    // Hàm cập nhật văn bản theo orientation
     function updateWelcomeText() {
-      // Kiểm tra xem thiết bị có đang ở chế độ portrait không
       if (window.matchMedia("(orientation: portrait)").matches) {
-        // Nếu ở portrait, hiển thị tiếng Anh
         document.getElementById('typing-text').textContent = "Welcome to search";
         document.getElementById('glow-text').textContent = "Welcome to search";
       } else {
-        // Nếu không, hiển thị tiếng Việt
         document.getElementById('typing-text').textContent = "Chào mừng đến với Web Tra Cứu";
         document.getElementById('glow-text').textContent = "Chào mừng đến với Web Tra Cứu";
       }
     }
 
-    // Gọi hàm cập nhật ngay khi trang load
     updateWelcomeText();
-
-    // Cập nhật văn bản khi orientation thay đổi (có thể dùng resize để bao gồm cả thay đổi kích thước)
     window.addEventListener("resize", updateWelcomeText);
     window.addEventListener("orientationchange", updateWelcomeText);
 
-    // Hiệu ứng chuyển đổi chữ như trước
+    // Hiệu ứng chuyển đổi chữ
     setTimeout(() => {
       document.getElementById('typing-text').style.animation = "fadeOut 1.5s ease-in-out forwards";
       setTimeout(() => {
