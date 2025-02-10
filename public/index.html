@@ -108,40 +108,12 @@
     .footer:hover {
       opacity: 1;
     }
-
-    /* Các điều chỉnh responsive */
-    @media only screen and (max-width: 768px) {
-      .typing-container,
-      .glow-text {
-        font-size: 40px; /* Giảm kích thước chữ chạy cho màn hình trung bình */
-      }
-      .btn {
-        font-size: 20px;
-        padding: 14px 28px;
-      }
-      .btn-container {
-        margin-top: 60px;
-      }
-    }
-
-    @media only screen and (max-width: 480px) {
-      .typing-container,
-      .glow-text {
-        font-size: 30px; /* Giảm thêm kích thước cho màn hình nhỏ */
-      }
-      .btn {
-        font-size: 18px;
-        padding: 12px 24px;
-      }
-      .btn-container {
-        margin-top: 40px;
-      }
-    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="text-wrapper">
+      <!-- Chỉ sử dụng một cặp phần tử để hiển thị dòng chữ chào mừng -->
       <h1 id="typing-text" class="typing-container">Chào mừng đến với Web Tra Cứu</h1>
       <h1 id="glow-text" class="glow-text">Chào mừng đến với Web Tra Cứu</h1>
     </div>
@@ -154,6 +126,28 @@
   <div class="footer">Người phát triển: Nguyễn Văn Đạo</div>
 
   <script>
+    // Hàm cập nhật văn bản dựa trên orientation
+    function updateWelcomeText() {
+      // Kiểm tra xem thiết bị có đang ở chế độ portrait không
+      if (window.matchMedia("(orientation: portrait)").matches) {
+        // Nếu ở portrait, hiển thị tiếng Anh
+        document.getElementById('typing-text').textContent = "Welcome to search";
+        document.getElementById('glow-text').textContent = "Welcome to search";
+      } else {
+        // Nếu không, hiển thị tiếng Việt
+        document.getElementById('typing-text').textContent = "Chào mừng đến với Web Tra Cứu";
+        document.getElementById('glow-text').textContent = "Chào mừng đến với Web Tra Cứu";
+      }
+    }
+
+    // Gọi hàm cập nhật ngay khi trang load
+    updateWelcomeText();
+
+    // Cập nhật văn bản khi orientation thay đổi (có thể dùng resize để bao gồm cả thay đổi kích thước)
+    window.addEventListener("resize", updateWelcomeText);
+    window.addEventListener("orientationchange", updateWelcomeText);
+
+    // Hiệu ứng chuyển đổi chữ như trước
     setTimeout(() => {
       document.getElementById('typing-text').style.animation = "fadeOut 1.5s ease-in-out forwards";
       setTimeout(() => {
