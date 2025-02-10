@@ -2,7 +2,7 @@ name: Convert Google Sheet to JSON
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Chạy mỗi giờ (bạn có thể điều chỉnh cron theo nhu cầu)
+    - cron: '0 * * * *'  # Chạy mỗi giờ; điều chỉnh theo nhu cầu của bạn
   workflow_dispatch:       # Cho phép chạy thủ công
 
 jobs:
@@ -25,8 +25,8 @@ jobs:
           echo "Downloading Excel from Google Sheets..."
           wget -O book1.xlsx "https://docs.google.com/spreadsheets/d/1mMiVqnAE_y5uEH8MS7zk5BAF6w1P50Br/export?format=xlsx"
           echo "Converting Excel to JSON..."
-          node -e "const xlsx = require('xlsx'); const fs = require('fs'); const workbook = xlsx.readFile('book1.xlsx'); const sheetName = workbook.SheetNames[0]; const jsonData = xlsx.utils.sheet_to_json(workbook.Sheets[sheetName]); fs.writeFileSync('data.json', JSON.stringify(jsonData, null, 2)); console.log('Conversion done.');"
-
+          node -e "const xlsx = require('xlsx'); const fs = require('fs'); const workbook = xlsx.readFile('book1.xlsx'); let allData = []; workbook.SheetNames.forEach(sheetName => { const sheet = workbook.Sheets[sheetName]; const jsonData = xlsx.utils.sheet_to_json(sheet).map(row => Object.assign({}, row, { Sheet: sheetName })); allData = allData.concat(jsonData); }); fs.writeFileSync('data.json', JSON.stringify(allData, null, 2)); console.log('Conversion done.');"
+      
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -34,6 +34,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data.json
-          # Kiểm tra nếu có thay đổi, commit và push
           git diff --cached --exit-code || git commit -m "Auto-update data.json from Google Sheets"
           git push
