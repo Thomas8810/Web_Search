@@ -113,7 +113,7 @@
     @media only screen and (max-width: 768px) {
       .typing-container,
       .glow-text {
-        font-size: 40px; /* Giảm kích thước chữ chạy cho màn hình trung bình */
+        font-size: 40px; /* Giảm kích thước chữ cho màn hình trung bình */
       }
       .btn {
         font-size: 20px;
@@ -142,7 +142,6 @@
 <body>
   <div class="container">
     <div class="text-wrapper">
-      <!-- Nội dung ban đầu là "Chào mừng đến với Web Tra Cứu" -->
       <h1 id="typing-text" class="typing-container">Chào mừng đến với Web Tra Cứu</h1>
       <h1 id="glow-text" class="glow-text">Chào mừng đến với Web Tra Cứu</h1>
     </div>
@@ -155,21 +154,31 @@
   <div class="footer">Người phát triển: Nguyễn Văn Đạo</div>
 
   <script>
-    // Nếu màn hình nhỏ (<=480px) thì thay đổi nội dung chữ
     if (window.innerWidth <= 480) {
+      // Trên màn hình nhỏ: thay đổi nội dung chữ
       document.getElementById('typing-text').textContent = "Welcom to search";
+      // (Có thể cập nhật glow-text, nhưng sẽ không sử dụng nó trên mobile)
       document.getElementById('glow-text').textContent = "Welcom to search";
-    }
-
-    // Hiệu ứng chữ gõ và chuyển sang hiệu ứng phát sáng
-    setTimeout(() => {
-      document.getElementById('typing-text').style.animation = "fadeOut 1.5s ease-in-out forwards";
+      
+      // Sau khi hiệu ứng gõ chữ hoàn tất (3s), áp dụng hiệu ứng phát sáng trên cùng phần tử
       setTimeout(() => {
-        document.getElementById('typing-text').style.display = 'none';
-        document.getElementById('glow-text').style.opacity = '1';
-        document.getElementById('glow-text').style.animation = "fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate ease-in-out";
-      }, 1500);
-    }, 4000);
+        // Loại bỏ hiệu ứng gõ (và border hiển thị dấu nháy)
+        document.getElementById('typing-text').style.borderRight = 'none';
+        // Áp dụng hiệu ứng phát sáng
+        document.getElementById('typing-text').style.animation = "glow 2s infinite alternate ease-in-out";
+      }, 3000);
+      
+    } else {
+      // Trên màn hình lớn: sử dụng hiệu ứng fade out của chữ gõ và fade in của hiệu ứng phát sáng
+      setTimeout(() => {
+        document.getElementById('typing-text').style.animation = "fadeOut 1.5s ease-in-out forwards";
+        setTimeout(() => {
+          document.getElementById('typing-text').style.display = 'none';
+          document.getElementById('glow-text').style.opacity = '1';
+          document.getElementById('glow-text').style.animation = "fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate ease-in-out";
+        }, 1500);
+      }, 4000);
+    }
 
     // Hiệu ứng chuyển trang khi bấm nút "Bắt Đầu"
     document.getElementById("startBtn").addEventListener("click", function() {
