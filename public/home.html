@@ -576,16 +576,16 @@
       });
     }
     
-    // Hàm cập nhật giá trị cho từng bộ lọc (không dùng new Set() để hiển thị tất cả các option, kể cả trùng lặp)
+    // Hàm cập nhật giá trị cho từng bộ lọc (loại bỏ trùng lặp bằng new Set())
     function updateFilterValues(blockNumber) {
       const column = $(`#filter-column-${blockNumber}`).val();
       const selectElem = $(`#filter-value-${blockNumber}`);
       selectElem.empty();
       if (distinctValues[column]) {
+        let uniqueValues = [...new Set(distinctValues[column])];
         // Thêm tùy chọn "Chọn tất cả" đầu danh sách
         selectElem.append(new Option("Chọn tất cả", "all", false, false));
-        // Duyệt qua mảng như đã có (không loại bỏ trùng lặp)
-        distinctValues[column].forEach(function(val) {
+        uniqueValues.forEach(function(val) {
           const option = new Option(val, val, false, false);
           selectElem.append(option);
         });
@@ -593,7 +593,7 @@
       selectElem.trigger('change');
     }
     
-    // Cập nhật giá trị cho dropdown chọn Sheet (ở đây vẫn dùng new Set() nếu muốn hiển thị duy nhất)
+    // Cập nhật giá trị cho dropdown chọn Sheet (sử dụng new Set() để hiển thị duy nhất)
     function updateSheetFilterValues() {
       const selectElem = $('#filter-sheet');
       selectElem.empty();
@@ -617,9 +617,8 @@
         const col = $(`#filter-column-${i}`).val();
         const values = $(`#filter-value-${i}`).val();
         if (values && values.length > 0) {
-          // Nếu giá trị chọn bao gồm "all", bạn có thể xử lý riêng nếu cần.
           if (values.includes("all")) {
-            // Có thể bỏ qua lọc theo cột đó hoặc xử lý theo ý bạn.
+            // Bạn có thể xử lý riêng khi chọn "Chọn tất cả" nếu cần.
           } else {
             queryParams[col] = values.join(',');
           }
@@ -732,7 +731,6 @@
         var allOptions = [];
         selectElem.find('option').not('[value="all"]').each(function() {
           var optionText = $(this).text().toLowerCase();
-          // Nếu searchTerm rỗng hoặc option chứa chuỗi tìm kiếm
           if (searchTerm === '' || optionText.indexOf(searchTerm) !== -1) {
             allOptions.push($(this).val());
           }
