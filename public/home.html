@@ -576,16 +576,16 @@
       });
     }
     
-    // Hàm cập nhật giá trị cho từng bộ lọc (lọc giá trị duy nhất và thêm "Chọn tất cả")
+    // Hàm cập nhật giá trị cho từng bộ lọc (không dùng new Set() để hiển thị tất cả các option, kể cả trùng lặp)
     function updateFilterValues(blockNumber) {
       const column = $(`#filter-column-${blockNumber}`).val();
       const selectElem = $(`#filter-value-${blockNumber}`);
       selectElem.empty();
       if (distinctValues[column]) {
-        let uniqueValues = [...new Set(distinctValues[column])];
         // Thêm tùy chọn "Chọn tất cả" đầu danh sách
         selectElem.append(new Option("Chọn tất cả", "all", false, false));
-        uniqueValues.forEach(function(val) {
+        // Duyệt qua mảng như đã có (không loại bỏ trùng lặp)
+        distinctValues[column].forEach(function(val) {
           const option = new Option(val, val, false, false);
           selectElem.append(option);
         });
@@ -593,7 +593,7 @@
       selectElem.trigger('change');
     }
     
-    // Cập nhật giá trị cho dropdown chọn Sheet (lấy giá trị duy nhất)
+    // Cập nhật giá trị cho dropdown chọn Sheet (ở đây vẫn dùng new Set() nếu muốn hiển thị duy nhất)
     function updateSheetFilterValues() {
       const selectElem = $('#filter-sheet');
       selectElem.empty();
@@ -619,7 +619,7 @@
         if (values && values.length > 0) {
           // Nếu giá trị chọn bao gồm "all", bạn có thể xử lý riêng nếu cần.
           if (values.includes("all")) {
-            // Ở đây có thể bỏ qua lọc theo cột đó hoặc xử lý tùy ý.
+            // Có thể bỏ qua lọc theo cột đó hoặc xử lý theo ý bạn.
           } else {
             queryParams[col] = values.join(',');
           }
@@ -715,10 +715,9 @@
       $(this).addClass('selected');
     });
     
-    // Xử lý sự kiện "Chọn tất cả" cho select2:
-    // Khi người dùng chọn option có value "all",
-    // kiểm tra giá trị tìm kiếm hiện hành và chỉ chọn các option
-    // mà nội dung chứa chuỗi tìm kiếm đó.
+    // Xử lý sự kiện "Chọn tất cả" cho Select2:
+    // Khi người dùng chọn option có value "all", kiểm tra ô tìm kiếm của dropdown
+    // và chỉ lấy các option (ngoại trừ "all") có text chứa chuỗi tìm kiếm đó.
     $(document).on('select2:select', '.value-select', function(e) {
       if (e.params.data.id === "all") {
         var selectElem = $(this);
@@ -733,6 +732,7 @@
         var allOptions = [];
         selectElem.find('option').not('[value="all"]').each(function() {
           var optionText = $(this).text().toLowerCase();
+          // Nếu searchTerm rỗng hoặc option chứa chuỗi tìm kiếm
           if (searchTerm === '' || optionText.indexOf(searchTerm) !== -1) {
             allOptions.push($(this).val());
           }
@@ -778,7 +778,7 @@
       $('#results-table').colResizable({ liveDrag: true });
     });
     
-    // Bắt sự kiện paste cho trường tìm kiếm của select2 (đối tượng được tạo động có class .select2-search__field)
+    // Bắt sự kiện paste cho trường tìm kiếm của Select2 (đối tượng được tạo động có class .select2-search__field)
     $(document).on('paste', '.select2-search__field', function(e) {
       e.preventDefault();
       var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
