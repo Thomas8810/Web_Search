@@ -728,13 +728,18 @@
     });
     
     // Khi dropdown được mở, chèn option "Chọn tất cả"
-    $(document).on('select2:open', '.value-select', function() {
-      var $dropdown = $('.select2-results__options');
-      // Xóa nếu đã tồn tại option "Chọn tất cả" để tránh trùng lặp
-      $dropdown.find('.select2-results__option--select-all').remove();
-      // Chèn option "Chọn tất cả" vào đầu danh sách
-      $dropdown.prepend('<li class="select2-results__option select2-results__option--select-all" role="option" aria-selected="false">Chọn tất cả</li>');
-    });
+$(document).on('select2:open', function(e) {
+  // Lấy đối tượng select2 của phần tử vừa mở
+  var select2Data = $(e.target).data('select2');
+  if (select2Data && select2Data.dropdown && select2Data.dropdown.$dropdown) {
+    var $results = select2Data.dropdown.$dropdown.find('.select2-results__options');
+    // Kiểm tra nếu chưa có option "Chọn tất cả" thì chèn vào đầu danh sách
+    if ($results.find('.select2-results__option--select-all').length === 0) {
+      $results.prepend('<li class="select2-results__option select2-results__option--select-all" role="treeitem" aria-selected="false">Chọn tất cả</li>');
+    }
+  }
+});
+
     
     // Xử lý sự kiện click vào option "Chọn tất cả"
     $(document).on('click', '.select2-results__option--select-all', function(e) {
