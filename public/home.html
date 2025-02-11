@@ -228,7 +228,6 @@
         font-size: 9px;
       }
     }
-    /* Thêm media query cho chế độ quay ngang (landscape) trên điện thoại */
     @media (orientation: landscape) and (max-width: 768px) {
       .top-container {
         max-height: 30vh;
@@ -296,7 +295,6 @@
             <option value="Part Number">Part Number</option>
             <option value="REV">REV</option>
             <option value="Discription">Discription</option>
-            <!-- Cột Note Number sẽ hiển thị dưới dạng phần trăm -->
             <option value="Note Number">Note Number</option>
             <option value="Critical">Critical</option>
             <option value="CE">CE</option>
@@ -305,7 +303,6 @@
             <option value="Painting">Painting</option>
             <option value="Tiêu chuẩn mạ sơn">Tiêu chuẩn mạ sơn</option>
             <option value="Ngày Nhận PO">Ngày Nhận PO</option>
-            <!-- Các cột hiển thị dưới dạng phần trăm -->
             <option value="Cover sheet">Cover sheet</option>
             <option value="Drawing">Drawing</option>
             <option value="Datasheet form">Datasheet form</option>
@@ -499,7 +496,6 @@
             <th data-column="PO Number">PO Number</th>
             <th data-column="Project">Project</th>
             <th data-column="Discription">Discription</th>
-            <!-- Note Number hiển thị % -->
             <th data-column="Note Number">Note Number</th>
             <th data-column="Critical">Critical</th>
             <th data-column="CE">CE</th>
@@ -507,9 +503,7 @@
             <th data-column="Plating">Plating</th>
             <th data-column="Painting">Painting</th>
             <th data-column="Tiêu chuẩn mạ sơn">Tiêu chuẩn mạ sơn</th>
-            <!-- Ngày Nhận PO chuyển đổi -->
             <th data-column="Ngày Nhận PO">Ngày Nhận PO</th>
-            <!-- Các cột hiển thị % -->
             <th data-column="Cover sheet">Cover sheet</th>
             <th data-column="Drawing">Drawing</th>
             <th data-column="Datasheet form">Datasheet form</th>
@@ -519,7 +513,6 @@
             <th data-column="Mill">Mill</th>
             <th data-column="Part Pictures">Part Pictures</th>
             <th data-column="Packaging Pictures">Packaging Pictures</th>
-            <!-- Submit date chuyển đổi -->
             <th data-column="Submit date">Submit date</th>
             <th data-column="Đã lên PO LAM">Đã lên PO LAM</th>
             <th data-column="OK">OK</th>
@@ -536,7 +529,7 @@
     </div>
     <div class="footer">Người phát triển: Nguyễn Văn Đạo</div>
   </div>
-  <!-- Các thư viện JS cần thiết -->
+  <!-- Thư viện JS cần thiết -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -546,7 +539,6 @@
     function formatExcelDate(val) {
       if(val && !isNaN(val)) {
         let num = parseFloat(val);
-        // Chuyển đổi: số ngày Excel trừ đi offset 25569, nhân với số mili-giây trong 1 ngày
         let date = new Date((num - 25569) * 86400 * 1000);
         let year = date.getFullYear();
         let month = (date.getMonth() + 1).toString().padStart(2, '0');
@@ -555,9 +547,7 @@
       }
       return val || '';
     }
-    
-    // Hàm chuyển đổi giá trị số sang dạng phần trăm.
-    // Nếu giá trị <= 1 thì nhân với 100 (ví dụ: 1 -> 100%, 0.75 -> 75%)
+    // Hàm chuyển đổi giá trị số sang dạng phần trăm
     function formatPercentage(val) {
       if(val === undefined || val === null || val === '') return '';
       if(!isNaN(val)) {
@@ -570,10 +560,8 @@
       }
       return val;
     }
-    
     let distinctValues = {};
     let currentData = [];
-    
     function loadDistinctValues() {
       $.getJSON('/filters', function(data) {
         distinctValues = data;
@@ -583,7 +571,6 @@
         }
       });
     }
-    
     // Cập nhật dropdown cho các giá trị của từng cột: loại bỏ trùng lặp và sắp xếp A-Z
     function updateFilterValues(blockNumber) {
       const column = $(`#filter-column-${blockNumber}`).val();
@@ -601,7 +588,6 @@
       }
       selectElem.trigger('change');
     }
-    
     // Cập nhật dropdown cho Sheet: loại bỏ trùng lặp và sắp xếp A-Z
     function updateSheetFilterValues() {
       const selectElem = $('#filter-sheet');
@@ -618,7 +604,6 @@
       }
       selectElem.trigger('change');
     }
-    
     function applyFilters() {
       let queryParams = {};
       const sheetValues = $('#filter-sheet').val();
@@ -638,20 +623,17 @@
         updateTable(data);
       });
     }
-    
     function updateTable(data) {
       const tbody = $('#results-table tbody');
       tbody.empty();
       data.forEach(function(row, index) {
         const tr = $('<tr>');
-        // Sắp xếp theo thứ tự: STT, Part Number, REV, sau đó các cột khác
         tr.append(`<td class="sticky-col-1">${index + 1}</td>`);
         tr.append(`<td class="sticky-col-2">${row['Part Number'] || ''}</td>`);
         tr.append(`<td class="sticky-col-3">${row['REV'] || ''}</td>`);
         tr.append(`<td>${row['PO Number'] || ''}</td>`);
         tr.append(`<td>${row['Project'] || ''}</td>`);
         tr.append(`<td>${row['Discription'] || ''}</td>`);
-        // Hiển thị Note Number dưới dạng phần trăm
         tr.append(`<td>${formatPercentage(row['Note Number'])}</td>`);
         tr.append(`<td>${row['Critical'] || ''}</td>`);
         tr.append(`<td>${row['CE'] || ''}</td>`);
@@ -659,9 +641,7 @@
         tr.append(`<td>${row['Plating'] || ''}</td>`);
         tr.append(`<td>${row['Painting'] || ''}</td>`);
         tr.append(`<td>${row['Tiêu chuẩn mạ sơn'] || ''}</td>`);
-        // Chuyển đổi Ngày Nhận PO
         tr.append(`<td>${formatExcelDate(row['Ngày Nhận PO'])}</td>`);
-        // Hiển thị các cột dưới dạng phần trăm
         tr.append(`<td>${formatPercentage(row['Cover sheet'])}</td>`);
         tr.append(`<td>${formatPercentage(row['Drawing'])}</td>`);
         tr.append(`<td>${formatPercentage(row['Datasheet form'])}</td>`);
@@ -671,7 +651,6 @@
         tr.append(`<td>${formatPercentage(row['Mill'])}</td>`);
         tr.append(`<td>${formatPercentage(row['Part Pictures'])}</td>`);
         tr.append(`<td>${formatPercentage(row['Packaging Pictures'])}</td>`);
-        // Chuyển đổi Submit date
         tr.append(`<td>${formatExcelDate(row['Submit date'])}</td>`);
         tr.append(`<td>${row['Đã lên PO LAM'] || ''}</td>`);
         tr.append(`<td>${row['OK'] || ''}</td>`);
@@ -684,7 +663,6 @@
       $('#results-count').text(`Tổng số dòng: ${data.length}`);
       $('#results-table').colResizable({ liveDrag: true });
     }
-    
     function sortTable(column, order) {
       currentData.sort(function(a, b) {
         let aVal = (a[column] || "").toString().toLowerCase();
@@ -693,7 +671,6 @@
       });
       updateTable(currentData);
     }
-    
     $(document).on('click', '#results-table th', function() {
       const col = $(this).data('column');
       if (!col) return;
@@ -702,13 +679,10 @@
       $(this).data('order', newOrder);
       sortTable(col, newOrder);
     });
-    
     function downloadExcel() {
       var wb = XLSX.utils.table_to_book(document.getElementById('results-table'), {sheet:"Sheet1"});
       XLSX.writeFile(wb, 'ketqua.xlsx');
     }
-    
-    // Zoom controls sử dụng CSS zoom
     let currentZoom = 1;
     $('#zoom-in').on('click', function() {
       currentZoom += 0.1;
@@ -720,30 +694,23 @@
         $('#results-table').css('zoom', currentZoom);
       }
     });
-    
-    // Xử lý click vào dòng để highlight
     $(document).on('click', '#results-table tbody tr', function() {
       $('#results-table tbody tr').removeClass('selected');
       $(this).addClass('selected');
     });
-    
-    // Khi dropdown được mở, chèn option "Chọn tất cả"
-$(document).on('select2:open', function(e) {
-  // Lấy đối tượng select2 của phần tử vừa mở
-  var select2Data = $(e.target).data('select2');
-  if (select2Data && select2Data.dropdown && select2Data.dropdown.$dropdown) {
-    var $results = select2Data.dropdown.$dropdown.find('.select2-results__options');
-    // Kiểm tra nếu chưa có option "Chọn tất cả" thì chèn vào đầu danh sách
-    if ($results.find('.select2-results__option--select-all').length === 0) {
-      $results.prepend('<li class="select2-results__option select2-results__option--select-all" role="treeitem" aria-selected="false">Chọn tất cả</li>');
-    }
-  }
-});
-
-    
-    // Xử lý sự kiện click vào option "Chọn tất cả"
+    // Khi dropdown được mở, chèn option "Chọn tất cả" vào đầu danh sách
+    $(document).on('select2:open', function(e) {
+      var select2Data = $(e.target).data('select2');
+      if (select2Data && select2Data.dropdown && select2Data.dropdown.$dropdown) {
+        var $results = select2Data.dropdown.$dropdown.find('.select2-results__options');
+        if ($results.find('.select2-results__option--select-all').length === 0) {
+          $results.prepend('<li class="select2-results__option select2-results__option--select-all" role="treeitem" aria-selected="false">Chọn tất cả</li>');
+        }
+      }
+    });
+    // Xử lý click vào option "Chọn tất cả" để chọn tất cả các option đang được hiển thị (theo từ khóa tìm kiếm nếu có)
     $(document).on('click', '.select2-results__option--select-all', function(e) {
-      e.stopPropagation(); // Ngăn không để Select2 tự động đóng dropdown
+      e.stopPropagation(); // Ngăn Select2 tự động đóng dropdown
       var $select = $('.select2-container--open').prev('select');
       var searchTerm = $('.select2-search__field').val() || "";
       var optionsToSelect = [];
@@ -758,31 +725,25 @@ $(document).on('select2:open', function(e) {
       newValues = Array.from(new Set(newValues));
       $select.val(newValues).trigger('change');
     });
-    
-    // Bắt sự kiện paste cho trường tìm kiếm của select2 (đối tượng được tạo động có class .select2-search__field)
+    // Bắt sự kiện paste cho trường tìm kiếm của Select2
     $(document).on('paste', '.select2-search__field', function(e) {
       e.preventDefault();
-      // Lấy dữ liệu dạng plain text từ clipboard
       var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
-      // Tách dữ liệu theo dòng và tab
       var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
         return acc.concat(line.split('\t'));
       }, []).filter(function(val) {
         return val.trim() !== '';
       });
-      // Lấy select element gắn liền với input select2
       var $select = $(this).closest('.select2-container').prev('select');
       if ($select.length) {
-        // Kết hợp các giá trị hiện có với giá trị mới, loại bỏ trùng lặp
         var currentValues = $select.val() || [];
         var newValues = currentValues.concat(values);
         newValues = Array.from(new Set(newValues));
         $select.val(newValues).trigger('change');
       }
     });
-    
     $(document).ready(function() {
-      // Khởi tạo select2 với closeOnSelect: false cho phép chọn nhiều giá trị mà không tự động đóng dropdown
+      // Khởi tạo Select2 với closeOnSelect: false để cho phép chọn nhiều giá trị mà không tự động đóng dropdown
       $('.value-select').select2({
         placeholder: 'Chọn giá trị...',
         allowClear: true,
@@ -795,28 +756,22 @@ $(document).on('select2:open', function(e) {
         width: '100%',
         closeOnSelect: false
       });
-      
       $('#filter-column-1').on('change', function() { updateFilterValues(1); });
       $('#filter-column-2').on('change', function() { updateFilterValues(2); });
       $('#filter-column-3').on('change', function() { updateFilterValues(3); });
       $('#filter-column-4').on('change', function() { updateFilterValues(4); });
       $('#filter-column-5').on('change', function() { updateFilterValues(5); });
-      
-      // Khi nhấn "Áp Dụng Lọc": áp dụng bộ lọc và tự động cuộn xuống bảng kết quả
       $('#apply-filters').on('click', function() {
         applyFilters();
         $('html, body').animate({
           scrollTop: $('.table-container').offset().top
         }, 500);
       });
-      
       $('#clear-filters').on('click', function() {
         $('.value-select').val(null).trigger('change');
         applyFilters();
       });
-      
       $('#download-excel').on('click', function() { downloadExcel(); });
-      
       loadDistinctValues();
       applyFilters();
       $('#results-table').colResizable({ liveDrag: true });
