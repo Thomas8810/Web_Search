@@ -132,7 +132,7 @@
       table-layout: fixed;
     }
     th, td {
-      padding: 6px 8px; /* Giảm padding để cột hiển thị sát nhau */
+      padding: 6px 8px;
       border: 1px solid #ccc;
       font-size: 12px;
       text-align: center;
@@ -145,7 +145,7 @@
       top: 0;
       z-index: 2;
     }
-    /* Cố định 3 cột đầu với kích thước nhỏ gọn */
+    /* Cố định 3 cột đầu */
     .sticky-col-1 {
       position: sticky;
       left: 0;
@@ -228,7 +228,6 @@
         font-size: 9px;
       }
     }
-    /* Thêm media query cho chế độ quay ngang (landscape) trên điện thoại */
     @media (orientation: landscape) and (max-width: 768px) {
       .top-container {
         max-height: 30vh;
@@ -549,16 +548,12 @@
       return val || '';
     }
     
-    // Hàm chuyển đổi giá trị số sang dạng phần trăm.
+    // Hàm chuyển đổi số sang phần trăm
     function formatPercentage(val) {
       if(val === undefined || val === null || val === '') return '';
       if(!isNaN(val)) {
         let num = parseFloat(val);
-        if(num <= 1) {
-          return Math.round(num * 100) + '%';
-        } else {
-          return num + '%';
-        }
+        return num <= 1 ? Math.round(num * 100) + '%' : num + '%';
       }
       return val;
     }
@@ -576,32 +571,34 @@
       });
     }
     
-    // Hàm cập nhật giá trị cho từng bộ lọc (loại bỏ trùng lặp bằng new Set())
+    // Cập nhật dropdown "Chọn giá trị" cho mỗi bộ lọc:
+    // - Loại bỏ trùng lặp bằng new Set()
+    // - Sắp xếp theo thứ tự A–Z
+    // - Thêm option "Chọn tất cả" ở đầu
     function updateFilterValues(blockNumber) {
       const column = $(`#filter-column-${blockNumber}`).val();
       const selectElem = $(`#filter-value-${blockNumber}`);
       selectElem.empty();
       if (distinctValues[column]) {
         let uniqueValues = [...new Set(distinctValues[column])];
-        // Thêm tùy chọn "Chọn tất cả" đầu danh sách
+        uniqueValues.sort((a, b) => a.localeCompare(b));
         selectElem.append(new Option("Chọn tất cả", "all", false, false));
         uniqueValues.forEach(function(val) {
-          const option = new Option(val, val, false, false);
-          selectElem.append(option);
+          selectElem.append(new Option(val, val, false, false));
         });
       }
       selectElem.trigger('change');
     }
     
-    // Cập nhật giá trị cho dropdown chọn Sheet (sử dụng new Set() để hiển thị duy nhất)
+    // Cập nhật dropdown cho Sheet (hiển thị duy nhất, có thể sắp xếp nếu cần)
     function updateSheetFilterValues() {
       const selectElem = $('#filter-sheet');
       selectElem.empty();
       if (distinctValues['Sheet']) {
         let uniqueValues = [...new Set(distinctValues['Sheet'])];
+        uniqueValues.sort((a, b) => a.localeCompare(b));
         uniqueValues.forEach(function(val) {
-          const option = new Option(val, val, false, false);
-          selectElem.append(option);
+          selectElem.append(new Option(val, val, false, false));
         });
       }
       selectElem.trigger('change');
@@ -617,8 +614,9 @@
         const col = $(`#filter-column-${i}`).val();
         const values = $(`#filter-value-${i}`).val();
         if (values && values.length > 0) {
+          // Nếu option "Chọn tất cả" được chọn thì ta có thể bỏ qua lọc theo cột đó hoặc xử lý riêng
           if (values.includes("all")) {
-            // Bạn có thể xử lý riêng khi chọn "Chọn tất cả" nếu cần.
+            // Ví dụ: không thêm tham số lọc cho cột đó
           } else {
             queryParams[col] = values.join(',');
           }
@@ -715,7 +713,7 @@
     });
     
     // Xử lý sự kiện "Chọn tất cả" cho Select2:
-    // Khi người dùng chọn option có value "all", kiểm tra ô tìm kiếm của dropdown
+    // Khi người dùng chọn option có value "all", kiểm tra ô tìm kiếm (nếu có)
     // và chỉ lấy các option (ngoại trừ "all") có text chứa chuỗi tìm kiếm đó.
     $(document).on('select2:select', '.value-select', function(e) {
       if (e.params.data.id === "all") {
@@ -740,15 +738,18 @@
     });
     
     $(document).ready(function() {
+      // Khởi tạo Select2 cho các dropdown với closeOnSelect:false
       $('.value-select').select2({
         placeholder: 'Chọn giá trị...',
         allowClear: true,
-        width: '100%'
+        width: '100%',
+        closeOnSelect: false
       });
       $('#filter-sheet').select2({
         placeholder: 'Chọn sheet...',
         allowClear: true,
-        width: '100%'
+        width: '100%',
+        closeOnSelect: false
       });
       $('#filter-column-1').on('change', function() { updateFilterValues(1); });
       $('#filter-column-2').on('change', function() { updateFilterValues(2); });
@@ -756,7 +757,7 @@
       $('#filter-column-4').on('change', function() { updateFilterValues(4); });
       $('#filter-column-5').on('change', function() { updateFilterValues(5); });
       
-      // Khi nhấn "Áp Dụng Lọc": áp dụng bộ lọc và tự động cuộn xuống bảng kết quả
+      // Khi nhấn "Áp Dụng Lọc": áp dụng bộ lọc và cuộn xuống bảng kết quả
       $('#apply-filters').on('click', function() {
         applyFilters();
         $('html, body').animate({
@@ -776,7 +777,7 @@
       $('#results-table').colResizable({ liveDrag: true });
     });
     
-    // Bắt sự kiện paste cho trường tìm kiếm của Select2 (đối tượng được tạo động có class .select2-search__field)
+    // Bắt sự kiện paste cho ô tìm kiếm của Select2 (đối tượng có class .select2-search__field)
     $(document).on('paste', '.select2-search__field', function(e) {
       e.preventDefault();
       var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
