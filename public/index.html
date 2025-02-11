@@ -109,6 +109,14 @@
       opacity: 1;
     }
 
+    /* Mặc định hiển thị nội dung dành cho desktop và ẩn nội dung dành cho mobile */
+    .desktop-content {
+      display: block;
+    }
+    .mobile-content {
+      display: none;
+    }
+
     /* Các điều chỉnh responsive */
     @media only screen and (max-width: 768px) {
       .typing-container,
@@ -125,50 +133,75 @@
     }
 
     @media only screen and (max-width: 480px) {
-      .typing-container,
-      .glow-text {
-        font-size: 30px; /* Giảm thêm kích thước cho màn hình nhỏ */
+      /* Ẩn nội dung dành cho desktop */
+      .desktop-content {
+        display: none;
       }
-      .btn {
-        font-size: 18px;
-        padding: 12px 24px;
+      /* Hiển thị nội dung dành cho mobile */
+      .mobile-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
       }
-      .btn-container {
-        margin-top: 40px;
+      /* Định dạng và hiệu ứng nhấp nháy cho thông điệp mobile */
+      .mobile-blink {
+        font-size: 30px;
+        color: white;
+        font-family: Arial, sans-serif;
+        animation: blink 1.5s infinite;
       }
+    }
+
+    /* Hiệu ứng nhấp nháy cho mobile */
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="text-wrapper">
-      <h1 id="typing-text" class="typing-container">Chào mừng đến với Web Tra Cứu</h1>
-      <h1 id="glow-text" class="glow-text">Chào mừng đến với Web Tra Cứu</h1>
-    </div>
+  <!-- Nội dung dành cho desktop -->
+  <div class="desktop-content">
+    <div class="container">
+      <div class="text-wrapper">
+        <h1 id="typing-text" class="typing-container">Chào mừng đến với Web Tra Cứu</h1>
+        <h1 id="glow-text" class="glow-text">Chào mừng đến với Web Tra Cứu</h1>
+      </div>
 
-    <div class="btn-container">
-      <button class="btn" id="startBtn">Bắt Đầu</button>
+      <div class="btn-container">
+        <button class="btn" id="startBtn">Bắt Đầu</button>
+      </div>
     </div>
+  </div>
+
+  <!-- Nội dung dành cho mobile -->
+  <div class="mobile-content">
+    <h1 id="mobile-text" class="mobile-blink">Welcom to search</h1>
   </div>
 
   <div class="footer">Người phát triển: Nguyễn Văn Đạo</div>
 
   <script>
-    setTimeout(() => {
-      document.getElementById('typing-text').style.animation = "fadeOut 1.5s ease-in-out forwards";
+    // Chỉ chạy các hiệu ứng của desktop nếu màn hình lớn hơn 480px
+    if (window.innerWidth > 480) {
       setTimeout(() => {
-        document.getElementById('typing-text').style.display = 'none';
-        document.getElementById('glow-text').style.opacity = '1';
-        document.getElementById('glow-text').style.animation = "fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate ease-in-out";
-      }, 1500);
-    }, 4000);
+        document.getElementById('typing-text').style.animation = "fadeOut 1.5s ease-in-out forwards";
+        setTimeout(() => {
+          document.getElementById('typing-text').style.display = 'none';
+          document.getElementById('glow-text').style.opacity = '1';
+          document.getElementById('glow-text').style.animation = "fadeIn 1.5s ease-in-out forwards, glow 2s infinite alternate ease-in-out";
+        }, 1500);
+      }, 4000);
 
-    document.getElementById("startBtn").addEventListener("click", function() {
-      document.body.classList.add("fade-out");
-      setTimeout(() => {
-        window.location.href = "home.html";
-      }, 1000);
-    });
+      document.getElementById("startBtn").addEventListener("click", function() {
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = "home.html";
+        }, 1000);
+      });
+    }
   </script>
 </body>
 </html>
