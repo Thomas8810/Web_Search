@@ -716,13 +716,27 @@
     });
     
     // Xử lý sự kiện "Chọn tất cả" cho select2:
-    // Khi người dùng chọn option có value "all", sẽ tự động chọn tất cả các giá trị còn lại
+    // Khi người dùng chọn option có value "all",
+    // kiểm tra giá trị tìm kiếm hiện hành và chỉ chọn các option
+    // mà nội dung chứa chuỗi tìm kiếm đó.
     $(document).on('select2:select', '.value-select', function(e) {
       if (e.params.data.id === "all") {
         var selectElem = $(this);
-        var allOptions = selectElem.find('option').not('[value="all"]').map(function() {
-          return this.value;
-        }).get();
+        var searchTerm = '';
+        var select2Data = selectElem.data('select2');
+        if (select2Data && select2Data.dropdown && select2Data.dropdown.$search) {
+          searchTerm = select2Data.dropdown.$search.val();
+        } else {
+          searchTerm = $('.select2-search__field').val() || '';
+        }
+        searchTerm = searchTerm.trim().toLowerCase();
+        var allOptions = [];
+        selectElem.find('option').not('[value="all"]').each(function() {
+          var optionText = $(this).text().toLowerCase();
+          if (searchTerm === '' || optionText.indexOf(searchTerm) !== -1) {
+            allOptions.push($(this).val());
+          }
+        });
         selectElem.val(allOptions).trigger('change');
       }
     });
