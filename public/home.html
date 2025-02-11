@@ -296,7 +296,6 @@
             <option value="Part Number">Part Number</option>
             <option value="REV">REV</option>
             <option value="Discription">Discription</option>
-            <!-- Cột Note Number sẽ hiển thị dưới dạng phần trăm -->
             <option value="Note Number">Note Number</option>
             <option value="Critical">Critical</option>
             <option value="CE">CE</option>
@@ -305,7 +304,6 @@
             <option value="Painting">Painting</option>
             <option value="Tiêu chuẩn mạ sơn">Tiêu chuẩn mạ sơn</option>
             <option value="Ngày Nhận PO">Ngày Nhận PO</option>
-            <!-- Các cột hiển thị dưới dạng phần trăm -->
             <option value="Cover sheet">Cover sheet</option>
             <option value="Drawing">Drawing</option>
             <option value="Datasheet form">Datasheet form</option>
@@ -499,7 +497,6 @@
             <th data-column="PO Number">PO Number</th>
             <th data-column="Project">Project</th>
             <th data-column="Discription">Discription</th>
-            <!-- Note Number hiển thị % -->
             <th data-column="Note Number">Note Number</th>
             <th data-column="Critical">Critical</th>
             <th data-column="CE">CE</th>
@@ -507,9 +504,7 @@
             <th data-column="Plating">Plating</th>
             <th data-column="Painting">Painting</th>
             <th data-column="Tiêu chuẩn mạ sơn">Tiêu chuẩn mạ sơn</th>
-            <!-- Ngày Nhận PO chuyển đổi -->
             <th data-column="Ngày Nhận PO">Ngày Nhận PO</th>
-            <!-- Các cột hiển thị % -->
             <th data-column="Cover sheet">Cover sheet</th>
             <th data-column="Drawing">Drawing</th>
             <th data-column="Datasheet form">Datasheet form</th>
@@ -519,7 +514,6 @@
             <th data-column="Mill">Mill</th>
             <th data-column="Part Pictures">Part Pictures</th>
             <th data-column="Packaging Pictures">Packaging Pictures</th>
-            <!-- Submit date chuyển đổi -->
             <th data-column="Submit date">Submit date</th>
             <th data-column="Đã lên PO LAM">Đã lên PO LAM</th>
             <th data-column="OK">OK</th>
@@ -546,7 +540,6 @@
     function formatExcelDate(val) {
       if(val && !isNaN(val)) {
         let num = parseFloat(val);
-        // Chuyển đổi: số ngày Excel trừ đi offset 25569, nhân với số mili-giây trong 1 ngày
         let date = new Date((num - 25569) * 86400 * 1000);
         let year = date.getFullYear();
         let month = (date.getMonth() + 1).toString().padStart(2, '0');
@@ -557,7 +550,6 @@
     }
     
     // Hàm chuyển đổi giá trị số sang dạng phần trăm.
-    // Nếu giá trị <= 1 thì nhân với 100 (ví dụ: 1 -> 100%, 0.75 -> 75%)
     function formatPercentage(val) {
       if(val === undefined || val === null || val === '') return '';
       if(!isNaN(val)) {
@@ -584,12 +576,16 @@
       });
     }
     
+    // Hàm cập nhật giá trị cho từng bộ lọc (lọc giá trị duy nhất và thêm "Chọn tất cả")
     function updateFilterValues(blockNumber) {
       const column = $(`#filter-column-${blockNumber}`).val();
       const selectElem = $(`#filter-value-${blockNumber}`);
       selectElem.empty();
       if (distinctValues[column]) {
-        distinctValues[column].forEach(function(val) {
+        let uniqueValues = [...new Set(distinctValues[column])];
+        // Thêm tùy chọn "Chọn tất cả" đầu danh sách
+        selectElem.append(new Option("Chọn tất cả", "all", false, false));
+        uniqueValues.forEach(function(val) {
           const option = new Option(val, val, false, false);
           selectElem.append(option);
         });
@@ -597,11 +593,13 @@
       selectElem.trigger('change');
     }
     
+    // Cập nhật giá trị cho dropdown chọn Sheet (lấy giá trị duy nhất)
     function updateSheetFilterValues() {
       const selectElem = $('#filter-sheet');
       selectElem.empty();
       if (distinctValues['Sheet']) {
-        distinctValues['Sheet'].forEach(function(val) {
+        let uniqueValues = [...new Set(distinctValues['Sheet'])];
+        uniqueValues.forEach(function(val) {
           const option = new Option(val, val, false, false);
           selectElem.append(option);
         });
@@ -619,7 +617,12 @@
         const col = $(`#filter-column-${i}`).val();
         const values = $(`#filter-value-${i}`).val();
         if (values && values.length > 0) {
-          queryParams[col] = values.join(',');
+          // Nếu giá trị chọn bao gồm "all", bạn có thể xử lý riêng nếu cần.
+          if (values.includes("all")) {
+            // Ở đây có thể bỏ qua lọc theo cột đó hoặc xử lý tùy ý.
+          } else {
+            queryParams[col] = values.join(',');
+          }
         }
       }
       const queryString = $.param(queryParams);
@@ -634,14 +637,12 @@
       tbody.empty();
       data.forEach(function(row, index) {
         const tr = $('<tr>');
-        // Sắp xếp theo thứ tự: STT, Part Number, REV, sau đó các cột khác
         tr.append(`<td class="sticky-col-1">${index + 1}</td>`);
         tr.append(`<td class="sticky-col-2">${row['Part Number'] || ''}</td>`);
         tr.append(`<td class="sticky-col-3">${row['REV'] || ''}</td>`);
         tr.append(`<td>${row['PO Number'] || ''}</td>`);
         tr.append(`<td>${row['Project'] || ''}</td>`);
         tr.append(`<td>${row['Discription'] || ''}</td>`);
-        // Hiển thị Note Number dưới dạng phần trăm
         tr.append(`<td>${formatPercentage(row['Note Number'])}</td>`);
         tr.append(`<td>${row['Critical'] || ''}</td>`);
         tr.append(`<td>${row['CE'] || ''}</td>`);
@@ -649,9 +650,7 @@
         tr.append(`<td>${row['Plating'] || ''}</td>`);
         tr.append(`<td>${row['Painting'] || ''}</td>`);
         tr.append(`<td>${row['Tiêu chuẩn mạ sơn'] || ''}</td>`);
-        // Chuyển đổi Ngày Nhận PO
         tr.append(`<td>${formatExcelDate(row['Ngày Nhận PO'])}</td>`);
-        // Hiển thị các cột dưới dạng phần trăm
         tr.append(`<td>${formatPercentage(row['Cover sheet'])}</td>`);
         tr.append(`<td>${formatPercentage(row['Drawing'])}</td>`);
         tr.append(`<td>${formatPercentage(row['Datasheet form'])}</td>`);
@@ -661,7 +660,6 @@
         tr.append(`<td>${formatPercentage(row['Mill'])}</td>`);
         tr.append(`<td>${formatPercentage(row['Part Pictures'])}</td>`);
         tr.append(`<td>${formatPercentage(row['Packaging Pictures'])}</td>`);
-        // Chuyển đổi Submit date
         tr.append(`<td>${formatExcelDate(row['Submit date'])}</td>`);
         tr.append(`<td>${row['Đã lên PO LAM'] || ''}</td>`);
         tr.append(`<td>${row['OK'] || ''}</td>`);
@@ -717,6 +715,18 @@
       $(this).addClass('selected');
     });
     
+    // Xử lý sự kiện "Chọn tất cả" cho select2:
+    // Khi người dùng chọn option có value "all", sẽ tự động chọn tất cả các giá trị còn lại
+    $(document).on('select2:select', '.value-select', function(e) {
+      if (e.params.data.id === "all") {
+        var selectElem = $(this);
+        var allOptions = selectElem.find('option').not('[value="all"]').map(function() {
+          return this.value;
+        }).get();
+        selectElem.val(allOptions).trigger('change');
+      }
+    });
+    
     $(document).ready(function() {
       $('.value-select').select2({
         placeholder: 'Chọn giá trị...',
@@ -757,18 +767,14 @@
     // Bắt sự kiện paste cho trường tìm kiếm của select2 (đối tượng được tạo động có class .select2-search__field)
     $(document).on('paste', '.select2-search__field', function(e) {
       e.preventDefault();
-      // Lấy dữ liệu dạng plain text từ clipboard
       var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
-      // Tách dữ liệu theo dòng và tab
       var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
         return acc.concat(line.split('\t'));
       }, []).filter(function(val) {
         return val.trim() !== '';
       });
-      // Lấy select element gắn liền với input select2
       var $select = $(this).closest('.select2-container').prev('select');
       if ($select.length) {
-        // Kết hợp các giá trị hiện có với giá trị mới, loại bỏ trùng lặp
         var currentValues = $select.val() || [];
         var newValues = currentValues.concat(values);
         newValues = Array.from(new Set(newValues));
