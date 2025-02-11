@@ -584,12 +584,17 @@
       });
     }
     
+    // Cập nhật dropdown cho các giá trị của từng cột: loại bỏ trùng lặp và sắp xếp A-Z
     function updateFilterValues(blockNumber) {
       const column = $(`#filter-column-${blockNumber}`).val();
       const selectElem = $(`#filter-value-${blockNumber}`);
       selectElem.empty();
       if (distinctValues[column]) {
-        distinctValues[column].forEach(function(val) {
+        let values = Array.from(new Set(distinctValues[column]));
+        values.sort(function(a, b) {
+          return a.localeCompare(b);
+        });
+        values.forEach(function(val) {
           const option = new Option(val, val, false, false);
           selectElem.append(option);
         });
@@ -597,11 +602,16 @@
       selectElem.trigger('change');
     }
     
+    // Cập nhật dropdown cho Sheet: loại bỏ trùng lặp và sắp xếp A-Z
     function updateSheetFilterValues() {
       const selectElem = $('#filter-sheet');
       selectElem.empty();
       if (distinctValues['Sheet']) {
-        distinctValues['Sheet'].forEach(function(val) {
+        let values = Array.from(new Set(distinctValues['Sheet']));
+        values.sort(function(a, b) {
+          return a.localeCompare(b);
+        });
+        values.forEach(function(val) {
           const option = new Option(val, val, false, false);
           selectElem.append(option);
         });
@@ -717,17 +727,70 @@
       $(this).addClass('selected');
     });
     
+    // Khi dropdown được mở, chèn option "Chọn tất cả"
+    $(document).on('select2:open', '.value-select', function() {
+      var $dropdown = $('.select2-results__options');
+      // Xóa nếu đã tồn tại option "Chọn tất cả" để tránh trùng lặp
+      $dropdown.find('.select2-results__option--select-all').remove();
+      // Chèn option "Chọn tất cả" vào đầu danh sách
+      $dropdown.prepend('<li class="select2-results__option select2-results__option--select-all" role="option" aria-selected="false">Chọn tất cả</li>');
+    });
+    
+    // Xử lý sự kiện click vào option "Chọn tất cả"
+    $(document).on('click', '.select2-results__option--select-all', function(e) {
+      e.stopPropagation(); // Ngăn không để Select2 tự động đóng dropdown
+      var $select = $('.select2-container--open').prev('select');
+      var searchTerm = $('.select2-search__field').val() || "";
+      var optionsToSelect = [];
+      $select.find('option').each(function() {
+        var optionText = $(this).text();
+        if (optionText.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1) {
+          optionsToSelect.push($(this).val());
+        }
+      });
+      var currentValues = $select.val() || [];
+      var newValues = currentValues.concat(optionsToSelect);
+      newValues = Array.from(new Set(newValues));
+      $select.val(newValues).trigger('change');
+    });
+    
+    // Bắt sự kiện paste cho trường tìm kiếm của select2 (đối tượng được tạo động có class .select2-search__field)
+    $(document).on('paste', '.select2-search__field', function(e) {
+      e.preventDefault();
+      // Lấy dữ liệu dạng plain text từ clipboard
+      var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
+      // Tách dữ liệu theo dòng và tab
+      var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
+        return acc.concat(line.split('\t'));
+      }, []).filter(function(val) {
+        return val.trim() !== '';
+      });
+      // Lấy select element gắn liền với input select2
+      var $select = $(this).closest('.select2-container').prev('select');
+      if ($select.length) {
+        // Kết hợp các giá trị hiện có với giá trị mới, loại bỏ trùng lặp
+        var currentValues = $select.val() || [];
+        var newValues = currentValues.concat(values);
+        newValues = Array.from(new Set(newValues));
+        $select.val(newValues).trigger('change');
+      }
+    });
+    
     $(document).ready(function() {
+      // Khởi tạo select2 với closeOnSelect: false cho phép chọn nhiều giá trị mà không tự động đóng dropdown
       $('.value-select').select2({
         placeholder: 'Chọn giá trị...',
         allowClear: true,
-        width: '100%'
+        width: '100%',
+        closeOnSelect: false
       });
       $('#filter-sheet').select2({
         placeholder: 'Chọn sheet...',
         allowClear: true,
-        width: '100%'
+        width: '100%',
+        closeOnSelect: false
       });
+      
       $('#filter-column-1').on('change', function() { updateFilterValues(1); });
       $('#filter-column-2').on('change', function() { updateFilterValues(2); });
       $('#filter-column-3').on('change', function() { updateFilterValues(3); });
@@ -752,28 +815,6 @@
       loadDistinctValues();
       applyFilters();
       $('#results-table').colResizable({ liveDrag: true });
-    });
-    
-    // Bắt sự kiện paste cho trường tìm kiếm của select2 (đối tượng được tạo động có class .select2-search__field)
-    $(document).on('paste', '.select2-search__field', function(e) {
-      e.preventDefault();
-      // Lấy dữ liệu dạng plain text từ clipboard
-      var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
-      // Tách dữ liệu theo dòng và tab
-      var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
-        return acc.concat(line.split('\t'));
-      }, []).filter(function(val) {
-        return val.trim() !== '';
-      });
-      // Lấy select element gắn liền với input select2
-      var $select = $(this).closest('.select2-container').prev('select');
-      if ($select.length) {
-        // Kết hợp các giá trị hiện có với giá trị mới, loại bỏ trùng lặp
-        var currentValues = $select.val() || [];
-        var newValues = currentValues.concat(values);
-        newValues = Array.from(new Set(newValues));
-        $select.val(newValues).trigger('change');
-      }
     });
   </script>
 </body>
