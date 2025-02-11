@@ -509,7 +509,7 @@
             <th data-column="Tiêu chuẩn mạ sơn">Tiêu chuẩn mạ sơn</th>
             <!-- Ngày Nhận PO chuyển đổi -->
             <th data-column="Ngày Nhận PO">Ngày Nhận PO</th>
-            <!-- Các cột hiển thị dưới dạng phần trăm -->
+            <!-- Các cột hiển thị % -->
             <th data-column="Cover sheet">Cover sheet</th>
             <th data-column="Drawing">Drawing</th>
             <th data-column="Datasheet form">Datasheet form</th>
@@ -574,6 +574,7 @@
     let distinctValues = {};
     let currentData = [];
     
+    // Lấy dữ liệu bộ lọc từ server
     function loadDistinctValues() {
       $.getJSON('/filters', function(data) {
         distinctValues = data;
@@ -584,16 +585,15 @@
       });
     }
     
-    // Cập nhật dropdown cho từng cột: Loại bỏ trùng lặp và sắp xếp theo A-Z
+    // Cập nhật các giá trị cho dropdown của từng cột
     function updateFilterValues(blockNumber) {
       const column = $(`#filter-column-${blockNumber}`).val();
       const selectElem = $(`#filter-value-${blockNumber}`);
       selectElem.empty();
       if (distinctValues[column]) {
-        // Loại bỏ trùng lặp và sắp xếp theo thứ tự chữ cái (sử dụng localeCompare để hỗ trợ tiếng Việt)
-        let values = Array.from(new Set(distinctValues[column]));
-        values.sort((a, b) => a.localeCompare(b, 'vi', { sensitivity: 'base' }));
-        values.forEach(function(val) {
+        // Loại bỏ trùng lặp và sắp xếp A-Z
+        let uniqueSortedValues = Array.from(new Set(distinctValues[column])).sort((a, b) => a.localeCompare(b));
+        uniqueSortedValues.forEach(function(val) {
           const option = new Option(val, val, false, false);
           selectElem.append(option);
         });
@@ -601,14 +601,13 @@
       selectElem.trigger('change');
     }
     
-    // Cập nhật dropdown cho Sheet với cùng cơ chế loại bỏ trùng lặp và sắp xếp
+    // Cập nhật dropdown cho Sheet (loại bỏ trùng lặp và sắp xếp A-Z)
     function updateSheetFilterValues() {
       const selectElem = $('#filter-sheet');
       selectElem.empty();
       if (distinctValues['Sheet']) {
-        let values = Array.from(new Set(distinctValues['Sheet']));
-        values.sort((a, b) => a.localeCompare(b, 'vi', { sensitivity: 'base' }));
-        values.forEach(function(val) {
+        let uniqueSortedSheets = Array.from(new Set(distinctValues['Sheet'])).sort((a, b) => a.localeCompare(b));
+        uniqueSortedSheets.forEach(function(val) {
           const option = new Option(val, val, false, false);
           selectElem.append(option);
         });
@@ -616,6 +615,7 @@
       selectElem.trigger('change');
     }
     
+    // Áp dụng bộ lọc và tải dữ liệu
     function applyFilters() {
       let queryParams = {};
       const sheetValues = $('#filter-sheet').val();
@@ -636,6 +636,7 @@
       });
     }
     
+    // Cập nhật bảng dữ liệu hiển thị
     function updateTable(data) {
       const tbody = $('#results-table tbody');
       tbody.empty();
@@ -682,6 +683,7 @@
       $('#results-table').colResizable({ liveDrag: true });
     }
     
+    // Hàm sắp xếp bảng theo cột
     function sortTable(column, order) {
       currentData.sort(function(a, b) {
         let aVal = (a[column] || "").toString().toLowerCase();
@@ -700,6 +702,7 @@
       sortTable(col, newOrder);
     });
     
+    // Hàm tải file Excel
     function downloadExcel() {
       var wb = XLSX.utils.table_to_book(document.getElementById('results-table'), {sheet:"Sheet1"});
       XLSX.writeFile(wb, 'ketqua.xlsx');
@@ -725,7 +728,7 @@
     });
     
     $(document).ready(function() {
-      // Khởi tạo Select2 với tùy chọn closeOnSelect: false để dropdown không tự đóng khi chọn giá trị
+      // Khởi tạo Select2 cho các dropdown có khả năng chọn nhiều giá trị với closeOnSelect: false
       $('.value-select').select2({
         placeholder: 'Chọn giá trị...',
         allowClear: true,
