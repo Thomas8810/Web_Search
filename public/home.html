@@ -509,7 +509,7 @@
             <th data-column="Tiêu chuẩn mạ sơn">Tiêu chuẩn mạ sơn</th>
             <!-- Ngày Nhận PO chuyển đổi -->
             <th data-column="Ngày Nhận PO">Ngày Nhận PO</th>
-            <!-- Các cột hiển thị % -->
+            <!-- Các cột hiển thị dưới dạng phần trăm -->
             <th data-column="Cover sheet">Cover sheet</th>
             <th data-column="Drawing">Drawing</th>
             <th data-column="Datasheet form">Datasheet form</th>
@@ -584,12 +584,16 @@
       });
     }
     
+    // Cập nhật dropdown cho từng cột: Loại bỏ trùng lặp và sắp xếp theo A-Z
     function updateFilterValues(blockNumber) {
       const column = $(`#filter-column-${blockNumber}`).val();
       const selectElem = $(`#filter-value-${blockNumber}`);
       selectElem.empty();
       if (distinctValues[column]) {
-        distinctValues[column].forEach(function(val) {
+        // Loại bỏ trùng lặp và sắp xếp theo thứ tự chữ cái (sử dụng localeCompare để hỗ trợ tiếng Việt)
+        let values = Array.from(new Set(distinctValues[column]));
+        values.sort((a, b) => a.localeCompare(b, 'vi', { sensitivity: 'base' }));
+        values.forEach(function(val) {
           const option = new Option(val, val, false, false);
           selectElem.append(option);
         });
@@ -597,11 +601,14 @@
       selectElem.trigger('change');
     }
     
+    // Cập nhật dropdown cho Sheet với cùng cơ chế loại bỏ trùng lặp và sắp xếp
     function updateSheetFilterValues() {
       const selectElem = $('#filter-sheet');
       selectElem.empty();
       if (distinctValues['Sheet']) {
-        distinctValues['Sheet'].forEach(function(val) {
+        let values = Array.from(new Set(distinctValues['Sheet']));
+        values.sort((a, b) => a.localeCompare(b, 'vi', { sensitivity: 'base' }));
+        values.forEach(function(val) {
           const option = new Option(val, val, false, false);
           selectElem.append(option);
         });
@@ -718,15 +725,18 @@
     });
     
     $(document).ready(function() {
+      // Khởi tạo Select2 với tùy chọn closeOnSelect: false để dropdown không tự đóng khi chọn giá trị
       $('.value-select').select2({
         placeholder: 'Chọn giá trị...',
         allowClear: true,
-        width: '100%'
+        width: '100%',
+        closeOnSelect: false
       });
       $('#filter-sheet').select2({
         placeholder: 'Chọn sheet...',
         allowClear: true,
-        width: '100%'
+        width: '100%',
+        closeOnSelect: false
       });
       $('#filter-column-1').on('change', function() { updateFilterValues(1); });
       $('#filter-column-2').on('change', function() { updateFilterValues(2); });
