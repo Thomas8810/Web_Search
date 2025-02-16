@@ -20963,7 +20963,17 @@
     "Discription": "BLK,HTR,BASE,TOP PLATE",
     "Note Number": 1,
     "Critical": "NC",
-    "Status": "On going",
+    "Cover sheet": 1,
+    "Drawing": 1,
+    "Datasheet\nform": 1,
+    "Data": 1,
+    "COC": 1,
+    "BOM": 1,
+    "Mill": 1,
+    "Part Pictures": 1,
+    "Packaging Pictures": 1,
+    "Status": "OK",
+    "Note": "Đã gửi: 250215",
     "Sheet": "LAM Machining"
   },
   {
