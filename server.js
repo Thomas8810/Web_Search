@@ -2,11 +2,22 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const XLSX = require('xlsx');
+const session = require('express-session');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Thiết lập thư mục tĩnh cho frontend (đặt các file HTML, CSS, JS vào thư mục public)
+// Cấu hình session (chỉ dùng cho nội bộ, không cần quá bảo mật)
+app.use(session({
+  secret: 'your-secret-key', // Thay thế bằng chuỗi khó đoán
+  resave: false,
+  saveUninitialized: false
+}));
+
+// Cho phép parse dữ liệu từ form (để xử lý đăng nhập)
+app.use(express.urlencoded({ extended: false }));
+
+// Thiết lập thư mục tĩnh cho các file tĩnh (HTML, CSS, JS) – giả sử đặt trong thư mục public
 app.use(express.static(path.join(__dirname, 'public')));
 
 const dataFilePath = path.join(__dirname, 'data.json');
@@ -22,8 +33,30 @@ function loadDataFromFile() {
     console.error("Lỗi khi đọc file data.json:", err);
   }
 }
-
 loadDataFromFile();
+
+// --- Phần đăng nhập cơ bản ---
+// Danh sách người dùng mẫu (trong thực tế nên lưu vào CSDL và mật khẩu được hash)
+const users = [
+  { id: 1, username: 'user1', password: 'password1' },
+  { id: 2, username: 'user2', password: 'password2' }
+];
+
+// Middleware kiểm tra đăng nhập
+function checkAuth(req, res, next) {
+  if (req.session && req.session.user) {
+    return next();
+  }
+  res.redirect('/login.html');
+}
+
+// Các API và route cần bảo vệ phải được đặt sau middleware bảo vệ
+app.use('/home.html', checkAuth);
+app.use('/filters', checkAuth);
+app.use('/search', checkAuth);
+app.use('/export', checkAuth);
+
+// --- Các API hiện có ---
 
 // API lấy danh sách giá trị lọc (distinct)
 app.get('/filters', (req, res) => {
@@ -71,7 +104,6 @@ app.get('/search', (req, res) => {
   let filtered = cachedData;
   const { limit, offset, ...filters } = req.query;
 
-  // Lọc dữ liệu theo các tham số (ngoại trừ limit và offset)
   for (let key in filters) {
     if (filters[key]) {
       const filterValues = filters[key].split(',').map(val => val.trim().toLowerCase());
@@ -98,7 +130,6 @@ app.get('/export', (req, res) => {
   let filtered = cachedData;
   const { limit, offset, ...filters } = req.query;
 
-  // Lọc dữ liệu theo các tham số lọc
   for (let key in filters) {
     if (filters[key]) {
       const filterValues = filters[key].split(',').map(val => val.trim().toLowerCase());
@@ -112,7 +143,6 @@ app.get('/export', (req, res) => {
     }
   }
 
-  // Tạo workbook và chuyển dữ liệu JSON sang sheet
   const wb = XLSX.utils.book_new();
   const ws = XLSX.utils.json_to_sheet(filtered);
   XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
@@ -121,6 +151,30 @@ app.get('/export', (req, res) => {
   res.setHeader('Content-Disposition', 'attachment; filename=export.xlsx');
   res.setHeader('Content-Type', 'application/octet-stream');
   res.send(buf);
+});
+
+// --- Route đăng nhập & đăng xuất ---
+// Trang login (login.html được đặt trong thư mục public)
+app.get('/login', (req, res) => {
+  res.redirect('/login.html');
+});
+
+// Xử lý đăng nhập (POST /login)
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+  const user = users.find(u => u.username === username && u.password === password);
+  if (user) {
+    req.session.user = user;
+    res.redirect('/home.html');
+  } else {
+    res.redirect('/login.html?error=1');
+  }
+});
+
+// Route đăng xuất
+app.get('/logout', (req, res) => {
+  req.session.destroy();
+  res.redirect('/login.html');
 });
 
 app.listen(port, () => {
