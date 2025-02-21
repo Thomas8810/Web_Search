@@ -433,6 +433,11 @@
       <div class="download-container">
         <button id="download-excel">Tải xuống Excel</button>
       </div>
+      <div class="download-container">
+       <button id="download-excel">Tải xuống Excel (Xem)</button>
+       <button id="export-all">Xuất Excel (Tất cả)</button>
+      </div>
+
       <div class="zoom-controls">
         <button id="zoom-in">Phóng to</button>
         <button id="zoom-out">Thu nhỏ</button>
@@ -720,6 +725,24 @@
         }
       });
     });
+    $('#export-all').on('click', function() {
+  let queryParams = {};
+  const sheetValues = $('#filter-sheet').val();
+  if (sheetValues && sheetValues.length > 0) {
+    queryParams["Sheet"] = sheetValues.join(',');
+  }
+  for (let i = 1; i <= 5; i++) {
+    const col = $(`#filter-column-${i}`).val();
+    const values = $(`#filter-value-${i}`).val();
+    if (values && values.length > 0) {
+      queryParams[col] = values.join(',');
+    }
+  }
+  const queryString = $.param(queryParams);
+  // Chuyển hướng trình duyệt đến endpoint /export để tải file Excel
+  window.location.href = `/export?${queryString}`;
+});
+
   </script>
 </body>
 </html>
