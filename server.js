@@ -6,7 +6,7 @@ const XLSX = require('xlsx');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Thiết lập thư mục tĩnh cho frontend (đặt file HTML, CSS, JS trong thư mục public)
+// Thiết lập thư mục tĩnh cho frontend (đặt các file HTML, CSS, JS vào thư mục public)
 app.use(express.static(path.join(__dirname, 'public')));
 
 const dataFilePath = path.join(__dirname, 'data.json');
