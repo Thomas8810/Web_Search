@@ -1,8 +1,8 @@
 [
   {
-    "name": "Admin",
+    "name": "Thomas",
     "email": "thomasjessehill8@gmail.com",
-    "password": "admin0",
+    "password": "0",
     "role": "admin"
   },
   {
@@ -21,6 +21,12 @@
     "name": "Ha",
     "email": "Ha@gmail.com",
     "password": "Ha123",
+    "role": "user"
+  }
+  {
+    "name": "Thiet",
+    "email": "Thiet@gmail.com",
+    "password": "thiet123",
     "role": "user"
   }
 ]
