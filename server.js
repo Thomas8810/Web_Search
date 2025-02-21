@@ -17,7 +17,7 @@ app.use(session({
 // Cho phép parse dữ liệu từ form (để xử lý đăng nhập)
 app.use(express.urlencoded({ extended: false }));
 
-// Thiết lập thư mục tĩnh cho các file tĩnh (HTML, CSS, JS) – giả sử đặt trong thư mục public
+// Thiết lập thư mục tĩnh cho các file tĩnh (HTML, CSS, JS) – đặt trong thư mục public
 app.use(express.static(path.join(__dirname, 'public')));
 
 const dataFilePath = path.join(__dirname, 'data.json');
