@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const XLSX = require('xlsx');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -97,4 +98,33 @@ app.get('/search', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
+});
+app.get('/export', (req, res) => {
+  let filtered = cachedData;
+
+  // Lọc dữ liệu theo các query parameter (ngoại trừ limit và offset)
+  const { limit, offset, ...filters } = req.query;
+  for (let key in filters) {
+    if (filters[key]) {
+      const filterValues = filters[key].split(',').map(val => val.trim().toLowerCase());
+      filtered = filtered.filter(row => {
+        if (row[key]) {
+          const cellValue = row[key].toString().toLowerCase();
+          return filterValues.some(val => cellValue.includes(val));
+        }
+        return false;
+      });
+    }
+  }
+
+  // Tạo file Excel từ dữ liệu đã lọc
+  const wb = XLSX.utils.book_new();
+  const ws = XLSX.utils.json_to_sheet(filtered);
+  XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
+  const buf = XLSX.write(wb, { type: 'buffer', bookType: 'xlsx' });
+  
+  // Thiết lập header để trả về file tải về
+  res.setHeader('Content-Disposition', 'attachment; filename=export.xlsx');
+  res.setHeader('Content-Type', 'application/octet-stream');
+  res.send(buf);
 });
