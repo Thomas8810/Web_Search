@@ -6,13 +6,13 @@ const XLSX = require('xlsx');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Thiết lập thư mục tĩnh cho frontend (giả sử các file HTML, JS, CSS nằm trong thư mục public)
+// Thiết lập thư mục tĩnh cho frontend (đặt file HTML, CSS, JS trong thư mục public)
 app.use(express.static(path.join(__dirname, 'public')));
 
 const dataFilePath = path.join(__dirname, 'data.json');
 let cachedData = [];
 
-// Đọc dữ liệu từ file một lần khi khởi động server và lưu vào cache
+// Đọc dữ liệu từ file data.json khi server khởi động và lưu vào cache
 function loadDataFromFile() {
   try {
     const fileData = fs.readFileSync(dataFilePath, 'utf8');
@@ -66,14 +66,12 @@ app.get('/filters', (req, res) => {
   });
 });
 
-// API tìm kiếm có hỗ trợ phân trang
+// API tìm kiếm dữ liệu với phân trang
 app.get('/search', (req, res) => {
   let filtered = cachedData;
-
-  // Lấy các tham số limit và offset, các tham số còn lại dùng để lọc dữ liệu
   const { limit, offset, ...filters } = req.query;
 
-  // Lọc dữ liệu theo các query parameter (ngoại trừ limit và offset)
+  // Lọc dữ liệu theo các tham số (ngoại trừ limit và offset)
   for (let key in filters) {
     if (filters[key]) {
       const filterValues = filters[key].split(',').map(val => val.trim().toLowerCase());
@@ -88,7 +86,6 @@ app.get('/search', (req, res) => {
   }
 
   const total = filtered.length;
-  // Áp dụng phân trang: trả về số dòng theo limit và offset
   const pageLimit = parseInt(limit, 10) || 50;
   const pageOffset = parseInt(offset, 10) || 0;
   const paginatedData = filtered.slice(pageOffset, pageOffset + pageLimit);
@@ -96,14 +93,12 @@ app.get('/search', (req, res) => {
   res.json({ total, data: paginatedData });
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+// API xuất toàn bộ dữ liệu đã lọc dưới dạng file Excel
 app.get('/export', (req, res) => {
   let filtered = cachedData;
-
-  // Lọc dữ liệu theo các query parameter (ngoại trừ limit và offset)
   const { limit, offset, ...filters } = req.query;
+
+  // Lọc dữ liệu theo các tham số lọc
   for (let key in filters) {
     if (filters[key]) {
       const filterValues = filters[key].split(',').map(val => val.trim().toLowerCase());
@@ -117,14 +112,17 @@ app.get('/export', (req, res) => {
     }
   }
 
-  // Tạo file Excel từ dữ liệu đã lọc
+  // Tạo workbook và chuyển dữ liệu JSON sang sheet
   const wb = XLSX.utils.book_new();
   const ws = XLSX.utils.json_to_sheet(filtered);
   XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
   const buf = XLSX.write(wb, { type: 'buffer', bookType: 'xlsx' });
-  
-  // Thiết lập header để trả về file tải về
+
   res.setHeader('Content-Disposition', 'attachment; filename=export.xlsx');
   res.setHeader('Content-Type', 'application/octet-stream');
   res.send(buf);
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
