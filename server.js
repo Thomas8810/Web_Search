@@ -7,7 +7,7 @@ const session = require('express-session');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Cấu hình session (chỉ dùng cho nội bộ, không cần quá bảo mật)
+// Cấu hình session (cho nội bộ, không cần bảo mật quá cao)
 app.use(session({
   secret: 'your-secret-key', // Thay thế bằng chuỗi khó đoán
   resave: false,
@@ -17,7 +17,7 @@ app.use(session({
 // Cho phép parse dữ liệu từ form (để xử lý đăng nhập)
 app.use(express.urlencoded({ extended: false }));
 
-// Thiết lập thư mục tĩnh cho các file tĩnh (HTML, CSS, JS) – đặt trong thư mục public
+// Thiết lập thư mục tĩnh cho các file tĩnh (HTML, CSS, JS) trong thư mục public
 app.use(express.static(path.join(__dirname, 'public')));
 
 const dataFilePath = path.join(__dirname, 'data.json');
@@ -104,6 +104,7 @@ app.get('/search', (req, res) => {
   let filtered = cachedData;
   const { limit, offset, ...filters } = req.query;
 
+  // Lọc dữ liệu theo các tham số (ngoại trừ limit và offset)
   for (let key in filters) {
     if (filters[key]) {
       const filterValues = filters[key].split(',').map(val => val.trim().toLowerCase());
