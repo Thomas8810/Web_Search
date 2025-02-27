@@ -605,38 +605,44 @@
       $('#results-table').colResizable({ liveDrag: true });
       
 $(document).on('paste', '.select2-search__field', function(e) {
-  e.preventDefault();
-  // Lấy dữ liệu clipboard dạng text
+  e.preventDefault(); 
+  // Lấy dữ liệu dạng text từ clipboard
   var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
-  // Tách thành mảng 2 chiều: mỗi dòng là một mảng chứa các ô
-  var rows = clipboardData.split(/\r?\n/).map(function(line) {
-    return line.split('\t');
-  }).filter(function(row) {
-    return row.some(function(cell) { return cell.trim() !== ''; });
+
+  // Tách theo dòng (mỗi dòng là một hàng)
+  var lines = clipboardData.split(/\r?\n|\r|\n/);
+
+  // allValues sẽ chứa toàn bộ ô trong tất cả hàng-cột
+  var allValues = [];
+  lines.forEach(function(line) {
+    // Tách từng dòng theo tab => các ô
+    var columns = line.split('\t');
+    // Gom tất cả các ô vào mảng allValues
+    allValues.push(...columns);
   });
-  
-  // Tìm select tương ứng (ô lọc)
-  var $select = $(this).closest('.select2-container').prev('select');
-  if (!$select.length) return;
-  
-  // Xác định số thứ tự của filter từ id, ví dụ: "filter-value-1" => cột thứ 1 (index 0)
-  var selectId = $select.attr('id');
-  var match = selectId.match(/\d+$/);
-  var colIndex = match ? parseInt(match[0], 10) - 1 : 0;
-  
-  // Lấy giá trị từ cột tương ứng của từng hàng
-  var values = rows.map(function(row) {
-    return row[colIndex] ? row[colIndex].trim() : '';
+
+  // Loại bỏ các chuỗi trống hoặc khoảng trắng thừa
+  allValues = allValues.map(function(val) {
+    return val.trim();
   }).filter(function(val) {
     return val !== '';
   });
-  
-  // Cập nhật giá trị cho select (giữ lại các giá trị đã có, cộng thêm giá trị mới)
+
+  // Tìm thẻ <select> tương ứng với ô input Select2 mà bạn đang paste
+  var $select = $(this).closest('.select2-container').prev('select');
+  if (!$select.length) return;
+
+  // Lấy các giá trị hiện có trong select (nếu có), rồi nối thêm các giá trị mới
   var currentValues = $select.val() || [];
-  var newValues = currentValues.concat(values);
-  newValues = Array.from(new Set(newValues)); // Loại bỏ trùng lặp
+  var newValues = currentValues.concat(allValues);
+
+  // Loại bỏ trùng lặp
+  newValues = Array.from(new Set(newValues));
+
+  // Gán lại vào select và trigger('change') để Select2 hiển thị
   $select.val(newValues).trigger('change');
 });
+
 
     });
   </script>
