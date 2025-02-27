@@ -109,7 +109,7 @@
           <label for="filter-value-1">Chọn giá trị:</label>
           <select id="filter-value-1" class="value-select" multiple="multiple"></select>
         </div>
-        <!-- Các Filter Block 2,3,4,5 tương tự -->
+        <!-- Các Filter Block 2,3,4,5 tương tự như trên -->
         <div class="filter-block" id="filter-block-2">
           <label for="filter-column-2">Chọn tiêu chí số 2:</label>
           <select id="filter-column-2">
@@ -543,7 +543,7 @@
       });
       return index;
     }
-    
+
     function sortTable(column, order) {
       let rows = $('#results-table tbody tr').get();
       let colIndex = getColumnIndex(column);
@@ -557,7 +557,7 @@
         $('#results-table tbody').append(row);
       });
     }
-    
+
     $(document).on('click', '#results-table th', function() {
       const col = $(this).data('column');
       if (!col) return;
@@ -567,8 +567,8 @@
       sortTable(col, newOrder);
     });
     
+    // Khởi tạo select2 và các sự kiện liên quan khi trang được load
     $(document).ready(function() {
-      // Khởi tạo Select2 mà không sử dụng tags, chỉ cho phép chọn giá trị có sẵn
       $('.value-select').select2({
         placeholder: 'Chọn giá trị...',
         allowClear: true,
@@ -604,37 +604,19 @@
       applyFilters(true);
       $('#results-table').colResizable({ liveDrag: true });
       
-      // Xử lý sự kiện paste không cho phép nhập giá trị mới
       $(document).on('paste', '.select2-search__field', function(e) {
         e.preventDefault();
         var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
-        console.log("Clipboard data:", clipboardData);
-    
-        let values = [];
-        if (clipboardData.indexOf('\t') === -1 && clipboardData.indexOf('\n') === -1 && clipboardData.trim().indexOf(' ') > -1) {
-          values = clipboardData.split(/\s+/);
-        } else {
-          values = clipboardData.split(/\r\n|\n|\r/).reduce(function(acc, line) {
-            return acc.concat(line.split('\t'));
-          }, []);
-        }
-        values = values.filter(function(val) {
+        var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
+          return acc.concat(line.split('\t'));
+        }, []).filter(function(val) {
           return val.trim() !== '';
         });
-    
         var $select = $(this).closest('.select2-container').prev('select');
         if ($select.length) {
           var currentValues = $select.val() || [];
           var newValues = currentValues.concat(values);
           newValues = Array.from(new Set(newValues));
-          // Lấy danh sách các giá trị được phép (các option hiện có)
-          var allowedValues = $select.find('option').map(function() {
-            return $(this).val();
-          }).get();
-          // Chỉ giữ lại các giá trị đã có trong danh sách option
-          newValues = newValues.filter(function(v) {
-            return allowedValues.indexOf(v) !== -1;
-          });
           $select.val(newValues).trigger('change');
         }
       });
