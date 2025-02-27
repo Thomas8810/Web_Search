@@ -574,7 +574,6 @@
         allowClear: true,
         width: '100%',
         closeOnSelect: false
-        tags: true
       });
       $('#filter-sheet').select2({
         placeholder: 'Chọn dự án...',
@@ -605,46 +604,22 @@
       applyFilters(true);
       $('#results-table').colResizable({ liveDrag: true });
       
-$(document).on('paste', '.select2-search__field', function(e) {
-  e.preventDefault(); 
-  // Lấy dữ liệu dạng text từ clipboard
-  var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
-
-  // Tách theo dòng (mỗi dòng là một hàng)
-  var lines = clipboardData.split(/\r?\n|\r|\n/);
-
-  // allValues sẽ chứa toàn bộ ô trong tất cả hàng-cột
-  var allValues = [];
-  lines.forEach(function(line) {
-    // Tách từng dòng theo tab => các ô
-    var columns = line.split('\t');
-    // Gom tất cả các ô vào mảng allValues
-    allValues.push(...columns);
-  });
-
-  // Loại bỏ các chuỗi trống hoặc khoảng trắng thừa
-  allValues = allValues.map(function(val) {
-    return val.trim();
-  }).filter(function(val) {
-    return val !== '';
-  });
-
-  // Tìm thẻ <select> tương ứng với ô input Select2 mà bạn đang paste
-  var $select = $(this).closest('.select2-container').prev('select');
-  if (!$select.length) return;
-
-  // Lấy các giá trị hiện có trong select (nếu có), rồi nối thêm các giá trị mới
-  var currentValues = $select.val() || [];
-  var newValues = currentValues.concat(allValues);
-
-  // Loại bỏ trùng lặp
-  newValues = Array.from(new Set(newValues));
-
-  // Gán lại vào select và trigger('change') để Select2 hiển thị
-  $select.val(newValues).trigger('change');
-});
-
-
+      $(document).on('paste', '.select2-search__field', function(e) {
+        e.preventDefault();
+        var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
+        var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
+          return acc.concat(line.split('\t'));
+        }, []).filter(function(val) {
+          return val.trim() !== '';
+        });
+        var $select = $(this).closest('.select2-container').prev('select');
+        if ($select.length) {
+          var currentValues = $select.val() || [];
+          var newValues = currentValues.concat(values);
+          newValues = Array.from(new Set(newValues));
+          $select.val(newValues).trigger('change');
+        }
+      });
     });
   </script>
 </body>
