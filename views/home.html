@@ -698,7 +698,7 @@ let values = filteredData.map(function(row) {
   let cellVal = row[dependentColumn];
   if (cellVal == null) return "";
   if (typeof cellVal === 'string') {
-    return cellVal.trim().toLowerCase();  // chuẩn hóa nếu là chuỗi
+    return cellVal.trim().toUpperCase();  // chuẩn hóa nếu là chuỗi
   }
   return cellVal.toString(); // nếu không phải chuỗi, chuyển về string
 }).filter(function(v) {
