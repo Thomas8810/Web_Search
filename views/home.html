@@ -274,7 +274,7 @@
             <option value="Status">Status</option>
             <option value="Note">Note</option>
           </select>
-          <label for="filter-value-2">Chọn giá trị: (có thể paste ô excel)</label>
+          <label for="filter-value-2">Chọn giá trị: (Paste excel)</label>
           <!-- Đây là select2 sẽ paste kiểu Home paste -->
           <select id="filter-value-2" multiple="multiple"></select>
         </div>
@@ -557,7 +557,7 @@
         tr.append(`<td class="sticky-col-3">${row['REV'] || ''}</td>`);
         tr.append(`<td>${row['PO Number'] || ''}</td>`);
         tr.append(`<td>${row['Project'] || ''}</td>`);
-        tr.append(`<td>${row['Discription'] || ''}</td>`);
+        tr.append(`<td>${row['Description'] || ''}</td>`);
         tr.append(`<td>${formatPercentage(row['Note Number'])}</td>`);
         tr.append(`<td>${row['Critical'] || ''}</td>`);
         tr.append(`<td>${row['CE'] || ''}</td>`);
