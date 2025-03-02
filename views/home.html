@@ -604,29 +604,33 @@
       applyFilters(true);
       $('#results-table').colResizable({ liveDrag: true });
       
-      // Xử lý sự kiện paste cho trường tìm kiếm của select2
       $(document).on('paste', '.select2-search__field', function(e) {
-        e.preventDefault();
-        var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
-        var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
-          return acc.concat(line.split('\t'));
-        }, []).filter(function(val) {
-          return val.trim() !== '';
-        });
-        var $select = $(this).closest('.select2-container').prev('select');
-        if ($select.length) {
-          var currentValues = $select.val() || [];
-          var newValues = currentValues.concat(values);
-          newValues = Array.from(new Set(newValues));
-          $select.val(newValues).trigger('change');
-          
-          // Làm trống ô tìm kiếm sau khi paste để xử lý dữ liệu đúng
-          var searchField = $select.data('select2').dropdown.$search;
-          if (searchField) {
-              searchField.val('');
-          }
-        }
-      });
+  e.preventDefault();
+  var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
+  var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
+    return acc.concat(line.split('\t'));
+  }, []).filter(function(val) {
+    return val.trim() !== '';
+  });
+  var $select = $(this).closest('.select2-container').prev('select');
+  if ($select.length) {
+    var currentValues = $select.val() || [];
+    var newValues = currentValues.concat(values);
+    newValues = Array.from(new Set(newValues));
+    $select.val(newValues).trigger('change');
+    
+    // Làm trống ô tìm kiếm theo cách mới
+    var $select2Data = $select.data('select2');
+    if ($select2Data) {
+      var searchField = $select2Data.$dropdown.find('.select2-search__field');
+      if (searchField.length) {
+        searchField.val('');
+        searchField.trigger('keyup');
+      }
+    }
+  }
+});
+
     });
   </script>
 </body>
