@@ -605,21 +605,28 @@
       
       // Bổ sung xử lý sự kiện paste cho trường tìm kiếm của select2
       $(document).on('paste', '.select2-search__field', function(e) {
-        e.preventDefault();
-        var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
-        var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
-          return acc.concat(line.split('\t'));
-        }, []).filter(function(val) {
-          return val.trim() !== '';
-        });
-        var $select = $(this).closest('.select2-container').prev('select');
-        if ($select.length) {
-          var currentValues = $select.val() || [];
-          var newValues = currentValues.concat(values);
-          newValues = Array.from(new Set(newValues));
-          $select.val(newValues).trigger('change');
-        }
-      });
+  e.preventDefault();
+  var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
+  var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
+    return acc.concat(line.split('\t'));
+  }, []).filter(function(val) {
+    return val.trim() !== '';
+  });
+  var $select = $(this).closest('.select2-container').prev('select');
+  if ($select.length) {
+    var currentValues = $select.val() || [];
+    var newValues = currentValues.concat(values);
+    newValues = Array.from(new Set(newValues));
+    $select.val(newValues).trigger('change');
+    
+    // Làm trống ô tìm kiếm để xử lý dữ liệu paste đúng cách
+    var searchField = $select.data('select2').dropdown.$search;
+    if (searchField) {
+      searchField.val('');
+    }
+  }
+});
+
     });
   </script>
 </body>
