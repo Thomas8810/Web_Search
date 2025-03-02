@@ -705,7 +705,7 @@ let values = filteredData.map(function(row) {
   return v !== "";
 });
 let distinctValues = Array.from(new Set(values));
-
+distinctValues.sort((a, b) => a.localeCompare(b));
 
       
       const selectElem = $('#filter-value-' + blockIndex);
