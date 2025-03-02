@@ -5,6 +5,18 @@
     "password": "12",
     "role": "admin"
   },
+    {
+    "name": "Thiet",
+    "email": "thiet@gmail.com",
+    "password": "thiet123",
+    "role": "user"
+  },
+    {
+    "name": "Son",
+    "email": "Son@gmail.com",
+    "password": "son123",
+    "role": "user"
+  },
   {
     "name": "Hai",
     "email": "Hai@gmail.com",
@@ -15,6 +27,18 @@
     "name": "Duc",
     "email": "Duc@gmail.com",
     "password": "duc123",
+    "role": "user"
+  },
+    {
+    "name": "Long",
+    "email": "Long@gmail.com",
+    "password": "long123",
+    "role": "user"
+  },
+    {
+    "name": "Kien",
+    "email": "Kien@gmail.com",
+    "password": "kien123",
     "role": "user"
   },
   {
