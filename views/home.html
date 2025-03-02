@@ -565,15 +565,21 @@
       sortTable(col, newOrder);
     });
     
-    // Khởi tạo select2 với closeOnSelect: false và xử lý paste
+    // Khởi tạo select2 với các tùy chọn cải tiến:
+    // Sử dụng tags: true và tokenSeparators để tự động tách giá trị khi dán từ Excel,
+    // đồng thời giữ dropdown mở (closeOnSelect: false)
     $(document).ready(function() {
       $('.value-select').select2({
+        tags: true,
+        tokenSeparators: [",", "\n", "\t"],
         placeholder: 'Chọn giá trị...',
         allowClear: true,
         width: '100%',
         closeOnSelect: false
       });
       $('#filter-sheet').select2({
+        tags: true,
+        tokenSeparators: [",", "\n", "\t"],
         placeholder: 'Chọn dự án...',
         allowClear: true,
         width: '100%',
@@ -600,31 +606,14 @@
       applyFilters(true);
       $('#results-table').colResizable({ liveDrag: true });
       
-      // Khi dropdown mở, xóa ô tìm kiếm (như trong file Home paste)
+      // Khi dropdown mở, xóa ô tìm kiếm (giống như trong Home paste)
       $(document).on('select2:open', function() {
         var $searchField = $('.select2-container--open .select2-search__field');
         if ($searchField.length) { $searchField.val(''); }
       });
       
-      // Xử lý sự kiện paste cho ô tìm kiếm của select2
-      $(document).on('paste', '.select2-search__field', function(e) {
-        e.preventDefault();
-        var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
-        var items = clipboardData.split(/[\r\n\t]+/).filter(function(item) { return item.trim() !== ""; });
-        var $select = $(this).closest('.select2-container').prev('select');
-        if ($select.length) {
-          var currentVal = $select.val() || [];
-          var newVal = currentVal.concat(items);
-          // Loại bỏ trùng lặp
-          newVal = newVal.filter(function(item, pos) { return newVal.indexOf(item) === pos; });
-          $select.val(newVal).trigger('change');
-          // Đóng dropdown và mở lại để xóa sạch nội dung ô tìm kiếm
-          $select.select2('close');
-          setTimeout(function() {
-            $select.select2('open');
-          }, 50);
-        }
-      });
+      // Với cấu hình tags và tokenSeparators, khi dán từ Excel,
+      // select2 sẽ tự động tách chuỗi thành các tag mà không cần xử lý paste thủ công.
     });
   </script>
 </body>
