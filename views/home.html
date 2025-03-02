@@ -196,13 +196,13 @@
         <p>Tra cứu tình trạng FAIR</p>
       </div>
       <div class="filter-bar">
-        <!-- Filter Block Sheet (vẫn như home) -->
+        <!-- Filter Block Sheet -->
         <div class="filter-block" id="filter-block-sheet">
           <label for="filter-sheet">Chọn dự án:</label>
           <select id="filter-sheet" class="value-select" multiple="multiple"></select>
         </div>
         
-        <!-- Filter Block 1 (vẫn như home) -->
+        <!-- Filter Block 1 -->
         <div class="filter-block" id="filter-block-1">
           <label for="filter-column-1">Chọn tiêu chí số 1:</label>
           <select id="filter-column-1">
@@ -240,7 +240,7 @@
           <select id="filter-value-1" class="value-select" multiple="multiple"></select>
         </div>
         
-        <!-- Filter Block 2 (Ô này sẽ được paste kiểu Home paste) -->
+        <!-- Filter Block 2 -->
         <div class="filter-block" id="filter-block-2">
           <label for="filter-column-2">Chọn tiêu chí số 2:</label>
           <select id="filter-column-2">
@@ -275,11 +275,10 @@
             <option value="Note">Note</option>
           </select>
           <label for="filter-value-2">Chọn giá trị: (Paste excel)</label>
-          <!-- Đây là select2 sẽ paste kiểu Home paste -->
           <select id="filter-value-2" multiple="multiple"></select>
         </div>
         
-               <!-- Filter Block 3 -->
+        <!-- Filter Block 3 -->
         <div class="filter-block" id="filter-block-3">
           <label for="filter-column-3">Chọn tiêu chí số 3:</label>
           <select id="filter-column-3">
@@ -444,7 +443,7 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Dữ liệu -->
+          <!-- Dữ liệu sẽ được load tại đây -->
         </tbody>
       </table>
     </div>
@@ -462,7 +461,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/colresizable/1.6/colResizable-1.6.min.js"></script>
   <script>
-    // Hàm formatExcelDate, formatPercentage, v.v.
+    // Các hàm format (Excel, percentage) giữ nguyên
     function formatExcelDate(val) {
       if(val && !isNaN(val)) {
         let num = parseFloat(val);
@@ -483,45 +482,192 @@
       return val;
     }
     
-    let distinctValues = {};
     let currentFilters = {};
     let currentOffset = 0;
     const pageSize = 50;
     let totalData = 0;
+    let currentZoom = 1;
     
-    function loadDistinctValues() {
-      $.getJSON('/filters', function(data) {
-        distinctValues = data;
-        updateSheetFilterValues();
-        for (let i = 1; i <= 5; i++) {
-          updateFilterValues(i);
+    // Khởi tạo các dropdown với Select2
+    $(document).ready(function() {
+      $('.value-select').not('#filter-value-2').select2({
+        placeholder: 'Chọn giá trị...',
+        allowClear: true,
+        width: '100%',
+        closeOnSelect: false
+      });
+      $('#filter-sheet').select2({
+        placeholder: 'Chọn dự án...',
+        allowClear: true,
+        width: '100%',
+        closeOnSelect: false
+      });
+      // Đối với filter-value-2 dùng mặc định (closeOnSelect: true)
+      $('#filter-value-2').select2({
+        placeholder: 'Chọn giá trị...',
+        allowClear: true,
+        width: '100%'
+      });
+      
+      // Xử lý sự kiện paste cho filter-value-2
+      $(document).on('paste', '#filter-value-2 ~ .select2 .select2-search__field', function(e) {
+        e.preventDefault();
+        var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
+        var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
+          return acc.concat(line.split('\t'));
+        }, []).filter(function(val) {
+          return val.trim() !== '';
+        });
+        var $select = $('#filter-value-2');
+        var currentValues = $select.val() || [];
+        var newValues = currentValues.concat(values);
+        newValues = Array.from(new Set(newValues));
+        $select.val(newValues).trigger('change');
+      });
+      
+      // Ban đầu cập nhật block 1 (không có điều kiện lọc trước)
+      updateFilterValuesForBlock(1);
+      
+      // Gắn sự kiện cascade: khi thay đổi ở block i, cập nhật các block sau
+      $('#filter-column-1, #filter-value-1').on('change', function() {
+        updateCascade(2);
+      });
+      $('#filter-column-2, #filter-value-2').on('change', function() {
+        updateCascade(3);
+      });
+      $('#filter-column-3, #filter-value-3').on('change', function() {
+        updateCascade(4);
+      });
+      $('#filter-column-4, #filter-value-4').on('change', function() {
+        updateCascade(5);
+      });
+      
+      // Các sự kiện xử lý lọc, tải dữ liệu, zoom, xuất Excel…
+      $('#apply-filters').on('click', function() {
+        applyFilters(true);
+        $('html, body').animate({
+          scrollTop: $('.table-container').offset().top
+        }, 500);
+      });
+      $('#clear-filters').on('click', function() {
+        $('.value-select').val(null).trigger('change');
+        $('#filter-value-2').val(null).trigger('change');
+        applyFilters(true);
+      });
+      $('#load-more').on('click', function() {
+        if (currentOffset < totalData) {
+          let queryString = $.param(currentFilters);
+          $.getJSON(`/search?${queryString}&offset=${currentOffset}`, function(response) {
+            currentOffset += pageSize;
+            updateTable(response.data, false);
+          });
+        } else {
+          alert("Đã tải hết dữ liệu!");
         }
       });
-    }
-    function updateSheetFilterValues() {
-      const selectElem = $('#filter-sheet');
-      selectElem.empty();
-      if (distinctValues['Sheet']) {
-        distinctValues['Sheet'].forEach(function(val) {
+      $('#load-all').on('click', function() {
+        let queryParams = {};
+        const sheetValues = $('#filter-sheet').val();
+        if (sheetValues && sheetValues.length > 0) {
+          queryParams["Sheet"] = sheetValues.join(',');
+        }
+        for (let i = 1; i <= 5; i++) {
+          const col = $(`#filter-column-${i}`).val();
+          const values = $(`#filter-value-${i}`).val();
+          if (values && values.length > 0) {
+            queryParams[col] = values.join(',');
+          }
+        }
+        queryParams.limit = 1000000;
+        queryParams.offset = 0;
+        const queryString = $.param(queryParams);
+        $.getJSON(`/search?${queryString}`, function(response) {
+          currentOffset = response.total;
+          updateTable(response.data, true);
+        });
+      });
+      $('#download-excel').on('click', function() { downloadExcel(); });
+      $('#export-all').on('click', function() {
+        let queryParams = {};
+        const sheetValues = $('#filter-sheet').val();
+        if (sheetValues && sheetValues.length > 0) {
+          queryParams["Sheet"] = sheetValues.join(',');
+        }
+        for (let i = 1; i <= 5; i++) {
+          const col = $(`#filter-column-${i}`).val();
+          const values = $(`#filter-value-${i}`).val();
+          if (values && values.length > 0) {
+            queryParams[col] = values.join(',');
+          }
+        }
+        const queryString = $.param(queryParams);
+        window.location.href = `/export?${queryString}`;
+      });
+      $('#zoom-in').on('click', function() {
+        currentZoom += 0.1;
+        $('#results-table').css('zoom', currentZoom);
+      });
+      $('#zoom-out').on('click', function() {
+        if (currentZoom > 0.5) {
+          currentZoom -= 0.1;
+          $('#results-table').css('zoom', currentZoom);
+        }
+      });
+      
+      loadDistinctValuesForSheet();
+      applyFilters(true);
+      $('#results-table').colResizable({ liveDrag: true });
+    });
+    
+    // Hàm cập nhật dropdown cho từng block (blockIndex) dựa trên dữ liệu đã lọc từ các block trước đó
+    function updateFilterValuesForBlock(blockIndex) {
+      let queryParams = {};
+      for (let i = 1; i < blockIndex; i++) {
+        let col = $('#filter-column-' + i).val();
+        let values = $('#filter-value-' + i).val();
+        if (col && values && values.length > 0) {
+          queryParams[col] = values.join(',');
+        }
+      }
+      let dependentColumn = $('#filter-column-' + blockIndex).val();
+      queryParams.limit = 1000000;
+      let queryString = $.param(queryParams);
+      $.getJSON('/search?' + queryString, function(response) {
+        let data = response.data;
+        let values = data.map(row => row[dependentColumn]).filter(v => v != null && v !== "");
+        let distinctValues = Array.from(new Set(values));
+        const selectElem = $('#filter-value-' + blockIndex);
+        selectElem.empty();
+        distinctValues.forEach(function(val) {
           const option = new Option(val, val, false, false);
           selectElem.append(option);
         });
-      }
-      selectElem.trigger('change');
-    }
-    function updateFilterValues(blockNumber) {
-      const column = $(`#filter-column-${blockNumber}`).val();
-      const selectElem = $(`#filter-value-${blockNumber}`);
-      selectElem.empty();
-      if (distinctValues[column]) {
-        distinctValues[column].forEach(function(val) {
-          const option = new Option(val, val, false, false);
-          selectElem.append(option);
-        });
-      }
-      selectElem.trigger('change');
+        selectElem.trigger('change');
+      });
     }
     
+    // Hàm cập nhật cascade: từ block startBlock đến block 5
+    function updateCascade(startBlock) {
+      for (let i = startBlock; i <= 5; i++) {
+        updateFilterValuesForBlock(i);
+      }
+    }
+    
+    function loadDistinctValuesForSheet() {
+      const selectElem = $('#filter-sheet');
+      selectElem.empty();
+      $.getJSON('/filters', function(data) {
+        if (data['Sheet']) {
+          data['Sheet'].forEach(function(val) {
+            const option = new Option(val, val, false, false);
+            selectElem.append(option);
+          });
+        }
+        selectElem.trigger('change');
+      });
+    }
+    
+    // Hàm áp dụng bộ lọc và gọi API /search
     function applyFilters(reset = true) {
       if (reset) {
         currentOffset = 0;
@@ -547,6 +693,7 @@
         updateTable(response.data, true);
       });
     }
+    
     function updateTable(data, reset) {
       const tbody = $('#results-table tbody');
       if (reset) tbody.empty();
@@ -588,73 +735,10 @@
       $('#results-table').colResizable({ liveDrag: true });
     }
     
-    $('#load-more').on('click', function() {
-      if (currentOffset < totalData) {
-        let queryString = $.param(currentFilters);
-        $.getJSON(`/search?${queryString}&offset=${currentOffset}`, function(response) {
-          currentOffset += pageSize;
-          updateTable(response.data, false);
-        });
-      } else {
-        alert("Đã tải hết dữ liệu!");
-      }
-    });
-    $('#load-all').on('click', function() {
-      let queryParams = {};
-      const sheetValues = $('#filter-sheet').val();
-      if (sheetValues && sheetValues.length > 0) {
-        queryParams["Sheet"] = sheetValues.join(',');
-      }
-      for (let i = 1; i <= 5; i++) {
-        const col = $(`#filter-column-${i}`).val();
-        const values = $(`#filter-value-${i}`).val();
-        if (values && values.length > 0) {
-          queryParams[col] = values.join(',');
-        }
-      }
-      queryParams.limit = 1000000;
-      queryParams.offset = 0;
-      const queryString = $.param(queryParams);
-      $.getJSON(`/search?${queryString}`, function(response) {
-        currentOffset = response.total;
-        updateTable(response.data, true);
-      });
-    });
-    
     function downloadExcel() {
       var wb = XLSX.utils.table_to_book(document.getElementById('results-table'), {sheet:"Sheet1"});
       XLSX.writeFile(wb, 'ketqua.xlsx');
     }
-    $('#download-excel').on('click', function() { downloadExcel(); });
-    
-    $('#export-all').on('click', function() {
-      let queryParams = {};
-      const sheetValues = $('#filter-sheet').val();
-      if (sheetValues && sheetValues.length > 0) {
-        queryParams["Sheet"] = sheetValues.join(',');
-      }
-      for (let i = 1; i <= 5; i++) {
-        const col = $(`#filter-column-${i}`).val();
-        const values = $(`#filter-value-${i}`).val();
-        if (values && values.length > 0) {
-          queryParams[col] = values.join(',');
-        }
-      }
-      const queryString = $.param(queryParams);
-      window.location.href = `/export?${queryString}`;
-    });
-    
-    let currentZoom = 1;
-    $('#zoom-in').on('click', function() {
-      currentZoom += 0.1;
-      $('#results-table').css('zoom', currentZoom);
-    });
-    $('#zoom-out').on('click', function() {
-      if (currentZoom > 0.5) {
-        currentZoom -= 0.1;
-        $('#results-table').css('zoom', currentZoom);
-      }
-    });
     
     function getColumnIndex(columnName) {
       let index = -1;
@@ -686,70 +770,6 @@
       const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
       $(this).data('order', newOrder);
       sortTable(col, newOrder);
-    });
-    
-    // Khởi tạo select2
-    $(document).ready(function() {
-
-      $('.value-select').not('#filter-value-2').select2({
-        placeholder: 'Chọn giá trị...',
-        allowClear: true,
-        width: '100%',
-        closeOnSelect: false
-      });
-      $('#filter-sheet').select2({
-        placeholder: 'Chọn dự án...',
-        allowClear: true,
-        width: '100%',
-        closeOnSelect: false
-      });
-      
-      // 2) Riêng ô #filter-value-2 dùng logic : closeOnSelect: true (mặc định)
-      $('#filter-value-2').select2({
-        placeholder: 'Chọn giá trị...',
-        allowClear: true,
-        width: '100%'
-        // closeOnSelect: true (mặc định)
-      });
-      
-      // Sự kiện paste riêng cho #filter-value-2
-      $(document).on('paste', '#filter-value-2 ~ .select2 .select2-search__field', function(e) {
-        e.preventDefault();
-        var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
-        var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
-          return acc.concat(line.split('\t'));
-        }, []).filter(function(val) {
-          return val.trim() !== '';
-        });
-        var $select = $('#filter-value-2');
-        var currentValues = $select.val() || [];
-        var newValues = currentValues.concat(values);
-        newValues = Array.from(new Set(newValues));
-        $select.val(newValues).trigger('change');
-      });
-      
-      // Các sự kiện filter, apply, loadDistinct, v.v.
-      $('#filter-column-1').on('change', function() { updateFilterValues(1); });
-      $('#filter-column-2').on('change', function() { updateFilterValues(2); });
-      $('#filter-column-3').on('change', function() { updateFilterValues(3); });
-      $('#filter-column-4').on('change', function() { updateFilterValues(4); });
-      $('#filter-column-5').on('change', function() { updateFilterValues(5); });
-      
-      $('#apply-filters').on('click', function() {
-        applyFilters(true);
-        $('html, body').animate({
-          scrollTop: $('.table-container').offset().top
-        }, 500);
-      });
-      $('#clear-filters').on('click', function() {
-        $('.value-select').val(null).trigger('change');
-        $('#filter-value-2').val(null).trigger('change'); // Thêm dòng này để xóa lọc bộ lọc thứ 2
-        applyFilters(true);
-      });
-      
-      loadDistinctValues();
-      applyFilters(true);
-      $('#results-table').colResizable({ liveDrag: true });
     });
   </script>
 </body>
