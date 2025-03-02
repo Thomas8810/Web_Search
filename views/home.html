@@ -109,7 +109,7 @@
           <label for="filter-value-1">Chọn giá trị:</label>
           <select id="filter-value-1" class="value-select" multiple="multiple"></select>
         </div>
-        <!-- Các Filter Block 2,3,4,5 tương tự như trên -->
+        <!-- Các Filter Block 2,3,4,5 tương tự -->
         <div class="filter-block" id="filter-block-2">
           <label for="filter-column-2">Chọn tiêu chí số 2:</label>
           <select id="filter-column-2">
@@ -531,7 +531,7 @@
       }
     });
     
-    // Xử lý sắp xếp theo tiêu đề cột (A-Z / Z-A) trên dữ liệu đang hiển thị
+    // Xử lý sắp xếp theo tiêu đề cột (A-Z / Z-A)
     function getColumnIndex(columnName) {
       let index = -1;
       $('#results-table th').each(function(i) {
@@ -566,7 +566,7 @@
       sortTable(col, newOrder);
     });
     
-    // Khởi tạo select2 và các sự kiện liên quan khi trang được load
+    // Khởi tạo select2 với closeOnSelect: false
     $(document).ready(function() {
       $('.value-select').select2({
         placeholder: 'Chọn giá trị...',
@@ -603,6 +603,14 @@
       applyFilters(true);
       $('#results-table').colResizable({ liveDrag: true });
       
+      // Khi dropdown mở, tự động xóa ô tìm kiếm (đảm bảo rằng nội dung paste không bị giữ lại)
+      $(document).on('select2:open', function() {
+        var $searchField = $('.select2-container--open .select2-search__field');
+        if ($searchField.length) {
+          $searchField.val('');
+        }
+      });
+      
       // Xử lý sự kiện paste cho trường tìm kiếm của select2
       $(document).on('paste', '.select2-search__field', function(e) {
         e.preventDefault();
@@ -618,15 +626,8 @@
           var newValues = currentValues.concat(values);
           newValues = Array.from(new Set(newValues));
           $select.val(newValues).trigger('change');
-          
-          // Sau khi trigger('change'), sử dụng setTimeout với 100ms để xóa giá trị trong ô tìm kiếm
-          setTimeout(function(){
-            var $searchField = $select.data('select2').$dropdown.find('.select2-search__field');
-            if ($searchField.length) {
-              $searchField.val('');
-              $searchField.trigger('input');
-            }
-          }, 100);
+          // Sau khi cập nhật giá trị, đảm bảo dropdown vẫn mở
+          $select.select2('open');
         }
       });
     });
