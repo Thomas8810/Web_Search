@@ -546,7 +546,6 @@
     function formatExcelDate(val) {
       if(val && !isNaN(val)) {
         let num = parseFloat(val);
-        // Chuyển đổi: số ngày Excel trừ đi offset 25569, nhân với số mili-giây trong 1 ngày
         let date = new Date((num - 25569) * 86400 * 1000);
         let year = date.getFullYear();
         let month = (date.getMonth() + 1).toString().padStart(2, '0');
@@ -557,16 +556,11 @@
     }
     
     // Hàm chuyển đổi giá trị số sang dạng phần trăm.
-    // Nếu giá trị <= 1 thì nhân với 100 (ví dụ: 1 -> 100%, 0.75 -> 75%)
     function formatPercentage(val) {
       if(val === undefined || val === null || val === '') return '';
       if(!isNaN(val)) {
         let num = parseFloat(val);
-        if(num <= 1) {
-          return Math.round(num * 100) + '%';
-        } else {
-          return num + '%';
-        }
+        return num <= 1 ? Math.round(num * 100) + '%' : num + '%';
       }
       return val;
     }
@@ -634,14 +628,12 @@
       tbody.empty();
       data.forEach(function(row, index) {
         const tr = $('<tr>');
-        // Sắp xếp theo thứ tự: STT, Part Number, REV, sau đó các cột khác
         tr.append(`<td class="sticky-col-1">${index + 1}</td>`);
         tr.append(`<td class="sticky-col-2">${row['Part Number'] || ''}</td>`);
         tr.append(`<td class="sticky-col-3">${row['REV'] || ''}</td>`);
         tr.append(`<td>${row['PO Number'] || ''}</td>`);
         tr.append(`<td>${row['Project'] || ''}</td>`);
         tr.append(`<td>${row['Discription'] || ''}</td>`);
-        // Hiển thị Note Number dưới dạng phần trăm
         tr.append(`<td>${formatPercentage(row['Note Number'])}</td>`);
         tr.append(`<td>${row['Critical'] || ''}</td>`);
         tr.append(`<td>${row['CE'] || ''}</td>`);
@@ -649,9 +641,7 @@
         tr.append(`<td>${row['Plating'] || ''}</td>`);
         tr.append(`<td>${row['Painting'] || ''}</td>`);
         tr.append(`<td>${row['Tiêu chuẩn mạ sơn'] || ''}</td>`);
-        // Chuyển đổi Ngày Nhận PO
         tr.append(`<td>${formatExcelDate(row['Ngày Nhận PO'])}</td>`);
-        // Hiển thị các cột dưới dạng phần trăm
         tr.append(`<td>${formatPercentage(row['Cover sheet'])}</td>`);
         tr.append(`<td>${formatPercentage(row['Drawing'])}</td>`);
         tr.append(`<td>${formatPercentage(row['Datasheet form'])}</td>`);
@@ -661,7 +651,6 @@
         tr.append(`<td>${formatPercentage(row['Mill'])}</td>`);
         tr.append(`<td>${formatPercentage(row['Part Pictures'])}</td>`);
         tr.append(`<td>${formatPercentage(row['Packaging Pictures'])}</td>`);
-        // Chuyển đổi Submit date
         tr.append(`<td>${formatExcelDate(row['Submit date'])}</td>`);
         tr.append(`<td>${row['Đã lên PO LAM'] || ''}</td>`);
         tr.append(`<td>${row['OK'] || ''}</td>`);
@@ -754,7 +743,7 @@
       $('#results-table').colResizable({ liveDrag: true });
     });
     
-    // Bắt sự kiện paste cho trường tìm kiếm của select2 (đối tượng được tạo động có class .select2-search__field)
+    // Bổ sung xử lý sự kiện paste cho trường tìm kiếm của select2
     $(document).on('paste', '.select2-search__field', function(e) {
       e.preventDefault();
       // Lấy dữ liệu dạng plain text từ clipboard
