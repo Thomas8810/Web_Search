@@ -142,7 +142,7 @@ app.get('/filters', (req, res) => {
     "Project": getDistinct("Project"),
     "Part Number": getDistinct("Part Number"),
     "REV": getDistinct("REV"),
-    "Discription": getDistinct("Discription"),
+    "Description": getDistinct("Description"),
     "Note Number": getDistinct("Note Number"),
     "Critical": getDistinct("Critical"),
     "CE": getDistinct("CE"),
@@ -215,7 +215,15 @@ app.get('/export', (req, res) => {
   }
 
   const wb = XLSX.utils.book_new();
-  const ws = XLSX.utils.json_to_sheet(filtered);
+  const headerOrder = [
+  "Part Number", "REV", "PO Number", "Project", "Description", "Note Number",
+  "Critical", "CE", "Material", "Plating", "Painting", "Tiêu chuẩn mạ sơn",
+  "Ngày Nhận PO", "Cover sheet", "Drawing", "Datasheet form", "Data",
+  "COC", "BOM", "Mill", "Part Pictures", "Packaging Pictures", "Submit date",
+  "Đã lên PO LAM", "OK", "Remark", "Remark 2", "Status", "Note"
+];
+const ws = XLSX.utils.json_to_sheet(filtered, { header: headerOrder });
+
   XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
   const buf = XLSX.write(wb, { type: 'buffer', bookType: 'xlsx' });
 
