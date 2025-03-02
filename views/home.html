@@ -565,25 +565,36 @@
       sortTable(col, newOrder);
     });
     
-    // Khởi tạo select2 với các tùy chọn cải tiến:
-    // Sử dụng tags: true và tokenSeparators để tự động tách giá trị khi dán từ Excel,
-    // đồng thời giữ dropdown mở (closeOnSelect: false)
+    // Khởi tạo select2 với cấu hình tags và tokenSeparators (bao gồm dấu cách)
+    // và sử dụng createTag để không cho phép thêm tag không có sẵn.
     $(document).ready(function() {
-      $('.value-select').select2({
+      $('.value-select, #filter-sheet').select2({
         tags: true,
-        tokenSeparators: [",", "\n", "\t"],
+        tokenSeparators: [",", "\n", "\t", " "],
         placeholder: 'Chọn giá trị...',
         allowClear: true,
         width: '100%',
-        closeOnSelect: false
-      });
-      $('#filter-sheet').select2({
-        tags: true,
-        tokenSeparators: [",", "\n", "\t"],
-        placeholder: 'Chọn dự án...',
-        allowClear: true,
-        width: '100%',
-        closeOnSelect: false
+        closeOnSelect: false,
+        createTag: function (params) {
+          var term = $.trim(params.term);
+          if (term === '') {
+            return null;
+          }
+          var exists = false;
+          this.$element.find('option').each(function() {
+            if ($(this).text().toLowerCase() === term.toLowerCase()) {
+              exists = true;
+              return false;
+            }
+          });
+          if (exists) {
+            return {
+              id: term,
+              text: term
+            };
+          }
+          return null;
+        }
       });
       
       $('#filter-column-1').on('change', function() { updateFilterValues(1); });
@@ -606,14 +617,14 @@
       applyFilters(true);
       $('#results-table').colResizable({ liveDrag: true });
       
-      // Khi dropdown mở, xóa ô tìm kiếm (giống như trong Home paste)
+      // Khi dropdown mở, xóa ô tìm kiếm (như trong file Home paste)
       $(document).on('select2:open', function() {
         var $searchField = $('.select2-container--open .select2-search__field');
         if ($searchField.length) { $searchField.val(''); }
       });
       
-      // Với cấu hình tags và tokenSeparators, khi dán từ Excel,
-      // select2 sẽ tự động tách chuỗi thành các tag mà không cần xử lý paste thủ công.
+      // Với cấu hình tags và tokenSeparators, khi dán từ Excel
+      // select2 sẽ tự động tách chuỗi thành các tag và chỉ thêm nếu tag đó đã có trong option.
     });
   </script>
 </body>
