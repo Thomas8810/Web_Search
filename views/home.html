@@ -694,12 +694,13 @@
       
       // Lấy cột của block hiện tại để tính giá trị distinct
       let dependentColumn = $('#filter-column-' + blockIndex).val();
-      let values = filteredData.map(function(row) {
-        return row[dependentColumn];
-      }).filter(function(v) {
-        return v != null && v !== "";
-      });
-      let distinctValues = Array.from(new Set(values));
+let values = filteredData.map(function(row) {
+  return row[dependentColumn] ? row[dependentColumn].trim().toLowerCase() : "";
+}).filter(function(v) {
+  return v !== "";
+});
+let distinctValues = Array.from(new Set(values));
+
       
       const selectElem = $('#filter-value-' + blockIndex);
       selectElem.empty();
