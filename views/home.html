@@ -534,18 +534,42 @@
       // Ban đầu, cập nhật dropdown cho block 1 (sử dụng bộ lọc dự án nếu có)
       updateFilterValuesForBlock(1);
       
-      // Gắn sự kiện cascade: khi thay đổi ở block i, cập nhật các block sau
-      $('#filter-column-1, #filter-value-1').on('change', function() {
+      // Gắn sự kiện cho từng block: khi thay đổi tiêu chí (column) cập nhật giá trị của block đó, đồng thời cascade update các block sau
+      $('#filter-column-1').on('change', function() {
+        updateFilterValuesForBlock(1);
         updateCascade(2);
       });
-      $('#filter-column-2, #filter-value-2').on('change', function() {
+      $('#filter-value-1').on('change', function() {
+        updateCascade(2);
+      });
+      
+      $('#filter-column-2').on('change', function() {
+        updateFilterValuesForBlock(2);
         updateCascade(3);
       });
-      $('#filter-column-3, #filter-value-3').on('change', function() {
+      $('#filter-value-2').on('change', function() {
+        updateCascade(3);
+      });
+      
+      $('#filter-column-3').on('change', function() {
+        updateFilterValuesForBlock(3);
         updateCascade(4);
       });
-      $('#filter-column-4, #filter-value-4').on('change', function() {
+      $('#filter-value-3').on('change', function() {
+        updateCascade(4);
+      });
+      
+      $('#filter-column-4').on('change', function() {
+        updateFilterValuesForBlock(4);
         updateCascade(5);
+      });
+      $('#filter-value-4').on('change', function() {
+        updateCascade(5);
+      });
+      
+      // Đối với block 5, khi thay đổi tiêu chí thì cập nhật giá trị của block 5 (không có cascade)
+      $('#filter-column-5').on('change', function() {
+        updateFilterValuesForBlock(5);
       });
       
       // Các sự kiện xử lý lọc, tải dữ liệu, zoom, xuất Excel…
