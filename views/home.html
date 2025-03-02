@@ -743,6 +743,7 @@
       });
       $('#clear-filters').on('click', function() {
         $('.value-select').val(null).trigger('change');
+        $('#filter-value-2').val(null).trigger('change'); // Thêm dòng này để xóa lọc bộ lọc thứ 2
         applyFilters(true);
       });
       
