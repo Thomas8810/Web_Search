@@ -619,17 +619,14 @@
           newValues = Array.from(new Set(newValues));
           $select.val(newValues).trigger('change');
           
-          var $select2Data = $select.data('select2');
-          if ($select2Data) {
-            // Sử dụng setTimeout để đảm bảo sau khi trigger('change') xong, ô tìm kiếm được làm trống
-            setTimeout(function(){
-              var $searchField = $select2Data.$dropdown.find('.select2-search__field');
-              if ($searchField.length) {
-                $searchField.val('');
-                $searchField.trigger('keyup');
-              }
-            }, 1);
-          }
+          // Sau khi trigger('change'), sử dụng setTimeout với 100ms để xóa giá trị trong ô tìm kiếm
+          setTimeout(function(){
+            var $searchField = $select.data('select2').$dropdown.find('.select2-search__field');
+            if ($searchField.length) {
+              $searchField.val('');
+              $searchField.trigger('input');
+            }
+          }, 100);
         }
       });
     });
