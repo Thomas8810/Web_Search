@@ -411,7 +411,7 @@
       $.getJSON(`/search?${queryString}`, function(response) {
         totalData = response.total;
         currentOffset += pageSize;
-        updateTable(response.data, reset);
+        updateTable(response.data, true);
       });
     }
     
@@ -484,7 +484,6 @@
           queryParams[col] = values.join(',');
         }
       }
-      // Đặt limit lớn để lấy toàn bộ dữ liệu và offset = 0
       queryParams.limit = 1000000;
       queryParams.offset = 0;
       const queryString = $.param(queryParams);
@@ -543,7 +542,7 @@
       });
       return index;
     }
-
+    
     function sortTable(column, order) {
       let rows = $('#results-table tbody tr').get();
       let colIndex = getColumnIndex(column);
@@ -557,7 +556,7 @@
         $('#results-table tbody').append(row);
       });
     }
-
+    
     $(document).on('click', '#results-table th', function() {
       const col = $(this).data('column');
       if (!col) return;
@@ -604,33 +603,35 @@
       applyFilters(true);
       $('#results-table').colResizable({ liveDrag: true });
       
+      // Xử lý sự kiện paste cho trường tìm kiếm của select2
       $(document).on('paste', '.select2-search__field', function(e) {
-  e.preventDefault();
-  var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
-  var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
-    return acc.concat(line.split('\t'));
-  }, []).filter(function(val) {
-    return val.trim() !== '';
-  });
-  var $select = $(this).closest('.select2-container').prev('select');
-  if ($select.length) {
-    var currentValues = $select.val() || [];
-    var newValues = currentValues.concat(values);
-    newValues = Array.from(new Set(newValues));
-    $select.val(newValues).trigger('change');
-    
-    // Làm trống ô tìm kiếm theo cách mới
-    var $select2Data = $select.data('select2');
-    if ($select2Data) {
-      var searchField = $select2Data.$dropdown.find('.select2-search__field');
-      if (searchField.length) {
-        searchField.val('');
-        searchField.trigger('keyup');
-      }
-    }
-  }
-});
-
+        e.preventDefault();
+        var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
+        var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
+          return acc.concat(line.split('\t'));
+        }, []).filter(function(val) {
+          return val.trim() !== '';
+        });
+        var $select = $(this).closest('.select2-container').prev('select');
+        if ($select.length) {
+          var currentValues = $select.val() || [];
+          var newValues = currentValues.concat(values);
+          newValues = Array.from(new Set(newValues));
+          $select.val(newValues).trigger('change');
+          
+          var $select2Data = $select.data('select2');
+          if ($select2Data) {
+            // Sử dụng setTimeout để đảm bảo sau khi trigger('change') xong, ô tìm kiếm được làm trống
+            setTimeout(function(){
+              var $searchField = $select2Data.$dropdown.find('.select2-search__field');
+              if ($searchField.length) {
+                $searchField.val('');
+                $searchField.trigger('keyup');
+              }
+            }, 1);
+          }
+        }
+      });
     });
   </script>
 </body>
