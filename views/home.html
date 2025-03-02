@@ -487,9 +487,20 @@
     const pageSize = 50;
     let totalData = 0;
     let currentZoom = 1;
+    // Biến toàn cục chứa toàn bộ dữ liệu
+    let allData = null;
+    
+    // Hàm load toàn bộ dữ liệu khi trang được load
+    function loadAllData() {
+      $.getJSON('/search?limit=1000000', function(response) {
+        allData = response.data;
+      });
+    }
     
     // Khởi tạo các dropdown với Select2
     $(document).ready(function() {
+      loadAllData(); // load dữ liệu toàn bộ một lần
+      
       $('.value-select').not('#filter-value-2').select2({
         placeholder: 'Chọn giá trị...',
         allowClear: true,
@@ -649,39 +660,54 @@
       $('#results-table').colResizable({ liveDrag: true });
     });
     
-    // Hàm cập nhật dropdown cho từng block (blockIndex) dựa trên dữ liệu đã lọc từ các block trước đó,
-    // đồng thời luôn đưa bộ lọc dự án (Sheet) nếu đã chọn.
+    // Hàm cập nhật dropdown cho từng block dựa trên dữ liệu đã lọc từ các block trước đó (và điều kiện dự án)
     function updateFilterValuesForBlock(blockIndex) {
-      let queryParams = {};
-      // Nếu đã chọn dự án, thêm vào điều kiện lọc
+      if (!allData) {
+        // Nếu dữ liệu chưa được load, gọi lại sau
+        setTimeout(function(){ updateFilterValuesForBlock(blockIndex); }, 100);
+        return;
+      }
+      let filteredData = allData.slice(); // sao chép dữ liệu toàn bộ
+      
+      // Áp dụng điều kiện bộ lọc dự án (Sheet) nếu có
       const sheetValues = $('#filter-sheet').val();
       if (sheetValues && sheetValues.length > 0) {
-          queryParams["Sheet"] = sheetValues.join(',');
+        filteredData = filteredData.filter(function(row) {
+          return sheetValues.some(function(s) {
+            return row['Sheet'] && row['Sheet'].toString().toLowerCase().includes(s.toLowerCase());
+          });
+        });
       }
-      // Lấy điều kiện từ các block trước đó (block 1 đến blockIndex-1)
+      
+      // Áp dụng điều kiện từ các block trước đó (block 1 đến blockIndex-1)
       for (let i = 1; i < blockIndex; i++) {
         let col = $('#filter-column-' + i).val();
         let values = $('#filter-value-' + i).val();
         if (col && values && values.length > 0) {
-          queryParams[col] = values.join(',');
+          filteredData = filteredData.filter(function(row) {
+            return values.some(function(v) {
+              return row[col] && row[col].toString().toLowerCase().includes(v.toLowerCase());
+            });
+          });
         }
       }
+      
       // Lấy cột của block hiện tại để tính giá trị distinct
       let dependentColumn = $('#filter-column-' + blockIndex).val();
-      queryParams.limit = 1000000;  // đảm bảo lấy toàn bộ dữ liệu
-      let queryString = $.param(queryParams);
-      $.getJSON('/search?' + queryString, function(response) {
-        let data = response.data;
-        let values = data.map(row => row[dependentColumn]).filter(v => v != null && v !== "");
-        let distinctValues = Array.from(new Set(values));
-        const selectElem = $('#filter-value-' + blockIndex);
-        selectElem.empty();
-        distinctValues.forEach(function(val) {
-          const option = new Option(val, val, false, false);
-          selectElem.append(option);
-        });
-        selectElem.trigger('change');
+      let values = filteredData.map(function(row) {
+        return row[dependentColumn];
+      }).filter(function(v) {
+        return v != null && v !== "";
       });
+      let distinctValues = Array.from(new Set(values));
+      
+      const selectElem = $('#filter-value-' + blockIndex);
+      selectElem.empty();
+      distinctValues.forEach(function(val) {
+        const option = new Option(val, val, false, false);
+        selectElem.append(option);
+      });
+      selectElem.trigger('change');
     }
     
     // Hàm cập nhật cascade: từ block startBlock đến block 5
@@ -705,7 +731,7 @@
       });
     }
     
-    // Hàm áp dụng bộ lọc và gọi API /search
+    // Hàm áp dụng bộ lọc và gọi API /search (vẫn gọi API để load dữ liệu hiển thị bảng)
     function applyFilters(reset = true) {
       if (reset) {
         currentOffset = 0;
