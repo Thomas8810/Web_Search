@@ -484,6 +484,7 @@
           queryParams[col] = values.join(',');
         }
       }
+      // Đặt limit lớn để lấy toàn bộ dữ liệu và offset = 0
       queryParams.limit = 1000000;
       queryParams.offset = 0;
       const queryString = $.param(queryParams);
@@ -542,7 +543,7 @@
       });
       return index;
     }
-    
+
     function sortTable(column, order) {
       let rows = $('#results-table tbody tr').get();
       let colIndex = getColumnIndex(column);
@@ -556,7 +557,7 @@
         $('#results-table tbody').append(row);
       });
     }
-    
+
     $(document).on('click', '#results-table th', function() {
       const col = $(this).data('column');
       if (!col) return;
@@ -603,30 +604,29 @@
       applyFilters(true);
       $('#results-table').colResizable({ liveDrag: true });
       
-      // Bổ sung xử lý sự kiện paste cho trường tìm kiếm của select2
+      // Xử lý sự kiện paste cho trường tìm kiếm của select2
       $(document).on('paste', '.select2-search__field', function(e) {
-  e.preventDefault();
-  var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
-  var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
-    return acc.concat(line.split('\t'));
-  }, []).filter(function(val) {
-    return val.trim() !== '';
-  });
-  var $select = $(this).closest('.select2-container').prev('select');
-  if ($select.length) {
-    var currentValues = $select.val() || [];
-    var newValues = currentValues.concat(values);
-    newValues = Array.from(new Set(newValues));
-    $select.val(newValues).trigger('change');
-    
-    // Làm trống ô tìm kiếm để xử lý dữ liệu paste đúng cách
-    var searchField = $select.data('select2').dropdown.$search;
-    if (searchField) {
-      searchField.val('');
-    }
-  }
-});
-
+        e.preventDefault();
+        var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
+        var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
+          return acc.concat(line.split('\t'));
+        }, []).filter(function(val) {
+          return val.trim() !== '';
+        });
+        var $select = $(this).closest('.select2-container').prev('select');
+        if ($select.length) {
+          var currentValues = $select.val() || [];
+          var newValues = currentValues.concat(values);
+          newValues = Array.from(new Set(newValues));
+          $select.val(newValues).trigger('change');
+          
+          // Làm trống ô tìm kiếm sau khi paste để xử lý dữ liệu đúng
+          var searchField = $select.data('select2').dropdown.$search;
+          if (searchField) {
+              searchField.val('');
+          }
+        }
+      });
     });
   </script>
 </body>
