@@ -695,11 +695,17 @@
       // Lấy cột của block hiện tại để tính giá trị distinct
       let dependentColumn = $('#filter-column-' + blockIndex).val();
 let values = filteredData.map(function(row) {
-  return row[dependentColumn] ? row[dependentColumn].trim().toLowerCase() : "";
+  let cellVal = row[dependentColumn];
+  if (cellVal == null) return "";
+  if (typeof cellVal === 'string') {
+    return cellVal.trim().toLowerCase();  // chuẩn hóa nếu là chuỗi
+  }
+  return cellVal.toString(); // nếu không phải chuỗi, chuyển về string
 }).filter(function(v) {
   return v !== "";
 });
 let distinctValues = Array.from(new Set(values));
+
 
       
       const selectElem = $('#filter-value-' + blockIndex);
