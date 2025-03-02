@@ -525,7 +525,13 @@
         $select.val(newValues).trigger('change');
       });
       
-      // Ban đầu cập nhật block 1 (không có điều kiện lọc trước)
+      // Khi chọn dự án, cập nhật lại dropdown ở block 1 và cascade các block còn lại
+      $('#filter-sheet').on('change', function(){
+        updateFilterValuesForBlock(1);
+        updateCascade(2);
+      });
+      
+      // Ban đầu, cập nhật dropdown cho block 1 (sử dụng bộ lọc dự án nếu có)
       updateFilterValuesForBlock(1);
       
       // Gắn sự kiện cascade: khi thay đổi ở block i, cập nhật các block sau
@@ -619,9 +625,16 @@
       $('#results-table').colResizable({ liveDrag: true });
     });
     
-    // Hàm cập nhật dropdown cho từng block (blockIndex) dựa trên dữ liệu đã lọc từ các block trước đó
+    // Hàm cập nhật dropdown cho từng block (blockIndex) dựa trên dữ liệu đã lọc từ các block trước đó,
+    // đồng thời luôn đưa bộ lọc dự án (Sheet) nếu đã chọn.
     function updateFilterValuesForBlock(blockIndex) {
       let queryParams = {};
+      // Nếu đã chọn dự án, thêm vào điều kiện lọc
+      const sheetValues = $('#filter-sheet').val();
+      if (sheetValues && sheetValues.length > 0) {
+          queryParams["Sheet"] = sheetValues.join(',');
+      }
+      // Lấy điều kiện từ các block trước đó (block 1 đến blockIndex-1)
       for (let i = 1; i < blockIndex; i++) {
         let col = $('#filter-column-' + i).val();
         let values = $('#filter-value-' + i).val();
@@ -629,8 +642,9 @@
           queryParams[col] = values.join(',');
         }
       }
+      // Lấy cột của block hiện tại để tính giá trị distinct
       let dependentColumn = $('#filter-column-' + blockIndex).val();
-      queryParams.limit = 1000000;
+      queryParams.limit = 1000000;  // đảm bảo lấy toàn bộ dữ liệu
       let queryString = $.param(queryParams);
       $.getJSON('/search?' + queryString, function(response) {
         let data = response.data;
