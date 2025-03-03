@@ -37,7 +37,7 @@
     .header h1 { margin: 0; font-size: 28px; color: white; }
     .header p { margin: 5px 0 0 0; font-size: 16px; color: #ddd; }
     
-    /* Nút toggle bộ lọc */
+    /* Nút toggle hiển thị bộ lọc (chỉ cho màn hình nhỏ) */
     .filter-toggle {
       text-align: center;
       margin: 10px 0;
@@ -60,17 +60,21 @@
     .filter-bar {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: center; /* căn giữa các phần tiêu chí lọc */
       padding: 5px;
     }
-    /* Ẩn bộ lọc mặc định trên mobile, chỉ hiển thị khi active */
+    /* Ẩn bộ lọc trên màn hình nhỏ (<=768px) theo mặc định */
     @media (max-width: 768px) {
       .filter-bar { display: none; }
-      .filter-bar.active { display: flex; flex-direction: column; }
-      .header h1 { font-size: 24px; }
-      .header p { font-size: 14px; }
-      .filter-toggle button { font-size: 12px; padding: 6px 12px; }
     }
+    /* Trên màn hình lớn, luôn hiển thị bộ lọc và ẩn nút toggle */
+    @media (min-width: 769px) {
+      .filter-toggle { display: none; }
+      .filter-bar { display: flex !important; }
+      .header h1 { font-size: 28px; }
+      .header p { font-size: 16px; }
+    }
+    
     .filter-block {
       background: #444;
       border-radius: 5px;
@@ -84,6 +88,7 @@
       display: block;
       margin-bottom: 3px;
       font-weight: bold;
+      text-align: center;
     }
     .filter-block select {
       width: 100%;
@@ -145,11 +150,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 18px;
-      color: #fff;
-      background: rgba(0,0,0,0.7);
-      padding: 10px 20px;
-      border-radius: 4px;
+      /* Spinner không có nội dung chữ */
     }
     table {
       width: auto;
@@ -197,7 +198,7 @@
         <h1>FAIR TEAM</h1>
         <p>Tra cứu tình trạng FAIR</p>
       </div>
-      <!-- Nút toggle hiển thị bộ lọc (có ARIA để cải thiện truy cập) -->
+      <!-- Nút toggle hiển thị bộ lọc (chỉ hiển thị trên mobile) -->
       <div class="filter-toggle">
         <button id="toggle-filters" aria-label="Hiện/Ẩn Bộ lọc">Hiện/Ẩn Bộ lọc</button>
       </div>
@@ -411,7 +412,8 @@
     
     <!-- Phần bảng dữ liệu -->
     <div class="table-container" role="main">
-      <div id="loading-spinner" class="loading-spinner" role="status" aria-live="polite">Đang tải...</div>
+      <!-- Spinner loading không còn chứa chữ -->
+      <div id="loading-spinner" class="loading-spinner" role="status" aria-live="polite"></div>
       <table id="results-table">
         <thead>
           <tr>
@@ -507,7 +509,7 @@
       $('.filter-bar').toggleClass('active');
     }
     
-    // Hiển thị/ẩn spinner loading
+    // Hiển thị/ẩn spinner (không chứa chữ)
     function showLoading() { $('#loading-spinner').show(); }
     function hideLoading() { $('#loading-spinner').hide(); }
     
@@ -546,7 +548,7 @@
         $select.val(newValues).trigger('change');
       });
       
-      // Gán sự kiện cho nút toggle bộ lọc
+      // Gán sự kiện cho nút toggle bộ lọc (chỉ trên mobile)
       $('#toggle-filters').on('click', toggleFilters);
       
       // Cập nhật dropdown cho các block bộ lọc
