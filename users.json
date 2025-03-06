@@ -35,12 +35,6 @@
     "password": "long123",
     "role": "user"
   },
-    {
-    "name": "Kien",
-    "email": "Kien@gmail.com",
-    "password": "kien123",
-    "role": "user"
-  },
   {
     "name": "Ha",
     "email": "Ha@gmail.com",
