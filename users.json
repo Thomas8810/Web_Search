@@ -35,6 +35,12 @@
     "password": "long123",
     "role": "user"
   },
+      {
+    "name": "SongJisub",
+    "email": "SongJisub@gmail.com",
+    "password": "SongJisub",
+    "role": "user"
+  },
   {
     "name": "Ha",
     "email": "Ha@gmail.com",
