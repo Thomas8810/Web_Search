@@ -6,6 +6,9 @@
   <title>Web Tra Cứu - Nguyễn Văn Đạo</title>
   <!-- CSS Select2 -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+  <!-- Thêm i18next và i18next-browser-languagedetector -->
+  <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
   <style>
     /* Cài đặt CSS cơ bản */
     html, body { height: 100%; margin: 0; padding: 0; }
@@ -27,14 +30,35 @@
       padding: 15px;
       max-height: 40vh;
       overflow-y: auto;
+      position: relative;
     }
     .header {
       text-align: center;
       padding: 10px;
+      position: relative;
     }
     .header h1 { margin: 0; font-size: 28px; color: white; }
     .header p { margin: 5px 0 0; font-size: 16px; color: #ddd; }
-
+    /* Language switcher ở góc trên bên phải */
+    .language-switcher {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .language-switcher button {
+      padding: 4px 8px;
+      margin-left: 5px;
+      font-size: 12px;
+      cursor: pointer;
+      border: none;
+      border-radius: 3px;
+      background: #ff8c00;
+      color: white;
+      transition: background 0.3s;
+    }
+    .language-switcher button:hover {
+      background: #ff6500;
+    }
     /* Khối chứa các tiêu chí lọc */
     .filter-bar {
       display: flex;
@@ -62,7 +86,6 @@
       margin-bottom: 3px;
       font-size: 12px;
     }
-
     /* Khối chứa các nút chức năng */
     .action-bar {
       display: flex;
@@ -109,7 +132,6 @@
     .zoom-controls button:hover {
       background: linear-gradient(45deg, #34d058, #28a745);
     }
-
     /* Phần hiển thị tổng số dòng */
     .results-count {
       text-align: center;
@@ -117,7 +139,6 @@
       font-size: 14px;
       color: white;
     }
-
     /* Bảng dữ liệu */
     .table-container {
       flex: 1 1 auto;
@@ -214,19 +235,24 @@
   <div class="page-container">
     <div class="top-container">
       <div class="header">
-        <h1>FAIR TEAM</h1>
-        <p>Tra cứu tình trạng FAIR</p>
+        <h1 id="header-title">FAIR TEAM - Tra cứu tình trạng FAIR</h1>
+        <p id="header-subtitle">Tra cứu tình trạng FAIR</p>
+        <!-- Nút chuyển đổi ngôn ngữ ở góc trên bên phải -->
+        <div class="language-switcher">
+          <button onclick="changeLanguage('vi')">Vi</button>
+          <button onclick="changeLanguage('en')">En</button>
+        </div>
       </div>
       <!-- Phần tiêu chí lọc -->
       <div class="filter-bar">
         <!-- Filter Block Sheet -->
         <div class="filter-block" id="filter-block-sheet">
-          <label for="filter-sheet">Chọn dự án:</label>
+          <label for="filter-sheet" id="label-filter-sheet">Chọn dự án</label>
           <select id="filter-sheet" class="value-select" multiple="multiple"></select>
         </div>
         <!-- Filter Block 1 -->
         <div class="filter-block" id="filter-block-1">
-          <label for="filter-column-1">Chọn tiêu chí số 1:</label>
+          <label for="filter-column-1" id="label-criteria-1">Chọn tiêu chí số 1:</label>
           <select id="filter-column-1">
             <option value="Status">Status</option>
             <option value="Critical">Critical</option>
@@ -258,12 +284,12 @@
             <option value="Remark 2">Remark 2</option>
             <option value="Note">Note</option>
           </select>
-          <label for="filter-value-1">Chọn giá trị:</label>
+          <label for="filter-value-1" id="label-filter-value-1">Chọn giá trị</label>
           <select id="filter-value-1" class="value-select" multiple="multiple"></select>
         </div>
         <!-- Filter Block 2 -->
         <div class="filter-block" id="filter-block-2">
-          <label for="filter-column-2">Chọn tiêu chí số 2:</label>
+          <label for="filter-column-2" id="label-criteria-2">Chọn tiêu chí số 2:</label>
           <select id="filter-column-2">
             <option value="Status">Status</option>
             <option value="Critical">Critical</option>
@@ -295,12 +321,12 @@
             <option value="Remark 2">Remark 2</option>
             <option value="Note">Note</option>
           </select>
-          <label for="filter-value-2">Chọn giá trị: (Paste excel)</label>
+          <label for="filter-value-2" id="label-filter-value-2">Chọn giá trị</label>
           <select id="filter-value-2" multiple="multiple"></select>
         </div>
         <!-- Filter Block 3 -->
         <div class="filter-block" id="filter-block-3">
-          <label for="filter-column-3">Chọn tiêu chí số 3:</label>
+          <label for="filter-column-3" id="label-criteria-3">Chọn tiêu chí số 3:</label>
           <select id="filter-column-3">
             <option value="Status">Status</option>
             <option value="Critical">Critical</option>
@@ -332,7 +358,7 @@
             <option value="Remark 2">Remark 2</option>
             <option value="Note">Note</option>
           </select>
-          <label for="filter-value-3">Chọn giá trị:</label>
+          <label for="filter-value-3" id="label-filter-value-3">Chọn giá trị</label>
           <select id="filter-value-3" class="value-select" multiple="multiple"></select>
         </div>
       </div>
@@ -354,7 +380,7 @@
       </div>
 
       <!-- Phần hiển thị tổng số dòng -->
-      <div class="results-count" id="results-count">Tổng số dòng: 0</div>
+      <div class="results-count" id="results-count">Total rows: 0</div>
     </div>
 
     <!-- Khu vực hiển thị bảng dữ liệu -->
@@ -402,12 +428,12 @@
 
     <!-- Nút tải thêm -->
     <div id="load-more-container" style="text-align:center; margin:10px;">
-      <button id="load-more">Tải thêm (50)</button>
-      <button id="load-all">Tải toàn bộ</button>
+      <button id="load-more">Load More</button>
+      <button id="load-all">Load All</button>
     </div>
 
     <!-- Footer -->
-    <div class="footer">Người phát triển: Nguyễn Văn Đạo</div>
+    <div class="footer" id="footer-text">Người phát triển: Nguyễn Văn Đạo</div>
   </div>
 
   <!-- JS Thư viện -->
@@ -415,6 +441,130 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/colresizable/1.6/colResizable-1.6.min.js"></script>
+
+  <!-- i18next Integration -->
+  <script>
+    // Khởi tạo i18next với resource cho tiếng Anh và tiếng Việt
+    i18next.use(i18nextBrowserLanguageDetector).init({
+      fallbackLng: 'vi',
+      debug: false,
+      resources: {
+        en: {
+          translation: {
+            "header_title": "FAIR TEAM - Search Status",
+            "header_subtitle": "Search FAIR status",
+            "choose_project": "Choose Project",
+            "choose_value": "Choose Value",
+            "choose_criteria_1": "Select Criteria 1:",
+            "choose_criteria_2": "Select Criteria 2:",
+            "choose_criteria_3": "Select Criteria 3:",
+            "apply_filter": "Apply Filter",
+            "clear_filter": "Clear Filter",
+            "download_excel": "Export Excel (Current)",
+            "export_all": "Export Excel (All)",
+            "zoom_in": "Zoom In",
+            "zoom_out": "Zoom Out",
+            "load_more": "Load More",
+            "load_all": "Load All",
+            "total_rows": "Total rows: {{count}} / {{total}}",
+            "developer": "Developer: Nguyễn Văn Đạo"
+          }
+        },
+        vi: {
+          translation: {
+            "header_title": "FAIR TEAM - Tra cứu tình trạng FAIR",
+            "header_subtitle": "Tra cứu tình trạng FAIR",
+            "choose_project": "Chọn dự án",
+            "choose_value": "Chọn giá trị",
+            "choose_criteria_1": "Chọn tiêu chí số 1:",
+            "choose_criteria_2": "Chọn tiêu chí số 2:",
+            "choose_criteria_3": "Chọn tiêu chí số 3:",
+            "apply_filter": "Áp dụng lọc",
+            "clear_filter": "Xóa lọc",
+            "download_excel": "Xuất Excel (Đang xem)",
+            "export_all": "Xuất Excel (Tất cả)",
+            "zoom_in": "Phóng to",
+            "zoom_out": "Thu nhỏ",
+            "load_more": "Tải thêm",
+            "load_all": "Tải toàn bộ",
+            "total_rows": "Tổng số dòng: {{count}} / {{total}}",
+            "developer": "Người phát triển: Nguyễn Văn Đạo"
+          }
+        }
+      }
+    }, function(err, t) {
+      updateStaticContent();
+    });
+
+    // Hàm tái khởi tạo lại widget Select2 để cập nhật placeholder và giữ lựa chọn hiện tại
+    function reinitializeSelect2(selector, placeholder, extraOptions) {
+      var $el = $(selector);
+      var currentValue = $el.val();
+      $el.select2("destroy");
+      $el.select2($.extend({
+        placeholder: placeholder,
+        allowClear: true,
+        width: '100%'
+      }, extraOptions));
+      $el.val(currentValue).trigger('change');
+    }
+
+    // Hàm cập nhật nội dung tĩnh theo ngôn ngữ hiện tại
+    function updateStaticContent() {
+      // Header
+      document.getElementById("header-title").innerText = i18next.t("header_title");
+      document.getElementById("header-subtitle").innerText = i18next.t("header_subtitle");
+
+      // Các label trong filter
+      var labelSheet = document.querySelector('label[for="filter-sheet"]');
+      if (labelSheet) { labelSheet.innerText = i18next.t("choose_project"); }
+      var labelCriteria1 = document.getElementById("label-criteria-1");
+      if (labelCriteria1) { labelCriteria1.innerText = i18next.t("choose_criteria_1"); }
+      var labelCriteria2 = document.getElementById("label-criteria-2");
+      if (labelCriteria2) { labelCriteria2.innerText = i18next.t("choose_criteria_2"); }
+      var labelCriteria3 = document.getElementById("label-criteria-3");
+      if (labelCriteria3) { labelCriteria3.innerText = i18next.t("choose_criteria_3"); }
+      var labelValue1 = document.getElementById("label-filter-value-1");
+      if (labelValue1) { labelValue1.innerText = i18next.t("choose_value"); }
+      var labelValue2 = document.getElementById("label-filter-value-2");
+      if (labelValue2) { labelValue2.innerText = i18next.t("choose_value"); }
+      var labelValue3 = document.getElementById("label-filter-value-3");
+      if (labelValue3) { labelValue3.innerText = i18next.t("choose_value"); }
+      var tbodyCount = $('#results-table tbody').children().length;
+$('#results-count').text(i18next.t("total_rows", { count: tbodyCount, total: totalData }));
+
+
+      // Cập nhật lại các widget Select2 (để thay đổi placeholder mà vẫn giữ lựa chọn)
+      reinitializeSelect2('#filter-sheet', i18next.t("choose_project"), { closeOnSelect: false });
+      reinitializeSelect2('#filter-value-1', i18next.t("choose_value"), { closeOnSelect: false });
+      reinitializeSelect2('#filter-value-2', i18next.t("choose_value"), {}); // mặc định closeOnSelect = true
+      reinitializeSelect2('#filter-value-3', i18next.t("choose_value"), { closeOnSelect: false });
+
+      // Action buttons
+      document.getElementById("apply-filters").innerText = i18next.t("apply_filter");
+      document.getElementById("clear-filters").innerText = i18next.t("clear_filter");
+      document.getElementById("download-excel").innerText = i18next.t("download_excel");
+      document.getElementById("export-all").innerText = i18next.t("export_all");
+      document.getElementById("zoom-in").innerText = i18next.t("zoom_in");
+      document.getElementById("zoom-out").innerText = i18next.t("zoom_out");
+
+      // Update "Load More" and "Load All" buttons
+      document.getElementById("load-more").innerText = i18next.t("load_more");
+      document.getElementById("load-all").innerText = i18next.t("load_all");
+
+      // Update footer text
+      document.getElementById("footer-text").innerText = i18next.t("developer");
+    }
+
+    // Hàm chuyển đổi ngôn ngữ khi bấm nút
+    function changeLanguage(lng) {
+      i18next.changeLanguage(lng, function() {
+        updateStaticContent();
+      });
+    }
+  </script>
+
+  <!-- Các mã JS hiện tại -->
   <script>
     // Hàm format Excel date
     function formatExcelDate(val) {
@@ -471,26 +621,26 @@
     $(document).ready(function() {
       loadAllData(); // Tải toàn bộ dữ liệu một lần
 
-      // Khởi tạo Select2
+      // Khởi tạo Select2 ban đầu
       $('.value-select').not('#filter-value-2').select2({
-        placeholder: 'Chọn giá trị...',
+        placeholder: i18next.t("choose_value"),
         allowClear: true,
         width: '100%',
         closeOnSelect: false
       });
       $('#filter-sheet').select2({
-        placeholder: 'Chọn dự án...',
+        placeholder: i18next.t("choose_project"),
         allowClear: true,
         width: '100%',
         closeOnSelect: false
       });
       $('#filter-value-2').select2({
-        placeholder: 'Chọn giá trị...',
+        placeholder: i18next.t("choose_value"),
         allowClear: true,
         width: '100%'
       });
 
-      // Gọi hàm loadDistinctValuesForSheet() để load dữ liệu cho phần "Chọn dự án"
+      // Load dữ liệu cho "Chọn dự án"
       loadDistinctValuesForSheet();
 
       // Xử lý paste Excel cho filter-value-2
@@ -735,7 +885,8 @@
         tr.append(`<td>${row['Note'] || ''}</td>`);
         tbody.append(tr);
       });
-      $('#results-count').text(`Tổng số dòng: ${tbody.children().length} / ${totalData}`);
+      var totalText = i18next.t("total_rows", { count: tbody.children().length, total: totalData });
+      $('#results-count').text(totalText);
       $('#results-table').colResizable({ liveDrag: true });
     }
 
