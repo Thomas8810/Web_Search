@@ -365,12 +365,13 @@
             <th class="sticky-col-1">STT</th>
             <th class="sticky-col-2">Part Number</th>
             <th class="sticky-col-3">REV</th>
+            <th data-column="Status">Status</th>
+            <th data-column="Critical">Critical</th>
+            <th data-column="CE">CE</th>
             <th data-column="PO Number">PO Number</th>
             <th data-column="Project">Project</th>
             <th data-column="Description">Description</th>
             <th data-column="Note Number">Note Number</th>
-            <th data-column="Critical">Critical</th>
-            <th data-column="CE">CE</th>
             <th data-column="Material">Material</th>
             <th data-column="Plating">Plating</th>
             <th data-column="Painting">Painting</th>
@@ -390,7 +391,6 @@
             <th data-column="OK">OK</th>
             <th data-column="Remark">Remark</th>
             <th data-column="Remark 2">Remark 2</th>
-            <th data-column="Status">Status</th>
             <th data-column="Note">Note</th>
           </tr>
         </thead>
@@ -706,12 +706,13 @@
         tr.append(`<td class="sticky-col-1">${tbody.children().length + 1}</td>`);
         tr.append(`<td class="sticky-col-2">${row['Part Number'] || ''}</td>`);
         tr.append(`<td class="sticky-col-3">${row['REV'] || ''}</td>`);
+        tr.append(`<td>${row['Status'] || ''}</td>`);
+        tr.append(`<td>${row['Critical'] || ''}</td>`);
+        tr.append(`<td>${row['CE'] || ''}</td>`);
         tr.append(`<td>${row['PO Number'] || ''}</td>`);
         tr.append(`<td>${row['Project'] || ''}</td>`);
         tr.append(`<td>${row['Description'] || ''}</td>`);
         tr.append(`<td>${formatPercentage(row['Note Number'])}</td>`);
-        tr.append(`<td>${row['Critical'] || ''}</td>`);
-        tr.append(`<td>${row['CE'] || ''}</td>`);
         tr.append(`<td>${row['Material'] || ''}</td>`);
         tr.append(`<td>${row['Plating'] || ''}</td>`);
         tr.append(`<td>${row['Painting'] || ''}</td>`);
@@ -731,7 +732,6 @@
         tr.append(`<td>${row['OK'] || ''}</td>`);
         tr.append(`<td>${row['Remark'] || ''}</td>`);
         tr.append(`<td>${row['Remark 2'] || ''}</td>`);
-        tr.append(`<td>${row['Status'] || ''}</td>`);
         tr.append(`<td>${row['Note'] || ''}</td>`);
         tbody.append(tr);
       });
