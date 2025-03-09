@@ -833,6 +833,9 @@ Mô tả: ${ext.description || ''}
     $(document).ready(async function(){
       $('a[data-toggle="tab"]').on('shown.bs.tab', onTabShown);
       await init();
+      document.getElementById('searchInput').addEventListener('input', () => {
+    loadTasks();
+      });
     });
   </script>
 </body>
