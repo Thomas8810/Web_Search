@@ -27,7 +27,7 @@
     .home-link:hover {
       background: #0056b3;
     }
-
+    
     /* Mobile optimization cho nút Home */
     @media (max-width: 480px) {
       .home-link {
@@ -41,7 +41,7 @@
         font-size: 16px;
       }
     }
-
+    
     /* Responsive Nav Tabs */
     @media (max-width: 576px) {
       .nav-tabs {
@@ -56,7 +56,7 @@
         font-size: 12px;
       }
     }
-
+    
     /* Dropzone styles */
     #dropzone {
       border: 2px dashed #ccc;
@@ -70,7 +70,7 @@
     #dropzone.dragover {
       background-color: #eee;
     }
-
+    
     /* File preview styles */
     #filePreviewList { margin-top: 10px; }
     .preview-item {
@@ -113,7 +113,7 @@
       right: 20px;
       z-index: 9999;
     }
-
+    
     /* Cố định tiêu đề bảng */
     thead th {
       position: sticky;
@@ -121,7 +121,7 @@
       background: #fff;
       z-index: 10; /* để nổi lên trên phần nội dung */
     }
-
+    
     /* Đặt chiều cao tối đa cho vùng table-responsive để cuộn dọc */
     .table-responsive {
       max-height: calc(100vh - 250px); /* Tùy chỉnh khoảng trừ */
@@ -181,8 +181,8 @@
             </select>
           </div>
           
-          <!-- Nút mở form tạo nhiệm vụ (admin) -->
-          <div class="mb-3">
+          <!-- Phần tạo nhiệm vụ mới chỉ dành cho admin -->
+          <div id="createTaskContainer" class="mb-3">
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#createTaskForm" aria-expanded="false" aria-controls="createTaskForm">
               Tạo nhiệm vụ mới
             </button>
@@ -304,9 +304,13 @@
         currentUser = data.user;
         document.getElementById('welcome').innerText =
           `Xin chào ${currentUser.name} - Vai trò: ${currentUser.role}`;
+        // Nếu là admin, hiển thị form tạo nhiệm vụ và phần lọc; nếu không, ẩn chúng
         if (currentUser.role === 'admin') {
-          document.getElementById('taskForm').style.display = 'block';
+          document.getElementById('createTaskContainer').style.display = 'block';
           document.getElementById('filter-section').style.display = 'block';
+        } else {
+          document.getElementById('createTaskContainer').style.display = 'none';
+          document.getElementById('filter-section').style.display = 'none';
         }
       } catch (err) {
         console.error("Error checking auth:", err);
@@ -527,7 +531,7 @@ Mô tả: ${ext.description || ''}
       try {
         // Kiểm tra nếu currentUser chưa có => return
         if (!currentUser) return;
-
+  
         let url = '/api/tasks';
         // Chỉ admin mới lọc theo người nhận
         if (currentUser.role === 'admin') {
@@ -808,8 +812,7 @@ Mô tả: ${ext.description || ''}
       setTimeout(() => { toast.remove(); }, 3500);
     }
   
-    // 15) Tabs
-    // Mỗi khi chuyển tab => loadCalendar() hoặc loadReport()
+    // 15) Tabs - mỗi khi chuyển tab load Calendar hoặc Report
     async function onTabShown(e) {
       const target = $(e.target).attr("href");
       if (target === "#calendar-pane") {
@@ -819,22 +822,16 @@ Mô tả: ${ext.description || ''}
         await loadReport();
       }
     }
-
+  
     // 16) Khởi tạo
     async function init() {
-      // 1. checkAuth
       await checkAuth();
-      // 2. Nếu chưa có user => dừng
       if (!currentUser) return;
-      // 3. loadTasks
       loadTasks();
     }
-
+  
     $(document).ready(async function(){
-      // Gắn sự kiện chuyển tab
       $('a[data-toggle="tab"]').on('shown.bs.tab', onTabShown);
-
-      // Gọi init
       await init();
     });
   </script>
