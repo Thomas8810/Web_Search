@@ -127,6 +127,13 @@
       max-height: calc(100vh - 250px); /* Tùy chỉnh khoảng trừ */
       overflow-y: auto;
     }
+    
+    /* Căn giữa chữ trong bảng */
+    #tasksTable th,
+    #tasksTable td {
+      text-align: center;
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body>
@@ -238,7 +245,7 @@
             <table class="table table-bordered" id="tasksTable">
               <thead>
                 <tr>
-                  <th>ID</th>
+                  <th>STT</th>
                   <th>Tên nhiệm vụ</th>
                   <th>Người nhận</th>
                   <th>Mức ưu tiên</th>
@@ -562,6 +569,8 @@ Mô tả: ${ext.description || ''}
         // Hiển thị bảng
         const tbody = document.querySelector('#tasksTable tbody');
         tbody.innerHTML = '';
+        // Dùng biến đếm để hiển thị STT
+        let stt = 1;
         for (const task of tasks) {
           let actionButtons = '';
           // Nếu là người được giao và nhiệm vụ đang "Chưa thực hiện"
@@ -589,7 +598,7 @@ Mô tả: ${ext.description || ''}
   
           const tr = document.createElement('tr');
           tr.innerHTML = `
-            <td>${task.id}</td>
+            <td>${stt}</td>
             <td>${task.title}</td>
             <td>${task.assignedTo}</td>
             <td>${task.priority}</td>
@@ -616,6 +625,7 @@ Mô tả: ${ext.description || ''}
             </td>
           `;
           tbody.appendChild(tr);
+          stt++;
           loadAttachments(task.id);
         }
       } catch (err) {
@@ -834,7 +844,7 @@ Mô tả: ${ext.description || ''}
       $('a[data-toggle="tab"]').on('shown.bs.tab', onTabShown);
       await init();
       document.getElementById('searchInput').addEventListener('input', () => {
-    loadTasks();
+        loadTasks();
       });
     });
   </script>
