@@ -119,13 +119,20 @@
       position: sticky;
       top: 0;
       background: #fff;
-      z-index: 10; /* để nổi lên trên phần nội dung */
+      z-index: 10;
     }
     
     /* Đặt chiều cao tối đa cho vùng table-responsive để cuộn dọc */
     .table-responsive {
-      max-height: calc(100vh - 250px); /* Tùy chỉnh khoảng trừ */
+      max-height: calc(100vh - 250px);
       overflow-y: auto;
+    }
+    
+    /* Căn giữa chữ trong bảng */
+    #tasksTable th,
+    #tasksTable td {
+      text-align: center;
+      vertical-align: middle;
     }
   </style>
 </head>
@@ -238,7 +245,7 @@
             <table class="table table-bordered" id="tasksTable">
               <thead>
                 <tr>
-                  <th>ID</th>
+                  <th>STT</th>
                   <th>Tên nhiệm vụ</th>
                   <th>Người nhận</th>
                   <th>Mức ưu tiên</th>
@@ -381,7 +388,6 @@
           events,
           editable: (currentUser && currentUser.role === 'admin'),
           eventDidMount: function(info) {
-            // Tooltip khi hover
             const ext = info.event.extendedProps;
             const tooltipContent = `
               <b>${info.event.title}</b><br>
@@ -393,7 +399,6 @@
             info.el.setAttribute('title', tooltipContent);
           },
           eventClick: function(info) {
-            // Click để xem chi tiết
             const ext = info.event.extendedProps;
             const details = `
 Nhiệm vụ: ${info.event.title}
@@ -529,11 +534,9 @@ Mô tả: ${ext.description || ''}
     // 7) Load danh sách nhiệm vụ
     async function loadTasks() {
       try {
-        // Kiểm tra nếu currentUser chưa có => return
         if (!currentUser) return;
   
         let url = '/api/tasks';
-        // Chỉ admin mới lọc theo người nhận
         if (currentUser.role === 'admin') {
           const assigned = document.getElementById('filterAssigned').value;
           if (assigned) url += `?assignedTo=${encodeURIComponent(assigned)}`;
@@ -541,7 +544,6 @@ Mô tả: ${ext.description || ''}
         const res = await fetch(url);
         let tasks = await res.json();
   
-        // Tìm kiếm
         const searchVal = document.getElementById('searchInput').value.trim().toLowerCase();
         if (searchVal) {
           tasks = tasks.filter(task => {
@@ -550,7 +552,6 @@ Mô tả: ${ext.description || ''}
           });
         }
   
-        // Sắp xếp
         const sortVal = document.getElementById('sortSelect').value;
         if (sortVal === 'deadline') {
           tasks.sort((a, b) => new Date(a.deadline) - new Date(b.deadline));
@@ -559,37 +560,31 @@ Mô tả: ${ext.description || ''}
           tasks.sort((a, b) => order[a.priority] - order[b.priority]);
         }
   
-        // Hiển thị bảng
         const tbody = document.querySelector('#tasksTable tbody');
         tbody.innerHTML = '';
+        let stt = 1;
         for (const task of tasks) {
           let actionButtons = '';
-          // Nếu là người được giao và nhiệm vụ đang "Chưa thực hiện"
           if (task.status === "Chưa thực hiện" && currentUser.name === task.assignedTo) {
             actionButtons += `<button class="btn btn-info btn-sm" onclick="startTask(${task.id})">Nhận</button> `;
           }
-          // Nếu chưa hoàn thành và (admin hoặc là người được giao)
           if (task.status !== "Hoàn thành" && (currentUser.role === 'admin' || currentUser.name === task.assignedTo)) {
             actionButtons += `<button class="btn btn-success btn-sm" onclick="completeTask(${task.id})">Hoàn thành</button> `;
           }
-          // Chỉ admin được bàn giao
           if (currentUser.role === 'admin') {
             actionButtons += `<button class="btn btn-warning btn-sm" onclick="handoverTask(${task.id})">Bàn giao</button> `;
           }
-          // Admin hoặc người được giao => upload file
           if (currentUser.role === 'admin' || currentUser.name === task.assignedTo) {
             actionButtons += `<button class="btn btn-secondary btn-sm" onclick="uploadAttachmentPrompt(${task.id})">Upload File</button> `;
           }
-          // Comment
           actionButtons += `<button class="btn btn-info btn-sm" onclick="toggleComments(${task.id})">Comment</button> `;
-          // Xóa (admin)
           if (currentUser.role === 'admin') {
             actionButtons += `<button class="btn btn-danger btn-sm" onclick="deleteTask(${task.id})">Xóa</button>`;
           }
   
           const tr = document.createElement('tr');
           tr.innerHTML = `
-            <td>${task.id}</td>
+            <td>${stt}</td>
             <td>${task.title}</td>
             <td>${task.assignedTo}</td>
             <td>${task.priority}</td>
@@ -616,6 +611,7 @@ Mô tả: ${ext.description || ''}
             </td>
           `;
           tbody.appendChild(tr);
+          stt++;
           loadAttachments(task.id);
         }
       } catch (err) {
@@ -626,7 +622,43 @@ Mô tả: ${ext.description || ''}
       loadTasks();
     }
   
-    // 8) Nhận nhiệm vụ
+    // 8) Xử lý submit form giao nhiệm vụ
+    document.getElementById('taskForm').addEventListener('submit', async function(e) {
+      e.preventDefault(); // Ngăn reload trang
+      const task = {
+        title: document.getElementById('taskTitle').value,
+        assignedTo: document.getElementById('taskAssigned').value,
+        priority: document.getElementById('taskPriority').value,
+        deadline: document.getElementById('taskDeadline').value,
+        description: document.getElementById('taskDescription').value,
+        status: 'Chưa thực hiện'
+      };
+      try {
+        const createRes = await fetch('/api/tasks', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(task)
+        });
+        const createResult = await createRes.json();
+        console.log("Phản hồi từ API tạo nhiệm vụ:", createResult);
+        if (!createResult.success) {
+          showToast("Lỗi tạo nhiệm vụ: " + createResult.message);
+          return;
+        }
+        showToast("Nhiệm vụ đã được tạo thành công!");
+        loadTasks();
+        loadReport();
+  
+        document.getElementById('taskForm').reset();
+        document.getElementById('filePreviewList').innerHTML = '';
+        selectedFiles = [];
+      } catch (err) {
+        console.error("Error creating task:", err);
+        showToast("Lỗi tạo nhiệm vụ: " + (err?.message || "Xem log"));
+      }
+    });
+  
+    // 9) Nhận nhiệm vụ
     async function startTask(taskId) {
       if (!confirm("Nhận nhiệm vụ này?")) return;
       try {
@@ -648,7 +680,7 @@ Mô tả: ${ext.description || ''}
       }
     }
   
-    // 9) Hoàn thành nhiệm vụ
+    // 10) Hoàn thành nhiệm vụ
     async function completeTask(taskId) {
       if (!confirm("Đánh dấu là 'Hoàn thành'?")) return;
       try {
@@ -670,7 +702,7 @@ Mô tả: ${ext.description || ''}
       }
     }
   
-    // 10) Bàn giao nhiệm vụ (admin)
+    // 11) Bàn giao nhiệm vụ (admin)
     async function handoverTask(taskId) {
       const newAssignee = prompt("Nhập tên người nhận mới:");
       if (!newAssignee) return;
@@ -693,7 +725,7 @@ Mô tả: ${ext.description || ''}
       }
     }
   
-    // 11) Xóa nhiệm vụ (admin)
+    // 12) Xóa nhiệm vụ (admin)
     async function deleteTask(taskId) {
       if (!confirm("Xóa nhiệm vụ này?")) return;
       try {
@@ -711,7 +743,7 @@ Mô tả: ${ext.description || ''}
       }
     }
   
-    // 12) Toggle comments
+    // 13) Toggle comments
     async function toggleComments(taskId) {
       const container = document.getElementById(`comments-${taskId}`);
       if (container.style.display === 'none' || container.style.display === '') {
@@ -762,7 +794,7 @@ Mô tả: ${ext.description || ''}
       }
     }
   
-    // 13) Upload attachment
+    // 14) Upload attachment
     async function uploadAttachmentPrompt(taskId) {
       const input = document.createElement('input');
       input.type = 'file';
@@ -796,7 +828,7 @@ Mô tả: ${ext.description || ''}
       }
     }
   
-    // 14) Hàm hiển thị Toast
+    // 15) Hàm hiển thị Toast
     function showToast(message) {
       const toastContainer = document.querySelector('.toast-container');
       const toast = document.createElement('div');
@@ -812,7 +844,7 @@ Mô tả: ${ext.description || ''}
       setTimeout(() => { toast.remove(); }, 3500);
     }
   
-    // 15) Tabs - mỗi khi chuyển tab load Calendar hoặc Report
+    // 16) Tabs - mỗi khi chuyển tab load Calendar hoặc Report
     async function onTabShown(e) {
       const target = $(e.target).attr("href");
       if (target === "#calendar-pane") {
@@ -823,7 +855,7 @@ Mô tả: ${ext.description || ''}
       }
     }
   
-    // 16) Khởi tạo
+    // 17) Khởi tạo
     async function init() {
       await checkAuth();
       if (!currentUser) return;
@@ -834,7 +866,7 @@ Mô tả: ${ext.description || ''}
       $('a[data-toggle="tab"]').on('shown.bs.tab', onTabShown);
       await init();
       document.getElementById('searchInput').addEventListener('input', () => {
-    loadTasks();
+        loadTasks();
       });
     });
   </script>
