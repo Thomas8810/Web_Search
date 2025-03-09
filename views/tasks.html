@@ -119,20 +119,13 @@
       position: sticky;
       top: 0;
       background: #fff;
-      z-index: 10;
+      z-index: 10; /* để nổi lên trên phần nội dung */
     }
     
     /* Đặt chiều cao tối đa cho vùng table-responsive để cuộn dọc */
     .table-responsive {
-      max-height: calc(100vh - 250px);
+      max-height: calc(100vh - 250px); /* Tùy chỉnh khoảng trừ */
       overflow-y: auto;
-    }
-    
-    /* Căn giữa chữ trong bảng */
-    #tasksTable th,
-    #tasksTable td {
-      text-align: center;
-      vertical-align: middle;
     }
   </style>
 </head>
@@ -245,7 +238,7 @@
             <table class="table table-bordered" id="tasksTable">
               <thead>
                 <tr>
-                  <th>STT</th>
+                  <th>ID</th>
                   <th>Tên nhiệm vụ</th>
                   <th>Người nhận</th>
                   <th>Mức ưu tiên</th>
@@ -536,9 +529,11 @@ Mô tả: ${ext.description || ''}
     // 7) Load danh sách nhiệm vụ
     async function loadTasks() {
       try {
+        // Kiểm tra nếu currentUser chưa có => return
         if (!currentUser) return;
   
         let url = '/api/tasks';
+        // Chỉ admin mới lọc theo người nhận
         if (currentUser.role === 'admin') {
           const assigned = document.getElementById('filterAssigned').value;
           if (assigned) url += `?assignedTo=${encodeURIComponent(assigned)}`;
@@ -546,6 +541,7 @@ Mô tả: ${ext.description || ''}
         const res = await fetch(url);
         let tasks = await res.json();
   
+        // Tìm kiếm
         const searchVal = document.getElementById('searchInput').value.trim().toLowerCase();
         if (searchVal) {
           tasks = tasks.filter(task => {
@@ -554,6 +550,7 @@ Mô tả: ${ext.description || ''}
           });
         }
   
+        // Sắp xếp
         const sortVal = document.getElementById('sortSelect').value;
         if (sortVal === 'deadline') {
           tasks.sort((a, b) => new Date(a.deadline) - new Date(b.deadline));
@@ -562,31 +559,37 @@ Mô tả: ${ext.description || ''}
           tasks.sort((a, b) => order[a.priority] - order[b.priority]);
         }
   
+        // Hiển thị bảng
         const tbody = document.querySelector('#tasksTable tbody');
         tbody.innerHTML = '';
-        let stt = 1;
         for (const task of tasks) {
           let actionButtons = '';
+          // Nếu là người được giao và nhiệm vụ đang "Chưa thực hiện"
           if (task.status === "Chưa thực hiện" && currentUser.name === task.assignedTo) {
             actionButtons += `<button class="btn btn-info btn-sm" onclick="startTask(${task.id})">Nhận</button> `;
           }
+          // Nếu chưa hoàn thành và (admin hoặc là người được giao)
           if (task.status !== "Hoàn thành" && (currentUser.role === 'admin' || currentUser.name === task.assignedTo)) {
             actionButtons += `<button class="btn btn-success btn-sm" onclick="completeTask(${task.id})">Hoàn thành</button> `;
           }
+          // Chỉ admin được bàn giao
           if (currentUser.role === 'admin') {
             actionButtons += `<button class="btn btn-warning btn-sm" onclick="handoverTask(${task.id})">Bàn giao</button> `;
           }
+          // Admin hoặc người được giao => upload file
           if (currentUser.role === 'admin' || currentUser.name === task.assignedTo) {
             actionButtons += `<button class="btn btn-secondary btn-sm" onclick="uploadAttachmentPrompt(${task.id})">Upload File</button> `;
           }
+          // Comment
           actionButtons += `<button class="btn btn-info btn-sm" onclick="toggleComments(${task.id})">Comment</button> `;
+          // Xóa (admin)
           if (currentUser.role === 'admin') {
             actionButtons += `<button class="btn btn-danger btn-sm" onclick="deleteTask(${task.id})">Xóa</button>`;
           }
   
           const tr = document.createElement('tr');
           tr.innerHTML = `
-            <td>${stt}</td>
+            <td>${task.id}</td>
             <td>${task.title}</td>
             <td>${task.assignedTo}</td>
             <td>${task.priority}</td>
@@ -613,7 +616,6 @@ Mô tả: ${ext.description || ''}
             </td>
           `;
           tbody.appendChild(tr);
-          stt++;
           loadAttachments(task.id);
         }
       } catch (err) {
@@ -832,7 +834,7 @@ Mô tả: ${ext.description || ''}
       $('a[data-toggle="tab"]').on('shown.bs.tab', onTabShown);
       await init();
       document.getElementById('searchInput').addEventListener('input', () => {
-        loadTasks();
+    loadTasks();
       });
     });
   </script>
