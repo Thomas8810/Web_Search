@@ -1214,41 +1214,105 @@ Mô tả: ${ext.description || ''}
       loadTasks();
     }
 
-    // 8) Xử lý submit form giao nhiệm vụ
-    document.getElementById('taskForm').addEventListener('submit', async function(e) {
-      e.preventDefault(); // Ngăn reload trang
-      const task = {
-        title: document.getElementById('taskTitle').value,
-        assignedTo: document.getElementById('taskAssigned').value,
-        priority: document.getElementById('taskPriority').value,
-        deadline: document.getElementById('taskDeadline').value,
-        description: document.getElementById('taskDescription').value,
-        status: 'Chưa thực hiện'
-      };
-      try {
-        const createRes = await fetch('/api/tasks', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(task)
-        });
-        const createResult = await createRes.json();
-        console.log("Phản hồi từ API tạo nhiệm vụ:", createResult);
-        if (!createResult.success) {
-          showToast("Lỗi tạo nhiệm vụ: " + createResult.message);
-          return;
-        }
-        showToast("Nhiệm vụ đã được tạo thành công!");
-        loadTasks();
-        loadReport();
+// 8) Xử lý submit form giao nhiệm vụ
+document.getElementById('taskForm').addEventListener('submit', async function(e) {
+  e.preventDefault(); // Ngăn reload trang
 
-        document.getElementById('taskForm').reset();
-        document.getElementById('filePreviewList').innerHTML = '';
-        selectedFiles = [];
-      } catch (err) {
-        console.error("Error creating task:", err);
-        showToast("Lỗi tạo nhiệm vụ: " + (err?.message || "Xem log"));
-      }
+  const task = {
+    title: document.getElementById('taskTitle').value,
+    assignedTo: document.getElementById('taskAssigned').value,
+    priority: document.getElementById('taskPriority').value,
+    deadline: document.getElementById('taskDeadline').value,
+    description: document.getElementById('taskDescription').value,
+    status: 'Chưa thực hiện'
+  };
+
+  try {
+    // Gọi API tạo nhiệm vụ
+    const createRes = await fetch('/api/tasks', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(task)
     });
+    const createResult = await createRes.json();
+    console.log("Phản hồi từ API tạo nhiệm vụ:", createResult);
+    if (!createResult.success) {
+      showToast("Lỗi tạo nhiệm vụ: " + createResult.message);
+      return;
+    }
+    
+    // Lấy ID của nhiệm vụ vừa tạo (theo cấu trúc trả về từ server: { success: true, task: { id: ... } })
+    const newTaskId = createResult.task && createResult.task.id;
+    if (!newTaskId) {
+      showToast("Không tìm thấy ID của nhiệm vụ vừa tạo!");
+      return;
+    }
+    
+    // Xử lý upload file nếu có
+    let mainImageUpdated = false; // dùng để chỉ cập nhật hình chính một lần
+    if (selectedFiles.length > 0) {
+      for (const file of selectedFiles) {
+        if (file.type.startsWith('image/')) {
+          // Upload hình ảnh qua API /api/upload-image
+          const uploadResult = await uploadImage(file);
+          if (!uploadResult.success) {
+            showToast("Lỗi upload hình ảnh: " + uploadResult.message);
+          } else {
+            if (!mainImageUpdated) {
+              // Cập nhật nhiệm vụ với imageURL và image_path
+              await updateTaskImage(newTaskId, uploadResult.imageUrl, uploadResult.filePath);
+              mainImageUpdated = true;
+            } else {
+              // Nếu có thêm hình khác, có thể upload chúng dưới dạng file đính kèm (nếu cần)
+              const attResult = await uploadAttachment(newTaskId, file);
+              if (!attResult.success) {
+                showToast("Lỗi upload file đính kèm: " + attResult.message);
+              }
+            }
+          }
+        } else {
+          // Các file không phải hình ảnh sẽ được upload dưới dạng đính kèm
+          const uploadResult = await uploadAttachment(newTaskId, file);
+          if (!uploadResult.success) {
+            showToast("Lỗi upload file đính kèm: " + uploadResult.message);
+          }
+        }
+      }
+    }
+    
+    showToast("Nhiệm vụ và file đính kèm đã được tạo thành công!");
+    loadTasks();
+    loadReport();
+    
+    // Reset form và mảng file đã chọn
+    document.getElementById('taskForm').reset();
+    document.getElementById('filePreviewList').innerHTML = '';
+    selectedFiles = [];
+  } catch (err) {
+    console.error("Error creating task:", err);
+    showToast("Lỗi tạo nhiệm vụ: " + (err?.message || "Xem log"));
+  }
+});
+
+// Hàm cập nhật hình ảnh cho nhiệm vụ
+async function updateTaskImage(taskId, imageUrl, imagePath) {
+  try {
+    const res = await fetch(`/api/tasks/${taskId}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ imageURL: imageUrl, image_path: imagePath })
+    });
+    const result = await res.json();
+    if (!result.success) {
+      showToast("Lỗi cập nhật hình ảnh nhiệm vụ: " + result.message);
+    }
+    return result;
+  } catch (error) {
+    console.error("Error updating task image:", error);
+    showToast("Lỗi cập nhật hình ảnh nhiệm vụ: " + error.message);
+  }
+}
+
 
     // 9) Nhận nhiệm vụ
     async function startTask(taskId) {
