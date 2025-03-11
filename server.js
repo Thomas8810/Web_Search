@@ -309,35 +309,6 @@ app.post('/api/tasks/:id/comments', isAuthenticated, async (req, res) => {
   }
 });
 
-// ----------------------- IMAGE UPLOAD ENDPOINT -----------------------
-app.post('/api/upload-image', isAuthenticated, upload.single('image'), async (req, res) => {
-  try {
-    if (!req.file) return res.status(400).json({ success: false, message: 'No file provided' });
-    const fileName = `tasks-images/${Date.now()}_${req.file.originalname}`;
-    const { data: uploadData, error: uploadError } = await supabase
-      .storage
-      .from('tasks-images')
-      .upload(fileName, req.file.buffer, { contentType: req.file.mimetype, upsert: false });
-    if (uploadError) {
-      console.error("Upload error:", JSON.stringify(uploadError, null, 2));
-      return res.status(500).json({ success: false, message: uploadError.message || JSON.stringify(uploadError) });
-    }
-    const filePath = uploadData.path;
-    const { data: publicUrlData, error: publicUrlError } = supabase
-      .storage
-      .from('tasks-images')
-      .getPublicUrl(filePath);
-    if (publicUrlError) {
-      console.error("Error getting public URL:", publicUrlError);
-      return res.status(500).json({ success: false, message: publicUrlError.message || JSON.stringify(publicUrlError) });
-    }
-    res.json({ success: true, imageUrl: publicUrlData.publicUrl, filePath });
-  } catch (error) {
-    console.error("Error in POST /api/upload-image:", error);
-    res.status(500).json({ success: false, message: error.message || JSON.stringify(error) });
-  }
-});
-
 // ----------------------- ATTACHMENTS ENDPOINT -----------------------
 app.post('/api/tasks/:id/attachments', isAuthenticated, upload.single('file'), async (req, res) => {
   const taskId = req.params.id;
@@ -524,6 +495,48 @@ app.get('/export', (req, res) => {
   res.setHeader('Content-Disposition', 'attachment; filename=export.xlsx');
   res.setHeader('Content-Type', 'application/octet-stream');
   res.send(buf);
+});
+// Xóa một attachment (chỉ admin mới được xóa)
+app.delete('/api/attachments/:id', isAuthenticated, isAdmin, async (req, res) => {
+  const attachmentId = req.params.id;
+  try {
+    // 1) Tìm attachment trong bảng task_attachments
+    const { data: attData, error: attError } = await supabase
+      .from('task_attachments')
+      .select('*')
+      .eq('id', attachmentId)
+      .single();
+    if (attError) throw attError;
+    if (!attData) {
+      return res.json({ success: false, message: "Không tìm thấy attachment" });
+    }
+
+    // 2) Xóa file thực tế khỏi Supabase Storage (nếu có file_path)
+    if (attData.file_path) {
+      console.log("Deleting attachment file:", attData.file_path);
+      const { error: storageError } = await supabase
+        .storage
+        .from('tasks-attachments')
+        .remove([attData.file_path]);
+      if (storageError) {
+        // Không bắt buộc dừng, chỉ log lỗi
+        console.error("Error removing file from storage:", storageError);
+      }
+    }
+
+    // 3) Xóa dòng trong bảng task_attachments
+    const { error: delError } = await supabase
+      .from('task_attachments')
+      .delete()
+      .eq('id', attachmentId);
+    if (delError) throw delError;
+
+    // 4) Trả về kết quả
+    return res.json({ success: true, message: "Attachment deleted successfully!" });
+  } catch (error) {
+    console.error("Error deleting attachment:", error);
+    return res.json({ success: false, message: error.message });
+  }
 });
 
 // ----------------------- START SERVER -----------------------
