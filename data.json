@@ -22163,7 +22163,7 @@
     "Part Pictures": 1,
     "Packaging Pictures": 1,
     "Submit date": 45747,
-    "Status": "Submit",
+    "Status": "Approved",
     "Note": "Đã gửi: 250317",
     "Sheet": "LAM Machining"
   },
@@ -36489,6 +36489,20 @@
     "Sheet": "Mattson"
   },
   {
+    "No": 102,
+    "Need Date": 45774,
+    "Classify": "FA ",
+    "PO Number": 6100001036,
+    "Project": "Mattson Machining",
+    "Part Number": 1011718,
+    "REV": "A",
+    "Description": "BRKT,MNTG,MOTOR,THETA,ROBOT A3",
+    "Ngày Nhận PO": 45745,
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Status": "On going",
+    "Sheet": "Mattson"
+  },
+  {
     "No": 1,
     "Need Date": 45777,
     "Classify": "FA ",
@@ -38260,6 +38274,108 @@
     "Packaging Pictures": 1,
     "Remark": "Send to PBX",
     "Status": "Submit",
+    "Sheet": "PBX Texon"
+  },
+  {
+    "No": 16,
+    "Classify": "FA",
+    "Project": "VVA",
+    "Part Number": "714-083009-011",
+    "REV": "C ",
+    "Description": "SHLD,MAG,TOP/FR,LCLP COIL ENCL          ",
+    "Critical": " C1",
+    "CE": "Y",
+    "Remark": "Có bản vẽ trong LAM machining",
+    "Remark 2": "VVA",
+    "Status": "Ongoing",
+    "Sheet": "PBX Texon"
+  },
+  {
+    "No": 17,
+    "Classify": "FA",
+    "Project": "VVA",
+    "Part Number": "714-083010-011",
+    "REV": "B ",
+    "Description": "SHLD,MAG,SIDE,LCLP COIL ENCL            ",
+    "Critical": " C1",
+    "CE": "Y",
+    "Remark": "Có bản vẽ trong LAM machining",
+    "Remark 2": "VVA",
+    "Status": "Ongoing",
+    "Sheet": "PBX Texon"
+  },
+  {
+    "No": 18,
+    "Classify": "FA",
+    "Project": "VVA",
+    "Part Number": "714-082889-002",
+    "REV": "B ",
+    "Description": "PNL,BHD FDTHRU,EXT COIL ENCL            ",
+    "CE": "Y",
+    "Remark": "Có bản vẽ trong LAM machining",
+    "Remark 2": "VVA",
+    "Status": "Ongoing",
+    "Sheet": "PBX Texon"
+  },
+  {
+    "No": 19,
+    "Classify": "FA",
+    "Project": "VVA",
+    "Part Number": "714-082890-001",
+    "REV": "A ",
+    "Description": "COV,BHD FDTHRU,EXT COIL ENCL            ",
+    "CE": "Y",
+    "Remark": "Có bản vẽ trong LAM machining",
+    "Remark 2": "VVA",
+    "Status": "Ongoing",
+    "Sheet": "PBX Texon"
+  },
+  {
+    "No": 20,
+    "Classify": "FA",
+    "Project": "VVA",
+    "Part Number": "714-082865-021",
+    "REV": "C",
+    "Description": "COV,CA,BHD FDTHRU,EXT COIL ENCL",
+    "Remark": "Có bản vẽ trong LAM machining",
+    "Remark 2": "VVA",
+    "Status": "Ongoing",
+    "Sheet": "PBX Texon"
+  },
+  {
+    "No": 21,
+    "Classify": "FA",
+    "Project": "VVA",
+    "Part Number": "714-082889-585",
+    "REV": "A",
+    "Description": "PNL,BHD FDTHRU,EXT COIL ENCL",
+    "Remark": "Có bản vẽ trong LAM machining",
+    "Remark 2": "VVA",
+    "Status": "Ongoing",
+    "Sheet": "PBX Texon"
+  },
+  {
+    "No": 22,
+    "Classify": "FA",
+    "Project": "VVA",
+    "Part Number": "853-082890-586",
+    "REV": "A",
+    "Description": "ASSY,COV,BHD FDTHRU,EXT COIL ENCL",
+    "Remark": "Có bản vẽ trong LAM machining",
+    "Remark 2": "VVA",
+    "Status": "Ongoing",
+    "Sheet": "PBX Texon"
+  },
+  {
+    "No": 23,
+    "Classify": "FA",
+    "Project": "VVA",
+    "Part Number": "713-A12915-002",
+    "REV": "B",
+    "Description": "BRKT, FO CABLE SUPPORT",
+    "Remark": "Có bản vẽ trong LAM machining",
+    "Remark 2": "VVA",
+    "Status": "Ongoing",
     "Sheet": "PBX Texon"
   }
 ]
