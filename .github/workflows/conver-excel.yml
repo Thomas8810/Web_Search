@@ -2,7 +2,7 @@ name: Convert Google Sheet to JSON
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Chạy mỗi giờ; điều chỉnh theo nhu cầu của bạn
+    - cron: '0 * * * *'  # Chạy mỗi giờ; điều chỉnh theo nhu cầu
   workflow_dispatch:       # Cho phép chạy thủ công
 
 jobs:
