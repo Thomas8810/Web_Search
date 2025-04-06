@@ -7294,6 +7294,7 @@
     "Critical": "N/V",
     "CE": "N",
     "Ngày Nhận PO": 45628,
+    "Take pictures": "O",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -7456,6 +7457,7 @@
     "Critical": "N/V",
     "CE": "N",
     "Ngày Nhận PO": 45628,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -7568,6 +7570,7 @@
     "Critical": "N/V",
     "CE": "N",
     "Ngày Nhận PO": 45628,
+    "Take pictures": "O",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -7664,6 +7667,7 @@
     "Critical": "N/V",
     "CE": "N",
     "Ngày Nhận PO": 45628,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -7958,6 +7962,7 @@
     "Critical": "N/V",
     "CE": "N",
     "Ngày Nhận PO": 45628,
+    "Take pictures": "O",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -8364,6 +8369,7 @@
     "Critical": "N/V",
     "CE": "N",
     "Ngày Nhận PO": 45628,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -9497,6 +9503,7 @@
     "Critical": "N/V",
     "CE": "N",
     "Ngày Nhận PO": 45628,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -9679,6 +9686,7 @@
     "Critical": "N/V",
     "CE": "N",
     "Ngày Nhận PO": 45645,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -9695,6 +9703,7 @@
     "Critical": "N/V",
     "CE": "N",
     "Ngày Nhận PO": 45645,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -9711,6 +9720,7 @@
     "Critical": "N/V",
     "CE": "Y",
     "Ngày Nhận PO": 45645,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -10287,6 +10297,7 @@
     "Critical": "N/V ",
     "CE": "N ",
     "Ngày Nhận PO": 45649,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -11400,6 +11411,7 @@
     "Critical": "N/V",
     "CE": "N",
     "Ngày Nhận PO": 45680,
+    "Take pictures": "OK",
     "Remark 2": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
@@ -11608,6 +11620,7 @@
     "Critical": "N",
     "CE": "N",
     "Ngày Nhận PO": 45700,
+    "Take pictures": "OK",
     "Remark 2": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
@@ -12514,6 +12527,7 @@
     "Critical": "N",
     "CE": "N",
     "Ngày Nhận PO": 45700,
+    "Take pictures": "OK",
     "Remark 2": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
@@ -16968,6 +16982,7 @@
     "Description": "BUSBAR,M8,TB,100A MAX",
     "Critical": "N",
     "CE": "N",
+    "Take pictures": "OK",
     "Remark": "PO mới chưa đánh số",
     "Status": "On going",
     "Sheet": "GUMI Flexible bus bar"
@@ -23141,6 +23156,7 @@
     "Note Number": 1,
     "Critical": "C1",
     "CE": "Y",
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "LAM Machining"
   },
@@ -23170,6 +23186,7 @@
     "Description": "PIN,LIFT,LWR ELCTD",
     "Note Number": 1,
     "Critical": "C1",
+    "Take pictures": "OK",
     "Remark": "Phôi NG",
     "Status": "On going",
     "Sheet": "LAM Machining"
@@ -23185,6 +23202,7 @@
     "Description": "PIN,LFTR,LWR,ELCTD",
     "Note Number": 1,
     "Critical": "C1",
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "LAM Machining"
   },
@@ -31897,6 +31915,7 @@
     "Note Number": 1,
     "Critical": "NC",
     "CE": "N",
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -32365,6 +32384,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -32462,6 +32482,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "O",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -32494,6 +32515,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -32574,6 +32596,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -32662,6 +32685,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -32694,6 +32718,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -32726,6 +32751,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -32759,6 +32785,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -32863,6 +32890,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -32879,6 +32907,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -33258,6 +33287,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -33306,6 +33336,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -33322,6 +33353,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -33338,6 +33370,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -33354,6 +33387,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -33418,6 +33452,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -33482,6 +33517,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -33580,6 +33616,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45615,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -34126,6 +34163,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45638,
+    "Take pictures": "OK",
     "Remark": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "Hwaseong"
@@ -34223,6 +34261,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45638,
+    "Take pictures": "OK",
     "Remark": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "Hwaseong"
@@ -34239,6 +34278,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45638,
+    "Take pictures": "OK",
     "Remark": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "Hwaseong"
@@ -34639,6 +34679,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45638,
+    "Take pictures": "OK",
     "Remark": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "Hwaseong"
@@ -34831,6 +34872,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45638,
+    "Take pictures": "OK",
     "Remark": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "Hwaseong"
@@ -35167,6 +35209,7 @@
     "Critical": "NC",
     "CE": "N",
     "Ngày Nhận PO": 45638,
+    "Take pictures": "OK",
     "Remark": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "Hwaseong"
@@ -36155,6 +36198,7 @@
     "Description": "PIN PLATE",
     "Note Number": 1,
     "Ngày Nhận PO": 45660,
+    "Take pictures": "OK",
     "Remark": "For cleaning spec 075-01920-00 (Need DI water) Texon is setting up cleaning line",
     "Status": "On going",
     "Sheet": "Mattson"
@@ -36170,6 +36214,7 @@
     "Description": "BRKT, RATE CONTROL, TOP, HD D",
     "Note Number": 1,
     "Ngày Nhận PO": 45660,
+    "Take pictures": "OK",
     "Remark": "For cleaning spec 075-01920-00 (Need DI water) Texon is setting up cleaning line",
     "Status": "On going",
     "Sheet": "Mattson"
@@ -36199,6 +36244,7 @@
     "Description": "ADJUST,MT,SGL,TOP",
     "Note Number": 1,
     "Ngày Nhận PO": 45660,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Mattson"
   },
@@ -36242,6 +36288,7 @@
     "Description": "FIXTURE,ALUM,WAFER ALIGNMENT,NTK ESC",
     "Note Number": 1,
     "Ngày Nhận PO": 45660,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Mattson"
   },
@@ -36286,6 +36333,7 @@
     "Description": "CLEAT,CHAMBER SUPPORT",
     "Note Number": 1,
     "Ngày Nhận PO": 45660,
+    "Take pictures": "OK",
     "Remark": "For cleaning spec 075-01920-00 (Need DI water) Texon is setting up cleaning line",
     "Status": "On going",
     "Sheet": "Mattson"
@@ -36344,6 +36392,7 @@
     "Description": "BRKT,AIR CYL,SOLID,LCHT",
     "Note Number": 1,
     "Ngày Nhận PO": 45660,
+    "Take pictures": "OK",
     "Remark": "For cleaning spec 075-01920-00 (Need DI water) Texon is setting up cleaning line",
     "Status": "On going",
     "Sheet": "Mattson"
@@ -36388,6 +36437,7 @@
     "Description": "BASE,FOUP FIXTURE,SUPREMA",
     "Note Number": 1,
     "Ngày Nhận PO": 45660,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Mattson"
   },
@@ -36402,6 +36452,7 @@
     "Description": "FRONT DOOR FRAME,SUPREMA",
     "Note Number": 1,
     "Ngày Nhận PO": 45660,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Mattson"
   },
@@ -36416,6 +36467,7 @@
     "Description": "PLATE BASE OCR",
     "Note Number": 1,
     "Ngày Nhận PO": 45660,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Mattson"
   },
@@ -36459,6 +36511,7 @@
     "Description": "HOUSING,GEAR",
     "Note Number": 1,
     "Ngày Nhận PO": 45660,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Mattson"
   },
@@ -36547,6 +36600,7 @@
     "Description": "BRKT,RATE CONTROL,TOP,HD A",
     "Note Number": 1,
     "Ngày Nhận PO": 45660,
+    "Take pictures": "OK",
     "Remark": "For cleaning spec 075-01920-00 (Need DI water) Texon is setting up cleaning line",
     "Status": "On going",
     "Sheet": "Mattson"
@@ -36592,6 +36646,7 @@
     "Description": "VALVE MOUNT,KF40,LL,PM1",
     "Note Number": 1,
     "Ngày Nhận PO": 45660,
+    "Take pictures": "OK",
     "Remark": "For cleaning spec 075-01920-00 (Need DI water) Texon is setting up cleaning line",
     "Status": "On going",
     "Sheet": "Mattson"
@@ -36636,6 +36691,7 @@
     "Description": "BLOCK,COVER,A3",
     "Note Number": 1,
     "Ngày Nhận PO": 45666,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Mattson"
   },
@@ -36650,6 +36706,7 @@
     "Description": "MOUNT,WINDOW,END PT",
     "Note Number": 1,
     "Ngày Nhận PO": 45666,
+    "Take pictures": "OK",
     "Remark": "For cleaning spec 075-01920-00 (Need DI water) Texon is setting up cleaning line",
     "Status": "On going",
     "Sheet": "Mattson"
@@ -36679,6 +36736,7 @@
     "Description": "PLATE, MT, E84, BOARD",
     "Note Number": 1,
     "Ngày Nhận PO": 45666,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Mattson"
   },
@@ -36693,6 +36751,7 @@
     "Description": "BRKT,RATE CONTROL,TOP,HD B",
     "Note Number": 1,
     "Ngày Nhận PO": 45666,
+    "Take pictures": "OK",
     "Remark": "For cleaning spec 075-01920-00 (Need DI water) Texon is setting up cleaning line",
     "Status": "On going",
     "Sheet": "Mattson"
@@ -36723,6 +36782,7 @@
     "Description": "ADJUST,MOUNT,SGL",
     "Note Number": 1,
     "Ngày Nhận PO": 45666,
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Mattson"
   },
@@ -39393,6 +39453,7 @@
     "REV": "B ",
     "Description": "PNL,BHD FDTHRU,EXT COIL ENCL            ",
     "CE": "Y",
+    "Take pictures": "OK",
     "Remark": "Có bản vẽ trong LAM machining",
     "Remark 2": "VVA",
     "Status": "Ongoing",
@@ -39406,6 +39467,7 @@
     "REV": "A ",
     "Description": "COV,BHD FDTHRU,EXT COIL ENCL            ",
     "CE": "Y",
+    "Take pictures": "OK",
     "Remark": "Có bản vẽ trong LAM machining",
     "Remark 2": "VVA",
     "Status": "Ongoing",
