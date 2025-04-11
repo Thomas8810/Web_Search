@@ -13147,7 +13147,7 @@
     "Critical": "N",
     "CE": "Y",
     "Ngày Nhận PO": 45700,
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Remark 2": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
@@ -24783,6 +24783,38 @@
     "Sheet": "LAM Machining"
   },
   {
+    "No": 78,
+    "Need Date": 45775,
+    "Classify": "FA",
+    "PO Number": 4503110851,
+    "Project": "LAM Machining",
+    "Part Number": "15-139806-00",
+    "REV": "B",
+    "Description": "ROD, 1 CHAMBER LIFT",
+    "Critical": "NC",
+    "CE": "Y",
+    "Ngày Nhận PO": 45755,
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Status": "On going",
+    "Sheet": "LAM Machining"
+  },
+  {
+    "No": 79,
+    "Need Date": 45775,
+    "Classify": "FA",
+    "PO Number": 4503110851,
+    "Project": "LAM Machining",
+    "Part Number": "15-139809-00",
+    "REV": "B",
+    "Description": "ROD,4 CHAMBER LIFT",
+    "Critical": "NC",
+    "CE": "Y",
+    "Ngày Nhận PO": 45755,
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Status": "On going",
+    "Sheet": "LAM Machining"
+  },
+  {
     "No": 0,
     "Need Date": 45393,
     "Classify": "FA",
@@ -33796,7 +33828,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45615,
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
