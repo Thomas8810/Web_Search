@@ -8824,7 +8824,7 @@
     "Description": "BAF,TOP,ENCL,AC/DC",
     "Note Number": 1,
     "Ngày Nhận PO": 45628,
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -10321,7 +10321,7 @@
     "Description": "BUSBAR,GND,MAIN,UPS\r\n",
     "Note Number": 1,
     "Ngày Nhận PO": 45649,
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -32724,7 +32724,7 @@
     "Note Number": 1,
     "Critical": "C1",
     "CE": "N",
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -32740,7 +32740,7 @@
     "Note Number": 1,
     "Critical": "C1",
     "CE": "N",
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -34045,7 +34045,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45615,
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "Hwaseong"
   },
@@ -36494,7 +36494,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45638,
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Remark": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "Hwaseong"
