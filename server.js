@@ -419,43 +419,18 @@ app.get('/api/progress', isAuthenticated, async (req, res) => {
 // API lấy danh sách giá trị lọc
 app.get('/filters', (req, res) => {
   const getDistinct = (col) => {
-    const values = cachedData.map(row => row[col]).filter(v => v != null);
-    return Array.from(new Set(values));
+    const values = cachedData.map(row => row[col]).filter(v => v != null && v !== "");
+    return Array.from(new Set(values)).sort((a, b) => a.localeCompare(b, 'vi', { sensitivity: 'base' }));
   };
 
-  res.json({
-    "Sheet": getDistinct("Sheet"),
-    "PO Number": getDistinct("PO Number"),
-    "Part Number": getDistinct("Part Number"),
-    "REV": getDistinct("REV"),
-    "Description": getDistinct("Description"),
-    "Customer": getDistinct("Customer"),
-    "Commodity": getDistinct("Commodity"),
-    "Note Number": getDistinct("Note Number"),
-    "Critical": getDistinct("Critical"),
-    "CE": getDistinct("CE"),
-    "PO received date": getDistinct("PO received date"),
-    "Customer need date": getDistinct("Customer need date"),
-    "Requirements": getDistinct("Requirements"),
-    "FAIR Cover sheet": getDistinct("FAIR Cover sheet"),
-    "Bubble Drawings": getDistinct("Bubble Drawings"),
-    "Datasheet form": getDistinct("Datasheet form"),
-    "LAIR data": getDistinct("LAIR data"),
-    "FAIR Data": getDistinct("FAIR Data"),
-    "COC": getDistinct("COC"),
-    "BOM": getDistinct("BOM"),
-    "Mill": getDistinct("Mill"),
-    "Test reports/evidences": getDistinct("Test reports/evidences"),
-    "Part Pictures": getDistinct("Part Pictures"),
-    "Packaging Pictures": getDistinct("Packaging Pictures"),
-    "Production Status": getDistinct("Production Status"),
-    "Remark 1": getDistinct("Remark 1"),
-    "Remark 2": getDistinct("Remark 2"),
-    "Submit date": getDistinct("Submit date"),
-    "Approval Status": getDistinct("Approval Status"),
-    "Reject comments": getDistinct("Reject comments")
+  const result = {};
+  headerOrder.forEach(key => {
+    result[key] = getDistinct(key);
   });
+
+  res.json(result);
 });
+
 
 // API tìm kiếm dữ liệu có phân trang
 app.get('/search', (req, res) => {
