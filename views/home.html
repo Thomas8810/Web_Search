@@ -422,10 +422,8 @@ input:focus, select:focus {
 <div class="filter-bar">
 <!-- Filter Block Sheet -->
 <div class="filter-block" id="filter-block-project">
-<label>Chọn dự án (theo Customer)</label>
-<select class="form-select filter-value" id="filter-project-value">
-<option value="">-- chọn giá trị Customer --</option>
-</select>
+<label for="filter-project" id="label-filter-project">Chọn dự án (Customer)</label>
+<select class="value-select" id="filter-project" multiple="multiple"></select>
 </div>
 <!-- Filter Block 1 -->
 <div class="filter-block" id="filter-block-1">
@@ -572,6 +570,7 @@ input:focus, select:focus {
 <!-- Khu vực hiển thị bảng dữ liệu -->
 <div class="table-container">
 <table id="results-table">
+
 <thead><tr>
 <th class="sticky-col-1">No</th>
 <th class="sticky-col-2">Part Number</th>
@@ -719,8 +718,8 @@ input:focus, select:focus {
       document.getElementById("header-subtitle").innerText = i18next.t("header_subtitle");
 
       // Các label trong filter
-      var labelCustomer = document.querySelector('label[for="filter-project"]');
-      if (labelCustomer) { labelCustomer.innerText = i18next.t("choose_project"); }
+      var labelSheet = document.querySelector('label[for="filter-project"]');
+      if (labelSheet) { labelSheet.innerText = i18next.t("choose_project"); }
       var labelCriteria1 = document.getElementById("label-criteria-1");
       if (labelCriteria1) { labelCriteria1.innerText = i18next.t("choose_criteria_1"); }
       var labelCriteria2 = document.getElementById("label-criteria-2");
@@ -1156,25 +1155,7 @@ function updateTable(data, reset) {
       $(this).data('order', newOrder);
       sortTable(col, newOrder);
     });
-  
-function populateProjectByCustomer() {
-  const customers = [...new Set(allData.map(item => item.Customer).filter(Boolean))].sort();
-  const $value = $('#filter-project-value');
-  $value.empty().append(`<option value="">-- chọn giá trị Customer --</option>`);
-  customers.forEach(val => {
-    $value.append(`<option value="${val}">${val}</option>`);
-  });
-  $value.off('change').on('change', function () {
-    currentProject = $(this).val();
-    applyFilter();
-  });
-}
-$(document).ready(function () {
-  loadData().then(() => {
-    populateProjectByCustomer();
-  });
-});
-</script>
+  </script>
 <!-- Modal OCR (Không có xem trước ảnh) -->
 <div id="cameraModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#000; justify-content:center; align-items:center; z-index:9999; overflow-y:auto; transition: all 0.3s ease;">
 <div style="background:#fff; padding:16px; border-radius:8px; width:95%; max-width:400px; text-align:center;">
@@ -1367,5 +1348,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
+
 </body>
 </html>
