@@ -50,6 +50,7 @@ function loadDataFromFile() {
 }
 loadDataFromFile();
 
+
 const usersFilePath = path.join(__dirname, 'users.json');
 let usersData = [];
 function loadUsersData() {
@@ -404,34 +405,34 @@ app.get('/filters', (req, res) => {
   res.json({
     "Sheet": getDistinct("Sheet"),
     "PO Number": getDistinct("PO Number"),
-    "Project": getDistinct("Project"),
     "Part Number": getDistinct("Part Number"),
     "REV": getDistinct("REV"),
     "Description": getDistinct("Description"),
+    "Customer": getDistinct("Customer"),
+    "Commodity": getDistinct("Commodity"),
     "Note Number": getDistinct("Note Number"),
     "Critical": getDistinct("Critical"),
     "CE": getDistinct("CE"),
-    "Material": getDistinct("Material"),
-    "Plating": getDistinct("Plating"),
-    "Painting": getDistinct("Painting"),
-    "Tiêu chuẩn mạ sơn": getDistinct("Tiêu chuẩn mạ sơn"),
-    "Ngày Nhận PO": getDistinct("Ngày Nhận PO"),
-    "Cover sheet": getDistinct("Cover sheet"),
-    "Drawing": getDistinct("Drawing"),
+    "PO received date": getDistinct("PO received date"),
+    "Customer need date": getDistinct("Customer need date"),
+    "Requirements": getDistinct("Requirements"),
+    "FAIR Cover sheet": getDistinct("FAIR Cover sheet"),
+    "Bubble Drawings": getDistinct("Bubble Drawings"),
     "Datasheet form": getDistinct("Datasheet form"),
-    "Data": getDistinct("Data"),
+    "LAIR data": getDistinct("LAIR data"),
+    "FAIR Data": getDistinct("FAIR Data"),
     "COC": getDistinct("COC"),
     "BOM": getDistinct("BOM"),
     "Mill": getDistinct("Mill"),
+    "Test reports/evidences": getDistinct("Test reports/evidences"),
     "Part Pictures": getDistinct("Part Pictures"),
     "Packaging Pictures": getDistinct("Packaging Pictures"),
-    "Submit date": getDistinct("Submit date"),
-    "Take pictures": getDistinct("Take pictures"),
-    "OK": getDistinct("OK"),
-    "Remark": getDistinct("Remark"),
+    "Production Status": getDistinct("Production Status"),
+    "Remark 1": getDistinct("Remark 1"),
     "Remark 2": getDistinct("Remark 2"),
-    "Status": getDistinct("Status"),
-    "Note": getDistinct("Note")
+    "Submit date": getDistinct("Submit date"),
+    "Approval Status": getDistinct("Approval Status"),
+    "Reject comments": getDistinct("Reject comments")
   });
 });
 
@@ -480,13 +481,16 @@ app.get('/export', (req, res) => {
   }
 
   const wb = XLSX.utils.book_new();
-  const headerOrder = [
-    "Part Number", "REV", "PO Number", "Project", "Description", "Note Number",
-    "Critical", "CE", "Material", "Plating", "Painting", "Tiêu chuẩn mạ sơn",
-    "Ngày Nhận PO", "Cover sheet", "Drawing", "Datasheet form", "Data",
-    "COC", "BOM", "Mill", "Part Pictures", "Packaging Pictures", "Submit date",
-    "Take pictures", "OK", "Remark", "Remark 2", "Status", "Note"
-  ];
+const headerOrder = [
+  "PO Number", "Part Number", "REV", "Description",
+  "Customer", "Commodity", "Note Number", "Critical", "CE",
+  "PO received date", "Customer need date", "Requirements",
+  "FAIR Cover sheet", "Bubble Drawings", "Datasheet form", "LAIR data", "FAIR Data",
+  "COC", "BOM", "Mill", "Test reports/evidences", "Part Pictures",
+  "Packaging Pictures", "Production Status", "Remark 1", "Remark 2",
+  "Submit date", "Approval Status", "Reject comments"
+];
+
   const ws = XLSX.utils.json_to_sheet(filtered, { header: headerOrder });
 
   XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
