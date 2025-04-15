@@ -421,9 +421,9 @@ input:focus, select:focus {
 <!-- Phần tiêu chí lọc -->
 <div class="filter-bar">
 <!-- Filter Block Sheet -->
-<div class="filter-block" id="filter-block-sheet">
-<label for="filter-sheet" id="label-filter-sheet">Chọn dự án</label>
-<select class="value-select" id="filter-sheet" multiple="multiple"></select>
+<div class="filter-block" id="filter-block-project">
+<label for="filter-sheet" id="label-filter-project">Chọn dự án (Customer)</label>
+<select class="value-select" id="filter-project" multiple="multiple"></select>
 </div>
 <!-- Filter Block 1 -->
 <div class="filter-block" id="filter-block-1">
@@ -561,21 +561,34 @@ input:focus, select:focus {
 <!-- Khu vực hiển thị bảng dữ liệu -->
 <div class="table-container">
 <table id="results-table">
+<thead><tr>
 
-<thead>
-  <tr>
-    <th class="sticky-col-1">No</th>
-    <th class="sticky-col-2">Part Number</th>
-    <th class="sticky-col-3">REV</th>
-    <th>Approval Status</th>
-    <th>Part Pictures</th>
-    <th>Critical</th>
-    <th>CE</th>
-    <th>PO Number</th>
-    <!-- Các cột còn lại sẽ được thêm tự động bằng JS --> 
-  </tr>
-</thead>
-
+<th class="sticky-col-1">No</th>
+<th class="sticky-col-2">Part Number</th>
+<th class="sticky-col-3">REV</th>
+<th>Approval Status</th>
+<th>Part Pictures</th>
+<th>Critical</th>
+<th>CE</th>
+<th>PO Number</th>
+<th>Description</th>
+<th>Type</th>
+<th>Customer</th>
+<th>Commodity</th>
+<th>Note Number</th>
+<th>PO received date</th>
+<th>Customer need date</th>
+<th>Requirements</th>
+<th>FAIR Cover sheet</th>
+<th>Bubble Drawings</th>
+<th>Datasheet form</th>
+<th>FAIR Data</th>
+<th>COC</th>
+<th>BOM</th>
+<th>Mill</th>
+<th>Packaging Pictures</th>
+<th>Sheet</th>
+</tr></thead>
 <tbody>
 <!-- Dữ liệu sẽ được load tại đây -->
 </tbody>
