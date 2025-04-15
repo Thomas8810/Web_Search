@@ -420,7 +420,7 @@ input:focus, select:focus {
 </div>
 <!-- Phần tiêu chí lọc -->
 <div class="filter-bar">
-<!-- Filter Block Sheet -->
+<!-- Filter Block Customer -->
 <div class="filter-block" id="filter-block-sheet">
 <label for="filter-sheet" id="label-filter-sheet">Chọn dự án</label>
 <select class="value-select" id="filter-sheet" multiple="multiple"></select>
@@ -680,8 +680,8 @@ input:focus, select:focus {
       document.getElementById("header-subtitle").innerText = i18next.t("header_subtitle");
 
       // Các label trong filter
-      var labelSheet = document.querySelector('label[for="filter-sheet"]');
-      if (labelSheet) { labelSheet.innerText = i18next.t("choose_project"); }
+      var labelCustomer = document.querySelector('label[for="filter-sheet"]');
+      if (labelCustomer) { labelCustomer.innerText = i18next.t("choose_project"); }
       var labelCriteria1 = document.getElementById("label-criteria-1");
       if (labelCriteria1) { labelCriteria1.innerText = i18next.t("choose_criteria_1"); }
       var labelCriteria2 = document.getElementById("label-criteria-2");
@@ -768,12 +768,12 @@ input:focus, select:focus {
     }
 
     // Hàm load dữ liệu dự án cho phần "Chọn dự án"
-    function loadDistinctValuesForSheet() {
+    function loadDistinctValuesForCustomer() {
       const selectElem = $('#filter-sheet');
       selectElem.empty();
       $.getJSON('/filters', function(data) {
-        if (data['Sheet']) {
-          data['Sheet'].forEach(function(val) {
+        if (data['Customer']) {
+          data['Customer'].forEach(function(val) {
             const option = new Option(val, val, false, false);
             selectElem.append(option);
           });
@@ -808,7 +808,7 @@ input:focus, select:focus {
       });
 
       // Load dữ liệu cho "Chọn dự án"
-      loadDistinctValuesForSheet();
+      loadDistinctValuesForCustomer();
 
       // Xử lý paste Excel cho filter-value-2
       $(document).on('paste', '#filter-value-2 ~ .select2 .select2-search__field', function(e) {
@@ -880,7 +880,7 @@ input:focus, select:focus {
         let queryParams = {};
         const sheetValues = $('#filter-sheet').val();
         if (sheetValues && sheetValues.length > 0) {
-          queryParams["Sheet"] = sheetValues.join(',');
+          queryParams["Customer"] = sheetValues.join(',');
         }
         for (let i = 1; i <= 3; i++) {
           const col = $(`#filter-column-${i}`).val();
@@ -902,7 +902,7 @@ input:focus, select:focus {
         let queryParams = {};
         const sheetValues = $('#filter-sheet').val();
         if (sheetValues && sheetValues.length > 0) {
-          queryParams["Sheet"] = sheetValues.join(',');
+          queryParams["Customer"] = sheetValues.join(',');
         }
         for (let i = 1; i <= 3; i++) {
           const col = $(`#filter-column-${i}`).val();
@@ -944,12 +944,12 @@ input:focus, select:focus {
       }
       let filteredData = allData.slice();
 
-      // Lọc theo dự án (Sheet)
+      // Lọc theo dự án (Customer)
       const sheetValues = $('#filter-sheet').val();
       if (sheetValues && sheetValues.length > 0) {
         filteredData = filteredData.filter(function(row) {
           return sheetValues.some(function(s) {
-            return row['Sheet'] && row['Sheet'].toString().toLowerCase().includes(s.toLowerCase());
+            return row['Customer'] && row['Customer'].toString().toLowerCase().includes(s.toLowerCase());
           });
         });
       }
@@ -1003,7 +1003,7 @@ input:focus, select:focus {
       let queryParams = { limit: pageSize, offset: currentOffset };
       const sheetValues = $('#filter-sheet').val();
       if (sheetValues && sheetValues.length > 0) {
-        queryParams["Sheet"] = sheetValues.join(',');
+        queryParams["Customer"] = sheetValues.join(',');
       }
       for (let i = 1; i <= 3; i++) {
         const col = $(`#filter-column-${i}`).val();
@@ -1073,7 +1073,7 @@ input:focus, select:focus {
 
     // Hàm xuất Excel
     function downloadExcel() {
-      var wb = XLSX.utils.table_to_book(document.getElementById('results-table'), {sheet:"Sheet1"});
+      var wb = XLSX.utils.table_to_book(document.getElementById('results-table'), {sheet:"Customer1"});
       XLSX.writeFile(wb, 'ketqua.xlsx');
     }
 
