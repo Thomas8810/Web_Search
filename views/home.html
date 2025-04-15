@@ -1154,7 +1154,23 @@ function updateTable(data, reset) {
       $(this).data('order', newOrder);
       sortTable(col, newOrder);
     });
-  </script>
+  
+function populateCustomerDropdown() {
+  const customers = [...new Set(allData.map(item => item.Customer).filter(Boolean))].sort();
+  const $project = $('#filter-project');
+  $project.empty().append(`<option value="">-- Chọn dự án --</option>`);
+  customers.forEach(c => {
+    $project.append(`<option value="${c}">${c}</option>`);
+  });
+}
+
+// Gọi sau khi loadData xong
+$(document).ready(function () {
+  loadData().then(() => {
+    populateCustomerDropdown();
+  });
+});
+</script>
 <!-- Modal OCR (Không có xem trước ảnh) -->
 <div id="cameraModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#000; justify-content:center; align-items:center; z-index:9999; overflow-y:auto; transition: all 0.3s ease;">
 <div style="background:#fff; padding:16px; border-radius:8px; width:95%; max-width:400px; text-align:center;">
