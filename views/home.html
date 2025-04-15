@@ -570,7 +570,6 @@ input:focus, select:focus {
 <!-- Khu vực hiển thị bảng dữ liệu -->
 <div class="table-container">
 <table id="results-table">
-
 <thead><tr>
 <th class="sticky-col-1">No</th>
 <th class="sticky-col-2">Part Number</th>
@@ -718,8 +717,8 @@ input:focus, select:focus {
       document.getElementById("header-subtitle").innerText = i18next.t("header_subtitle");
 
       // Các label trong filter
-      var labelSheet = document.querySelector('label[for="filter-project"]');
-      if (labelSheet) { labelSheet.innerText = i18next.t("choose_project"); }
+      var labelCustomer = document.querySelector('label[for="filter-project"]');
+      if (labelCustomer) { labelCustomer.innerText = i18next.t("choose_project"); }
       var labelCriteria1 = document.getElementById("label-criteria-1");
       if (labelCriteria1) { labelCriteria1.innerText = i18next.t("choose_criteria_1"); }
       var labelCriteria2 = document.getElementById("label-criteria-2");
@@ -1348,6 +1347,5 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
-
 </body>
 </html>
