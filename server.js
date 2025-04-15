@@ -502,15 +502,6 @@ app.get('/export', (req, res) => {
   }
 
   const wb = XLSX.utils.book_new();
-const headerOrder = [
-  "PO Number", "Part Number", "REV", "Description",
-  "Customer", "Commodity", "Note Number", "Critical", "CE",
-  "PO received date", "Customer need date", "Requirements",
-  "FAIR Cover sheet", "Bubble Drawings", "Datasheet form", "LAIR data", "FAIR Data",
-  "COC", "BOM", "Mill", "Test reports/evidences", "Part Pictures",
-  "Packaging Pictures", "Production Status", "Remark 1", "Remark 2",
-  "Submit date", "Approval Status", "Reject comments"
-];
 
   const ws = XLSX.utils.json_to_sheet(filtered, { header: headerOrder });
 
