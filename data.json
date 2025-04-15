@@ -9189,7 +9189,7 @@
     "Critical": "N",
     "CE": "N",
     "Ngày Nhận PO": 45628,
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
   },
@@ -11384,7 +11384,7 @@
     "Critical": "N",
     "CE": "N",
     "Ngày Nhận PO": 45680,
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Remark 2": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
@@ -12994,7 +12994,7 @@
     "Critical": "N",
     "CE": "Y",
     "Ngày Nhận PO": 45700,
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Remark 2": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "GUMI Sheet metal"
@@ -33198,49 +33198,6 @@
     "Sheet": "Hwaseong"
   },
   {
-    "No": 51,
-    "Need Date": 45590,
-    "Classify": "FA",
-    "PO Number": "PO2409060007",
-    "Project": "Hwaseong Machining",
-    "Part Number": "4022.456.53421",
-    "REV": 1,
-    "Description": "FRAME ILL.UNIT LS.",
-    "Note Number": 1,
-    "Take pictures": "-",
-    "Status": "On going",
-    "Sheet": "Hwaseong"
-  },
-  {
-    "No": 52,
-    "Need Date": 45590,
-    "Classify": "FA",
-    "PO Number": "PO2409060007",
-    "Project": "Hwaseong Machining",
-    "Part Number": "4022.456.53441",
-    "REV": 1,
-    "Description": "LAMPHOLDER",
-    "Note Number": 1,
-    "Take pictures": "-",
-    "Remark 2": "Cancel",
-    "Status": "On going",
-    "Sheet": "Hwaseong"
-  },
-  {
-    "No": 53,
-    "Need Date": 45590,
-    "Classify": "FA",
-    "PO Number": "PO2409060007",
-    "Project": "Hwaseong Machining",
-    "Part Number": "4022.456.53471",
-    "REV": 1,
-    "Description": "KEY",
-    "Note Number": 1,
-    "Take pictures": "-",
-    "Status": "On going",
-    "Sheet": "Hwaseong"
-  },
-  {
     "No": 54,
     "Need Date": 45695,
     "Classify": "FA",
@@ -33533,7 +33490,7 @@
     "Packaging Pictures": 1,
     "Submit date": 45761,
     "Take pictures": "OK",
-    "Status": "Submit",
+    "Status": "Approved",
     "Sheet": "Hwaseong"
   },
   {
@@ -33718,7 +33675,7 @@
     "Packaging Pictures": 1,
     "Submit date": 45761,
     "Take pictures": "OK",
-    "Status": "Submit",
+    "Status": "Approved",
     "Sheet": "Hwaseong"
   },
   {
@@ -33955,7 +33912,7 @@
     "Packaging Pictures": 1,
     "Submit date": 45761,
     "Take pictures": "OK",
-    "Status": "Submit",
+    "Status": "Approved",
     "Sheet": "Hwaseong"
   },
   {
@@ -37010,7 +36967,7 @@
     "Critical": "NC",
     "CE": "Y",
     "Ngày Nhận PO": 45638,
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Remark": "Chưa đánh số",
     "Status": "On going",
     "Sheet": "Hwaseong"
@@ -40818,7 +40775,7 @@
     "Description": "BLK OFF,COV,TROUGH,LPB,CHLR HOSE MTG    ",
     "CE": "Y",
     "Ngày Nhận PO": 45751,
-    "Take pictures": "-",
+    "Take pictures": "OK",
     "Remark": "853-290073-015",
     "Remark 2": "Chưa lấy bản vẽ",
     "Status": "On going",
