@@ -291,6 +291,117 @@
     padding-bottom: 300px; /* chừa chỗ cho bàn phím */
   }
 }
+
+@media screen and (orientation: landscape), (orientation: portrait) {
+  .table-container {
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    touch-action: pan-y;
+  }
+
+  table {
+    width: auto;
+    min-width: 100%;
+  }
+
+  td, th {
+    word-break: break-word;
+  }
+}
+
+/* Tối ưu bảng cho điện thoại xoay ngang/dọc và khi mở bàn phím */
+.table-container {
+  width: 100vw;
+  max-height: 50vh;
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  touch-action: auto;
+}
+
+@media screen and (orientation: landscape) {
+  .table-container {
+    max-height: 60vh;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .table-container {
+    max-height: 50vh;
+  }
+}
+
+table {
+  min-width: 800px;
+}
+
+th, td {
+  word-break: break-word;
+  white-space: nowrap;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 60vh;
+  -webkit-overflow-scrolling: touch;
+}
+table {
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+th, td {
+  white-space: nowrap;
+  padding: 6px;
+  font-size: 12px;
+}
+.sticky-col-1 {
+  position: sticky; left: 0; background: #4a76a8; z-index: 3;
+}
+.sticky-col-2 {
+  position: sticky; left: 40px; background: #4a76a8; z-index: 3;
+}
+.sticky-col-3 {
+  position: sticky; left: 140px; background: #4a76a8; z-index: 3;
+}
+td.sticky-col-1, td.sticky-col-2, td.sticky-col-3 {
+  background: #f3f3f3;
+}
+
+/* --- Cải tiến cho input khi focus --- */
+input:focus, select:focus {
+  outline: 2px solid #ff8c00;
+  background-color: #fffce6;
+}
+
+/* Tăng font input trên điện thoại để dễ nhập */
+@media (max-width: 768px) {
+  input, select {
+    font-size: 16px;
+  }
+}
+
+/* Cải thiện bảng khi xoay ngang */
+@media screen and (orientation: landscape) {
+  .top-container {
+    max-height: 30vh;
+    overflow-y: auto;
+  }
+  .table-container {
+    height: auto;
+    max-height: 90vh;
+    min-height: 70vh;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  table {
+    min-width: 1200px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1029,7 +1140,7 @@
     });
   </script>
 <!-- Modal OCR (Không có xem trước ảnh) -->
-<div id="cameraModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+<div id="cameraModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#000; justify-content:center; align-items:center; z-index:9999; overflow-y:auto; transition: all 0.3s ease;">
 <div style="background:#fff; padding:16px; border-radius:8px; width:95%; max-width:400px; text-align:center;">
 <h3>📷 Quét Part Number</h3>
 <div style="position: relative; width: 100%; max-height:240px;"><video autoplay="" id="camera" playsinline="" style="width:100%; max-height:240px; object-fit:cover; border-radius:6px;"></video><div id="ocrGuideBox" style="position: absolute; border: 2px solid red; top: 35%; left: 10%; width: 80%; height: 20%; box-sizing: border-box; pointer-events: none;"></div></div>
@@ -1185,5 +1296,41 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-</script></body>
+</script><script>
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('ocrInput');
+  if (input) {
+    input.addEventListener('focus', () => {
+      setTimeout(() => {
+        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
+    });
+  }
+});
+</script><script>
+document.addEventListener('DOMContentLoaded', function () {
+  const inputs = document.querySelectorAll('.filter-bar input, .filter-bar select');
+  inputs.forEach((input) => {
+    input.addEventListener('focus', () => {
+      setTimeout(() => {
+        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
+    });
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const inputs = document.querySelectorAll('input, select, textarea');
+  inputs.forEach((el) => {
+    el.addEventListener('focus', () => {
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
+    });
+  });
+});
+</script>
+
+</body>
 </html>
