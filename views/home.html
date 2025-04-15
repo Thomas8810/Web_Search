@@ -420,7 +420,7 @@ input:focus, select:focus {
 </div>
 <!-- Phần tiêu chí lọc -->
 <div class="filter-bar">
-<!-- Filter Block Customer -->
+<!-- Filter Block Sheet -->
 <div class="filter-block" id="filter-block-sheet">
 <label for="filter-sheet" id="label-filter-sheet">Chọn dự án</label>
 <select class="value-select" id="filter-sheet" multiple="multiple"></select>
@@ -560,16 +560,45 @@ input:focus, select:focus {
 </div>
 <!-- Khu vực hiển thị bảng dữ liệu -->
 <div class="table-container">
-
 <table id="results-table">
-  <thead>
-    <tr id="table-head">
-      <th>No</th><th>Part Number</th><th>REV</th><th>Approval Status</th><th>Part Pictures</th><th>Critical</th><th>CE</th><th>PO Number</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
+<thead>
+<tr>
+<th class="sticky-col-1">STT</th>
+<th class="sticky-col-2">Part Number</th>
+<th class="sticky-col-3">REV</th>
+<th data-column="Status">Status</th>
+<th data-column="Take pictures">Take pictures</th>
+<th data-column="Critical">Critical</th>
+<th data-column="CE">CE</th>
+<th data-column="PO Number">PO Number</th>
+<th data-column="Project">Project</th>
+<th data-column="Description">Description</th>
+<th data-column="Note Number">Note Number</th>
+<th data-column="Material">Material</th>
+<th data-column="Plating">Plating</th>
+<th data-column="Painting">Painting</th>
+<th data-column="Tiêu chuẩn mạ sơn">Tiêu chuẩn mạ sơn</th>
+<th data-column="Ngày Nhận PO">Ngày Nhận PO</th>
+<th data-column="Cover sheet">Cover sheet</th>
+<th data-column="Drawing">Drawing</th>
+<th data-column="Datasheet form">Datasheet form</th>
+<th data-column="Data">Data</th>
+<th data-column="COC">COC</th>
+<th data-column="BOM">BOM</th>
+<th data-column="Mill">Mill</th>
+<th data-column="Part Pictures">Part Pictures</th>
+<th data-column="Packaging Pictures">Packaging Pictures</th>
+<th data-column="Submit date">Submit date</th>
+<th data-column="OK">OK</th>
+<th data-column="Remark">Remark</th>
+<th data-column="Remark 2">Remark 2</th>
+<th data-column="Note">Note</th>
+</tr>
+</thead>
+<tbody>
+<!-- Dữ liệu sẽ được load tại đây -->
+</tbody>
 </table>
-
 </div>
 <!-- Nút tải thêm -->
 <div id="load-more-container" style="text-align:center; margin:10px;">
@@ -680,8 +709,8 @@ input:focus, select:focus {
       document.getElementById("header-subtitle").innerText = i18next.t("header_subtitle");
 
       // Các label trong filter
-      var labelCustomer = document.querySelector('label[for="filter-sheet"]');
-      if (labelCustomer) { labelCustomer.innerText = i18next.t("choose_project"); }
+      var labelSheet = document.querySelector('label[for="filter-sheet"]');
+      if (labelSheet) { labelSheet.innerText = i18next.t("choose_project"); }
       var labelCriteria1 = document.getElementById("label-criteria-1");
       if (labelCriteria1) { labelCriteria1.innerText = i18next.t("choose_criteria_1"); }
       var labelCriteria2 = document.getElementById("label-criteria-2");
@@ -768,12 +797,12 @@ input:focus, select:focus {
     }
 
     // Hàm load dữ liệu dự án cho phần "Chọn dự án"
-    function loadDistinctValuesForCustomer() {
+    function loadDistinctValuesForSheet() {
       const selectElem = $('#filter-sheet');
       selectElem.empty();
       $.getJSON('/filters', function(data) {
-        if (data['Customer']) {
-          data['Customer'].forEach(function(val) {
+        if (data['Sheet']) {
+          data['Sheet'].forEach(function(val) {
             const option = new Option(val, val, false, false);
             selectElem.append(option);
           });
@@ -808,7 +837,7 @@ input:focus, select:focus {
       });
 
       // Load dữ liệu cho "Chọn dự án"
-      loadDistinctValuesForCustomer();
+      loadDistinctValuesForSheet();
 
       // Xử lý paste Excel cho filter-value-2
       $(document).on('paste', '#filter-value-2 ~ .select2 .select2-search__field', function(e) {
@@ -880,7 +909,7 @@ input:focus, select:focus {
         let queryParams = {};
         const sheetValues = $('#filter-sheet').val();
         if (sheetValues && sheetValues.length > 0) {
-          queryParams["Customer"] = sheetValues.join(',');
+          queryParams["Sheet"] = sheetValues.join(',');
         }
         for (let i = 1; i <= 3; i++) {
           const col = $(`#filter-column-${i}`).val();
@@ -902,7 +931,7 @@ input:focus, select:focus {
         let queryParams = {};
         const sheetValues = $('#filter-sheet').val();
         if (sheetValues && sheetValues.length > 0) {
-          queryParams["Customer"] = sheetValues.join(',');
+          queryParams["Sheet"] = sheetValues.join(',');
         }
         for (let i = 1; i <= 3; i++) {
           const col = $(`#filter-column-${i}`).val();
@@ -944,12 +973,12 @@ input:focus, select:focus {
       }
       let filteredData = allData.slice();
 
-      // Lọc theo dự án (Customer)
+      // Lọc theo dự án (Sheet)
       const sheetValues = $('#filter-sheet').val();
       if (sheetValues && sheetValues.length > 0) {
         filteredData = filteredData.filter(function(row) {
           return sheetValues.some(function(s) {
-            return row['Customer'] && row['Customer'].toString().toLowerCase().includes(s.toLowerCase());
+            return row['Sheet'] && row['Sheet'].toString().toLowerCase().includes(s.toLowerCase());
           });
         });
       }
@@ -1003,7 +1032,7 @@ input:focus, select:focus {
       let queryParams = { limit: pageSize, offset: currentOffset };
       const sheetValues = $('#filter-sheet').val();
       if (sheetValues && sheetValues.length > 0) {
-        queryParams["Customer"] = sheetValues.join(',');
+        queryParams["Sheet"] = sheetValues.join(',');
       }
       for (let i = 1; i <= 3; i++) {
         const col = $(`#filter-column-${i}`).val();
@@ -1073,7 +1102,7 @@ input:focus, select:focus {
 
     // Hàm xuất Excel
     function downloadExcel() {
-      var wb = XLSX.utils.table_to_book(document.getElementById('results-table'), {sheet:"Customer1"});
+      var wb = XLSX.utils.table_to_book(document.getElementById('results-table'), {sheet:"Sheet1"});
       XLSX.writeFile(wb, 'ketqua.xlsx');
     }
 
@@ -1302,6 +1331,138 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
+<script>
+let rawData = [], filteredData = [], headerKeys = [];
+const fixedColumns = ["No", "Part Number", "REV", "Approval Status", "Part Pictures", "Critical", "CE", "PO Number"];
 
-</body>
+function renderDynamicHeaders(extraKeys) {
+  const thead = document.querySelector("#results-table thead tr");
+  thead.innerHTML = "";
+  fixedColumns.concat(extraKeys).forEach(key => {
+    const th = document.createElement("th");
+    th.textContent = key;
+    thead.appendChild(th);
+  });
+}
+
+function renderTable() {
+  const tbody = document.querySelector("#results-table tbody");
+  tbody.innerHTML = "";
+  filteredData.forEach((row, idx) => {
+    const tr = document.createElement("tr");
+    const baseRow = {
+      "No": idx + 1,
+      "Part Number": row["Part Number"] || "",
+      "REV": row["REV"] || "",
+      "Approval Status": row["Approval Status"] || "",
+      "Part Pictures": row["Part Pictures"] || "",
+      "Critical": row["Critical"] || "",
+      "CE": row["CE"] || "",
+      "PO Number": row["PO Number"] || ""
+    };
+    fixedColumns.forEach(col => {
+      const td = document.createElement("td");
+      td.textContent = baseRow[col];
+      tr.appendChild(td);
+    });
+    const extraCols = Object.keys(row).filter(k => !fixedColumns.includes(k));
+    extraCols.forEach(col => {
+      const td = document.createElement("td");
+      td.textContent = row[col] || "";
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+  document.getElementById("results-count").textContent = `Tổng số dòng: ${filteredData.length}`;
+}
+
+function populateCustomerFilter() {
+  const set = new Set(rawData.map(r => r["Customer"]).filter(Boolean));
+  const select = document.getElementById("filter-sheet");
+  select.innerHTML = "";
+  set.forEach(val => {
+    const opt = document.createElement("option");
+    opt.value = val;
+    opt.textContent = val;
+    select.appendChild(opt);
+  });
+  $('#filter-sheet').trigger('change');
+}
+
+function applyFilters() {
+  const selectedCustomers = $('#filter-sheet').val() || [];
+  const c1 = $('#filter-column-1').val(), v1 = $('#filter-value-1').val() || [];
+  const c2 = $('#filter-column-2').val(), v2 = $('#filter-value-2').val() || [];
+  const c3 = $('#filter-column-3').val(), v3 = $('#filter-value-3').val() || [];
+  filteredData = rawData.filter(row => {
+    const matchCustomer = selectedCustomers.length === 0 || selectedCustomers.includes(row["Customer"]);
+    const f1 = !c1 || v1.length === 0 || v1.includes(row[c1]);
+    const f2 = !c2 || v2.length === 0 || v2.includes(row[c2]);
+    const f3 = !c3 || v3.length === 0 || v3.includes(row[c3]);
+    return matchCustomer && f1 && f2 && f3;
+  });
+  renderTable();
+}
+
+function updateFilterColumns() {
+  const columns = headerKeys;
+  [1, 2, 3].forEach(i => {
+    const colSelect = document.getElementById(`filter-column-${i}`);
+    colSelect.innerHTML = "";
+    columns.forEach(key => {
+      const opt = document.createElement("option");
+      opt.value = key;
+      opt.textContent = key;
+      colSelect.appendChild(opt);
+    });
+    $('#filter-column-' + i).trigger('change');
+  });
+}
+
+function updateFilterValuesForBlock(blockIndex) {
+  const col = document.getElementById(`filter-column-${blockIndex}`).value;
+  const set = new Set(rawData.map(r => r[col]).filter(Boolean));
+  const valSelect = document.getElementById(`filter-value-${blockIndex}`);
+  valSelect.innerHTML = "";
+  set.forEach(v => {
+    const opt = document.createElement("option");
+    opt.value = v;
+    opt.textContent = v;
+    valSelect.appendChild(opt);
+  });
+  $('#filter-value-' + blockIndex).trigger('change');
+}
+
+function clearFilters() {
+  $('.value-select').val(null).trigger('change');
+  $('.filter-column').val(null).trigger('change');
+  $('#filter-sheet').val(null).trigger('change');
+  applyFilters();
+}
+
+$(document).ready(() => {
+  fetch("data.json")
+    .then(res => res.json())
+    .then(data => {
+      rawData = data;
+      filteredData = [...data];
+      headerKeys = Object.keys(data[0] || {});
+
+      const dynamicCols = headerKeys.filter(k => !fixedColumns.includes(k));
+      renderDynamicHeaders(dynamicCols);
+      populateCustomerFilter();
+      updateFilterColumns();
+      renderTable();
+
+      $('#filter-sheet').on('change', applyFilters);
+      [1, 2, 3].forEach(i => {
+        $('#filter-column-' + i).on('change', () => updateFilterValuesForBlock(i));
+        $('#filter-value-' + i).on('change', applyFilters);
+      });
+      $('#apply-filters').on('click', applyFilters);
+      $('#clear-filters').on('click', clearFilters);
+    });
+});
+</script>
+</script></body>
 </html>
