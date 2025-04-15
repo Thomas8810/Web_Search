@@ -35,19 +35,40 @@ const upload = multer({ storage: storage });
 // ----------------------- DỮ LIỆU TRA CỨU & NGƯỜI DÙNG -----------------------
 const dataFilePath = path.join(__dirname, 'data.json');
 let cachedData = [];
+
+
+let headerOrder = [];
+
 function loadDataFromFile() {
   try {
     if (fs.existsSync(dataFilePath)) {
       const fileData = fs.readFileSync(dataFilePath, 'utf8');
-      cachedData = JSON.parse(fileData);
+      let raw = JSON.parse(fileData);
+
+      // Tự động lấy cột
+      headerOrder = Object.keys(raw[0] || []);
+
+      cachedData = raw.map(row => {
+        const normalized = {};
+        headerOrder.forEach(key => {
+          normalized[key] = row[key] || "";
+        });
+        return normalized;
+      });
+
+      console.log("✅ data.json loaded with dynamic headers:", headerOrder);
     } else {
       cachedData = [];
+      headerOrder = [];
+      console.log("⚠️ File data.json not found.");
     }
-    console.log("Data loaded from data.json");
   } catch (err) {
-    console.error("Error reading data.json:", err);
+    console.error("❌ Error reading data.json:", err);
+    cachedData = [];
+    headerOrder = [];
   }
 }
+
 loadDataFromFile();
 
 
