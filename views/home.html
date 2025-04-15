@@ -422,8 +422,10 @@ input:focus, select:focus {
 <div class="filter-bar">
 <!-- Filter Block Sheet -->
 <div class="filter-block" id="filter-block-project">
-<label for="filter-project" id="label-filter-project">Chọn dự án (Customer)</label>
-<select class="value-select" id="filter-project" multiple="multiple"></select>
+<label>Chọn dự án (theo Customer)</label>
+<select class="form-select filter-value" id="filter-project-value">
+<option value="">-- chọn giá trị Customer --</option>
+</select>
 </div>
 <!-- Filter Block 1 -->
 <div class="filter-block" id="filter-block-1">
@@ -1155,19 +1157,21 @@ function updateTable(data, reset) {
       sortTable(col, newOrder);
     });
   
-function populateCustomerDropdown() {
+function populateProjectByCustomer() {
   const customers = [...new Set(allData.map(item => item.Customer).filter(Boolean))].sort();
-  const $project = $('#filter-project');
-  $project.empty().append(`<option value="">-- Chọn dự án --</option>`);
-  customers.forEach(c => {
-    $project.append(`<option value="${c}">${c}</option>`);
+  const $value = $('#filter-project-value');
+  $value.empty().append(`<option value="">-- chọn giá trị Customer --</option>`);
+  customers.forEach(val => {
+    $value.append(`<option value="${val}">${val}</option>`);
+  });
+  $value.off('change').on('change', function () {
+    currentProject = $(this).val();
+    applyFilter();
   });
 }
-
-// Gọi sau khi loadData xong
 $(document).ready(function () {
   loadData().then(() => {
-    populateCustomerDropdown();
+    populateProjectByCustomer();
   });
 });
 </script>
