@@ -418,17 +418,25 @@ app.get('/api/progress', isAuthenticated, async (req, res) => {
 
 // API lấy danh sách giá trị lọc
 app.get('/filters', (req, res) => {
-  const getDistinct = (col) => {
-    const values = cachedData.map(row => row[col]).filter(v => v != null && v !== "");
-    return Array.from(new Set(values)).sort((a, b) => a.localeCompare(b, 'vi', { sensitivity: 'base' }));
-  };
+  const data = require('./data.json');
+  const uniqueValues = {};
 
-  const result = {};
-  headerOrder.forEach(key => {
-    result[key] = getDistinct(key);
+  Object.keys(data).forEach(key => {
+    if (!Array.isArray(data[key])) return;
+
+    const values = new Set();
+    data[key].forEach(item => {
+      if (item !== null && item !== undefined && item !== '') {
+        values.add(item);
+      }
+    });
+
+    if (values.size > 0) {
+      uniqueValues[key] = Array.from(values).sort();
+    }
   });
 
-  res.json(result);
+  res.json(uniqueValues);
 });
 
 
