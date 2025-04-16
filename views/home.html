@@ -823,9 +823,15 @@ function loadAllData() {
       row._part = row["Part Number"]?.toLowerCase() || '';
       return row;
     });
+
     totalData = response.total;
+    filteredData = [...allData]; // <-- Quan trọng: giữ bản gốc hiển thị
+
+    updateTable(filteredData, true);
+    updateDropdowns(); // <-- làm mới dropdown sau khi load
   });
 }
+
 
     // Hàm load dữ liệu dự án cho phần "Chọn dự án"
     function loadDistinctValuesForProject() {
@@ -1395,11 +1401,11 @@ $('#quick-search').on('input', function () {
   clearTimeout(quickSearchTimeout);
   const keyword = $(this).val().toLowerCase();
   quickSearchTimeout = setTimeout(() => {
-    if (!allData) return;
-    const filteredQuick = allData.filter(row =>
-      row["Part Number"]?.toLowerCase().includes(keyword)
+    if (!filteredData) return;
+    const quickResult = filteredData.filter(row =>
+      row._part.includes(keyword)
     );
-    updateTable(filteredQuick, true);
+    updateTable(quickResult, true);
   }, 200);
 });
 
