@@ -8,8 +8,48 @@
 <!-- CSS Select2 -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet"/>
 <!-- Thêm i18next và i18next-browser-languagedetector -->
-<script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
-<script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+<script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js">
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
+</script>
+<script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js">
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
+</script>
 <style>
     /* Cài đặt CSS cơ bản */
     html, body { height: 100%; margin: 0; padding: 0; }
@@ -618,10 +658,90 @@ input:focus, select:focus {
 <div class="footer" id="footer-text">Người phát triển: Nguyễn Văn Đạo</div>
 </div>
 <!-- JS Thư viện -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/colresizable/1.6/colResizable-1.6.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js">
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js">
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/colresizable/1.6/colResizable-1.6.min.js">
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
+</script>
 <!-- i18next Integration -->
 <script>
     // Khởi tạo i18next với resource cho tiếng Anh và tiếng Việt
@@ -764,7 +884,27 @@ input:focus, select:focus {
         updateStaticContent();
       });
     }
-  </script>
+  
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
+</script>
 <!-- Các mã JS hiện tại -->
 <script>
     // Hàm format Excel date
@@ -1168,7 +1308,27 @@ function updateTable(data, reset) {
       $(this).data('order', newOrder);
       sortTable(col, newOrder);
     });
-  </script>
+  
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
+</script>
 <!-- Modal OCR (Không có xem trước ảnh) -->
 <div id="cameraModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#000; justify-content:center; align-items:center; z-index:9999; overflow-y:auto; transition: all 0.3s ease;">
 <div style="background:#fff; padding:16px; border-radius:8px; width:95%; max-width:400px; text-align:center;">
@@ -1188,7 +1348,27 @@ function updateTable(data, reset) {
 <p id="ocrStatus" style="font-size:14px; margin-top:10px;">Đang chờ thao tác...</p>
 </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js">
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
+</script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const btnScan = document.getElementById('btnScanCamera');
@@ -1304,6 +1484,26 @@ const cropHeight = canvas.height * 0.2;
     inputOCR.value = '';
   });
 });
+
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
 </script>
 <script>
 window.addEventListener('resize', () => {
@@ -1314,6 +1514,26 @@ window.addEventListener('resize', () => {
     }, 300);
   }
 });
+
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
 </script><script>
 // Scroll riêng cho input OCR khi focus (bàn phím mở lên)
 document.addEventListener('DOMContentLoaded', function () {
@@ -1326,6 +1546,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
 </script><script>
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.getElementById('ocrInput');
@@ -1337,6 +1577,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
 </script><script>
 document.addEventListener('DOMContentLoaded', function () {
   const inputs = document.querySelectorAll('.filter-bar input, .filter-bar select');
@@ -1348,6 +1608,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -1360,6 +1640,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+function loadDistinctValuesForCustomer() {
+  const selectElem = $('#filter-customer');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
+      });
+      selectElem.trigger('change');
+    }
+  });
+}
+
+$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
+
+function getSelectedCustomers() {
+  return $('#filter-customer').val();
+}
+
 </script>
 
 </body>
