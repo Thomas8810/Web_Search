@@ -414,10 +414,10 @@ input:focus, select:focus {
 </style>
 </head>
 <body>
-
-<div id="loading-spinner" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.7); z-index:9999; display:flex; align-items:center; justify-content:center;">
+<div id="loading-spinner" style="display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:99;">
   <div style="border: 6px solid #f3f3f3; border-top: 6px solid #3498db; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;"></div>
 </div>
+
 
 <div class="page-container">
 <div class="top-container">
@@ -817,12 +817,15 @@ input:focus, select:focus {
     let allData = null;
 
     // Hàm load toàn bộ dữ liệu khi trang mở
-    function loadAllData() {
-      $.getJSON('/search?limit=1000000', function(response) {
-        allData = response.data;
-        totalData = response.total; // Update totalData here
-      });
-    }
+function loadAllData() {
+  $.getJSON('/search?limit=1000000', function(response) {
+    allData = response.data.map(row => {
+      row._part = row["Part Number"]?.toLowerCase() || '';
+      return row;
+    });
+    totalData = response.total;
+  });
+}
 
     // Hàm load dữ liệu dự án cho phần "Chọn dự án"
     function loadDistinctValuesForProject() {
@@ -1387,13 +1390,19 @@ $('#apply-filters').on('click', function () {
 });
 
 // Tìm kiếm nhanh theo Part Number
+let quickSearchTimeout;
 $('#quick-search').on('input', function () {
+  clearTimeout(quickSearchTimeout);
   const keyword = $(this).val().toLowerCase();
-  $('#results-table tbody tr').each(function () {
-    const partNumber = $(this).find('td:nth-child(2)').text().toLowerCase();
-    $(this).toggle(partNumber.includes(keyword));
-  });
+  quickSearchTimeout = setTimeout(() => {
+    if (!allData) return;
+    const filteredQuick = allData.filter(row =>
+      row["Part Number"]?.toLowerCase().includes(keyword)
+    );
+    updateTable(filteredQuick, true);
+  }, 200);
 });
+
 
 // Chuyển số Excel sang ngày JS
 function excelDateToJSDate(serial) {
