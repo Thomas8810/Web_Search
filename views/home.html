@@ -420,7 +420,11 @@ input:focus, select:focus {
 </div>
 <!-- Phần tiêu chí lọc -->
 <div class="filter-bar">
-
+<!-- Filter Block Sheet -->
+<div class="filter-block" id="filter-block-project">
+          <label for="filter-value-project" id="label-filter-value-project">Chọn Customer</label>
+          <select class="value-select" id="filter-value-project" multiple="multiple"></select>
+        </div>
 <!-- Filter Block 1 -->
 <div class="filter-block" id="filter-block-1">
 <label for="filter-column-1" id="label-criteria-1">Chọn tiêu chí số 1:</label>
@@ -732,7 +736,9 @@ input:focus, select:focus {
       $('#results-count').text(i18next.t("total_rows", { count: tbodyCount, total: totalData }));
 
 
-      // Cập nhật lại các widget Select2 (để thay đổi placeholder mà vẫn giữ lựa chọn)      reinitializeSelect2('#filter-value-1', i18next.t("choose_value"), { closeOnSelect: false });
+      // Cập nhật lại các widget Select2 (để thay đổi placeholder mà vẫn giữ lựa chọn)
+      reinitializeSelect2('#filter-sheet', i18next.t("choose_project"), { closeOnSelect: false });
+      reinitializeSelect2('#filter-value-1', i18next.t("choose_value"), { closeOnSelect: false });
       reinitializeSelect2('#filter-value-2', i18next.t("choose_value"), {}); // mặc định closeOnSelect = true
       reinitializeSelect2('#filter-value-3', i18next.t("choose_value"), { closeOnSelect: false });
 
@@ -799,9 +805,17 @@ input:focus, select:focus {
       });
     }
 
-    // Hàm load dữ liệu dự án cho phần "Chọn dự án"
-    );
-        }
+    // Hàm load distinct Customer
+    function loadDistinctValuesForProject() {
+      const $sel = $('#filter-value-project').empty();
+      $.getJSON('/filters', function(data) {
+        (data['Customer'] || []).forEach(function(val) {
+          const option = new Option(val, val, false, false);
+          $sel.append(option);
+        });
+        $sel.trigger('change');
+      });
+    }
         selectElem.trigger('change');
       });
     }
@@ -810,7 +824,16 @@ input:focus, select:focus {
 
 
     $(document).ready(function() {
-      loadAllData(); // Tải toàn bộ dữ liệu một lần
+      loadAllData();
+
+      // Khởi tạo Select2 cho filter-value-project
+      $('#filter-value-project').select2({
+        placeholder: i18next.t("choose_project"),
+        allowClear: true,
+        width: '100%',
+        closeOnSelect: false
+      });
+// Tải toàn bộ dữ liệu một lần
 
       // Khởi tạo Select2 ban đầu
       $('.value-select').not('#filter-value-2').select2({
@@ -822,9 +845,9 @@ input:focus, select:focus {
         placeholder: i18next.t("choose_value"),
         allowClear: true,
         width: '100%'
-      });
+      });    // Load distinct Customer
+      loadDistinctValuesForProject();
 
-      // Load dữ liệu cho "Chọn dự án"
       // Xử lý paste Excel cho filter-value-2
       $(document).on('paste', '#filter-value-2 ~ .select2 .select2-search__field', function(e) {
         e.preventDefault();
@@ -841,9 +864,11 @@ input:focus, select:focus {
         $select.val(newValues).trigger('change');
       });
 
-      // Khi chọn dự án => cập nhật block 1, cascade block 2        updateCascade(2);
+      // Khi chọn Customer => áp dụng filter ngay
+      $('#filter-value-project').on('change', function(){
+        applyFilters(true);
       });
-      // Ban đầu, cập nhật block 1
+      // Khi chọn dự án => cập nhật block 1,
       updateFilterValuesForBlock(1);
 
       // Sự kiện thay đổi tiêu chí và giá trị cho các block
@@ -889,33 +914,21 @@ input:focus, select:focus {
         }
       });
       $('#load-all').on('click', function() {
-        let queryParams = {};        for (let i = 1; i <= 3; i++) {
-          const col = $(`#filter-column-${i}`).val();
-          const values = $(`#filter-value-${i}`).val();
-          if (values && values.length > 0) {
-            queryParams[col] = values.join(',');
-          }
+        let queryParams = {};
+        const projectValues = $('#filter-value-project').val();
+        if (projectValues && projectValues.length > 0) {
+          queryParams['Customer'] = projectValues.join(',');
         }
-        queryParams.limit = 1000000;
-        queryParams.offset = 0;
-        const queryString = $.param(queryParams);
-        $.getJSON(`/search?${queryString}`, function(response) {
-          currentOffset = response.total;
-          updateTable(response.data, true);
-        });
+        // Giá trị từ 3 block còn lại
       });
       $('#download-excel').on('click', function() { downloadExcel(); });
       $('#export-all').on('click', function() {
-        let queryParams = {};        for (let i = 1; i <= 3; i++) {
-          const col = $(`#filter-column-${i}`).val();
-          const values = $(`#filter-value-${i}`).val();
-          if (values && values.length > 0) {
-            queryParams[col] = values.join(',');
-          }
+        let queryParams = {};
+        const projectValues = $('#filter-value-project').val();
+        if (projectValues && projectValues.length > 0) {
+          queryParams['Customer'] = projectValues.join(',');
         }
-        const queryString = $.param(queryParams);
-        window.location.href = `/export?${queryString}`;
-      });
+        // Giá trị từ 3 block còn lại
       $('#zoom-in').on('click', function() {
         currentZoom += 0.1;
         $('#results-table').css('zoom', currentZoom);
@@ -946,12 +959,12 @@ input:focus, select:focus {
       }
       let filteredData = allData.slice();
 
-      // Lọc theo dự án (Sheet)
-      const sheetValues = $('#filter-sheet').val();
-      if (sheetValues && sheetValues.length > 0) {
+      // Lọc theo Customer
+      const projectValues = $('#filter-value-project').val();
+      if (projectValues && projectValues.length > 0) {
         filteredData = filteredData.filter(function(row) {
-          return sheetValues.some(function(s) {
-            return row['Sheet'] && row['Sheet'].toString().toLowerCase().includes(s.toLowerCase());
+          return projectValues.some(function(v) {
+            return row['Customer'] && row['Customer'].toString().toLowerCase().includes(v.toLowerCase());
           });
         });
       }
@@ -1002,20 +1015,12 @@ input:focus, select:focus {
         currentOffset = 0;
         $('#results-table tbody').empty();
       }
-      let queryParams = { limit: pageSize, offset: currentOffset };      for (let i = 1; i <= 3; i++) {
-        const col = $(`#filter-column-${i}`).val();
-        const values = $(`#filter-value-${i}`).val();
-        if (values && values.length > 0) {
-          queryParams[col] = values.join(',');
+      let queryParams = { limit: pageSize, offset: currentOffset };
+      const projectValues = $('#filter-value-project').val();
+        if (projectValues && projectValues.length > 0) {
+          queryParams['Customer'] = projectValues.join(',');
         }
-      }
-      currentFilters = queryParams;
-      const queryString = $.param(queryParams);
-      $.getJSON(`/search?${queryString}`, function(response) {
-        totalData = response.total;
-        currentOffset += pageSize;
-        updateTable(response.data, true);
-      });
+        // Giá trị từ 3 block còn lại
     }
 
     // Hàm cập nhật bảng dữ liệu
