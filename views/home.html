@@ -419,133 +419,42 @@ input:focus, select:focus {
 </div>
 </div>
 <!-- Phần tiêu chí lọc -->
+
 <div class="filter-bar">
-<!-- Filter Block Sheet -->
-<div class="filter-block" id="filter-block-project">
-<label for="filter-project" id="label-filter-project">Chọn dự án (Customer)</label>
-<select class="value-select" id="filter-project" multiple="multiple"></select>
+  <!-- Filter Block 1: Customer -->
+  <div class="filter-block" id="filter-block-1">
+    <label for="filter-value-1" id="label-filter-customer">Chọn Customer</label>
+    <select class="value-select" id="filter-value-1" multiple="multiple"></select>
+  </div>
+  <!-- Filter Block 2 -->
+  <div class="filter-block" id="filter-block-2">
+    <label for="filter-column-2" id="label-criteria-2">Chọn tiêu chí số 2:</label>
+    <select id="filter-column-2">
+      <!-- options populated dynamically -->
+    </select>
+    <label for="filter-value-2" id="label-filter-value-2">Chọn giá trị</label>
+    <select class="value-select" id="filter-value-2" multiple="multiple"></select>
+  </div>
+  <!-- Filter Block 3 -->
+  <div class="filter-block" id="filter-block-3">
+    <label for="filter-column-3" id="label-criteria-3">Chọn tiêu chí số 3:</label>
+    <select id="filter-column-3">
+      <!-- options populated dynamically -->
+    </select>
+    <label for="filter-value-3" id="label-filter-value-3">Chọn giá trị</label>
+    <select class="value-select" id="filter-value-3" multiple="multiple"></select>
+  </div>
+  <!-- Filter Block 4 -->
+  <div class="filter-block" id="filter-block-4">
+    <label for="filter-column-4" id="label-criteria-4">Chọn tiêu chí số 4:</label>
+    <select id="filter-column-4">
+      <!-- options populated dynamically -->
+    </select>
+    <label for="filter-value-4" id="label-filter-value-4">Chọn giá trị</label>
+    <select class="value-select" id="filter-value-4" multiple="multiple"></select>
+  </div>
 </div>
-<!-- Filter Block 1 -->
-<div class="filter-block" id="filter-block-1">
-<label for="filter-column-1" id="label-criteria-1">Chọn tiêu chí số 1:</label>
-<select id="filter-column-1">
-<option selected="" value="Part Number">Part Number</option>
-<option value="Approval Status">Approval Status</option>
-<option value="Part Pictures">Part Pictures</option>
-<option value="Packaging Pictures">Packaging Pictures</option>
-<option value="Customer">Customer</option>
-<option value="Commodity">Commodity</option>
-<option value="Critical">Critical</option>
-<option value="CE">CE</option>
-<option value="PO Number">PO Number</option>
-<option value="Type">Type</option>
-<option value="REV">REV</option>
-<option value="Description">Description</option>
-<option value="Note Number">Note Number</option>
-<option value="PO received date">PO received date</option>
-<option value="Customer need date">Customer need date</option>
-<option value="Requirements">Requirements</option>
-<option value="FAIR Cover sheet">FAIR Cover sheet</option>
-<option value="Bubble Drawings">Bubble Drawings</option>
-<option value="Datasheet form">Datasheet form</option>
-<option value="LAIR data">LAIR data</option>
-<option value="FAIR Data">FAIR Data</option>
-<option value="COC">COC</option>
-<option value="BOM">BOM</option>
-<option value="Mill">Mill</option>
-<option value="Test reports / evidences">Test reports / evidences</option>
-<option value="Part Pictures">Part Pictures</option>
-<option value="Packaging Pictures">Packaging Pictures</option>
-<option value="Production Status">Production Status</option>
-<option value="Remark 1">Remark 1</option>
-<option value="Remark 2">Remark 2</option>
-<option value="Submit date">Submit date</option>
-<option value="Reject comments">Reject comments</option>
-</select>
-<label for="filter-value-1" id="label-filter-value-1">Chọn giá trị</label>
-<select class="value-select" id="filter-value-1" multiple="multiple"></select>
-</div>
-<!-- Filter Block 2 -->
-<div class="filter-block" id="filter-block-2">
-<label for="filter-column-2" id="label-criteria-2">Chọn tiêu chí số 2 (paste ex):</label>
-<select id="filter-column-2">
-<option selected="" value="Part Number">Part Number</option>
-<option value="Approval Status">Approval Status</option>
-<option value="Part Pictures">Part Pictures</option>
-<option value="Packaging Pictures">Packaging Pictures</option>
-<option value="Customer">Customer</option>
-<option value="Commodity">Commodity</option>
-<option value="Critical">Critical</option>
-<option value="CE">CE</option>
-<option value="PO Number">PO Number</option>
-<option value="Type">Type</option>
-<option value="REV">REV</option>
-<option value="Description">Description</option>
-<option value="Note Number">Note Number</option>
-<option value="PO received date">PO received date</option>
-<option value="Customer need date">Customer need date</option>
-<option value="Requirements">Requirements</option>
-<option value="FAIR Cover sheet">FAIR Cover sheet</option>
-<option value="Bubble Drawings">Bubble Drawings</option>
-<option value="Datasheet form">Datasheet form</option>
-<option value="LAIR data">LAIR data</option>
-<option value="FAIR Data">FAIR Data</option>
-<option value="COC">COC</option>
-<option value="BOM">BOM</option>
-<option value="Mill">Mill</option>
-<option value="Test reports / evidences">Test reports / evidences</option>
-<option value="Part Pictures">Part Pictures</option>
-<option value="Packaging Pictures">Packaging Pictures</option>
-<option value="Production Status">Production Status</option>
-<option value="Remark 1">Remark 1</option>
-<option value="Remark 2">Remark 2</option>
-<option value="Submit date">Submit date</option>
-<option value="Reject comments">Reject comments</option>
-</select>
-<label for="filter-value-2" id="label-filter-value-2">Chọn giá trị</label>
-<select id="filter-value-2" multiple="multiple"></select>
-</div>
-<!-- Filter Block 3 -->
-<div class="filter-block" id="filter-block-3">
-<label for="filter-column-3" id="label-criteria-3">Chọn tiêu chí số 3:</label>
-<select id="filter-column-3">
-<option selected="" value="Part Number">Part Number</option>
-<option value="Approval Status">Approval Status</option>
-<option value="Part Pictures">Part Pictures</option>
-<option value="Packaging Pictures">Packaging Pictures</option>
-<option value="Customer">Customer</option>
-<option value="Commodity">Commodity</option>
-<option value="Critical">Critical</option>
-<option value="CE">CE</option>
-<option value="PO Number">PO Number</option>
-<option value="Type">Type</option>
-<option value="REV">REV</option>
-<option value="Description">Description</option>
-<option value="Note Number">Note Number</option>
-<option value="PO received date">PO received date</option>
-<option value="Customer need date">Customer need date</option>
-<option value="Requirements">Requirements</option>
-<option value="FAIR Cover sheet">FAIR Cover sheet</option>
-<option value="Bubble Drawings">Bubble Drawings</option>
-<option value="Datasheet form">Datasheet form</option>
-<option value="LAIR data">LAIR data</option>
-<option value="FAIR Data">FAIR Data</option>
-<option value="COC">COC</option>
-<option value="BOM">BOM</option>
-<option value="Mill">Mill</option>
-<option value="Test reports / evidences">Test reports / evidences</option>
-<option value="Part Pictures">Part Pictures</option>
-<option value="Packaging Pictures">Packaging Pictures</option>
-<option value="Production Status">Production Status</option>
-<option value="Remark 1">Remark 1</option>
-<option value="Remark 2">Remark 2</option>
-<option value="Submit date">Submit date</option>
-<option value="Reject comments">Reject comments</option>
-</select>
-<label for="filter-value-3" id="label-filter-value-3">Chọn giá trị</label>
-<select class="value-select" id="filter-value-3" multiple="multiple"></select>
-</div>
-</div>
+
 <!-- Khối chứa các nút chức năng -->
 <div class="action-bar">
 <div class="filter-actions">
@@ -1347,6 +1256,138 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+<!-- HTML: sửa ID cho đúng và đồng bộ -->
+<div class="filter-block" id="filter-block-project">
+  <label for="filter-project" id="label-filter-project">Chọn dự án (Customer)</label>
+  <select class="value-select" id="filter-project" multiple="multiple"></select>
+</div>
+
+<!-- JS: loadDistinctValuesForBlock dựa theo logic blockIndex -->
+
+<script>
+function updateFilterValuesForBlock(blockIndex) {
+  if (!allData) {
+    setTimeout(function(){ updateFilterValuesForBlock(blockIndex); }, 100);
+    return;
+  }
+  let filteredData = allData.slice();
+  // Apply previous filters
+  for (let i = 1; i < blockIndex; i++) {
+    let col = (i === 1) ? 'Customer' : $(`#filter-column-${i}`).val();
+    let values = $(`#filter-value-${i}`).val();
+    if (col && values && values.length > 0) {
+      filteredData = filteredData.filter(row =>
+        values.some(v => row[col] && row[col].toString().toLowerCase().includes(v.toLowerCase()))
+      );
+    }
+  }
+  // Determine column for current block
+  let dependentColumn = (blockIndex === 1) ? 'Customer' : $(`#filter-column-${blockIndex}`).val();
+  // Extract distinct values
+  let values = filteredData.map(row => row[dependentColumn] || '').filter(v => v !== '');
+  let distinctValues = Array.from(new Set(values.map(v => v.toString().toUpperCase())));
+  distinctValues.sort((a, b) => a.localeCompare(b));
+  // Populate select
+  const selectElem = $(`#filter-value-${blockIndex}`);
+  selectElem.empty();
+  distinctValues.forEach(val => {
+    selectElem.append(new Option(val, val, false, false));
+  });
+  selectElem.trigger('change');
+}
+</script>
+
+
+<!-- JS: gọi updateFilterValuesForBlock(0) khi load -->
+<script>
+$(document).ready(function() {
+  loadAllData();
+
+  $('.value-select').not('#filter-value-2').select2({
+    placeholder: i18next.t("choose_value"),
+    allowClear: true,
+    width: '100%',
+    closeOnSelect: false
+  });
+  $('#filter-value-2').select2({
+    placeholder: i18next.t("choose_value"),
+    allowClear: true,
+    width: '100%'
+  });
+  $('#filter-project').select2({
+    placeholder: i18next.t("choose_project"),
+    allowClear: true,
+    width: '100%',
+    closeOnSelect: false
+  });
+
+  $('#filter-project').on('change', function() {
+    updateCascade(1);
+  });
+
+  $('#filter-column-1').on('change', function() {
+    updateFilterValuesForBlock(1);
+    updateCascade(2);
+  });
+  $('#filter-value-1').on('change', function() {
+    updateCascade(2);
+  });
+  $('#filter-column-2').on('change', function() {
+    updateFilterValuesForBlock(2);
+    updateCascade(3);
+  });
+  $('#filter-value-2').on('change', function() {
+    updateCascade(3);
+  });
+  $('#filter-column-3').on('change', function() {
+    updateFilterValuesForBlock(3);
+  });
+
+  updateFilterValuesForBlock(0);
+});
+</script>
+
+<!-- JS: cascade toàn bộ -->
+
+<script>
+function updateCascade(startBlock) {
+  for (let i = startBlock; i <= 4; i++) {
+    updateFilterValuesForBlock(i);
+  }
+}
+</script>
+
+
+<!-- JS: applyFilters sửa để lấy Customer từ blockIndex 0 -->
+
+<script>
+function applyFilters(reset = true) {
+  if (reset) {
+    currentOffset = 0;
+    $('#results-table tbody').empty();
+  }
+  let queryParams = { limit: pageSize, offset: currentOffset };
+  // Collect filter values
+  for (let i = 1; i <= 4; i++) {
+    const col = (i === 1) ? 'Customer' : $(`#filter-column-${i}`).val();
+    const values = $(`#filter-value-${i}`).val();
+    if (values && values.length > 0) {
+      queryParams[col] = values.join(',');
+    }
+  }
+  currentFilters = queryParams;
+  const queryString = $.param(queryParams);
+  $.getJSON(`/search?${queryString}`, function(response) {
+    totalData = response.total;
+    currentOffset += pageSize;
+    updateTable(response.data, true);
+  });
+}
+</script>
+
+
 </script>
 
 </body>
