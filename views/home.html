@@ -737,7 +737,7 @@ input:focus, select:focus {
 
 
       // Cập nhật lại các widget Select2 (để thay đổi placeholder mà vẫn giữ lựa chọn)
-      reinitializeSelect2('#filter-sheet', i18next.t("choose_project"), { closeOnSelect: false });
+      reinitializeSelect2('#filter-project', i18next.t("choose_project"), { closeOnSelect: false });
       reinitializeSelect2('#filter-value-1', i18next.t("choose_value"), { closeOnSelect: false });
       reinitializeSelect2('#filter-value-2', i18next.t("choose_value"), {}); // mặc định closeOnSelect = true
       reinitializeSelect2('#filter-value-3', i18next.t("choose_value"), { closeOnSelect: false });
@@ -806,8 +806,8 @@ input:focus, select:focus {
     }
 
     // Hàm load dữ liệu dự án cho phần "Chọn dự án"
-    function loadDistinctValuesForSheet() {
-      const selectElem = $('#filter-sheet');
+    function loadDistinctValuesForProject() {
+      const selectElem = $('#filter-project');
       selectElem.empty();
       $.getJSON('/filters', function(data) {
         if (data['Sheet']) {
@@ -833,7 +833,7 @@ input:focus, select:focus {
         width: '100%',
         closeOnSelect: false
       });
-      $('#filter-sheet').select2({
+      $('#filter-project').select2({
         placeholder: i18next.t("choose_project"),
         allowClear: true,
         width: '100%',
@@ -846,7 +846,7 @@ input:focus, select:focus {
       });
 
       // Load dữ liệu cho "Chọn dự án"
-      loadDistinctValuesForSheet();
+      loadDistinctValuesForProject();
 
       // Xử lý paste Excel cho filter-value-2
       $(document).on('paste', '#filter-value-2 ~ .select2 .select2-search__field', function(e) {
@@ -865,7 +865,7 @@ input:focus, select:focus {
       });
 
       // Khi chọn dự án => cập nhật block 1, cascade block 2
-      $('#filter-sheet').on('change', function(){
+      $('#filter-project').on('change', function(){
         updateFilterValuesForBlock(1);
         updateCascade(2);
       });
@@ -916,9 +916,9 @@ input:focus, select:focus {
       });
       $('#load-all').on('click', function() {
         let queryParams = {};
-        const sheetValues = $('#filter-sheet').val();
+        const sheetValues = $('#filter-project').val();
         if (sheetValues && sheetValues.length > 0) {
-          queryParams["Sheet"] = sheetValues.join(',');
+          queryParams["Customer"] = sheetValues.join(',');
         }
         for (let i = 1; i <= 3; i++) {
           const col = $(`#filter-column-${i}`).val();
@@ -938,9 +938,9 @@ input:focus, select:focus {
       $('#download-excel').on('click', function() { downloadExcel(); });
       $('#export-all').on('click', function() {
         let queryParams = {};
-        const sheetValues = $('#filter-sheet').val();
+        const sheetValues = $('#filter-project').val();
         if (sheetValues && sheetValues.length > 0) {
-          queryParams["Sheet"] = sheetValues.join(',');
+          queryParams["Customer"] = sheetValues.join(',');
         }
         for (let i = 1; i <= 3; i++) {
           const col = $(`#filter-column-${i}`).val();
@@ -983,7 +983,7 @@ input:focus, select:focus {
       let filteredData = allData.slice();
 
       // Lọc theo dự án (Sheet)
-      const sheetValues = $('#filter-sheet').val();
+      const sheetValues = $('#filter-project').val();
       if (sheetValues && sheetValues.length > 0) {
         filteredData = filteredData.filter(function(row) {
           return sheetValues.some(function(s) {
@@ -1039,9 +1039,9 @@ input:focus, select:focus {
         $('#results-table tbody').empty();
       }
       let queryParams = { limit: pageSize, offset: currentOffset };
-      const sheetValues = $('#filter-sheet').val();
+      const sheetValues = $('#filter-project').val();
       if (sheetValues && sheetValues.length > 0) {
-        queryParams["Sheet"] = sheetValues.join(',');
+        queryParams["Customer"] = sheetValues.join(',');
       }
       for (let i = 1; i <= 3; i++) {
         const col = $(`#filter-column-${i}`).val();
