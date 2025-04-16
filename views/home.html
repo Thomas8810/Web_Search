@@ -418,9 +418,8 @@ input:focus, select:focus {
 <button onclick="changeLanguage('ko')">Ko</button>
 </div>
 </div>
+
 <!-- Phần tiêu chí lọc -->
-
-
 <div class="filter-bar">
   <!-- Filter Block 0: Customer -->
   <div class="filter-block" id="filter-block-0">
@@ -451,7 +450,6 @@ input:focus, select:focus {
 </div>
 
 <!-- Khối chứa các nút chức năng -->
-<div class="action-bar">
 <div class="filter-actions">
 <button id="apply-filters">Áp Dụng Lọc</button>
 <button id="clear-filters">Xóa Lọc</button>
@@ -551,7 +549,6 @@ function updateFilterValuesForBlock(blockIndex) {
     return;
   }
   let filtered = allData.slice();
-  // Apply previous filters
   for (let i = 0; i < blockIndex; i++) {
     const col = (i===0) ? 'Customer' : $(`#filter-column-${i}`).val();
     const vals = $(`#filter-value-${i}`).val();
@@ -561,7 +558,6 @@ function updateFilterValuesForBlock(blockIndex) {
       );
     }
   }
-  // Determine column for current block
   const depCol = (blockIndex===0) ? 'Customer' : $(`#filter-column-${blockIndex}`).val();
   const vals = filtered.map(r => r[depCol]|| '').filter(v=>v!=='');
   const distinct = Array.from(new Set(vals.map(v=>v.toString().toUpperCase()))).sort();
@@ -579,41 +575,297 @@ function updateCascade(startBlock) {
 }
 
 // Apply filters
-function applyFilters(reset=true) {
-  if (reset) { currentOffset=0; $('#results-table tbody').empty(); }
-  let params={ limit:pageSize, offset:currentOffset };
-  for (let i=0;i<=3;i++){
-    const col=(i===0)?'Customer':$(`#filter-column-${i}`).val();
-    const vals=$(`#filter-value-${i}`).val();
-    if (vals && vals.length) params[col]=vals.join(',');
+function applyFilters(reset = true) {
+  if (reset) {
+    currentOffset = 0;
+    $('#results-table tbody').empty();
   }
-  currentFilters=params;
-  $.getJSON(`/search?${$.param(params)}`, resp=>{
-    totalData=resp.total; currentOffset+=pageSize; updateTable(resp.data,true);
+  let params = { limit: pageSize, offset: currentOffset };
+  for (let i = 0; i <= 3; i++) {
+    const col = (i===0) ? 'Customer' : $(`#filter-column-${i}`).val();
+    const vals = $(`#filter-value-${i}`).val();
+    if (vals && vals.length) {
+      params[col] = vals.join(',');
+    }
+  }
+  currentFilters = params;
+  const queryString = $.param(params);
+  $.getJSON(`/search?${queryString}`, function(response) {
+    totalData = response.total;
+    currentOffset += pageSize;
+    updateTable(response.data, true);
   });
 }
 
-// Document ready
-$(document).ready(function(){
-  loadAllData();
-  $('.value-select').select2({ placeholder: i18next.t('choose_value'), allowClear:true, width:'100%', closeOnSelect:false });
+// Initialize filters on load
+$(document).ready(function() {
+  populateCriteriaSelects();
+  updateCascade(0);
+  // Bind change events
   $('#filter-value-0').on('change', ()=> updateCascade(1));
-  [1,2,3].forEach(i=>{
+  [1,2,3].forEach(i => {
     $(`#filter-column-${i}`).on('change', ()=>{ updateFilterValuesForBlock(i); updateCascade(i+1); });
     $(`#filter-value-${i}`).on('change', ()=> updateCascade(i+1));
   });
 });
+</script>
 
-// Override loadAllData
-function loadAllData() {
-  $.getJSON('/search?limit=1000000', resp => {
-    allData = resp.data; totalData = resp.total;
-    populateCriteriaSelects();
-    updateCascade(0);
+<script>
+// Hàm cập nhật bảng dữ liệu
+function updateTable(data, reset) {
+  const tbody = $('#results-table tbody');
+  if (reset) tbody.empty();
+  
+  data.forEach(function(row) {
+    const serial = tbody.children().length + 1;
+    const tr = $('<tr>');
+
+    // Các cột cố định và các cột theo thứ tự đã định
+    tr.append(`<td class="sticky-col-1">${serial}</td>`);
+    tr.append(`<td class="sticky-col-2">${row['Part Number'] || ''}</td>`);
+    tr.append(`<td class="sticky-col-3">${row['REV'] || ''}</td>`);
+    tr.append(`<td>${row['Approval Status'] || ''}</td>`);
+    tr.append(`<td>${row['Customer'] || ''}</td>`);
+    tr.append(`<td>${row['Commodity'] || ''}</td>`);
+    tr.append(`<td>${row['Part Pictures'] || ''}</td>`);
+    tr.append(`<td>${row['Packaging Pictures'] || ''}</td>`);
+    tr.append(`<td>${row['Critical'] || ''}</td>`);
+    tr.append(`<td>${row['CE'] || ''}</td>`);
+    tr.append(`<td>${row['PO Number'] || ''}</td>`);
+    tr.append(`<td>${row['Description'] || ''}</td>`);
+    tr.append(`<td>${row['Type'] || ''}</td>`);
+    tr.append(`<td>${row['Note Number'] || ''}</td>`);
+    tr.append(`<td>${formatExcelDate(row['PO received date'])}</td>`);
+    tr.append(`<td>${formatExcelDate(row['Customer need date'])}</td>`);
+    tr.append(`<td>${row['Requirements'] || ''}</td>`);
+    tr.append(`<td>${row['FAIR Cover sheet'] || ''}</td>`);
+    tr.append(`<td>${row['Bubble Drawings'] || ''}</td>`);
+    tr.append(`<td>${row['Datasheet form'] || ''}</td>`);
+    tr.append(`<td>${row['LAIR Data'] || row['LAIR data'] || ''}</td>`);
+    tr.append(`<td>${row['FAIR Data'] || ''}</td>`);
+    tr.append(`<td>${row['COC'] || ''}</td>`);
+    tr.append(`<td>${row['BOM'] || ''}</td>`);
+    tr.append(`<td>${row['Mill'] || ''}</td>`);
+    tr.append(`<td>${row['Test reports / evidences'] || ''}</td>`);
+    tr.append(`<td>${row['Production Status'] || ''}</td>`);
+    tr.append(`<td>${row['Remark 1'] || ''}</td>`);
+    tr.append(`<td>${row['Remark 2'] || ''}</td>`);
+    tr.append(`<td>${formatExcelDate(row['Submit date'])}</td>`);
+    tr.append(`<td>${row['Reject comments'] || ''}</td>`);
+
+    tbody.append(tr);
   });
+
+  var totalText = i18next.t("total_rows", { count: tbody.children().length, total: totalData });
+  $('#results-count').text(totalText);
+
+  // Sử dụng colResizable nếu có
+  try {
+    if (typeof $.fn.colResizable === 'function') {
+      $('#results-table').colResizable({ liveDrag: true });
+    }
+  } catch (e) {
+    console.log("colResizable not available in updateTable:", e);
+  }
 }
+
+    // Hàm xuất Excel
+    function downloadExcel() {
+      var wb = XLSX.utils.table_to_book(document.getElementById('results-table'), {sheet:"Sheet1"});
+      XLSX.writeFile(wb, 'ketqua.xlsx');
+    }
+
+    // Hàm sắp xếp bảng khi click tiêu đề cột
+    function getColumnIndex(columnName) {
+      let index = -1;
+      $('#results-table th').each(function(i) {
+        if ($(this).data('column') === columnName) {
+          index = i;
+          return false;
+        }
+      });
+      return index;
+    }
+    function sortTable(column, order) {
+      let rows = $('#results-table tbody tr').get();
+      let colIndex = getColumnIndex(column);
+      if (colIndex === -1) return;
+      rows.sort(function(a, b) {
+        let A = $(a).children('td').eq(colIndex).text().toUpperCase();
+        let B = $(b).children('td').eq(colIndex).text().toUpperCase();
+        return order === 'asc' ? A.localeCompare(B) : B.localeCompare(A);
+      });
+      $.each(rows, function(index, row) {
+        $('#results-table tbody').append(row);
+      });
+    }
+    $(document).on('click', '#results-table th', function() {
+      const col = $(this).data('column');
+      if (!col) return;
+      const currentOrder = $(this).data('order') || 'asc';
+      const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
+      $(this).data('order', newOrder);
+      sortTable(col, newOrder);
+    });
+  </script>
+<!-- Modal OCR (Không có xem trước ảnh) -->
+<div id="cameraModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#000; justify-content:center; align-items:center; z-index:9999; overflow-y:auto; transition: all 0.3s ease;">
+<div style="background:#fff; padding:16px; border-radius:8px; width:95%; max-width:400px; text-align:center;">
+<h3>📷 Quét Part Number</h3>
+<div style="position: relative; width: 100%; max-height:240px;"><video autoplay="" id="camera" playsinline="" style="width:100%; max-height:240px; object-fit:cover; border-radius:6px;"></video><div id="ocrGuideBox" style="position: absolute; border: 2px solid red; top: 35%; left: 10%; width: 80%; height: 20%; box-sizing: border-box; pointer-events: none;"></div></div>
+<div id="zoomContainer" style="display:none; margin:10px auto; text-align:center;">
+  🔍 Zoom:
+  <input id="zoomSlider" max="3" min="1" step="0.1" style="width:80%;" type="range" value="1"/>
+</div>
+<canvas height="240" id="canvas" style="display:none;" width="320"></canvas>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 15px;">
+<button id="btnCapture" style="padding:10px 14px; font-size:14px; flex:1 0 40%;">📸 Chụp &amp; Quét</button>
+<button id="btnApplyOcrFilter" style="padding:10px 14px; font-size:14px; flex:1 0 40%;">✅ Lọc</button>
+<button id="btnCloseCamera" style="padding:10px 14px; font-size:14px; flex:1 0 40%;">❌ Đóng</button>
+</div>
+<input id="ocrInput" placeholder="Kết quả OCR..." style="margin-top:10px; width:100%; padding:8px; font-size:14px;" type="text"/>
+<p id="ocrStatus" style="font-size:14px; margin-top:10px;">Đang chờ thao tác...</p>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const btnScan = document.getElementById('btnScanCamera');
+  const modal = document.getElementById('cameraModal');
+  const video = document.getElementById('camera');
+  const canvas = document.getElementById('canvas');
+  const statusP = document.getElementById('ocrStatus');
+  let inputOCR = document.getElementById('ocrInput');
+  const btnCapture = document.getElementById('btnCapture');
+  const btnClose = document.getElementById('btnCloseCamera');
+  const btnApply = document.getElementById('btnApplyOcrFilter');
+  const zoomSlider = document.getElementById("zoomSlider");
+  const zoomContainer = document.getElementById("zoomContainer");
+  let stream, intervalId;
+
+  function stopStream() {
+    if (stream) {
+      stream.getTracks().forEach(t => t.stop());
+      video.srcObject = null;
+    }
+    clearInterval(intervalId);
+  }
+
+  function cropCenterAndOCR(callback) {
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    
+const cropWidth = canvas.width * 0.8;
+const cropHeight = canvas.height * 0.2;
+
+    const offsetX = canvas.width * 0.1;
+    const offsetY = canvas.height * 0.35;
+    const imageData = ctx.getImageData(offsetX, offsetY, cropWidth, cropHeight);
+    const tempCanvas = document.createElement("canvas");
+    tempCanvas.width = cropWidth;
+    tempCanvas.height = cropHeight;
+    tempCanvas.getContext("2d").putImageData(imageData, 0, 0);
+
+    Tesseract.recognize(tempCanvas.toDataURL(), 'eng')
+      .then(({ data: { text } }) => callback(text))
+      .catch(() => statusP.textContent = '❌ Lỗi khi nhận diện.');
+  }
+
+  btnScan.addEventListener('click', async () => {
+    modal.style.display = 'flex';
+    statusP.textContent = '🔄 Đang khởi động camera...';
+    inputOCR.value = '';
+    document.getElementById("ocrInput").style.display = 'block';
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } });
+      video.srcObject = stream;
+      video.play();
+
+      const track = stream.getVideoTracks()[0];
+      const capabilities = track.getCapabilities();
+      if (capabilities.zoom) {
+        zoomContainer.style.display = 'block';
+        zoomSlider.min = capabilities.zoom.min;
+        zoomSlider.max = capabilities.zoom.max;
+        zoomSlider.step = capabilities.zoom.step || 0.1;
+        zoomSlider.value = capabilities.zoom.min;
+        zoomSlider.addEventListener("input", () => {
+          track.applyConstraints({ advanced: [{ zoom: zoomSlider.value }] });
+        });
+      }
+      statusP.textContent = '✅ Đã kết nối camera. Nhấn "Chụp & Quét" hoặc giữ chế độ tự động';
+    } catch (err) {
+      statusP.textContent = '❌ Không thể truy cập camera.';
+    }
+  });
+
+  btnCapture.addEventListener('click', () => {
+    statusP.textContent = '🔍 Đang quét...';
+    cropCenterAndOCR((text) => {
+      const lines = text.trim().split('\n').map(l => l.trim()).filter(Boolean);
+      if (lines.length === 0) return statusP.textContent = '❌ Không nhận được dòng nào.';
+
+      if (lines.length === 1) {
+        inputOCR.value = lines[0];
+        statusP.textContent = '✅ Đã nhận 1 dòng.';
+      } else {
+        const selectHTML = `
+          <select id="ocrLineSelector" style="width:100%; padding:8px; font-size:14px; margin-top:10px;">
+            ${lines.map(l => `<option>${l}</option>`).join('')}
+          </select>
+        `;
+        inputOCR.insertAdjacentHTML('beforebegin', selectHTML);
+        const selector = document.getElementById('ocrLineSelector');
+        selector.addEventListener('change', () => {
+          inputOCR.value = selector.value;
+        });
+        inputOCR.value = lines[0];
+        statusP.textContent = `✅ Đã nhận ${lines.length} dòng. Đã chọn dòng đầu tiên, có thể chỉnh sửa.`;
+      }
+    });
+  });
+
+  btnApply.addEventListener('click', () => {
+    const part = inputOCR.value.trim();
+    if (!part) return alert('Bạn chưa nhập Part Number!');
+    $('#filter-column-1').val('Part Number').trigger('change');
+    $('#filter-value-1').append(new Option(part, part, true, true)).trigger('change');
+    if (typeof applyFilters === 'function') applyFilters(true);
+    statusP.textContent = `✅ Đã lọc với Part Number: ${part}`;
+    setTimeout(() => btnClose.click(), 1500);
+  });
+
+  btnClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+    zoomContainer.style.display = 'none';
+    stopStream();
+    document.getElementById("ocrLineSelector")?.remove();
+    inputOCR.value = '';
+  });
+});
 </script>
 <script>
+window.addEventListener('resize', () => {
+  const activeEl = document.activeElement;
+  if (activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA')) {
+    setTimeout(() => {
+      activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 300);
+  }
+});
+</script><script>
+// Scroll riêng cho input OCR khi focus (bàn phím mở lên)
+document.addEventListener('DOMContentLoaded', function () {
+  const ocrInput = document.getElementById('ocrInput');
+  if (ocrInput) {
+    ocrInput.addEventListener('focus', () => {
+      setTimeout(() => {
+        ocrInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
+    });
+  }
+});
+</script><script>
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.getElementById('ocrInput');
   if (input) {
@@ -647,138 +899,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
-
-<!-- HTML: sửa ID cho đúng và đồng bộ -->
-<div class="filter-block" id="filter-block-project">
-  <label for="filter-project" id="label-filter-project">Chọn dự án (Customer)</label>
-  <select class="value-select" id="filter-project" multiple="multiple"></select>
-</div>
-
-<!-- JS: loadDistinctValuesForBlock dựa theo logic blockIndex -->
-
-<script>
-function updateFilterValuesForBlock(blockIndex) {
-  if (!allData) {
-    setTimeout(function(){ updateFilterValuesForBlock(blockIndex); }, 100);
-    return;
-  }
-  let filteredData = allData.slice();
-  // Apply previous filters
-  for (let i = 1; i < blockIndex; i++) {
-    let col = (i === 1) ? 'Customer' : $(`#filter-column-${i}`).val();
-    let values = $(`#filter-value-${i}`).val();
-    if (col && values && values.length > 0) {
-      filteredData = filteredData.filter(row =>
-        values.some(v => row[col] && row[col].toString().toLowerCase().includes(v.toLowerCase()))
-      );
-    }
-  }
-  // Determine column for current block
-  let dependentColumn = (blockIndex === 1) ? 'Customer' : $(`#filter-column-${blockIndex}`).val();
-  // Extract distinct values
-  let values = filteredData.map(row => row[dependentColumn] || '').filter(v => v !== '');
-  let distinctValues = Array.from(new Set(values.map(v => v.toString().toUpperCase())));
-  distinctValues.sort((a, b) => a.localeCompare(b));
-  // Populate select
-  const selectElem = $(`#filter-value-${blockIndex}`);
-  selectElem.empty();
-  distinctValues.forEach(val => {
-    selectElem.append(new Option(val, val, false, false));
-  });
-  selectElem.trigger('change');
-}
-</script>
-
-
-<!-- JS: gọi updateFilterValuesForBlock(0) khi load -->
-<script>
-$(document).ready(function() {
-  loadAllData();
-
-  $('.value-select').not('#filter-value-2').select2({
-    placeholder: i18next.t("choose_value"),
-    allowClear: true,
-    width: '100%',
-    closeOnSelect: false
-  });
-  $('#filter-value-2').select2({
-    placeholder: i18next.t("choose_value"),
-    allowClear: true,
-    width: '100%'
-  });
-  $('#filter-project').select2({
-    placeholder: i18next.t("choose_project"),
-    allowClear: true,
-    width: '100%',
-    closeOnSelect: false
-  });
-
-  $('#filter-project').on('change', function() {
-    updateCascade(1);
-  });
-
-  $('#filter-column-1').on('change', function() {
-    updateFilterValuesForBlock(1);
-    updateCascade(2);
-  });
-  $('#filter-value-1').on('change', function() {
-    updateCascade(2);
-  });
-  $('#filter-column-2').on('change', function() {
-    updateFilterValuesForBlock(2);
-    updateCascade(3);
-  });
-  $('#filter-value-2').on('change', function() {
-    updateCascade(3);
-  });
-  $('#filter-column-3').on('change', function() {
-    updateFilterValuesForBlock(3);
-  });
-
-  updateFilterValuesForBlock(0);
-});
-</script>
-
-<!-- JS: cascade toàn bộ -->
-
-<script>
-function updateCascade(startBlock) {
-  for (let i = startBlock; i <= 4; i++) {
-    updateFilterValuesForBlock(i);
-  }
-}
-</script>
-
-
-<!-- JS: applyFilters sửa để lấy Customer từ blockIndex 0 -->
-
-<script>
-function applyFilters(reset = true) {
-  if (reset) {
-    currentOffset = 0;
-    $('#results-table tbody').empty();
-  }
-  let queryParams = { limit: pageSize, offset: currentOffset };
-  // Collect filter values
-  for (let i = 1; i <= 4; i++) {
-    const col = (i === 1) ? 'Customer' : $(`#filter-column-${i}`).val();
-    const values = $(`#filter-value-${i}`).val();
-    if (values && values.length > 0) {
-      queryParams[col] = values.join(',');
-    }
-  }
-  currentFilters = queryParams;
-  const queryString = $.param(queryParams);
-  $.getJSON(`/search?${queryString}`, function(response) {
-    totalData = response.total;
-    currentOffset += pageSize;
-    updateTable(response.data, true);
-  });
-}
-</script>
-
-
 </script>
 
 </body>
