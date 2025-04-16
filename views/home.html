@@ -8,48 +8,8 @@
 <!-- CSS Select2 -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet"/>
 <!-- Thêm i18next và i18next-browser-languagedetector -->
-<script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js">
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
-</script>
-<script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js">
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
-</script>
+<script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
+<script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
 <style>
     /* Cài đặt CSS cơ bản */
     html, body { height: 100%; margin: 0; padding: 0; }
@@ -658,90 +618,10 @@ input:focus, select:focus {
 <div class="footer" id="footer-text">Người phát triển: Nguyễn Văn Đạo</div>
 </div>
 <!-- JS Thư viện -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js">
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js">
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js">
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/colresizable/1.6/colResizable-1.6.min.js">
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
-</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/colresizable/1.6/colResizable-1.6.min.js"></script>
 <!-- i18next Integration -->
 <script>
     // Khởi tạo i18next với resource cho tiếng Anh và tiếng Việt
@@ -857,7 +737,7 @@ function getSelectedCustomers() {
 
 
       // Cập nhật lại các widget Select2 (để thay đổi placeholder mà vẫn giữ lựa chọn)
-      reinitializeSelect2('#filter-project', i18next.t("choose_project"), { closeOnSelect: false });
+      reinitializeSelect2('#filter-sheet', i18next.t("choose_project"), { closeOnSelect: false });
       reinitializeSelect2('#filter-value-1', i18next.t("choose_value"), { closeOnSelect: false });
       reinitializeSelect2('#filter-value-2', i18next.t("choose_value"), {}); // mặc định closeOnSelect = true
       reinitializeSelect2('#filter-value-3', i18next.t("choose_value"), { closeOnSelect: false });
@@ -884,27 +764,7 @@ function getSelectedCustomers() {
         updateStaticContent();
       });
     }
-  
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
-</script>
+  </script>
 <!-- Các mã JS hiện tại -->
 <script>
     // Hàm format Excel date
@@ -946,25 +806,12 @@ function getSelectedCustomers() {
     }
 
     // Hàm load dữ liệu dự án cho phần "Chọn dự án"
-function loadDistinctValuesForProject() {
-  const selectElem = $('#filter-project');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-    function loadDistinctValuesForProject() {
-      const selectElem = $('#filter-project');
+    function loadDistinctValuesForSheet() {
+      const selectElem = $('#filter-sheet');
       selectElem.empty();
       $.getJSON('/filters', function(data) {
-        if (data['Customer']) {
-          data['Customer'].forEach(function(val) {
+        if (data['Sheet']) {
+          data['Sheet'].forEach(function(val) {
             const option = new Option(val, val, false, false);
             selectElem.append(option);
           });
@@ -986,7 +833,7 @@ function loadDistinctValuesForProject() {
         width: '100%',
         closeOnSelect: false
       });
-      $('#filter-project').select2({
+      $('#filter-sheet').select2({
         placeholder: i18next.t("choose_project"),
         allowClear: true,
         width: '100%',
@@ -999,7 +846,7 @@ function loadDistinctValuesForProject() {
       });
 
       // Load dữ liệu cho "Chọn dự án"
-      loadDistinctValuesForProject();
+      loadDistinctValuesForSheet();
 
       // Xử lý paste Excel cho filter-value-2
       $(document).on('paste', '#filter-value-2 ~ .select2 .select2-search__field', function(e) {
@@ -1018,7 +865,7 @@ function loadDistinctValuesForProject() {
       });
 
       // Khi chọn dự án => cập nhật block 1, cascade block 2
-      $('#filter-project').on('change', function(){
+      $('#filter-sheet').on('change', function(){
         updateFilterValuesForBlock(1);
         updateCascade(2);
       });
@@ -1069,9 +916,9 @@ function loadDistinctValuesForProject() {
       });
       $('#load-all').on('click', function() {
         let queryParams = {};
-        const sheetValues = $('#filter-project').val();
+        const sheetValues = $('#filter-sheet').val();
         if (sheetValues && sheetValues.length > 0) {
-          queryParams["Customer"] = sheetValues.join(',');
+          queryParams["Sheet"] = sheetValues.join(',');
         }
         for (let i = 1; i <= 3; i++) {
           const col = $(`#filter-column-${i}`).val();
@@ -1091,9 +938,9 @@ function loadDistinctValuesForProject() {
       $('#download-excel').on('click', function() { downloadExcel(); });
       $('#export-all').on('click', function() {
         let queryParams = {};
-        const sheetValues = $('#filter-project').val();
+        const sheetValues = $('#filter-sheet').val();
         if (sheetValues && sheetValues.length > 0) {
-          queryParams["Customer"] = sheetValues.join(',');
+          queryParams["Sheet"] = sheetValues.join(',');
         }
         for (let i = 1; i <= 3; i++) {
           const col = $(`#filter-column-${i}`).val();
@@ -1136,11 +983,11 @@ function loadDistinctValuesForProject() {
       let filteredData = allData.slice();
 
       // Lọc theo dự án (Sheet)
-      const sheetValues = $('#filter-project').val();
+      const sheetValues = $('#filter-sheet').val();
       if (sheetValues && sheetValues.length > 0) {
         filteredData = filteredData.filter(function(row) {
           return sheetValues.some(function(s) {
-            return row['Customer'] && row['Customer'].toString().toLowerCase().includes(s.toLowerCase());
+            return row['Sheet'] && row['Sheet'].toString().toLowerCase().includes(s.toLowerCase());
           });
         });
       }
@@ -1192,9 +1039,9 @@ function loadDistinctValuesForProject() {
         $('#results-table tbody').empty();
       }
       let queryParams = { limit: pageSize, offset: currentOffset };
-      const sheetValues = $('#filter-project').val();
+      const sheetValues = $('#filter-sheet').val();
       if (sheetValues && sheetValues.length > 0) {
-        queryParams["Customer"] = sheetValues.join(',');
+        queryParams["Sheet"] = sheetValues.join(',');
       }
       for (let i = 1; i <= 3; i++) {
         const col = $(`#filter-column-${i}`).val();
@@ -1308,27 +1155,7 @@ function updateTable(data, reset) {
       $(this).data('order', newOrder);
       sortTable(col, newOrder);
     });
-  
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
-</script>
+  </script>
 <!-- Modal OCR (Không có xem trước ảnh) -->
 <div id="cameraModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#000; justify-content:center; align-items:center; z-index:9999; overflow-y:auto; transition: all 0.3s ease;">
 <div style="background:#fff; padding:16px; border-radius:8px; width:95%; max-width:400px; text-align:center;">
@@ -1348,27 +1175,7 @@ function getSelectedCustomers() {
 <p id="ocrStatus" style="font-size:14px; margin-top:10px;">Đang chờ thao tác...</p>
 </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js">
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
-</script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const btnScan = document.getElementById('btnScanCamera');
@@ -1484,26 +1291,6 @@ const cropHeight = canvas.height * 0.2;
     inputOCR.value = '';
   });
 });
-
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
 </script>
 <script>
 window.addEventListener('resize', () => {
@@ -1514,26 +1301,6 @@ window.addEventListener('resize', () => {
     }, 300);
   }
 });
-
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
 </script><script>
 // Scroll riêng cho input OCR khi focus (bàn phím mở lên)
 document.addEventListener('DOMContentLoaded', function () {
@@ -1546,26 +1313,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
 </script><script>
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.getElementById('ocrInput');
@@ -1577,26 +1324,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
 </script><script>
 document.addEventListener('DOMContentLoaded', function () {
   const inputs = document.querySelectorAll('.filter-bar input, .filter-bar select');
@@ -1608,26 +1335,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -1640,26 +1347,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
-function loadDistinctValuesForCustomer() {
-  const selectElem = $('#filter-customer');
-  selectElem.empty();
-  $.getJSON('/filters', function(data) {
-    if (data['Customer']) {
-      data['Customer'].forEach(val => {
-        selectElem.append(new Option(val, val, false, false));
-      });
-      selectElem.trigger('change');
-    }
-  });
-}
-
-$('#filter-customer').select2({ placeholder: 'Chọn Customer' });
-
-function getSelectedCustomers() {
-  return $('#filter-customer').val();
-}
-
 </script>
 
 </body>
