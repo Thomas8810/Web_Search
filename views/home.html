@@ -1266,6 +1266,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <!-- JS: loadDistinctValuesForBlock dựa theo logic blockIndex -->
 
+
+<script>
+function populateCriteriaSelects() {
+  if (!allData || allData.length === 0) {
+    setTimeout(populateCriteriaSelects, 100);
+    return;
+  }
+  const headerOrder = Object.keys(allData[0]);
+  const criteriaOptions = headerOrder.filter(col => col !== 'Customer');
+  ['#filter-column-2', '#filter-column-3', '#filter-column-4'].forEach(selector => {
+    const sel = $(selector);
+    sel.empty();
+    criteriaOptions.forEach(col => {
+      sel.append(new Option(col, col));
+    });
+    sel.val(criteriaOptions[0]).trigger('change');
+  });
+}
+</script>
+
 <script>
 function updateFilterValuesForBlock(blockIndex) {
   if (!allData) {
