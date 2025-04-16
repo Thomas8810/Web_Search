@@ -737,7 +737,7 @@ input:focus, select:focus {
 
 
       // Cập nhật lại các widget Select2 (để thay đổi placeholder mà vẫn giữ lựa chọn)
-      reinitializeSelect2('#filter-project', i18next.t("choose_project"), { closeOnSelect: false });
+      reinitializeSelect2('#filter-sheet', i18next.t("choose_project"), { closeOnSelect: false });
       reinitializeSelect2('#filter-value-1', i18next.t("choose_value"), { closeOnSelect: false });
       reinitializeSelect2('#filter-value-2', i18next.t("choose_value"), {}); // mặc định closeOnSelect = true
       reinitializeSelect2('#filter-value-3', i18next.t("choose_value"), { closeOnSelect: false });
@@ -807,7 +807,7 @@ input:focus, select:focus {
 
     // Hàm load dữ liệu dự án cho phần "Chọn dự án"
     function loadDistinctValuesForSheet() {
-      const selectElem = $('#filter-project');
+      const selectElem = $('#filter-sheet');
       selectElem.empty();
       $.getJSON('/filters', function(data) {
         if (data['Sheet']) {
@@ -824,8 +824,7 @@ input:focus, select:focus {
 
 
     $(document).ready(function() {
-      loadAllData();
-  loadDistinctCustomers(); // Tải toàn bộ dữ liệu một lần
+      loadAllData(); // Tải toàn bộ dữ liệu một lần
 
       // Khởi tạo Select2 ban đầu
       $('.value-select').not('#filter-value-2').select2({
@@ -834,7 +833,7 @@ input:focus, select:focus {
         width: '100%',
         closeOnSelect: false
       });
-      $('#filter-project').select2({
+      $('#filter-sheet').select2({
         placeholder: i18next.t("choose_project"),
         allowClear: true,
         width: '100%',
@@ -866,15 +865,11 @@ input:focus, select:focus {
       });
 
       // Khi chọn dự án => cập nhật block 1, cascade block 2
-      $('#filter-project').on('change', function(){
+      $('#filter-sheet').on('change', function(){
         updateFilterValuesForBlock(1);
         updateCascade(2);
       });
-      $('#filter-project').on('change', function() {
-    updateFilterValuesForBlock(1);
-    updateCascade(2);
-  });
-  // Ban đầu, cập nhật block 1
+      // Ban đầu, cập nhật block 1
       updateFilterValuesForBlock(1);
 
       // Sự kiện thay đổi tiêu chí và giá trị cho các block
@@ -921,7 +916,7 @@ input:focus, select:focus {
       });
       $('#load-all').on('click', function() {
         let queryParams = {};
-        const sheetValues = $('#filter-project').val();
+        const sheetValues = $('#filter-sheet').val();
         if (sheetValues && sheetValues.length > 0) {
           queryParams["Sheet"] = sheetValues.join(',');
         }
@@ -943,7 +938,7 @@ input:focus, select:focus {
       $('#download-excel').on('click', function() { downloadExcel(); });
       $('#export-all').on('click', function() {
         let queryParams = {};
-        const sheetValues = $('#filter-project').val();
+        const sheetValues = $('#filter-sheet').val();
         if (sheetValues && sheetValues.length > 0) {
           queryParams["Sheet"] = sheetValues.join(',');
         }
@@ -988,7 +983,7 @@ input:focus, select:focus {
       let filteredData = allData.slice();
 
       // Lọc theo dự án (Sheet)
-      const sheetValues = $('#filter-project').val();
+      const sheetValues = $('#filter-sheet').val();
       if (sheetValues && sheetValues.length > 0) {
         filteredData = filteredData.filter(function(row) {
           return sheetValues.some(function(s) {
@@ -1044,9 +1039,9 @@ input:focus, select:focus {
         $('#results-table tbody').empty();
       }
       let queryParams = { limit: pageSize, offset: currentOffset };
-      const customerValues = $('#filter-project').val();
-      if (customerValues && customerValues.length > 0) {
-        queryParams["Customer"] = customerValues.join(',');
+      const sheetValues = $('#filter-sheet').val();
+      if (sheetValues && sheetValues.length > 0) {
+        queryParams["Sheet"] = sheetValues.join(',');
       }
       for (let i = 1; i <= 3; i++) {
         const col = $(`#filter-column-${i}`).val();
@@ -1353,24 +1348,147 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-function loadDistinctCustomers() {
-  const selectElem = $('#filter-project');
-  selectElem.empty();
+
+<!-- HTML: sửa ID cho đúng và đồng bộ -->
+<div class="filter-block" id="filter-block-project">
+  <label for="filter-project" id="label-filter-project">Chọn dự án (Customer)</label>
+  <select class="value-select" id="filter-project" multiple="multiple"></select>
+</div>
+
+<!-- JS: loadDistinctValuesForBlock dựa theo logic blockIndex -->
+<script>
+function updateFilterValuesForBlock(blockIndex) {
   if (!allData) {
-    setTimeout(loadDistinctCustomers, 200);
+    setTimeout(function(){ updateFilterValuesForBlock(blockIndex); }, 100);
     return;
   }
-  const customers = allData
-    .map(row => row['Customer'])
-    .filter(c => c && c.trim() !== "")
-    .map(c => c.toUpperCase().trim());
-  const distinct = [...new Set(customers)].sort((a, b) => a.localeCompare(b));
-  distinct.forEach(val => {
+  let filteredData = allData.slice();
+
+  // Lọc theo các block trước (block 1 đến blockIndex - 1)
+  for (let i = 0; i < blockIndex; i++) {
+    let col = ["Customer", $('#filter-column-1').val(), $('#filter-column-2').val(), $('#filter-column-3').val()][i];
+    let values = [$('#filter-project').val(), $('#filter-value-1').val(), $('#filter-value-2').val(), $('#filter-value-3').val()][i];
+
+    if (col && values && values.length > 0) {
+      filteredData = filteredData.filter(function(row) {
+        return values.some(function(v) {
+          return row[col] && row[col].toString().toLowerCase().includes(v.toLowerCase());
+        });
+      });
+    }
+  }
+
+  let dependentColumn = ["Customer", $('#filter-column-1').val(), $('#filter-column-2').val(), $('#filter-column-3').val()][blockIndex];
+  let values = filteredData.map(function(row) {
+    let cellVal = row[dependentColumn];
+    if (cellVal == null) return "";
+    if (typeof cellVal === 'string') {
+      return cellVal.trim().toUpperCase();
+    }
+    return cellVal.toString();
+  }).filter(function(v) { return v !== ""; });
+
+  let distinctValues = Array.from(new Set(values));
+  distinctValues.sort((a, b) => a.localeCompare(b));
+
+  const selectElem = [$('#filter-project'), $('#filter-value-1'), $('#filter-value-2'), $('#filter-value-3')][blockIndex];
+  selectElem.empty();
+  distinctValues.forEach(function(val) {
     const option = new Option(val, val, false, false);
     selectElem.append(option);
   });
   selectElem.trigger('change');
 }
+</script>
+
+<!-- JS: gọi updateFilterValuesForBlock(0) khi load -->
+<script>
+$(document).ready(function() {
+  loadAllData();
+
+  $('.value-select').not('#filter-value-2').select2({
+    placeholder: i18next.t("choose_value"),
+    allowClear: true,
+    width: '100%',
+    closeOnSelect: false
+  });
+  $('#filter-value-2').select2({
+    placeholder: i18next.t("choose_value"),
+    allowClear: true,
+    width: '100%'
+  });
+  $('#filter-project').select2({
+    placeholder: i18next.t("choose_project"),
+    allowClear: true,
+    width: '100%',
+    closeOnSelect: false
+  });
+
+  $('#filter-project').on('change', function() {
+    updateCascade(1);
+  });
+
+  $('#filter-column-1').on('change', function() {
+    updateFilterValuesForBlock(1);
+    updateCascade(2);
+  });
+  $('#filter-value-1').on('change', function() {
+    updateCascade(2);
+  });
+  $('#filter-column-2').on('change', function() {
+    updateFilterValuesForBlock(2);
+    updateCascade(3);
+  });
+  $('#filter-value-2').on('change', function() {
+    updateCascade(3);
+  });
+  $('#filter-column-3').on('change', function() {
+    updateFilterValuesForBlock(3);
+  });
+
+  updateFilterValuesForBlock(0);
+});
+</script>
+
+<!-- JS: cascade toàn bộ -->
+<script>
+function updateCascade(startBlock) {
+  for (let i = startBlock; i <= 3; i++) {
+    updateFilterValuesForBlock(i);
+  }
+}
+</script>
+
+<!-- JS: applyFilters sửa để lấy Customer từ blockIndex 0 -->
+<script>
+function applyFilters(reset = true) {
+  if (reset) {
+    currentOffset = 0;
+    $('#results-table tbody').empty();
+  }
+  let queryParams = { limit: pageSize, offset: currentOffset };
+
+  const customerValues = $('#filter-project').val();
+  if (customerValues && customerValues.length > 0) {
+    queryParams["Customer"] = customerValues.join(',');
+  }
+
+  for (let i = 1; i <= 3; i++) {
+    const col = $(`#filter-column-${i}`).val();
+    const values = $(`#filter-value-${i}`).val();
+    if (values && values.length > 0) {
+      queryParams[col] = values.join(',');
+    }
+  }
+  currentFilters = queryParams;
+  const queryString = $.param(queryParams);
+  $.getJSON(`/search?${queryString}`, function(response) {
+    totalData = response.total;
+    currentOffset += pageSize;
+    updateTable(response.data, true);
+  });
+}
+</script>
 
 </script>
 
