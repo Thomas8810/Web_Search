@@ -806,20 +806,18 @@ input:focus, select:focus {
     }
 
     // Hàm load dữ liệu dự án cho phần "Chọn dự án"
-
-    function loadDistinctValuesForProject() {
-      const selectElem = $('#filter-project');
-      selectElem.empty();
-      $.getJSON('/filters', function(data) {
-        if (data['Customer']) {
-          data['Customer'].forEach(function(val) {
-            const option = new Option(val, val, false, false);
-            selectElem.append(option);
-          });
-        }
-        selectElem.trigger('change');
+function loadDistinctValuesForProject() {
+  const selectElem = $('#filter-project');
+  selectElem.empty();
+  $.getJSON('/filters', function(data) {
+    if (data['Customer']) {
+      data['Customer'].forEach(val => {
+        selectElem.append(new Option(val, val, false, false));
       });
+      selectElem.trigger('change');
     }
+  });
+}
 
     function loadDistinctValuesForProject() {
       const selectElem = $('#filter-project');
