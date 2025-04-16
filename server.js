@@ -418,25 +418,35 @@ app.get('/api/progress', isAuthenticated, async (req, res) => {
 
 // API lấy danh sách giá trị lọc
 app.get('/filters', (req, res) => {
-  const data = require('./data.json');
+  const fs = require('fs');
+  const path = require('path');
+  const filePath = path.join(__dirname, 'data.json');
+
+  let rawData;
+  try {
+    rawData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+  } catch (err) {
+    console.error('Error reading data.json:', err);
+    return res.status(500).json({ error: 'Failed to load data' });
+  }
+
   const uniqueValues = {};
 
-  Object.keys(data).forEach(key => {
-    if (!Array.isArray(data[key])) return;
-
-    const values = new Set();
-    data[key].forEach(item => {
-      if (item !== null && item !== undefined && item !== '') {
-        values.add(item);
+  rawData.forEach(row => {
+    Object.entries(row).forEach(([key, val]) => {
+      if (val !== null && val !== undefined && val !== "") {
+        if (!uniqueValues[key]) uniqueValues[key] = new Set();
+        uniqueValues[key].add(val.toString().trim());
       }
     });
-
-    if (values.size > 0) {
-      uniqueValues[key] = Array.from(values).sort();
-    }
   });
 
-  res.json(uniqueValues);
+  const result = {};
+  Object.entries(uniqueValues).forEach(([key, set]) => {
+    result[key] = Array.from(set).sort((a, b) => a.localeCompare(b, 'vi'));
+  });
+
+  res.json(result);
 });
 
 
