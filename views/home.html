@@ -987,7 +987,7 @@ input:focus, select:focus {
       if (sheetValues && sheetValues.length > 0) {
         filteredData = filteredData.filter(function(row) {
           return sheetValues.some(function(s) {
-            return row['Sheet'] && row['Sheet'].toString().toLowerCase().includes(s.toLowerCase());
+            return row['Customer'] && row['Customer'].toString().toLowerCase().includes(s.toLowerCase());
           });
         });
       }
