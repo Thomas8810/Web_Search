@@ -806,7 +806,22 @@ input:focus, select:focus {
     }
 
     // Hàm load dữ liệu dự án cho phần "Chọn dự án"
-    function loadDistinctValuesForSheet() {
+
+    function loadDistinctValuesForProject() {
+      const selectElem = $('#filter-project');
+      selectElem.empty();
+      $.getJSON('/filters', function(data) {
+        if (data['Customer']) {
+          data['Customer'].forEach(function(val) {
+            const option = new Option(val, val, false, false);
+            selectElem.append(option);
+          });
+        }
+        selectElem.trigger('change');
+      });
+    }
+
+    function loadDistinctValuesForProject() {
       const selectElem = $('#filter-project');
       selectElem.empty();
       $.getJSON('/filters', function(data) {
@@ -846,7 +861,7 @@ input:focus, select:focus {
       });
 
       // Load dữ liệu cho "Chọn dự án"
-      loadDistinctValuesForSheet();
+      loadDistinctValuesForProject();
 
       // Xử lý paste Excel cho filter-value-2
       $(document).on('paste', '#filter-value-2 ~ .select2 .select2-search__field', function(e) {
