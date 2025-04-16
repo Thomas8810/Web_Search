@@ -822,26 +822,7 @@ function loadAllData() {
     allData = response.data.map(row => {
       row._part = (row["Part Number"] || '').toLowerCase(); // dùng để tìm nhanh
       return row;
-    }
-
-
-function updateDropdowns() {
-  const data = filteredData.length ? filteredData : allData;
-
-  // Cập nhật dropdown "Chọn dự án"
-  const customers = [...new Set(data.map(row => row.Customer))].sort();
-  const projectSelect = $('#filter-project');
-  projectSelect.empty();
-  customers.forEach(c => {
-    const option = new Option(c, c, false, false);
-    projectSelect.append(option);
-  });
-  projectSelect.trigger('change');
-
-  // Nếu cần, có thể gọi updateFilterValuesForBlock(1) để đồng bộ block 1
-}
-
-);
+    });
 
     totalData = response.total;
     filteredData = [...allData]; // giữ bản gốc cho lọc & tìm nhanh
