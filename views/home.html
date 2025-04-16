@@ -817,21 +817,12 @@ input:focus, select:focus {
     let allData = null;
 
     // Hàm load toàn bộ dữ liệu khi trang mở
-function loadAllData() {
-  $.getJSON('/search?limit=1000000', function(response) {
-    allData = response.data.map(row => {
-      row._part = (row["Part Number"] || '').toLowerCase(); // dùng để tìm nhanh
-      return row;
-    });
-
-    totalData = response.total;
-    filteredData = [...allData]; // giữ bản gốc cho lọc & tìm nhanh
-    updateTable(filteredData, true);
-    updateDropdowns(); // đảm bảo dropdown hoạt động
-  });
-}
-
-
+    function loadAllData() {
+      $.getJSON('/search?limit=1000000', function(response) {
+        allData = response.data;
+        totalData = response.total; // Update totalData here
+      });
+    }
 
     // Hàm load dữ liệu dự án cho phần "Chọn dự án"
     function loadDistinctValuesForProject() {
@@ -1396,20 +1387,13 @@ $('#apply-filters').on('click', function () {
 });
 
 // Tìm kiếm nhanh theo Part Number
-let quickSearchTimeout;
 $('#quick-search').on('input', function () {
-  clearTimeout(quickSearchTimeout);
   const keyword = $(this).val().toLowerCase();
-
-  quickSearchTimeout = setTimeout(() => {
-    const quickResult = filteredData.filter(row =>
-      row._part.includes(keyword)
-    );
-    updateTable(quickResult, true);
-  }, 200);
+  $('#results-table tbody tr').each(function () {
+    const partNumber = $(this).find('td:nth-child(2)').text().toLowerCase();
+    $(this).toggle(partNumber.includes(keyword));
+  });
 });
-
-
 
 // Chuyển số Excel sang ngày JS
 function excelDateToJSDate(serial) {
