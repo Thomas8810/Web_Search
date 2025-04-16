@@ -402,9 +402,23 @@ input:focus, select:focus {
   }
 }
 
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#results-table td, #results-table th {
+  user-select: text;
+}
+
 </style>
 </head>
 <body>
+
+<div id="loading-spinner" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,255,255,0.7); z-index:9999; display:flex; align-items:center; justify-content:center;">
+  <div style="border: 6px solid #f3f3f3; border-top: 6px solid #3498db; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;"></div>
+</div>
+
 <div class="page-container">
 <div class="top-container">
 <div class="header">
@@ -567,6 +581,11 @@ input:focus, select:focus {
 </div>
 <div class="results-count" id="results-count">Total rows: 0</div>
 </div>
+
+<div style="text-align:center; margin: 10px;">
+  <input type="text" id="quick-search" placeholder="🔍 Tìm Part Number..." style="padding:5px; width: 60%; font-size:14px;" />
+</div>
+
 <!-- Khu vực hiển thị bảng dữ liệu -->
 <div class="table-container">
 <table id="results-table">
@@ -1347,6 +1366,40 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+</script>
+
+
+<script>
+// Spinner control
+function showSpinner() {
+  $('#loading-spinner').show();
+}
+function hideSpinner() {
+  $('#loading-spinner').hide();
+}
+
+$('#apply-filters').on('click', function () {
+  showSpinner();
+  setTimeout(() => {
+    applyFilters?.();
+    hideSpinner();
+  }, 100);
+});
+
+// Tìm kiếm nhanh theo Part Number
+$('#quick-search').on('input', function () {
+  const keyword = $(this).val().toLowerCase();
+  $('#results-table tbody tr').each(function () {
+    const partNumber = $(this).find('td:nth-child(2)').text().toLowerCase();
+    $(this).toggle(partNumber.includes(keyword));
+  });
+});
+
+// Chuyển số Excel sang ngày JS
+function excelDateToJSDate(serial) {
+  const excelEpoch = new Date(1899, 11, 30);
+  return new Date(excelEpoch.getTime() + serial * 86400000);
+}
 </script>
 
 </body>
