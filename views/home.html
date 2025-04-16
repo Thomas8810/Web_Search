@@ -810,11 +810,12 @@ input:focus, select:focus {
       const selectElem = $('#filter-project');
       selectElem.empty();
       $.getJSON('/filters', function(data) {
-        if (data['Sheet']) {
-          data['Sheet'].forEach(function(val) {
-            const option = new Option(val, val, false, false);
-            selectElem.append(option);
-          });
+        if (data['Customer']) {
+        data['Customer'].forEach(function(val) {
+          const option = new Option(val, val, false, false);
+          selectElem.append(option);
+        });
+    });
         }
         selectElem.trigger('change');
       });
