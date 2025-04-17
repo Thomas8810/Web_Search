@@ -59,6 +59,20 @@
       text-decoration: none;
       border: 1px solid #ccc;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 6px;
+    }
+    th {
+      background: #333;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -187,9 +201,20 @@
       } else {
         let msg = `Tìm thấy ${results.length} kết quả gần giống.`;
         speak(msg);
-        let html = `<table border='1' cellpadding='6' style='margin-top:1rem; width:100%; font-size:0.9rem;'><tr style='background:#333; color:#fff;'><th>Part Number</th><th>Trạng thái</th></tr>`;
-        results.slice(0, 10).forEach(item => {
-          html += `<tr><td>${item["Part Number"]}</td><td>${item["Approval Status"]}</td></tr>`;
+        let html = `<table><tr><th>No.</th><th>Part Number</th><th>REV</th><th>Approval Status</th><th>Customer</th><th>Commodity</th><th>Part Pictures</th><th>Packaging Pictures</th><th>Critical</th><th>CE</th></tr>`;
+        results.slice(0, 10).forEach((item, index) => {
+          html += `<tr>
+            <td>${index + 1}</td>
+            <td>${item["Part Number"] || ""}</td>
+            <td>${item["REV"] || ""}</td>
+            <td>${item["Approval Status"] || ""}</td>
+            <td>${item["Customer"] || ""}</td>
+            <td>${item["Commodity"] || ""}</td>
+            <td>${item["Part Pictures"] || ""}</td>
+            <td>${item["Packaging Pictures"] || ""}</td>
+            <td>${item["Critical"] || ""}</td>
+            <td>${item["CE"] || ""}</td>
+          </tr>`;
         });
         html += `</table>`;
         document.getElementById("relatedResults").innerHTML = html;
