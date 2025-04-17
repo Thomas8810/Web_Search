@@ -1389,6 +1389,8 @@ const cropHeight = canvas.height * 0.2;
     if (typeof applyFilters === 'function') applyFilters(true);
     statusP.textContent = `✅ Đã lọc với Part Number: ${part}`;
     saveSearchHistory(part);
+    document.getElementById('ocr-modal').style.display = 'none';
+    saveSearchHistory(part);
     setTimeout(() => btnClose.click(), 1500);
   });
 
