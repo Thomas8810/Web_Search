@@ -1223,7 +1223,7 @@ function updateTable(data, reset) {
   </script>
 <!-- Modal OCR (Không có xem trước ảnh) -->
 <div id="cameraModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#000; justify-content:center; align-items:center; z-index:9999; overflow-y:auto; transition: all 0.3s ease;">
-<div style="background:#fff; padding:16px; border-radius:8px; width:95%; max-width:400px; text-align:center;">
+<div style="background:#fff; padding:16px; border-radius:8px; width:95%; max-width:400px; text-align:center; margin-top: env(safe-area-inset-top, 60px);">
 <h3>📷 Quét Part Number</h3>
 <div style="position: relative; width: 100%; max-height:240px;"><video autoplay="" id="camera" playsinline="" style="width:100%; max-height:240px; object-fit:cover; border-radius:6px;"></video><div id="ocrGuideBox" style="position: absolute; border: 2px solid red; top: 35%; left: 10%; width: 80%; height: 20%; box-sizing: border-box; pointer-events: none;"></div></div>
 <div id="zoomContainer" style="display:none; margin:10px auto; text-align:center;">
