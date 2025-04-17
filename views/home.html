@@ -1643,10 +1643,16 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 </body></html>
 <script>
-  function toggleHistoryPopup() {
-    const popup = document.getElementById("floating-history-popup");
-    if (popup) {
-      popup.style.display = (popup.style.display === "none" || popup.style.display === "") ? "block" : "none";
+function toggleHistoryPopup() {
+  const popup = document.getElementById("floating-history-popup");
+  if (popup) {
+    const isOpen = popup.style.display === "block";
+    popup.style.display = isOpen ? "none" : "block";
+
+    if (!isOpen) {
+      renderSearchHistory(); // Gọi lại để load mới lịch sử
     }
   }
+}
+
 </script>
