@@ -488,6 +488,12 @@ app.get('/search', (req, res) => {
 });
 
 // API xuất dữ liệu sang file Excel
+
+// Route API JSON cho voice_search.html
+app.get('/api/data', isAuthenticated, (req, res) => {
+  res.json(cachedData);
+});
+
 app.get('/export', (req, res) => {
   let filtered = cachedData;
   const { limit, offset, ...filters } = req.query;
