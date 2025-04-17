@@ -1432,6 +1432,23 @@ function excelDateToJSDate(serial) {
   return new Date(excelEpoch.getTime() + serial * 86400000);
 }
 </script>
+<script>
+  // Detect khi bàn phím mở bằng cách quan sát chiều cao viewport
+  let originalHeight = window.innerHeight;
+
+  window.addEventListener('resize', () => {
+    const currentHeight = window.innerHeight;
+    const table = document.querySelector('.table-container');
+
+    if (currentHeight < originalHeight - 100) {
+      // Bàn phím có thể đang mở → ẩn bảng
+      if (table) table.style.display = 'none';
+    } else {
+      // Bàn phím đóng → hiển thị bảng lại
+      if (table) table.style.display = '';
+    }
+  });
+</script>
 
 </body>
 </html>
