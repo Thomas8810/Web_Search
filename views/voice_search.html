@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tra cứu bằng giọng nói</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 1rem;
+      margin: 0;
+      background: #1e1e2f;
+      color: white;
+      text-align: center;
+    }
+    button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      border: none;
+      border-radius: 8px;
+      background: #4CAF50;
+      color: white;
+    }
+    .result {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎤 Tìm kiếm Part Number bằng giọng nói</h1>
+  <button id="speakBtn">Bấm để nói</button>
+  <div class="result" id="result"></div>
+
+  <script>
+    const dataUrl = "https://raw.githubusercontent.com/Thomas8810/web_tra_cuu/main/data.json";
+    const btn = document.getElementById("speakBtn");
+    const resultDiv = document.getElementById("result");
+
+    async function fetchData() {
+      const res = await fetch(dataUrl);
+      return res.json();
+    }
+
+    function speak(text) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "vi-VN";
+      speechSynthesis.speak(utterance);
+    }
+
+    function getStatusText(status) {
+      const map = {
+        "APPROVED": "Đã phê duyệt",
+        "CLOSED": "Đã đóng",
+        "EXPIRED": "Hết hạn",
+        "ON GOING": "Đang thực hiện",
+        "REJECTED": "Bị từ chối",
+        "SUBMITTED": "Đã gửi"
+      };
+      return map[status] || status;
+    }
+
+    function analyzePart(part, mode = "image") {
+      const status = part["Approval Status"]?.toUpperCase() || "";
+      const pic = part["Part Pictures"];
+      const pack = part["Packaging Pictures"];
+
+      if (mode === "image") {
+        if (["REJECTED", "EXPIRED"].includes(status)) {
+          return "Part này cần hỏi lại quản lý.";
+        } else if (["APPROVED", "CLOSED", "SUBMITTED"].includes(status)) {
+          return "Part này không cần chụp ảnh.";
+        } else if (status === "ON GOING") {
+          if (!pic) return "Cần chụp ảnh sản phẩm.";
+          if (!pack) return "Cần chụp ảnh đóng gói.";
+          if (pic === "OK" && pack === "OK") return "Không cần chụp ảnh.";
+        }
+      } else if (mode === "status") {
+        return "Trạng thái là: " + getStatusText(status);
+      }
+      return "Không rõ trạng thái.";
+    }
+
+    async function listenAndProcess() {
+      const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+      recognition.lang = "vi-VN";
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      recognition.start();
+
+      recognition.onresult = async (event) => {
+        const transcript = event.results[0][0].transcript;
+        resultDiv.innerHTML = `Bạn nói: <b>${transcript}</b><br/>Đang xử lý...`;
+
+        const data = await fetchData();
+        const partMatch = transcript.match(/([A-Z0-9\-]+)/gi);
+        const partNumber = partMatch ? partMatch[0] : null;
+        const isStatusCheck = transcript.toLowerCase().includes("trạng thái");
+
+        if (partNumber) {
+          const found = data.find(row => row["Part Number"]?.toUpperCase() === partNumber.toUpperCase());
+          if (found) {
+            const message = analyzePart(found, isStatusCheck ? "status" : "image");
+            resultDiv.innerHTML += `<br/>✅ ${message}`;
+            speak(message);
+          } else {
+            const msg = "Không tìm thấy part number.";
+            resultDiv.innerHTML += `<br/>❌ ${msg}`;
+            speak(msg);
+          }
+        } else {
+          const msg = "Không nhận diện được part number.";
+          resultDiv.innerHTML += `<br/>⚠️ ${msg}`;
+          speak(msg);
+        }
+      };
+
+      recognition.onerror = (e) => {
+        const msg = "Lỗi nhận diện giọng nói.";
+        resultDiv.innerHTML = msg;
+        speak(msg);
+      };
+    }
+
+    btn.addEventListener("click", listenAndProcess);
+  </script>
+</body>
+</html>
