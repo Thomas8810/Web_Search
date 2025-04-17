@@ -665,37 +665,37 @@ input:focus, select:focus {
 <div class="table-container">
 <table id="results-table">
 <thead><tr>
-<th class="sticky-col-1">No</th>
-<th class="sticky-col-2">Part Number</th>
-<th class="sticky-col-3">REV</th>
-<th>Approval Status</th>
-<th>Customer</th>
-<th>Commodity</th>
-<th>Production Status</th>
-<th>Part Pictures</th>
-<th>Packaging Pictures</th>
-<th>Critical</th>
-<th>CE</th>
-<th>PO Number</th>
-<th>Description</th>
-<th>Type</th>
-<th>Note Number</th>
-<th>PO received date</th>
-<th>Customer need date</th>
-<th>Requirements</th>
-<th>FAIR Cover sheet</th>
-<th>Bubble Drawings</th>
-<th>Datasheet form</th>
-<th>LAIR Data</th>
-<th>FAIR Data</th>
-<th>COC</th>
-<th>BOM</th>
-<th>Mill</th>
-<th>Test reports / evidences</th>
-<th>Remark 1</th>
-<th>Remark 2</th>
-<th>Submit date</th>
-<th>Reject comments</th>
+<th data-column="No">No</th>
+<th data-column="Part Number">Part Number</th>
+<th data-column="REV">REV</th>
+<th data-column="Approval Status">Approval Status</th>
+<th data-column="Customer">Customer</th>
+<th data-column="Commodity">Commodity</th>
+<th data-column="Production Status">Production Status</th>
+<th data-column="Part Pictures">Part Pictures</th>
+<th data-column="Packaging Pictures">Packaging Pictures</th>
+<th data-column="Critical">Critical</th>
+<th data-column="CE">CE</th>
+<th data-column="PO Number">PO Number</th>
+<th data-column="Description">Description</th>
+<th data-column="Type">Type</th>
+<th data-column="Note Number">Note Number</th>
+<th data-column="PO received date">PO received date</th>
+<th data-column="Customer need date">Customer need date</th>
+<th data-column="Requirements">Requirements</th>
+<th data-column="FAIR Cover sheet">FAIR Cover sheet</th>
+<th data-column="Bubble Drawings">Bubble Drawings</th>
+<th data-column="Datasheet form">Datasheet form</th>
+<th data-column="LAIR Data">LAIR Data</th>
+<th data-column="FAIR Data">FAIR Data</th>
+<th data-column="COC">COC</th>
+<th data-column="BOM">BOM</th>
+<th data-column="Mill">Mill</th>
+<th data-column="Test reports / evidences">Test reports / evidences</th>
+<th data-column="Remark 1">Remark 1</th>
+<th data-column="Remark 2">Remark 2</th>
+<th data-column="Submit date">Submit date</th>
+<th data-column="Reject comments">Reject comments</th>
 </tr></thead>
 <tbody>
 <!-- Dữ liệu sẽ được load tại đây -->
@@ -1237,14 +1237,25 @@ function updateTable(data, reset) {
         $('#results-table tbody').append(row);
       });
     }
-    $(document).on('click', '#results-table th', function() {
-      const col = $(this).data('column');
-      if (!col) return;
-      const currentOrder = $(this).data('order') || 'asc';
-      const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
-      $(this).data('order', newOrder);
-      sortTable(col, newOrder);
-    });
+    $(document).on('click', '#results-table th', function () {
+  const col = $(this).data('column');
+  if (!col) return;
+
+  const currentOrder = $(this).data('order') || 'asc';
+  const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
+
+  $('#results-table th').each(function () {
+    $(this).data('order', null);
+    const text = $(this).text().replace(/[▲▼]/g, '').trim();
+    $(this).text(text);
+  });
+
+  const arrow = newOrder === 'asc' ? ' ▲' : ' ▼';
+  $(this).text($(this).text().replace(/[▲▼]/g, '').trim() + arrow);
+  $(this).data('order', newOrder);
+
+  sortTable(col, newOrder);
+});
   </script>
 <!-- Modal OCR (Không có xem trước ảnh) -->
 <div id="cameraModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#000; justify-content:center; align-items:center; z-index:9999; overflow-y:auto; transition: all 0.3s ease;">
