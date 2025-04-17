@@ -233,6 +233,7 @@
     async function processTranscript(transcript) {
       const cleaned = transcript.replace(/\s+/g, '').toUpperCase();
       resultDiv.innerHTML = `🗣 Bạn nói: <b>${transcript}</b><br>→ Chuẩn hóa: <b>${cleaned}</b>`;
+        logSearch(cleaned, "voice");
       const data = await fetchData();
       logSearch(cleaned, "voice");
       const results = data.filter(row => typeof row["Part Number"] === "string" && row["Part Number"].toUpperCase().includes(cleaned));
@@ -395,6 +396,18 @@ function renderSearchHistory(containerId) {
 
 <h3 style="margin-top:2rem;">🕘 Lịch sử tìm kiếm</h3>
 <div id="searchHistory" style="margin: 1rem auto; max-width: 800px;"></div>
+
+<div style="text-align: center; margin-top: 1rem;">
+  <button onclick="clearSearchHistory()" style="
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+  ">🗑 Xóa lịch sử</button>
+</div>
+
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     renderSearchHistory("searchHistory");
