@@ -35,7 +35,7 @@
   <div class="result" id="result"></div>
 
   <script>
-    const dataUrl = "https://raw.githubusercontent.com/Thomas8810/web_tra_cuu/main/data.json";
+    const dataUrl = "/api/data";
     const btn = document.getElementById("speakBtn");
     const resultDiv = document.getElementById("result");
 
@@ -64,22 +64,26 @@
 
     function analyzePart(part, mode = "image") {
       const status = part["Approval Status"]?.toUpperCase() || "";
-      const pic = part["Part Pictures"];
-      const pack = part["Packaging Pictures"];
+      const pic = part["Part Pictures"]?.toUpperCase();
+      const pack = part["Packaging Pictures"]?.toUpperCase();
 
       if (mode === "image") {
         if (["REJECTED", "EXPIRED"].includes(status)) {
           return "Part này cần hỏi lại quản lý.";
-        } else if (["APPROVED", "CLOSED", "SUBMITTED"].includes(status)) {
+        }
+        if (["APPROVED", "CLOSED", "SUBMITTED"].includes(status)) {
           return "Part này không cần chụp ảnh.";
-        } else if (status === "ON GOING") {
-          if (!pic) return "Cần chụp ảnh sản phẩm.";
-          if (!pack) return "Cần chụp ảnh đóng gói.";
+        }
+        if (status === "ON GOING") {
           if (pic === "OK" && pack === "OK") return "Không cần chụp ảnh.";
+          if (!pic || pic === "-") return "Cần chụp ảnh sản phẩm.";
+          if (!pack || pack === "-") return "Cần chụp ảnh đóng gói.";
+          return "Đang xử lý, kiểm tra thêm chi tiết.";
         }
       } else if (mode === "status") {
         return "Trạng thái là: " + getStatusText(status);
       }
+
       return "Không rõ trạng thái.";
     }
 
@@ -96,7 +100,7 @@
         resultDiv.innerHTML = `Bạn nói: <b>${transcript}</b><br/>Đang xử lý...`;
 
         const data = await fetchData();
-        const partMatch = transcript.match(/([A-Z0-9\-]+)/gi);
+        const partMatch = transcript.match(/[A-Z0-9]{3,}-[A-Z0-9]{3,}-[0-9]{3}/i);
         const partNumber = partMatch ? partMatch[0] : null;
         const isStatusCheck = transcript.toLowerCase().includes("trạng thái");
 
