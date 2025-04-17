@@ -986,6 +986,13 @@ if (data['Customer']) {
 
       // Các nút chức năng: Lọc, Xóa, Tải thêm, Xuất Excel, Zoom
       $('#apply-filters').on('click', function() {
+        // ✅ Ghi lịch sử nếu đang lọc theo Part Number
+        const col1 = $('#filter-column-1').val();
+        const val1 = $('#filter-value-1').val();
+        if (col1 === 'Part Number' && val1 && val1.length > 0) {
+          val1.forEach(p => saveSearchHistory(p));
+        }
+
         applyFilters(true);
       });
       $('#clear-filters').on('click', function() {
