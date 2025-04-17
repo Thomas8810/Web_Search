@@ -1449,37 +1449,67 @@ function excelDateToJSDate(serial) {
 }
 </script>
 
+
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const topContainer = document.querySelector('.top-container');
   const tableContainer = document.querySelector('.table-container');
   const quickSearch = document.getElementById('quick-search');
-  let lastFocused = null;
+  const applyBtn = document.getElementById('apply-filters');
+  const clearBtn = document.getElementById('clear-filters');
 
+  let wasEditingTop = false;
+
+  // Gõ trong vùng 1 → mở rộng, chưa hiện bảng
   document.addEventListener('focusin', (e) => {
     const target = e.target;
-
-    if (topContainer.contains(target) && ['SELECT', 'INPUT'].includes(target.tagName)) {
+    if (topContainer.contains(target) && ['INPUT', 'SELECT'].includes(target.tagName)) {
+      wasEditingTop = true;
       topContainer.classList.add('full-top-container');
       topContainer.classList.remove('hide-top-container');
       tableContainer.classList.remove('show-table-only');
+      quickSearch.style.display = 'none';
     } else if (target === quickSearch) {
       topContainer.classList.add('hide-top-container');
       tableContainer.classList.add('show-table-only');
     }
-
-    lastFocused = target;
   });
 
-  document.addEventListener('focusout', (e) => {
+  // Khi mất focus nhưng vừa nhập ở vùng 1 thì không hiện bảng vội
+  document.addEventListener('focusout', () => {
     setTimeout(() => {
       const active = document.activeElement;
       if (!['INPUT', 'SELECT', 'TEXTAREA'].includes(active.tagName)) {
-        topContainer.classList.remove('full-top-container', 'hide-top-container');
-        tableContainer.classList.remove('show-table-only');
+        if (wasEditingTop) {
+          // Vẫn giữ vùng top mở, chưa hiện bảng
+          tableContainer.classList.remove('show-table-only');
+          quickSearch.style.display = 'none';
+        } else {
+          // Quay về trạng thái mặc định
+          topContainer.classList.remove('full-top-container', 'hide-top-container');
+          tableContainer.classList.remove('show-table-only');
+          quickSearch.style.display = 'block';
+        }
       }
     }, 300);
   });
+
+  // Khi người dùng thực hiện lọc, mới cho phép hiện bảng
+  function revealTableAndSearch() {
+    wasEditingTop = false;
+    topContainer.classList.remove('full-top-container', 'hide-top-container');
+    quickSearch.style.display = 'block';
+    tableContainer.classList.remove('show-table-only');
+    // Scroll lên nhưng chừa khoảng đỉnh 60px (tránh cam trước)
+    setTimeout(() => {
+      const yOffset = -60;
+      const y = tableContainer.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }, 300);
+  }
+
+  applyBtn?.addEventListener('click', revealTableAndSearch);
+  clearBtn?.addEventListener('click', revealTableAndSearch);
 });
 </script>
 </body>
