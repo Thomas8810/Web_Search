@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -13,6 +12,7 @@
       background: #1e1e2f;
       color: white;
       text-align: center;
+      position: relative;
     }
     button {
       padding: 1rem 2rem;
@@ -26,55 +26,39 @@
     .result {
       margin-top: 2rem;
       font-size: 1.1rem;
+      min-height: 4rem;
     }
-  
-    #listening-indicator {
-      display: none;
-      margin-top: 1rem;
-      font-size: 1.1rem;
-      animation: pulse 1s infinite;
-      color: #00ffcc;
-    }
-    @keyframes pulse {
-      0% { opacity: 0.3; }
-      50% { opacity: 1; }
-      100% { opacity: 0.3; }
-    }
-    #backHome {
-  display: inline-block;
-  background: #343a40;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 14px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: background 0.3s;
-
+    .back-home {
       position: fixed;
-      top: 20px;
-      left: 20px;
-      background: #555;
+      top: env(safe-area-inset-top, 10px);
+      left: 10px;
+      background: #333;
       color: white;
-      padding: 8px 12px;
-      border-radius: 6px;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 1rem;
+      z-index: 999;
     }
-    </style>
+    .listening {
+      font-style: italic;
+      color: #ccc;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-<a id="backHome" href="/home">← Quay về trang chủ</a>
+  <a class="back-home" href="home.html">← Quay về trang chủ</a>
   <h1>🎤 Tìm kiếm Part Number bằng giọng nói</h1>
   <button id="speakBtn">Bấm để nói</button>
-  <div id="listening-indicator">🎧 Đang nghe...</div>
+  <div class="listening" id="listeningStatus"></div>
   <div class="result" id="result"></div>
 
   <script>
-    const dataUrl = "/api/data";
+    const dataUrl = "https://raw.githubusercontent.com/Thomas8810/web_tra_cuu/main/data.json";
     const btn = document.getElementById("speakBtn");
     const resultDiv = document.getElementById("result");
+    const listeningStatus = document.getElementById("listeningStatus");
 
     async function fetchData() {
       const res = await fetch(dataUrl);
@@ -101,26 +85,22 @@
 
     function analyzePart(part, mode = "image") {
       const status = part["Approval Status"]?.toUpperCase() || "";
-      const pic = part["Part Pictures"]?.toUpperCase();
-      const pack = part["Packaging Pictures"]?.toUpperCase();
+      const pic = part["Part Pictures"];
+      const pack = part["Packaging Pictures"];
 
       if (mode === "image") {
         if (["REJECTED", "EXPIRED"].includes(status)) {
           return "Part này cần hỏi lại quản lý.";
-        }
-        if (["APPROVED", "CLOSED", "SUBMITTED"].includes(status)) {
+        } else if (["APPROVED", "CLOSED", "SUBMITTED"].includes(status)) {
           return "Part này không cần chụp ảnh.";
-        }
-        if (status === "ON GOING") {
+        } else if (status === "ON GOING") {
+          if (!pic) return "Cần chụp ảnh sản phẩm.";
+          if (!pack) return "Cần chụp ảnh đóng gói.";
           if (pic === "OK" && pack === "OK") return "Không cần chụp ảnh.";
-          if (!pic || pic === "-") return "Cần chụp ảnh sản phẩm.";
-          if (!pack || pack === "-") return "Cần chụp ảnh đóng gói.";
-          return "Đang xử lý, kiểm tra thêm chi tiết.";
         }
       } else if (mode === "status") {
         return "Trạng thái là: " + getStatusText(status);
       }
-
       return "Không rõ trạng thái.";
     }
 
@@ -130,44 +110,48 @@
       recognition.interimResults = false;
       recognition.maxAlternatives = 1;
 
-      document.getElementById("listening-indicator").style.display = "block";
+      resultDiv.innerHTML = "";
+      listeningStatus.innerText = "🎧 Đang nghe...";
+
       recognition.start();
 
       recognition.onresult = async (event) => {
-      document.getElementById("listening-indicator").style.display = "none";
+        listeningStatus.innerText = "";
         const transcript = event.results[0][0].transcript;
         resultDiv.innerHTML = `Bạn nói: <b>${transcript}</b><br/>Đang xử lý...`;
 
-        const data = await fetchData();
-        const partMatch = transcript.match(/[A-Z0-9]{3,}-[A-Z0-9]{3,}-[0-9]{3}/i);
-        const partNumber = partMatch ? partMatch[0] : null;
-        const isStatusCheck = transcript.toLowerCase().includes("trạng thái");
+        try {
+          const data = await fetchData();
+          const partMatch = transcript.match(/([A-Z0-9\-]+)/gi);
+          const partNumber = partMatch ? partMatch[0] : null;
+          const isStatusCheck = transcript.toLowerCase().includes("trạng thái");
 
-        if (partNumber) {
-          const found = data.find(row => row["Part Number"]?.toUpperCase() === partNumber.toUpperCase());
-          if (found) {
-            const message = analyzePart(found, isStatusCheck ? "status" : "image");
-            resultDiv.innerHTML += `<br/>✅ ${message}`;
-            speak(message);
+          if (partNumber) {
+            const found = data.find(row => row["Part Number"]?.toUpperCase() === partNumber.toUpperCase());
+            if (found) {
+              const message = analyzePart(found, isStatusCheck ? "status" : "image");
+              resultDiv.innerHTML += `<br/>✅ ${message}`;
+              speak(message);
+            } else {
+              const msg = "Không tìm thấy part number.";
+              resultDiv.innerHTML += `<br/>❌ ${msg}`;
+              speak(msg);
+            }
           } else {
-            const msg = "Không tìm thấy part number.";
-            resultDiv.innerHTML += `<br/>❌ ${msg}`;
+            const msg = "Không nhận diện được part number.";
+            resultDiv.innerHTML += `<br/>⚠️ ${msg}`;
             speak(msg);
           }
-        } else {
-          const msg = "Không nhận diện được part number.";
-          resultDiv.innerHTML += `<br/>⚠️ ${msg}`;
+        } catch (err) {
+          const msg = "Lỗi khi tải dữ liệu: " + err.message;
+          resultDiv.innerHTML += `<br/>🚫 ${msg}`;
           speak(msg);
         }
       };
 
       recognition.onerror = (e) => {
-      console.log("Lỗi giọng nói:", e);
-      const msg = "Lỗi: " + e.error + (e.message ? " (" + e.message + ")" : "");
-      resultDiv.innerHTML = msg;
-      speak("Có lỗi xảy ra khi nhận giọng nói.");
-      document.getElementById("listening-indicator").style.display = "none";
-        const msg = "Lỗi nhận diện giọng nói.";
+        listeningStatus.innerText = "";
+        const msg = `Lỗi nhận diện giọng nói: ${e.error}`;
         resultDiv.innerHTML = msg;
         speak(msg);
       };
