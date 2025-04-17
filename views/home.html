@@ -628,6 +628,7 @@ input:focus, select:focus {
 <th>Approval Status</th>
 <th>Customer</th>
 <th>Commodity</th>
+<th>Production Status</th>
 <th>Part Pictures</th>
 <th>Packaging Pictures</th>
 <th>Critical</th>
@@ -648,7 +649,6 @@ input:focus, select:focus {
 <th>BOM</th>
 <th>Mill</th>
 <th>Test reports / evidences</th>
-<th>Production Status</th>
 <th>Remark 1</th>
 <th>Remark 2</th>
 <th>Submit date</th>
@@ -1125,6 +1125,7 @@ function updateTable(data, reset) {
     tr.append(`<td>${row['Approval Status'] || ''}</td>`);
     tr.append(`<td>${row['Customer'] || ''}</td>`);
     tr.append(`<td>${row['Commodity'] || ''}</td>`);
+    tr.append(`<td>${row['Production Status'] || ''}</td>`);
     tr.append(`<td>${row['Part Pictures'] || ''}</td>`);
     tr.append(`<td>${row['Packaging Pictures'] || ''}</td>`);
     tr.append(`<td>${row['Critical'] || ''}</td>`);
@@ -1145,7 +1146,6 @@ function updateTable(data, reset) {
     tr.append(`<td>${row['BOM'] || ''}</td>`);
     tr.append(`<td>${row['Mill'] || ''}</td>`);
     tr.append(`<td>${row['Test reports / evidences'] || ''}</td>`);
-    tr.append(`<td>${row['Production Status'] || ''}</td>`);
     tr.append(`<td>${row['Remark 1'] || ''}</td>`);
     tr.append(`<td>${row['Remark 2'] || ''}</td>`);
     tr.append(`<td>${formatExcelDate(row['Submit date'])}</td>`);
