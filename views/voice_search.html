@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tra cứu Part Number bằng giọng nói</title>
   <style>
     body {
@@ -66,14 +66,21 @@
       padding: 6px;
       white-space: nowrap;
     }
-    td:first-child, th:first-child,
-    td:nth-child(2), th:nth-child(2),
-    td:nth-child(3), th:nth-child(3) {
+    th:first-child,
+    th:nth-child(2),
+    th:nth-child(3),
+    td:first-child,
+    td:nth-child(2),
+    td:nth-child(3) {
       position: sticky;
       left: 0;
       background: #1e1e2f;
-      z-index: 2;
+      z-index: 4;
     }
+    th:nth-child(2) { left: 60px; }
+    th:nth-child(3) { left: 160px; }
+    td:nth-child(2) { left: 60px; }
+    td:nth-child(3) { left: 160px; }
     #backHome {
       position: fixed;
       bottom: 10px;
