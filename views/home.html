@@ -11,24 +11,6 @@
 <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
 <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
 <style>
-  @media (max-width: 768px) {
-    .hidden-mobile {
-      max-height: 0 !important;
-      overflow: hidden !important;
-      opacity: 0 !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      pointer-events: none !important;
-      transition: all 0.3s ease-in-out;
-      height: 0 !important;
-    }
-    .top-container {
-      min-height: 100vh;
-      background-color: #000; /* Tuỳ chỉnh theo nền giao diện của bạn */
-      transition: all 0.3s ease-in-out;
-    }
-  }
-</style>
     /* Cài đặt CSS cơ bản */
     html, body { height: 100%; margin: 0; padding: 0; }
     body {
@@ -466,14 +448,35 @@ input:focus, select:focus {
   }
 }
 
+
+/* Hiệu ứng mượt cho vùng động */
+.top-container,
+.table-container,
+#quick-search {
+  transition: all 0.3s ease-in-out;
+}
+.full-top-container {
+  height: 100vh !important;
+  max-height: 100vh !important;
+  overflow-y: auto;
+}
+.hide-top-container {
+  height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden;
+  padding: 0 !important;
+  opacity: 0;
+  pointer-events: none;
+}
+.show-table-only {
+  height: calc(100vh - 60px);
+}
 </style>
 </head>
 <body>
 <div id="loading-spinner" style="display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:99;">
-  <div style="border: 6px solid #f3f3f3; border-top: 6px solid #3498db; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;"></div>
+<div style="border: 6px solid #f3f3f3; border-top: 6px solid #3498db; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;"></div>
 </div>
-
-
 <div class="page-container">
 <div class="top-container">
 <div class="header">
@@ -630,15 +633,12 @@ input:focus, select:focus {
 </div>
 <div class="results-count" id="results-count">Total rows: 0</div>
 </div>
-
 <div style="text-align:center; margin: 10px;">
-  <input type="text" id="quick-search" placeholder="🔍 Tìm Part Number..." style="padding:5px; width: 60%; font-size:14px;" />
+<input id="quick-search" placeholder="🔍 Tìm Part Number..." style="padding:5px; width: 60%; font-size:14px;" type="text"/>
 </div>
-
 <!-- Khu vực hiển thị bảng dữ liệu -->
 <div class="table-container">
 <table id="results-table">
-
 <thead><tr>
 <th class="sticky-col-1">No</th>
 <th class="sticky-col-2">Part Number</th>
@@ -1416,8 +1416,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
-
-
 <script>
 // Spinner control
 function showSpinner() {
@@ -1451,74 +1449,38 @@ function excelDateToJSDate(serial) {
 }
 </script>
 
-
-<style>
-  @media (max-width: 768px) {
-    .hidden-mobile {
-      max-height: 0 !important;
-      overflow: hidden !important;
-      opacity: 0 !important;
-      transition: all 0.3s ease-in-out;
-    }
-    .top-container, .table-container, #quick-search, #load-more-container, #footer-text {
-      transition: all 0.3s ease-in-out;
-    }
-  }
-</style>
-
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const topContainer = document.querySelector('.top-container');
-    const quickSearch = document.getElementById('quick-search');
-    const tableContainer = document.querySelector('.table-container');
-    const loadMore = document.getElementById('load-more-container');
-    const footer = document.getElementById('footer-text');
+document.addEventListener('DOMContentLoaded', () => {
+  const topContainer = document.querySelector('.top-container');
+  const tableContainer = document.querySelector('.table-container');
+  const quickSearch = document.getElementById('quick-search');
+  let lastFocused = null;
 
-    function showRegion1() {
-      topContainer.classList.remove('hidden-mobile');
-      quickSearch.parentElement.classList.add('hidden-mobile');
-      tableContainer.classList.add('hidden-mobile');
-      loadMore?.classList.add('hidden-mobile');
-      footer?.classList.add('hidden-mobile');
+  document.addEventListener('focusin', (e) => {
+    const target = e.target;
+
+    if (topContainer.contains(target) && ['SELECT', 'INPUT'].includes(target.tagName)) {
+      topContainer.classList.add('full-top-container');
+      topContainer.classList.remove('hide-top-container');
+      tableContainer.classList.remove('show-table-only');
+    } else if (target === quickSearch) {
+      topContainer.classList.add('hide-top-container');
+      tableContainer.classList.add('show-table-only');
     }
 
-    function showRegion2() {
-      topContainer.classList.add('hidden-mobile');
-      quickSearch.parentElement.classList.remove('hidden-mobile');
-      tableContainer.classList.remove('hidden-mobile');
-      loadMore?.classList.remove('hidden-mobile');
-      footer?.classList.remove('hidden-mobile');
-    }
-
-    // Khi focus input trong top-container => hiển thị vùng 1
-    const filterInputs = document.querySelectorAll('.top-container input, .top-container select, .top-container textarea');
-    filterInputs.forEach(input => {
-      input.addEventListener('focus', () => {
-        if (window.innerWidth <= 768) {
-          showRegion1();
-        }
-      });
-    });
-
-    // Khi nhập ở quick-search => hiển thị vùng 2
-    quickSearch.addEventListener('input', () => {
-      if (window.innerWidth <= 768 && quickSearch.value.trim() !== '') {
-        showRegion2();
-      } else if (window.innerWidth <= 768) {
-        showRegion1();
-      }
-    });
-
-    // Blur khỏi quick-search mà không có nội dung => trở lại vùng 1
-    quickSearch.addEventListener('blur', () => {
-      setTimeout(() => {
-        if (window.innerWidth <= 768 && quickSearch.value.trim() === '') {
-          showRegion1();
-        }
-      }, 200);
-    });
+    lastFocused = target;
   });
-</script>
 
+  document.addEventListener('focusout', (e) => {
+    setTimeout(() => {
+      const active = document.activeElement;
+      if (!['INPUT', 'SELECT', 'TEXTAREA'].includes(active.tagName)) {
+        topContainer.classList.remove('full-top-container', 'hide-top-container');
+        tableContainer.classList.remove('show-table-only');
+      }
+    }, 300);
+  });
+});
+</script>
 </body>
 </html>
