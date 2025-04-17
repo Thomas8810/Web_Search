@@ -227,10 +227,30 @@
         speak("Không tìm thấy Part Number.");
         resultDiv.innerHTML += `<br>❌ Không tìm thấy Part Number.`;
       } else if (results.length === 1) {
-        const msg = analyzePart(results[0]);
-        statusDiv.innerText = "";
-        resultDiv.innerHTML += `<br/>✅ ${msg}`;
-        speak(msg);
+  const msg = analyzePart(results[0]);
+  statusDiv.innerText = "";
+  resultDiv.innerHTML += `<br/>✅ ${msg}`;
+  speak(msg);
+
+  // Hiển thị bảng cho 1 dòng
+  let html = `<table id='resultsTable'><thead><tr><th>No.</th><th>Part Number</th><th>REV</th><th>Approval Status</th><th>Customer</th><th>Commodity</th><th>Part Pictures</th><th>Packaging Pictures</th><th>Critical</th><th>CE</th></tr></thead><tbody>`;
+  html += `<tr onclick="speak('${msg}')">
+    <td>1</td>
+    <td>${results[0]["Part Number"] || ""}</td>
+    <td>${results[0]["REV"] || ""}</td>
+    <td>${results[0]["Approval Status"] || ""}</td>
+    <td>${results[0]["Customer"] || ""}</td>
+    <td>${results[0]["Commodity"] || ""}</td>
+    <td>${results[0]["Part Pictures"] || ""}</td>
+    <td>${results[0]["Packaging Pictures"] || ""}</td>
+    <td>${results[0]["Critical"] || ""}</td>
+    <td>${results[0]["CE"] || ""}</td>
+  </tr>`;
+  html += `</tbody></table>`;
+  document.getElementById("relatedResults").innerHTML = html;
+  makeTableSortable('resultsTable');
+}
+
       } else {
         statusDiv.innerText = "";
         speak(`Tìm thấy ${results.length} kết quả gần giống.`);
