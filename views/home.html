@@ -1381,6 +1381,7 @@ const cropHeight = canvas.height * 0.2;
     $('#filter-value-1').append(new Option(part, part, true, true)).trigger('change');
     if (typeof applyFilters === 'function') applyFilters(true);
     statusP.textContent = `✅ Đã lọc với Part Number: ${part}`;
+    saveSearchHistory(part);
     setTimeout(() => btnClose.click(), 1500);
   });
 
@@ -1540,4 +1541,45 @@ document.addEventListener('DOMContentLoaded', () => {
           text-decoration: none;
           box-shadow: 0 4px 10px rgba(0,0,0,0.3);
           z-index: 9999;">🎤</a>
+
+<script>
+  function saveSearchHistory(partNumber) {
+    if (!partNumber) return;
+    const history = JSON.parse(localStorage.getItem("partSearchHistory") || "[]");
+    const now = new Date().toLocaleString("vi-VN");
+    history.unshift({ partNumber, time: now });
+    if (history.length > 30) history.pop();
+    localStorage.setItem("partSearchHistory", JSON.stringify(history));
+    renderSearchHistory();
+  }
+
+  function renderSearchHistory() {
+    const history = JSON.parse(localStorage.getItem("partSearchHistory") || "[]");
+    const list = document.getElementById("searchHistory");
+    if (!list) return;
+    list.innerHTML = "";
+    history.forEach(item => {
+      const li = document.createElement("li");
+      li.style.marginBottom = "6px";
+      li.innerHTML = \`<button onclick="quickSearchFromHistory('\${item.partNumber}')" style="background:#444; color:white; padding:6px 12px; border:none; border-radius:6px; cursor:pointer;">\${item.partNumber}</button> <small style="color:#666;">(\${item.time})</small>\`;
+      list.appendChild(li);
+    });
+  }
+
+  function quickSearchFromHistory(partNumber) {
+    const input = document.getElementById("quick-search");
+    if (input) {
+      input.value = partNumber;
+      input.dispatchEvent(new Event('input'));
+    }
+  }
+
+  function clearSearchHistory() {
+    localStorage.removeItem("partSearchHistory");
+    renderSearchHistory();
+  }
+
+  window.addEventListener("DOMContentLoaded", renderSearchHistory);
+</script>
+
 </html>
