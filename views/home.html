@@ -1433,22 +1433,25 @@ function excelDateToJSDate(serial) {
 }
 </script>
 <script>
-  // Detect khi bàn phím mở bằng cách quan sát chiều cao viewport
-  let originalHeight = window.innerHeight;
+  let initialHeight = window.innerHeight;
 
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     const currentHeight = window.innerHeight;
-    const table = document.querySelector('.table-container');
+    const top = document.querySelector(".top-container");
+    const table = document.querySelector(".table-wrapper");
 
-    if (currentHeight < originalHeight - 100) {
-      // Bàn phím có thể đang mở → ẩn bảng
-      if (table) table.style.display = 'none';
+    if (currentHeight < initialHeight - 150) {
+      // Bàn phím mở → mở rộng vùng tìm kiếm
+      top.classList.add("fullscreen");
+      if (table) table.style.display = "none";
     } else {
-      // Bàn phím đóng → hiển thị bảng lại
-      if (table) table.style.display = '';
+      // Bàn phím đóng → trả về bình thường
+      top.classList.remove("fullscreen");
+      if (table) table.style.display = "";
     }
   });
 </script>
+
 
 </body>
 </html>
