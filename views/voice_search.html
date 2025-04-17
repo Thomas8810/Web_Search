@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tra cứu Part Number bằng giọng nói</title>
   <style>
     body {
@@ -66,27 +66,34 @@
       padding: 6px;
       white-space: nowrap;
     }
-    th:first-child, td:first-child {
-      position: sticky;
-      left: 0;
-      min-width: 80px;
-      background: #1e1e2f;
-      z-index: 4;
+    tr.active-row {
+      background-color: #2a2a4d;
     }
-    th:nth-child(2), td:nth-child(2) {
-      position: sticky;
-      left: 80px;
-      min-width: 180px;
-      background: #1e1e2f;
-      z-index: 4;
+
+    @media (min-width: 600px) {
+      th:first-child, td:first-child {
+        position: sticky;
+        left: 0;
+        min-width: 80px;
+        background: #1e1e2f;
+        z-index: 4;
+      }
+      th:nth-child(2), td:nth-child(2) {
+        position: sticky;
+        left: 80px;
+        min-width: 180px;
+        background: #1e1e2f;
+        z-index: 4;
+      }
+      th:nth-child(3), td:nth-child(3) {
+        position: sticky;
+        left: 260px;
+        min-width: 100px;
+        background: #1e1e2f;
+        z-index: 4;
+      }
     }
-    th:nth-child(3), td:nth-child(3) {
-      position: sticky;
-      left: 260px;
-      min-width: 100px;
-      background: #1e1e2f;
-      z-index: 4;
-    }
+
     #backHome {
       position: fixed;
       bottom: 10px;
@@ -302,5 +309,16 @@
       }
     }
   </script>
+  <script>
+  // Highlight hàng khi click vào
+  document.addEventListener('click', function(e) {
+    const rows = document.querySelectorAll('table tbody tr');
+    rows.forEach(r => r.classList.remove('active-row'));
+    const targetRow = e.target.closest('tr');
+    if (targetRow && targetRow.parentNode.tagName === 'TBODY') {
+      targetRow.classList.add('active-row');
+    }
+  });
+</script>
 </body>
 </html>
