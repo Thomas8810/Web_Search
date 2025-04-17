@@ -353,5 +353,46 @@
     }
   });
 </script>
+
+<h3 style="margin-top:2rem;">🕘 Lịch sử tìm kiếm</h3>
+<div id="searchHistory"></div>
+<script>document.addEventListener('DOMContentLoaded', () => renderSearchHistory("searchHistory"));</script>
+
+<script>
+// === LỊCH SỬ TÌM KIẾM LOCAL STORAGE ===
+function logSearch(term, source = "home") {
+  if (!term) return;
+  const history = JSON.parse(localStorage.getItem("searchHistory") || "[]");
+  history.unshift({
+    term,
+    time: new Date().toISOString(),
+    source
+  });
+  localStorage.setItem("searchHistory", JSON.stringify(history.slice(0, 50)));
+}
+
+function renderSearchHistory(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const history = JSON.parse(localStorage.getItem("searchHistory") || "[]");
+  if (history.length === 0) {
+    container.innerHTML = "<i>Chưa có lịch sử tìm kiếm</i>";
+    return;
+  }
+
+  let html = "<table style='width:100%; border-collapse: collapse; font-size:0.9rem;'><thead><tr><th>Từ khóa</th><th>Thời gian</th><th>Trang</th></tr></thead><tbody>";
+  history.forEach(item => {
+    html += `<tr>
+      <td style="padding: 4px; border: 1px solid #ccc;">${item.term}</td>
+      <td style="padding: 4px; border: 1px solid #ccc;">${new Date(item.time).toLocaleString()}</td>
+      <td style="padding: 4px; border: 1px solid #ccc;">${item.source}</td>
+    </tr>`;
+  });
+  html += "</tbody></table>";
+  container.innerHTML = html;
+}
+</script>
+
 </body>
+
 </html>
