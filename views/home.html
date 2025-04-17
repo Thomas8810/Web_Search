@@ -1472,6 +1472,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Gõ trong vùng 1 → mở rộng, chưa hiện bảng
   document.addEventListener('focusin', (e) => {
+      // Bỏ qua nếu là màn hình lớn (máy tính)
+      if (window.innerWidth >= 768) return;
     const target = e.target;
     if (topContainer.contains(target) && ['INPUT', 'SELECT'].includes(target.tagName)) {
       wasEditingTop = true;
@@ -1487,6 +1489,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Khi mất focus nhưng vừa nhập ở vùng 1 thì không hiện bảng vội
   document.addEventListener('focusout', () => {
+        if (window.innerWidth >= 768) return;
     setTimeout(() => {
       const active = document.activeElement;
       if (!['INPUT', 'SELECT', 'TEXTAREA'].includes(active.tagName)) {
