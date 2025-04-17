@@ -147,6 +147,10 @@ app.get('/voice_search', isAuthenticated, (req, res) => {
 app.get('/dashboard', isAuthenticated, (req, res) => {
   res.send(`Chào mừng ${req.session.user.name || req.session.user.email}, đây là trang dashboard.`);
 });
+// Phần này bổ sung cho voice
+app.get('/data.json', (req, res) => {
+  res.sendFile(path.join(__dirname, 'data.json'));
+});
 
 // ----------------------- AUDIT LOG -----------------------
 async function logTaskHistory(taskId, changedBy, action, oldValue, newValue) {
