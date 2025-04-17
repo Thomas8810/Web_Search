@@ -1618,7 +1618,8 @@ document.addEventListener('DOMContentLoaded', () => {
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const historyList = document.getElementById("history-list");
-    const storedHistory = JSON.parse(localStorage.getItem("searchHistory") || "[]");
+    const storedHistory = JSON.parse(localStorage.getItem("partSearchHistory") || "[]");
+
 
     if (storedHistory.length > 0) {
         storedHistory.forEach(item => {
@@ -1635,7 +1636,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.getElementById("clear-history-btn").addEventListener("click", function () {
-        localStorage.removeItem("searchHistory");
+        localStorage.removeItem("partSearchHistory");
         location.reload();
     });
 });
