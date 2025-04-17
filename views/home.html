@@ -11,6 +11,24 @@
 <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
 <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
 <style>
+  @media (max-width: 768px) {
+    .hidden-mobile {
+      max-height: 0 !important;
+      overflow: hidden !important;
+      opacity: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      pointer-events: none !important;
+      transition: all 0.3s ease-in-out;
+      height: 0 !important;
+    }
+    .top-container {
+      min-height: 100vh;
+      background-color: #000; /* Tuỳ chỉnh theo nền giao diện của bạn */
+      transition: all 0.3s ease-in-out;
+    }
+  }
+</style>
     /* Cài đặt CSS cơ bản */
     html, body { height: 100%; margin: 0; padding: 0; }
     body {
@@ -1432,55 +1450,74 @@ function excelDateToJSDate(serial) {
   return new Date(excelEpoch.getTime() + serial * 86400000);
 }
 </script>
+
+
 <style>
   @media (max-width: 768px) {
-    .mobile-hidden { display: none !important; }
-    .mobile-visible { display: block !important; }
+    .hidden-mobile {
+      max-height: 0 !important;
+      overflow: hidden !important;
+      opacity: 0 !important;
+      transition: all 0.3s ease-in-out;
+    }
+    .top-container, .table-container, #quick-search, #load-more-container, #footer-text {
+      transition: all 0.3s ease-in-out;
+    }
   }
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const topContainer = document.querySelector('.top-container');
-  const quickSearch = document.getElementById('quick-search');
-  const tableContainer = document.querySelector('.table-container');
+  document.addEventListener('DOMContentLoaded', () => {
+    const topContainer = document.querySelector('.top-container');
+    const quickSearch = document.getElementById('quick-search');
+    const tableContainer = document.querySelector('.table-container');
+    const loadMore = document.getElementById('load-more-container');
+    const footer = document.getElementById('footer-text');
 
-  // Ẩn quick-search + bảng khi focus input (trừ chính quick-search)
-  const allInputs = document.querySelectorAll('input, select, textarea');
-  allInputs.forEach(el => {
-    el.addEventListener('focus', (e) => {
-      if (window.innerWidth <= 768 && e.target.id !== 'quick-search') {
-        topContainer.classList.remove('mobile-hidden');
-        quickSearch.classList.add('mobile-hidden');
-        tableContainer.classList.add('mobile-hidden');
+    function showRegion1() {
+      topContainer.classList.remove('hidden-mobile');
+      quickSearch.parentElement.classList.add('hidden-mobile');
+      tableContainer.classList.add('hidden-mobile');
+      loadMore?.classList.add('hidden-mobile');
+      footer?.classList.add('hidden-mobile');
+    }
+
+    function showRegion2() {
+      topContainer.classList.add('hidden-mobile');
+      quickSearch.parentElement.classList.remove('hidden-mobile');
+      tableContainer.classList.remove('hidden-mobile');
+      loadMore?.classList.remove('hidden-mobile');
+      footer?.classList.remove('hidden-mobile');
+    }
+
+    // Khi focus input trong top-container => hiển thị vùng 1
+    const filterInputs = document.querySelectorAll('.top-container input, .top-container select, .top-container textarea');
+    filterInputs.forEach(input => {
+      input.addEventListener('focus', () => {
+        if (window.innerWidth <= 768) {
+          showRegion1();
+        }
+      });
+    });
+
+    // Khi nhập ở quick-search => hiển thị vùng 2
+    quickSearch.addEventListener('input', () => {
+      if (window.innerWidth <= 768 && quickSearch.value.trim() !== '') {
+        showRegion2();
+      } else if (window.innerWidth <= 768) {
+        showRegion1();
       }
     });
-  });
 
-  // Khi nhập trong quick-search => chỉ hiện quick-search + bảng
-  quickSearch.addEventListener('input', () => {
-    if (window.innerWidth <= 768 && quickSearch.value.trim() !== '') {
-      topContainer.classList.add('mobile-hidden');
-      quickSearch.classList.remove('mobile-hidden');
-      tableContainer.classList.remove('mobile-hidden');
-    } else if (window.innerWidth <= 768) {
-      // Nếu xóa hết text thì hiện lại top
-      topContainer.classList.remove('mobile-hidden');
-      quickSearch.classList.remove('mobile-hidden');
-      tableContainer.classList.add('mobile-hidden');
-    }
+    // Blur khỏi quick-search mà không có nội dung => trở lại vùng 1
+    quickSearch.addEventListener('blur', () => {
+      setTimeout(() => {
+        if (window.innerWidth <= 768 && quickSearch.value.trim() === '') {
+          showRegion1();
+        }
+      }, 200);
+    });
   });
-
-  // Khi blur quick-search mà không có nội dung → hiện top
-  quickSearch.addEventListener('blur', () => {
-    setTimeout(() => {
-      if (window.innerWidth <= 768 && quickSearch.value.trim() === '') {
-        topContainer.classList.remove('mobile-hidden');
-        tableContainer.classList.add('mobile-hidden');
-      }
-    }, 300); // chờ bàn phím đóng hẳn
-  });
-});
 </script>
 
 </body>
