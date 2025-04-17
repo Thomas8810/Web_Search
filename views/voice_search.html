@@ -413,6 +413,12 @@ function renderSearchHistory(containerId) {
     renderSearchHistory("searchHistory");
   });
 </script>
+<script>
+function clearSearchHistory() {
+  localStorage.removeItem("searchHistory");
+  renderSearchHistory("searchHistory"); // Cập nhật lại hiển thị
+}
+</script>
 
 
 <script>
