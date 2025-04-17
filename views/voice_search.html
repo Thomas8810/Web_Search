@@ -395,24 +395,7 @@ function renderSearchHistory(containerId) {
 
 
 <h3 style="margin-top:2rem;">🕘 Lịch sử tìm kiếm</h3>
-<div id="searchHistory" style="margin: 1rem auto; max-width: 800px;"></div>
 
-<div style="text-align: center; margin-top: 1rem;">
-  <button onclick="clearSearchHistory()" style="
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border-radius: 6px;
-  ">🗑 Xóa lịch sử</button>
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    renderSearchHistory("searchHistory");
-  });
-</script>
 
 
 <script>
@@ -450,6 +433,72 @@ function renderSearchHistory(containerId) {
 }
 </script>
 
+
+<h3 style="margin-top:2rem;">🕘 Lịch sử tìm kiếm</h3>
+<div id="searchHistory" style="margin: 1rem auto; max-width: 800px;"></div>
+
+<div style="text-align: center; margin-top: 1rem;">
+  <button onclick="clearSearchHistory()" style="
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+  ">🗑 Xóa lịch sử</button>
+</div>
+
+
+<script>
+function renderSearchHistory(containerId) {
+  const container = document.getElementById(containerId);
+  const data = JSON.parse(localStorage.getItem("searchHistory") || "[]");
+  if (!data.length) {
+    container.innerHTML = "<p style='color: gray;'>Chưa có lịch sử tìm kiếm</p>";
+    return;
+  }
+  let rows = "";
+  data.reverse().forEach((item, idx) => {
+    rows += `
+      <tr>
+        <td style='padding: 0.5rem; border: 1px solid #666;'>${idx + 1}</td>
+        <td style='padding: 0.5rem; border: 1px solid #666;'>${item.partNumber}</td>
+        <td style='padding: 0.5rem; border: 1px solid #666;'>${item.source}</td>
+        <td style='padding: 0.5rem; border: 1px solid #666;'>${new Date(item.timestamp).toLocaleString("vi-VN")}</td>
+      </tr>
+    `;
+  });
+  container.innerHTML = `
+<div style="overflow-x: auto; max-width: 100%; margin-top: 1rem;">
+  <table style="width: 100%; border-collapse: collapse; color: white;">
+    <thead style="background-color: #444;">
+      <tr>
+        <th style="padding: 0.5rem; border: 1px solid #666;">#</th>
+        <th style="padding: 0.5rem; border: 1px solid #666;">Part Number</th>
+        <th style="padding: 0.5rem; border: 1px solid #666;">Nguồn</th>
+        <th style="padding: 0.5rem; border: 1px solid #666;">Thời gian</th>
+      </tr>
+    </thead>
+    <tbody id="searchHistoryBody">
+    </tbody>
+  </table>
+</div>
+`;
+  document.getElementById("searchHistoryBody").innerHTML = rows;
+}
+
+function clearSearchHistory() {
+  localStorage.removeItem("searchHistory");
+  renderSearchHistory("searchHistory");
+}
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    renderSearchHistory("searchHistory");
+  });
+</script>
 </body>
+
 
 </html>
