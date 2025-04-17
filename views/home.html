@@ -1569,12 +1569,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  
   function quickSearchFromHistory(partNumber) {
-    const input = document.getElementById("quick-search");
-    if (input) {
-      input.value = partNumber;
-      input.dispatchEvent(new Event('input'));
+    // Gán vào bộ lọc tiêu chí số 1
+    const col1 = document.getElementById("filter-column-1");
+    const val1 = document.getElementById("filter-value-1");
+    if (col1 && val1) {
+      col1.value = "Part Number";
+      col1.dispatchEvent(new Event("change")); // cập nhật select2 nếu có
+      setTimeout(() => {
+        if ($(val1).data('select2')) {
+          $(val1).val([partNumber]).trigger("change");
+        } else {
+          val1.value = partNumber;
+        }
+        // Gọi lọc
+        applyFilters(true);
+      }, 100);
     }
+  }
+
   }
 
   function clearSearchHistory() {
