@@ -834,7 +834,393 @@ input:focus, select:focus {
     }
   </script>
 <!-- Các mã JS hiện tại -->
+<script>
+    // Hàm format Excel date
+    function formatExcelDate(val) {
+      if(val && !isNaN(val)) {
+        let num = parseFloat(val);
+        let date = new Date((num - 25569) * 86400 * 1000);
+        let year = date.getFullYear();
+        let month = (date.getMonth() + 1).toString().padStart(2, '0');
+        let day = date.getDate().toString().padStart(2, '0');
+        return `${year}-${month}-${day}`;
+      }
+      return val || '';
+    }
+    // Hàm format phần trăm
+    function formatPercentage(val) {
+      if(val === undefined || val === null || val === '') return '';
+      if(!isNaN(val)) {
+        let num = parseFloat(val);
+        return num <= 1 ? Math.round(num * 100) + '%' : num + '%';
+      }
+      return val;
+    }
 
+    let currentFilters = {};
+    let currentOffset = 0;
+    const pageSize = 50;
+    let totalData = 0;
+    let currentZoom = 1;
+    // Biến chứa toàn bộ dữ liệu
+    let allData = null;
+
+    // Hàm load toàn bộ dữ liệu khi trang mở
+    function loadAllData() {
+      $.getJSON('/search?limit=1000000', function(response) {
+        allData = response.data;
+        totalData = response.total; // Update totalData here
+      });
+    }
+
+    // Hàm load dữ liệu dự án cho phần "Chọn dự án"
+    function loadDistinctValuesForProject() {
+      const selectElem = $('#filter-project');
+      selectElem.empty();
+      $.getJSON('/filters', function(data) {
+if (data['Customer']) {
+  data['Customer'].forEach(function(val) {
+    const option = new Option(val, val, false, false);
+    selectElem.append(option);
+  });
+}
+        selectElem.trigger('change');
+      });
+    }
+
+
+
+
+    $(document).ready(function() {
+      loadAllData(); // Tải toàn bộ dữ liệu một lần
+
+      // Khởi tạo Select2 ban đầu
+      $('.value-select').not('#filter-value-2').select2({
+        placeholder: i18next.t("choose_value"),
+        allowClear: true,
+        width: '100%',
+        closeOnSelect: false
+      });
+      $('#filter-project').select2({
+        placeholder: i18next.t("choose_project"),
+        allowClear: true,
+        width: '100%',
+        closeOnSelect: false
+      });
+      $('#filter-value-2').select2({
+        placeholder: i18next.t("choose_value"),
+        allowClear: true,
+        width: '100%'
+      });
+
+      // Load dữ liệu cho "Chọn dự án"
+      loadDistinctValuesForProject();
+
+      // Xử lý paste Excel cho filter-value-2
+      $(document).on('paste', '#filter-value-2 ~ .select2 .select2-search__field', function(e) {
+        e.preventDefault();
+        var clipboardData = e.originalEvent.clipboardData.getData('text/plain');
+        var values = clipboardData.split(/\r?\n/).reduce(function(acc, line) {
+          return acc.concat(line.split('\t'));
+        }, []).filter(function(val) {
+          return val.trim() !== '';
+        });
+        var $select = $('#filter-value-2');
+        var currentValues = $select.val() || [];
+        var newValues = currentValues.concat(values);
+        newValues = Array.from(new Set(newValues));
+        $select.val(newValues).trigger('change');
+      });
+
+      // Khi chọn dự án => cập nhật block 1, cascade block 2
+      $('#filter-project').on('change', function(){
+        updateFilterValuesForBlock(1);
+        updateCascade(2);
+      });
+      // Ban đầu, cập nhật block 1
+      updateFilterValuesForBlock(1);
+
+      // Sự kiện thay đổi tiêu chí và giá trị cho các block
+      $('#filter-column-1').on('change', function() {
+        updateFilterValuesForBlock(1);
+        updateCascade(2);
+      });
+      $('#filter-value-1').on('change', function() {
+        updateCascade(2);
+      });
+      $('#filter-column-2').on('change', function() {
+        updateFilterValuesForBlock(2);
+        updateCascade(3);
+      });
+      $('#filter-value-2').on('change', function() {
+        updateCascade(3);
+      });
+      $('#filter-column-3').on('change', function() {
+        updateFilterValuesForBlock(3);
+      });
+
+      // Các nút chức năng: Lọc, Xóa, Tải thêm, Xuất Excel, Zoom
+      $('#apply-filters').on('click', function() {
+        applyFilters(true);
+      });
+      $('#clear-filters').on('click', function() {
+        $('.value-select').val(null).trigger('change');
+        $('#filter-value-2').val(null).trigger('change');
+        applyFilters(true);
+      });
+      $('#load-more').on('click', function() {
+        if (currentOffset < totalData) {
+          let queryString = $.param(currentFilters);
+          $.getJSON(`/search?${queryString}&offset=${currentOffset}`, function(response) {
+            currentOffset += pageSize;
+            updateTable(response.data, false);
+          });
+        } else {
+          alert("Đã tải hết dữ liệu!");
+        }
+      });
+      $('#load-all').on('click', function() {
+        let queryParams = {};
+        const sheetValues = $('#filter-project').val();
+        if (sheetValues && sheetValues.length > 0) {
+          queryParams["Customer"] = sheetValues.join(',');
+        }
+        for (let i = 1; i <= 3; i++) {
+          const col = $(`#filter-column-${i}`).val();
+          const values = $(`#filter-value-${i}`).val();
+          if (values && values.length > 0) {
+            queryParams[col] = values.join(',');
+          }
+        }
+        queryParams.limit = 1000000;
+        queryParams.offset = 0;
+        const queryString = $.param(queryParams);
+        $.getJSON(`/search?${queryString}`, function(response) {
+          currentOffset = response.total;
+          updateTable(response.data, true);
+        });
+      });
+      $('#download-excel').on('click', function() { downloadExcel(); });
+      $('#export-all').on('click', function() {
+        let queryParams = {};
+        const sheetValues = $('#filter-project').val();
+        if (sheetValues && sheetValues.length > 0) {
+          queryParams["Customer"] = sheetValues.join(',');
+        }
+        for (let i = 1; i <= 3; i++) {
+          const col = $(`#filter-column-${i}`).val();
+          const values = $(`#filter-value-${i}`).val();
+          if (values && values.length > 0) {
+            queryParams[col] = values.join(',');
+          }
+        }
+        const queryString = $.param(queryParams);
+        window.location.href = `/export?${queryString}`;
+      });
+      $('#zoom-in').on('click', function() {
+        currentZoom += 0.1;
+        $('#results-table').css('zoom', currentZoom);
+      });
+      $('#zoom-out').on('click', function() {
+        if (currentZoom > 0.5) {
+          currentZoom -= 0.1;
+          $('#results-table').css('zoom', currentZoom);
+        }
+      });
+      // Check if colResizable is available before using it
+      try {
+        if (typeof $.fn.colResizable === 'function') {
+          $('#results-table').colResizable({ liveDrag: true });
+        }
+      } catch(e) {
+        console.log("colResizable not available:", e);
+      }
+
+      applyFilters(true);
+    });
+
+    // Hàm cập nhật dropdown cho blockIndex dựa trên dữ liệu đã lọc
+    function updateFilterValuesForBlock(blockIndex) {
+      if (!allData) {
+        setTimeout(function(){ updateFilterValuesForBlock(blockIndex); }, 100);
+        return;
+      }
+      let filteredData = allData.slice();
+
+      // Lọc theo dự án (Sheet)
+      const sheetValues = $('#filter-project').val();
+      if (sheetValues && sheetValues.length > 0) {
+        filteredData = filteredData.filter(function(row) {
+          return sheetValues.some(function(s) {
+            return row['Customer'] && row['Customer'].toString().toLowerCase().includes(s.toLowerCase());
+          });
+        });
+      }
+      // Lọc theo các block trước (block 1 đến blockIndex - 1)
+      for (let i = 1; i < blockIndex; i++) {
+        let col = $('#filter-column-' + i).val();
+        let values = $('#filter-value-' + i).val();
+        if (col && values && values.length > 0) {
+          filteredData = filteredData.filter(function(row) {
+            return values.some(function(v) {
+              return row[col] && row[col].toString().toLowerCase().includes(v.toLowerCase());
+            });
+          });
+        }
+      }
+      // Lấy giá trị distinct cho cột của block hiện tại
+      let dependentColumn = $('#filter-column-' + blockIndex).val();
+      let values = filteredData.map(function(row) {
+        let cellVal = row[dependentColumn];
+        if (cellVal == null) return "";
+        if (typeof cellVal === 'string') {
+          return cellVal.trim().toUpperCase();
+        }
+        return cellVal.toString();
+      }).filter(function(v) { return v !== ""; });
+      let distinctValues = Array.from(new Set(values));
+      distinctValues.sort((a, b) => a.localeCompare(b));
+
+      const selectElem = $('#filter-value-' + blockIndex);
+      selectElem.empty();
+      distinctValues.forEach(function(val) {
+        const option = new Option(val, val, false, false);
+        selectElem.append(option);
+      });
+      selectElem.trigger('change');
+    }
+
+    // Hàm cascade: cập nhật các block từ startBlock đến 3
+    function updateCascade(startBlock) {
+      for (let i = startBlock; i <= 3; i++) {
+        updateFilterValuesForBlock(i);
+      }
+    }
+
+    // Hàm áp dụng lọc (chỉ duyệt qua 3 tiêu chí)
+    function applyFilters(reset = true) {
+      if (reset) {
+        currentOffset = 0;
+        $('#results-table tbody').empty();
+      }
+      let queryParams = { limit: pageSize, offset: currentOffset };
+      const sheetValues = $('#filter-project').val();
+      if (sheetValues && sheetValues.length > 0) {
+        queryParams["Customer"] = sheetValues.join(',');
+      }
+      for (let i = 1; i <= 3; i++) {
+        const col = $(`#filter-column-${i}`).val();
+        const values = $(`#filter-value-${i}`).val();
+        if (values && values.length > 0) {
+          queryParams[col] = values.join(',');
+        }
+      }
+      currentFilters = queryParams;
+      const queryString = $.param(queryParams);
+      $.getJSON(`/search?${queryString}`, function(response) {
+        totalData = response.total;
+        currentOffset += pageSize;
+        updateTable(response.data, true);
+      });
+    }
+
+    // Hàm cập nhật bảng dữ liệu
+function updateTable(data, reset) {
+  const tbody = $('#results-table tbody');
+  if (reset) tbody.empty();
+  
+  data.forEach(function(row) {
+    const serial = tbody.children().length + 1;
+    const tr = $('<tr>');
+
+    // Các cột cố định và các cột theo thứ tự đã định
+    tr.append(`<td class="sticky-col-1">${serial}</td>`);
+    tr.append(`<td class="sticky-col-2">${row['Part Number'] || ''}</td>`);
+    tr.append(`<td class="sticky-col-3">${row['REV'] || ''}</td>`);
+    tr.append(`<td>${row['Approval Status'] || ''}</td>`);
+    tr.append(`<td>${row['Customer'] || ''}</td>`);
+    tr.append(`<td>${row['Commodity'] || ''}</td>`);
+    tr.append(`<td>${row['Production Status'] || ''}</td>`);
+    tr.append(`<td>${row['Part Pictures'] || ''}</td>`);
+    tr.append(`<td>${row['Packaging Pictures'] || ''}</td>`);
+    tr.append(`<td>${row['Critical'] || ''}</td>`);
+    tr.append(`<td>${row['CE'] || ''}</td>`);
+    tr.append(`<td>${row['PO Number'] || ''}</td>`);
+    tr.append(`<td>${row['Description'] || ''}</td>`);
+    tr.append(`<td>${row['Type'] || ''}</td>`);
+    tr.append(`<td>${row['Note Number'] || ''}</td>`);
+    tr.append(`<td>${formatExcelDate(row['PO received date'])}</td>`);
+    tr.append(`<td>${formatExcelDate(row['Customer need date'])}</td>`);
+    tr.append(`<td>${row['Requirements'] || ''}</td>`);
+    tr.append(`<td>${row['FAIR Cover sheet'] || ''}</td>`);
+    tr.append(`<td>${row['Bubble Drawings'] || ''}</td>`);
+    tr.append(`<td>${row['Datasheet form'] || ''}</td>`);
+    tr.append(`<td>${row['LAIR Data'] || row['LAIR data'] || ''}</td>`);
+    tr.append(`<td>${row['FAIR Data'] || ''}</td>`);
+    tr.append(`<td>${row['COC'] || ''}</td>`);
+    tr.append(`<td>${row['BOM'] || ''}</td>`);
+    tr.append(`<td>${row['Mill'] || ''}</td>`);
+    tr.append(`<td>${row['Test reports / evidences'] || ''}</td>`);
+    tr.append(`<td>${row['Remark 1'] || ''}</td>`);
+    tr.append(`<td>${row['Remark 2'] || ''}</td>`);
+    tr.append(`<td>${formatExcelDate(row['Submit date'])}</td>`);
+    tr.append(`<td>${row['Reject comments'] || ''}</td>`);
+
+    tbody.append(tr);
+  });
+
+  var totalText = i18next.t("total_rows", { count: tbody.children().length, total: totalData });
+  $('#results-count').text(totalText);
+
+  // Sử dụng colResizable nếu có
+  try {
+    if (typeof $.fn.colResizable === 'function') {
+      $('#results-table').colResizable({ liveDrag: true });
+    }
+  } catch (e) {
+    console.log("colResizable not available in updateTable:", e);
+  }
+}
+
+    // Hàm xuất Excel
+    function downloadExcel() {
+      var wb = XLSX.utils.table_to_book(document.getElementById('results-table'), {sheet:"Sheet1"});
+      XLSX.writeFile(wb, 'ketqua.xlsx');
+    }
+
+    // Hàm sắp xếp bảng khi click tiêu đề cột
+    function getColumnIndex(columnName) {
+      let index = -1;
+      $('#results-table th').each(function(i) {
+        if ($(this).data('column') === columnName) {
+          index = i;
+          return false;
+        }
+      });
+      return index;
+    }
+    function sortTable(column, order) {
+      let rows = $('#results-table tbody tr').get();
+      let colIndex = getColumnIndex(column);
+      if (colIndex === -1) return;
+      rows.sort(function(a, b) {
+        let A = $(a).children('td').eq(colIndex).text().toUpperCase();
+        let B = $(b).children('td').eq(colIndex).text().toUpperCase();
+        return order === 'asc' ? A.localeCompare(B) : B.localeCompare(A);
+      });
+      $.each(rows, function(index, row) {
+        $('#results-table tbody').append(row);
+      });
+    }
+    $(document).on('click', '#results-table th', function() {
+      const col = $(this).data('column');
+      if (!col) return;
+      const currentOrder = $(this).data('order') || 'asc';
+      const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
+      $(this).data('order', newOrder);
+      sortTable(col, newOrder);
+    });
+  </script>
 <!-- Modal OCR (Không có xem trước ảnh) -->
 <div id="cameraModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:#000; justify-content:center; align-items:center; z-index:9999; overflow-y:auto; transition: all 0.3s ease;">
 <div style="background:#fff; padding:16px; border-radius:8px; width:95%; max-width:400px; text-align:center;">
@@ -851,7 +1237,7 @@ input:focus, select:focus {
 <button id="btnCloseCamera" style="padding:10px 14px; font-size:14px; flex:1 0 40%;">❌ Đóng</button>
 </div>
 <input id="ocrInput" placeholder="Kết quả OCR..." style="margin-top:10px; width:100%; padding:8px; font-size:14px;" type="text"/>
-<p id="ocrStatus" style="font-size:14px; margin-top:10px;; margin-bottom: 20px; display: block;">Đang chờ thao tác...</p>
+<p id="ocrStatus" style="font-size:14px; margin-top:10px; margin-bottom: 20px; display: block;">Đang chờ thao tác...</p>
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
@@ -971,8 +1357,50 @@ const cropHeight = canvas.height * 0.2;
   });
 });
 </script>
-
-
+<script>
+window.addEventListener('resize', () => {
+  const activeEl = document.activeElement;
+  if (activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA')) {
+    setTimeout(() => {
+      activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 300);
+  }
+});
+</script><script>
+// Scroll riêng cho input OCR khi focus (bàn phím mở lên)
+document.addEventListener('DOMContentLoaded', function () {
+  const ocrInput = document.getElementById('ocrInput');
+  if (ocrInput) {
+    ocrInput.addEventListener('focus', () => {
+      setTimeout(() => {
+        ocrInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
+    });
+  }
+});
+</script><script>
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('ocrInput');
+  if (input) {
+    input.addEventListener('focus', () => {
+      setTimeout(() => {
+        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
+    });
+  }
+});
+</script><script>
+document.addEventListener('DOMContentLoaded', function () {
+  const inputs = document.querySelectorAll('.filter-bar input, .filter-bar select');
+  inputs.forEach((input) => {
+    input.addEventListener('focus', () => {
+      setTimeout(() => {
+        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
+    });
+  });
+});
+</script>
 <script>
 // Spinner control
 function showSpinner() {
@@ -1005,6 +1433,8 @@ function excelDateToJSDate(serial) {
   return new Date(excelEpoch.getTime() + serial * 86400000);
 }
 </script>
+
+
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const topContainer = document.querySelector('.top-container');
