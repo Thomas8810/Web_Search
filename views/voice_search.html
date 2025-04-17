@@ -27,11 +27,37 @@
       margin-top: 2rem;
       font-size: 1.1rem;
     }
-  </style>
+  
+    #listening-indicator {
+      display: none;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      animation: pulse 1s infinite;
+      color: #00ffcc;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
+    #backHome {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      background: #555;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    </style>
 </head>
 <body>
+<a id="backHome" href="/home">← Quay về trang chủ</a>
   <h1>🎤 Tìm kiếm Part Number bằng giọng nói</h1>
   <button id="speakBtn">Bấm để nói</button>
+  <div id="listening-indicator">🎧 Đang nghe...</div>
   <div class="result" id="result"></div>
 
   <script>
@@ -93,9 +119,11 @@
       recognition.interimResults = false;
       recognition.maxAlternatives = 1;
 
+      document.getElementById("listening-indicator").style.display = "block";
       recognition.start();
 
       recognition.onresult = async (event) => {
+      document.getElementById("listening-indicator").style.display = "none";
         const transcript = event.results[0][0].transcript;
         resultDiv.innerHTML = `Bạn nói: <b>${transcript}</b><br/>Đang xử lý...`;
 
@@ -123,6 +151,7 @@
       };
 
       recognition.onerror = (e) => {
+      document.getElementById("listening-indicator").style.display = "none";
         const msg = "Lỗi nhận diện giọng nói.";
         resultDiv.innerHTML = msg;
         speak(msg);
