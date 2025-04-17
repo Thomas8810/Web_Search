@@ -59,19 +59,35 @@
       text-decoration: none;
       border: 1px solid #ccc;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    .table-scroll {
+      overflow-x: auto;
       margin-top: 1rem;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 1000px;
       font-size: 0.9rem;
     }
     th, td {
       border: 1px solid #ccc;
       padding: 6px;
+      white-space: nowrap;
     }
     th {
       background: #333;
       color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    td:first-child, th:first-child,
+    td:nth-child(2), th:nth-child(2),
+    td:nth-child(3), th:nth-child(3) {
+      position: sticky;
+      left: 0;
+      background: #1e1e2f;
+      z-index: 1;
     }
   </style>
 </head>
@@ -84,7 +100,7 @@
   <button id="recordBtn">🎙️ Nhấn để bắt đầu</button>
   <div id="statusListening"></div>
   <div id="result"></div>
-  <div id="relatedResults"></div>
+  <div class="table-scroll" id="relatedResults"></div>
   <a href="/home" id="backHome">← Quay về trang chủ</a>
 
   <script>
