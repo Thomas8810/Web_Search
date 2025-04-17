@@ -46,7 +46,11 @@ function loadDataFromFile() {
       let raw = JSON.parse(fileData);
 
       // Tự động lấy cột
-      headerOrder = Object.keys(raw[0] || []);
+      const headerSet = new Set();
+raw.forEach(row => {
+  Object.keys(row).forEach(key => headerSet.add(key));
+});
+headerOrder = Array.from(headerSet);
 
       cachedData = raw.map(row => {
         const normalized = {};
