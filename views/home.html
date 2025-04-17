@@ -1536,7 +1536,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 <a href="/voice_search" style="position: fixed;
           bottom: 20px;
-          right: 20px;
+          left: 20px;
           background: #007bff;
           color: white;
           padding: 8px 10px;
@@ -1584,11 +1584,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener("DOMContentLoaded", renderSearchHistory);
 </script>
-
 <!-- 📜 Lịch sử nổi Part Number -->
-<div id="floating-history" style="position: fixed; bottom: 80px; right: 20px; background: rgba(30,30,30,0.95); color: white; padding: 16px; border-radius: 12px; max-width: 280px; max-height: 300px; overflow-y: auto; box-shadow: 0 0 10px rgba(0,0,0,0.5); z-index: 9999;">
-<h4 style="margin-top: 0;">📜 Lịch sử tìm kiếm</h4>
-<ul id="searchHistory" style="list-style: none; padding-left: 0; margin: 0;"></ul>
+
+
+<!-- 📜 Nút mở popup + Popup lịch sử -->
+<button onclick="toggleHistoryPopup()" style="position: fixed; bottom: 20px; left: 20px; background: #00cc99; color: white; border: none; border-radius: 50%; width: 48px; height: 48px; font-size: 20px; cursor: pointer; z-index: 9999;" title="Lịch sử tìm kiếm">🕘</button>
+<div id="floating-history-popup" style="display: none; position: fixed; bottom: 80px; left: 20px; background: rgba(30,30,30,0.95); color: white; padding: 16px; border-radius: 12px; width: 300px; max-height: 360px; overflow-y: auto; box-shadow: 0 0 10px rgba(0,0,0,0.5); z-index: 9999;">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<h4 style="margin: 0;">📜 Lịch sử tìm kiếm</h4>
+<button onclick="toggleHistoryPopup()" style="background: transparent; color: white; border: none; font-size: 20px; cursor: pointer;">×</button>
+</div>
+<ul id="searchHistory" style="list-style: none; padding-left: 0; margin: 12px 0;"></ul>
 <button onclick="clearSearchHistory()" style="margin-top: 8px; background:#cc4444; color:white; padding:6px 12px; border:none; border-radius:6px; cursor:pointer; width:100%;">🗑️ Xóa lịch sử</button>
 </div>
 </body></html>
+
+<script>
+  function toggleHistoryPopup() {
+    const popup = document.getElementById("floating-history-popup");
+    if (popup) {
+      popup.style.display = (popup.style.display === "none" || popup.style.display === "") ? "block" : "none";
+    }
+  }
+</script>
