@@ -11,6 +11,31 @@
 <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
 <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
 <style>
+    /* Đoạn CSS responsive máy tính */
+@media (min-width: 768px) {
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    overflow-y: auto;
+  }
+
+  input, select, textarea {
+    touch-action: manipulation;
+    -webkit-user-select: text;
+    user-select: text;
+    caret-color: auto;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
     /* Cài đặt CSS cơ bản */
     html, body { height: 100%; margin: 0; padding: 0; }
     body {
