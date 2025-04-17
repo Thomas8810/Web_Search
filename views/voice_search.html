@@ -41,9 +41,20 @@
       100% { opacity: 0.3; }
     }
     #backHome {
+  display: inline-block;
+  background: #343a40;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+
       position: fixed;
-      top: 15px;
-      left: 15px;
+      top: 20px;
+      left: 20px;
       background: #555;
       color: white;
       padding: 8px 12px;
@@ -151,6 +162,10 @@
       };
 
       recognition.onerror = (e) => {
+      console.log("Lỗi giọng nói:", e);
+      const msg = "Lỗi: " + e.error + (e.message ? " (" + e.message + ")" : "");
+      resultDiv.innerHTML = msg;
+      speak("Có lỗi xảy ra khi nhận giọng nói.");
       document.getElementById("listening-indicator").style.display = "none";
         const msg = "Lỗi nhận diện giọng nói.";
         resultDiv.innerHTML = msg;
