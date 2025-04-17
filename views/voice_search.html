@@ -230,9 +230,9 @@
       });
     }
 
-    async function processTranscript(transcript) {
+    async function processTranscript(transcript, fromHistory = false) {
       const cleaned = transcript.replace(/\s+/g, '').toUpperCase();
-      saveToHistory(cleaned);
+      if (!fromHistory) saveToHistory(cleaned);
       resultDiv.innerHTML = `🗣 Bạn nói: <b>${transcript}</b><br>→ Chuẩn hóa: <b>${cleaned}</b>`;
       const data = await fetchData();
       const results = data.filter(row => typeof row["Part Number"] === "string" && row["Part Number"].toUpperCase().includes(cleaned));
@@ -382,7 +382,7 @@
       const li = document.createElement("li");
       li.style.marginBottom = "6px";
       li.innerHTML = `
-<button onclick="processTranscript('${item.partNumber}'); navigator.clipboard.writeText('${item.partNumber}')" 
+<button onclick="processTranscript('${item.partNumber}', true); navigator.clipboard.writeText('${item.partNumber}')" 
         title="Click để tra cứu và sao chép" 
         style="background:#444; color:white; padding:6px 12px; border:none; border-radius:6px; cursor:pointer;">
         ${item.partNumber}</button> <small style="color:#ccc">(${item.time})</small>`;
