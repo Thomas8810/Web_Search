@@ -141,6 +141,9 @@ app.get('/home.html', isAuthenticated, (req, res) => {
 app.get('/tasks', isAuthenticated, (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'tasks.html'));
 });
+app.get('/voice_search', isAuthenticated, (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'voice_search.html'));
+});
 app.get('/dashboard', isAuthenticated, (req, res) => {
   res.send(`Chào mừng ${req.session.user.name || req.session.user.email}, đây là trang dashboard.`);
 });
