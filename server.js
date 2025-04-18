@@ -511,8 +511,26 @@ app.get('/export', (req, res) => {
     }
   }
 
-  const wb = XLSX.utils.book_new();
 
+
+    // Format lại các cột ngày thành YYYY-MM-DD
+  const dateColumns = ['PO received date', 'Customer need date', 'Submit date'];
+  filtered = filtered.map(row => {
+    const newRow = { ...row };
+    dateColumns.forEach(col => {
+      if (newRow[col]) {
+        const date = new Date(newRow[col]);
+        if (!isNaN(date)) {
+          const yyyy = date.getFullYear();
+          const mm = String(date.getMonth() + 1).padStart(2, '0');
+          const dd = String(date.getDate()).padStart(2, '0');
+          newRow[col] = `${yyyy}-${mm}-${dd}`;
+        }
+      }
+    });
+    return newRow;
+  });
+  const wb = XLSX.utils.book_new();
   const ws = XLSX.utils.json_to_sheet(filtered, { header: headerOrder });
 
   XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
