@@ -29583,7 +29583,8 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -31714,7 +31715,8 @@
     "PO received date": 45700,
     "Customer need date": 45732,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -39307,7 +39309,7 @@
     "PO Number": 4700844254,
     "Part Number": "711-A27362-510",
     "REV": "C",
-    "Description": "711-A27360-101",
+    "Description": "FGD LINER,HI PWR",
     "Customer": "LAM",
     "Commodity": "Machining",
     "Critical": "-",
