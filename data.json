@@ -25815,6 +25815,7 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -26739,6 +26740,7 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -27212,7 +27214,8 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -27321,6 +27324,7 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -27694,6 +27698,7 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -27823,7 +27828,8 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -28009,6 +28015,7 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -28396,10 +28403,17 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Test reports / evidences": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45771,
+    "Approval Status": "submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -28735,7 +28749,8 @@
     "PO received date": 45642,
     "Customer need date": 45740,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -28929,6 +28944,7 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -28971,6 +28987,7 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -29121,10 +29138,17 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Test reports / evidences": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45771,
+    "Approval Status": "submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -29420,10 +29444,17 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Test reports / evidences": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45771,
+    "Approval Status": "submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -29443,10 +29474,17 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Test reports / evidences": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45771,
+    "Approval Status": "submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -30816,7 +30854,8 @@
     "PO received date": 45680,
     "Customer need date": 45761,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -31327,6 +31366,7 @@
     "Customer need date": 45704,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -31425,6 +31465,7 @@
     "Customer need date": 45704,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -31734,7 +31775,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Production Status": "FQC on-going",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -32131,6 +32172,7 @@
     "Customer need date": 45767,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -32227,6 +32269,7 @@
     "Customer need date": 45767,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -32479,6 +32522,7 @@
     "Customer need date": 45767,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -33008,6 +33052,7 @@
     "Customer need date": 45742,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Remark 2": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -34275,7 +34320,7 @@
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Submit date": 45770,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -34326,7 +34371,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 45770,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -34648,7 +34693,7 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Part Pictures": "-",
-    "Production Status": "FQC on-going",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -34954,7 +34999,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 45770,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -36550,7 +36595,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 45770,
-    "Approval Status": "submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -36588,6 +36633,7 @@
     "Customer need date": 45731,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -36618,7 +36664,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 45770,
-    "Approval Status": "submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -37156,7 +37202,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 45770,
-    "Approval Status": "submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -37213,6 +37259,7 @@
     "Customer need date": 45731,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -37271,7 +37318,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Production Status": "FQC on-going",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -37330,6 +37377,7 @@
     "Customer need date": 45731,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -38283,6 +38331,7 @@
     "Customer need date": 45731,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -39203,7 +39252,8 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -39515,6 +39565,7 @@
     "Customer need date": 46067,
     "Requirements": "LAIR",
     "Part Pictures": "-",
+    "Production Status": "FQC on-going",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -40593,7 +40644,8 @@
     "PO received date": 45701,
     "Customer need date": 45740,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -48957,9 +49009,19 @@
     "PO received date": 45762,
     "Customer need date": 45699,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Test reports / evidences": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45771,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -48977,8 +49039,75 @@
     "PO received date": 45762,
     "Customer need date": 45699,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Test reports / evidences": "OK",
     "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
+    "Submit date": 45771,
+    "Approval Status": "Submitted",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2025,
+    "Check": "714-073562-006LAMSheet Metal",
+    "Type": "FA",
+    "PO Number": 4503116660,
+    "Part Number": "714-073562-006",
+    "REV": "C",
+    "Description": "RING,ESC REMOVAL,TESC",
+    "Customer": "LAM",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45768,
+    "Customer need date": 45874,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2026,
+    "Check": "714-040035-024GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO250423017",
+    "Part Number": "714-040035-024",
+    "REV": "D",
+    "Description": "TOPBRKT,PVCWTRMANF,FACIL,WTR",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45770,
+    "Customer need date": 45852,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2027,
+    "Check": "714-A72348-001GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO250423017",
+    "Part Number": "714-A72348-001",
+    "REV": "B",
+    "Description": "ENCL,AC/DC REV.B",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45770,
+    "Customer need date": 45852,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   }
