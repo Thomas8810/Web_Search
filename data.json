@@ -29315,7 +29315,7 @@
     "PO Number": "PO241220055",
     "Part Number": "714-A85919-002",
     "REV": "A",
-    "Description": "BRKT,MTG,EMO\r\r\n",
+    "Description": "839-109369-030",
     "Customer": "GUMI",
     "Commodity": "Sheet Metal",
     "Critical": "-",
@@ -33536,7 +33536,8 @@
     "PO received date": 45736,
     "Customer need date": 45758,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -35585,7 +35586,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 45775,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -35615,7 +35616,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 45775,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -38534,7 +38535,8 @@
     "PO received date": 45638,
     "Customer need date": 45731,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -39589,8 +39591,18 @@
     "Requirements": "LAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "LAIR data": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Test reports / evidences": "OK",
     "Part Pictures": "OK",
-    "Approval Status": "On going",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
+    "Submit date": 45776,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -39992,10 +40004,20 @@
     "PO received date": 45708,
     "Customer need date": 46067,
     "Requirements": "LAIR",
-    "FAIR Data": "CMM",
-    "Part Pictures": "-",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "LAIR data": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Test reports / evidences": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45776,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -40131,7 +40153,8 @@
     "PO received date": 45713,
     "Customer need date": 45807,
     "Requirements": "LAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -40150,7 +40173,8 @@
     "PO received date": 45713,
     "Customer need date": 45807,
     "Requirements": "LAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -40160,7 +40184,7 @@
     "Type": "FA",
     "PO Number": 4700858330,
     "Part Number": "715-B74783-054",
-    "REV": "C",
+    "REV": "D",
     "Description": "CHMBR,EEC,MACH I+",
     "Customer": "LAM",
     "Commodity": "Machining",
@@ -40170,6 +40194,7 @@
     "Customer need date": 45807,
     "Requirements": "LAIR",
     "Part Pictures": "-",
+    "Remark 1": "Up ver D",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -40882,9 +40907,17 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Test reports / evidences": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Approval Status": "On going",
+    "Production Status": "Finish Good",
+    "Submit date": 45776,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -41755,55 +41788,6 @@
   },
   {
     "No": 1690,
-    "Check": "0244713-006LAMSheet Metal",
-    "Type": "FA",
-    "Part Number": "0244713-006",
-    "REV": "AC",
-    "Description": "CASTING,ASSY,OPTICS,SP3",
-    "Customer": "LAM",
-    "Commodity": "Sheet Metal",
-    "Critical": "-",
-    "CE": "N",
-    "PO received date": 45441,
-    "Customer need date": 45397,
-    "Requirements": "FAIR",
-    "FAIR Cover sheet": "OK",
-    "Bubble Drawings": "OK",
-    "Datasheet form": "OK",
-    "COC": "OK",
-    "BOM": "N",
-    "Part Pictures": "-",
-    "Remark 1": "PROJECT KLA",
-    "Approval Status": "On going",
-    "Sheet": "Detailed listed"
-  },
-  {
-    "No": 1691,
-    "Check": "0247931-008LAMSheet Metal",
-    "Type": "FA",
-    "PO Number": 21782556,
-    "Part Number": "0247931-008",
-    "REV": "AA",
-    "Description": "SUB-ASSY,CASTING,MAIN OPTICS,SP3",
-    "Customer": "LAM",
-    "Commodity": "Sheet Metal",
-    "Critical": "-",
-    "CE": "N",
-    "PO received date": 44963,
-    "Customer need date": 45397,
-    "Requirements": "FAIR",
-    "FAIR Cover sheet": "OK",
-    "Bubble Drawings": "OK",
-    "Datasheet form": "OK",
-    "COC": "OK",
-    "BOM": "N",
-    "Part Pictures": "-",
-    "Remark 1": "PROJECT KLA",
-    "Approval Status": "On going",
-    "Sheet": "Detailed listed"
-  },
-  {
-    "No": 1692,
     "Check": "21-130845-00LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4502704235,
@@ -41827,7 +41811,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1693,
+    "No": 1691,
     "Check": "853-A10798-201LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4502726788,
@@ -41851,7 +41835,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1694,
+    "No": 1692,
     "Check": "839-B05101-001LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4503116535,
@@ -41870,7 +41854,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1695,
+    "No": 1693,
     "Check": "714-322025-025LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4503107828,
@@ -41888,7 +41872,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1696,
+    "No": 1694,
     "Check": "839-B33590-004LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4503116659,
@@ -41906,7 +41890,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1697,
+    "No": 1695,
     "Check": "303-23144-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -41928,7 +41912,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1698,
+    "No": 1696,
     "Check": "3013031MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -41950,7 +41934,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1699,
+    "No": 1697,
     "Check": "1010905MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -41972,7 +41956,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1700,
+    "No": 1698,
     "Check": "1019706MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -41994,7 +41978,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1701,
+    "No": 1699,
     "Check": "144-00004-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42015,7 +41999,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1702,
+    "No": 1700,
     "Check": "303-07757-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42037,7 +42021,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1703,
+    "No": 1701,
     "Check": "303-05935-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42059,7 +42043,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1704,
+    "No": 1702,
     "Check": "1007167MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42080,7 +42064,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1705,
+    "No": 1703,
     "Check": "1017845MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42102,7 +42086,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1706,
+    "No": 1704,
     "Check": "1021596MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42124,7 +42108,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1707,
+    "No": 1705,
     "Check": "1006208MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42146,7 +42130,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1708,
+    "No": 1706,
     "Check": "1006795MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42168,7 +42152,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1709,
+    "No": 1707,
     "Check": "040-00003-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42189,7 +42173,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1710,
+    "No": 1708,
     "Check": "040-00011-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42210,7 +42194,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1711,
+    "No": 1709,
     "Check": "303-23023-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42232,7 +42216,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1712,
+    "No": 1710,
     "Check": "1017191MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42253,7 +42237,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1713,
+    "No": 1711,
     "Check": "303-05028-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42275,7 +42259,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1714,
+    "No": 1712,
     "Check": "1001917MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42297,7 +42281,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1715,
+    "No": 1713,
     "Check": "1000499MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42319,7 +42303,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1716,
+    "No": 1714,
     "Check": "1011964MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42341,7 +42325,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1717,
+    "No": 1715,
     "Check": "303-17815-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42363,7 +42347,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1718,
+    "No": 1716,
     "Check": "139-00008-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42384,7 +42368,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1719,
+    "No": 1717,
     "Check": "303-12325-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42406,7 +42390,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1720,
+    "No": 1718,
     "Check": "1021225MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42428,7 +42412,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1721,
+    "No": 1719,
     "Check": "303-05105-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42450,7 +42434,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1722,
+    "No": 1720,
     "Check": "303-05103-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42472,7 +42456,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1723,
+    "No": 1721,
     "Check": "1019703MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42494,7 +42478,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1724,
+    "No": 1722,
     "Check": "303-05097-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42516,7 +42500,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1725,
+    "No": 1723,
     "Check": "303-05095-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42538,7 +42522,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1726,
+    "No": 1724,
     "Check": "1019200MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42560,7 +42544,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1727,
+    "No": 1725,
     "Check": "1002981MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -42581,7 +42565,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1728,
+    "No": 1726,
     "Check": "303-05094-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000894,
@@ -42604,7 +42588,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1729,
+    "No": 1727,
     "Check": "303-05961-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000894,
@@ -42626,7 +42610,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1730,
+    "No": 1728,
     "Check": "303-17345-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000894,
@@ -42648,7 +42632,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1731,
+    "No": 1729,
     "Check": "303-18076-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000894,
@@ -42669,7 +42653,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1732,
+    "No": 1730,
     "Check": "1002279MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000894,
@@ -42691,7 +42675,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1733,
+    "No": 1731,
     "Check": "1019705MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000894,
@@ -42713,7 +42697,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1734,
+    "No": 1732,
     "Check": "1019696MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000894,
@@ -42735,7 +42719,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1735,
+    "No": 1733,
     "Check": "303-07750-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000894,
@@ -42757,7 +42741,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1736,
+    "No": 1734,
     "Check": "303-05109-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000894,
@@ -42779,7 +42763,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1737,
+    "No": 1735,
     "Check": "1011954MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000894,
@@ -42800,7 +42784,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1738,
+    "No": 1736,
     "Check": "303-07822-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000898,
@@ -42821,7 +42805,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1739,
+    "No": 1737,
     "Check": "544-00032-08MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000898,
@@ -42842,7 +42826,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1740,
+    "No": 1738,
     "Check": "544-00032-05MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000898,
@@ -42863,7 +42847,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1741,
+    "No": 1739,
     "Check": "544-00032-04MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000898,
@@ -42884,7 +42868,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1742,
+    "No": 1740,
     "Check": "1014786MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000898,
@@ -42906,7 +42890,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1743,
+    "No": 1741,
     "Check": "1019197MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000898,
@@ -42928,7 +42912,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1744,
+    "No": 1742,
     "Check": "1000288MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000931,
@@ -42949,7 +42933,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1745,
+    "No": 1743,
     "Check": "1000289MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000931,
@@ -42970,7 +42954,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1746,
+    "No": 1744,
     "Check": "1000290MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000931,
@@ -42991,7 +42975,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1747,
+    "No": 1745,
     "Check": "1000291MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000931,
@@ -43012,7 +42996,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1748,
+    "No": 1746,
     "Check": "1000292MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000931,
@@ -43033,7 +43017,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1749,
+    "No": 1747,
     "Check": "1000293MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000931,
@@ -43054,7 +43038,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1750,
+    "No": 1748,
     "Check": "1000355MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000931,
@@ -43075,7 +43059,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1751,
+    "No": 1749,
     "Check": "1000402MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000931,
@@ -43096,7 +43080,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1752,
+    "No": 1750,
     "Check": "1000403MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000931,
@@ -43117,7 +43101,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1753,
+    "No": 1751,
     "Check": "1000934MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000931,
@@ -43138,7 +43122,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1754,
+    "No": 1752,
     "Check": "303-22987-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000931,
@@ -43160,7 +43144,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1755,
+    "No": 1753,
     "Check": "1001469MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000946,
@@ -43181,7 +43165,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1756,
+    "No": 1754,
     "Check": "301-05174-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43200,7 +43184,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1757,
+    "No": 1755,
     "Check": "303-18900-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43214,13 +43198,23 @@
     "PO received date": 45706,
     "Customer need date": 45762,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Test reports / evidences": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45776,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1758,
+    "No": 1756,
     "Check": "303-05026-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43239,7 +43233,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1759,
+    "No": 1757,
     "Check": "1022208MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43259,7 +43253,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1760,
+    "No": 1758,
     "Check": "303-18075-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43278,7 +43272,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1761,
+    "No": 1759,
     "Check": "1004581MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43297,7 +43291,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1762,
+    "No": 1760,
     "Check": "303-19456-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43316,7 +43310,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1763,
+    "No": 1761,
     "Check": "1017202MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43335,7 +43329,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1764,
+    "No": 1762,
     "Check": "1005657MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43354,7 +43348,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1765,
+    "No": 1763,
     "Check": "303-20006-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43373,7 +43367,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1766,
+    "No": 1764,
     "Check": "303-20005-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43392,7 +43386,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1767,
+    "No": 1765,
     "Check": "303-17972-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43411,7 +43405,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1768,
+    "No": 1766,
     "Check": "303-05939-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43431,7 +43425,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1769,
+    "No": 1767,
     "Check": "303-05940-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43451,7 +43445,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1770,
+    "No": 1768,
     "Check": "1001092MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000953,
@@ -43470,7 +43464,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1771,
+    "No": 1769,
     "Check": "1005991MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000966,
@@ -43489,7 +43483,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1772,
+    "No": 1770,
     "Check": "3001529MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000966,
@@ -43508,7 +43502,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1773,
+    "No": 1771,
     "Check": "301-23223-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000966,
@@ -43527,7 +43521,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1774,
+    "No": 1772,
     "Check": "303-01365-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000966,
@@ -43546,7 +43540,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1775,
+    "No": 1773,
     "Check": "303-23220-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000966,
@@ -43565,7 +43559,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1776,
+    "No": 1774,
     "Check": "303-23226-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000966,
@@ -43584,7 +43578,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1777,
+    "No": 1775,
     "Check": "1000284MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43603,7 +43597,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1778,
+    "No": 1776,
     "Check": "1000721MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43622,7 +43616,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1779,
+    "No": 1777,
     "Check": "1000829MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43641,7 +43635,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1780,
+    "No": 1778,
     "Check": "1001356MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43660,7 +43654,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1781,
+    "No": 1779,
     "Check": "1001582MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43679,7 +43673,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1782,
+    "No": 1780,
     "Check": "1005662MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43698,7 +43692,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1783,
+    "No": 1781,
     "Check": "1008870MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43717,7 +43711,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1784,
+    "No": 1782,
     "Check": "1010852MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43736,7 +43730,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1785,
+    "No": 1783,
     "Check": "1011233MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43755,7 +43749,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1786,
+    "No": 1784,
     "Check": "1011283MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43774,7 +43768,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1787,
+    "No": 1785,
     "Check": "1019965MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43793,7 +43787,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1788,
+    "No": 1786,
     "Check": "1020534MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43812,7 +43806,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1789,
+    "No": 1787,
     "Check": "1020535MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43831,7 +43825,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1790,
+    "No": 1788,
     "Check": "1022156MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43850,7 +43844,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1791,
+    "No": 1789,
     "Check": "1026682MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43869,7 +43863,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1792,
+    "No": 1790,
     "Check": "1030831MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43888,7 +43882,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1793,
+    "No": 1791,
     "Check": "1032165MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43907,7 +43901,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1794,
+    "No": 1792,
     "Check": "3001528MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000959,
@@ -43927,7 +43921,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1795,
+    "No": 1793,
     "Check": "853-224693-002Texon PBXMachining",
     "Type": "FA",
     "PO Number": 4503060176,
@@ -43947,7 +43941,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1796,
+    "No": 1794,
     "Check": "853-800083-413Texon PBXMachining",
     "Type": "FA",
     "PO Number": 4503060177,
@@ -43967,7 +43961,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1797,
+    "No": 1795,
     "Check": "853-290073-014Texon PBXMachining",
     "Type": "FA",
     "PO Number": 4503060178,
@@ -43987,7 +43981,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1798,
+    "No": 1796,
     "Check": "575-305086-001Texon PBXMachining",
     "Type": "FA",
     "PO Number": 4503082847,
@@ -44007,7 +44001,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1799,
+    "No": 1797,
     "Check": "853-800083-648Texon PBXMachining",
     "Type": "FA",
     "PO Number": 4503088218,
@@ -44027,7 +44021,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1800,
+    "No": 1798,
     "Check": "714-064035-007Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44047,7 +44041,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1801,
+    "No": 1799,
     "Check": "714-115875-522Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44067,7 +44061,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1802,
+    "No": 1800,
     "Check": "714-115875-511Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44087,7 +44081,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1803,
+    "No": 1801,
     "Check": "714-120243-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44107,7 +44101,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1804,
+    "No": 1802,
     "Check": "714-064499-005Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44127,7 +44121,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1805,
+    "No": 1803,
     "Check": "714-119819-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44147,7 +44141,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1806,
+    "No": 1804,
     "Check": "714-119402-007Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44167,7 +44161,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1807,
+    "No": 1805,
     "Check": "714-085299-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44188,7 +44182,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1808,
+    "No": 1806,
     "Check": "714-089223-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44208,7 +44202,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1809,
+    "No": 1807,
     "Check": "714-119402-109Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44228,7 +44222,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1810,
+    "No": 1808,
     "Check": "714-119403-003Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44248,7 +44242,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1811,
+    "No": 1809,
     "Check": "719-064080-512Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44268,7 +44262,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1812,
+    "No": 1810,
     "Check": "719-043334-509Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44288,7 +44282,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1813,
+    "No": 1811,
     "Check": "718-120360-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44308,7 +44302,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1814,
+    "No": 1812,
     "Check": "719-064080-518Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44328,7 +44322,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1815,
+    "No": 1813,
     "Check": "714-064728-006Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250308-02",
@@ -44348,7 +44342,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1816,
+    "No": 1814,
     "Check": "718-290991-012Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44368,7 +44362,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1817,
+    "No": 1815,
     "Check": "714-341507-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44388,7 +44382,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1818,
+    "No": 1816,
     "Check": "714-286892-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44408,7 +44402,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1819,
+    "No": 1817,
     "Check": "718-261091-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44428,7 +44422,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1820,
+    "No": 1818,
     "Check": "718-266439-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44448,7 +44442,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1821,
+    "No": 1819,
     "Check": "714-286898-003Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44468,7 +44462,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1822,
+    "No": 1820,
     "Check": "715-263042-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44488,7 +44482,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1823,
+    "No": 1821,
     "Check": "719-441437-170Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44508,7 +44502,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1824,
+    "No": 1822,
     "Check": "714-286893-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44528,7 +44522,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1825,
+    "No": 1823,
     "Check": "714-286898-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44548,7 +44542,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1826,
+    "No": 1824,
     "Check": "719-441437-185Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44568,7 +44562,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1827,
+    "No": 1825,
     "Check": "714-287292-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44588,7 +44582,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1828,
+    "No": 1826,
     "Check": "713-260625-013Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44608,7 +44602,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1829,
+    "No": 1827,
     "Check": "839-121582-004Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44629,7 +44623,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1830,
+    "No": 1828,
     "Check": "713-265503-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44649,7 +44643,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1831,
+    "No": 1829,
     "Check": "839-081800-004Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-01",
@@ -44669,7 +44663,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1832,
+    "No": 1830,
     "Check": "719-441437-030Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250313-03",
@@ -44689,7 +44683,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1833,
+    "No": 1831,
     "Check": "714-286998-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250320-01",
@@ -44709,7 +44703,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1834,
+    "No": 1832,
     "Check": "718-235567-004Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44730,7 +44724,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1835,
+    "No": 1833,
     "Check": "714-235728-003Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44751,7 +44745,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1836,
+    "No": 1834,
     "Check": "714-235738-003Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44772,7 +44766,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1837,
+    "No": 1835,
     "Check": "714-124698-103Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44793,7 +44787,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1838,
+    "No": 1836,
     "Check": "713-236307-005Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44814,7 +44808,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1839,
+    "No": 1837,
     "Check": "714-236116-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44835,7 +44829,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1840,
+    "No": 1838,
     "Check": "714-236117-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44856,7 +44850,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1841,
+    "No": 1839,
     "Check": "714-235884-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44877,7 +44871,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1842,
+    "No": 1840,
     "Check": "715-036764-004Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44898,7 +44892,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1843,
+    "No": 1841,
     "Check": "713-036974-003Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44919,7 +44913,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1844,
+    "No": 1842,
     "Check": "713-236307-006Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44940,7 +44934,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1845,
+    "No": 1843,
     "Check": "714-123931-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44961,7 +44955,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1846,
+    "No": 1844,
     "Check": "714-124717-102Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -44982,7 +44976,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1847,
+    "No": 1845,
     "Check": "714-124718-101Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -45003,7 +44997,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1848,
+    "No": 1846,
     "Check": "718-243489-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -45024,7 +45018,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1849,
+    "No": 1847,
     "Check": "714-285152-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -45045,7 +45039,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1850,
+    "No": 1848,
     "Check": "714-239317-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -45066,7 +45060,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1851,
+    "No": 1849,
     "Check": "714-239318-003Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -45087,7 +45081,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1852,
+    "No": 1850,
     "Check": "839-117995-007Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -45108,7 +45102,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1853,
+    "No": 1851,
     "Check": "714-239320-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -45129,7 +45123,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1854,
+    "No": 1852,
     "Check": "714-262225-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -45150,7 +45144,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1855,
+    "No": 1853,
     "Check": "714-272056-003Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250327-01",
@@ -45171,7 +45165,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1856,
+    "No": 1854,
     "Check": "714-248213-006Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45193,7 +45187,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1857,
+    "No": 1855,
     "Check": "714-311891-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45216,7 +45210,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1858,
+    "No": 1856,
     "Check": "714-249621-003Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45238,7 +45232,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1859,
+    "No": 1857,
     "Check": "714-299612-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45261,7 +45255,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1860,
+    "No": 1858,
     "Check": "714-224690-006Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45283,7 +45277,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1861,
+    "No": 1859,
     "Check": "715-286870-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45305,7 +45299,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1862,
+    "No": 1860,
     "Check": "714-299979-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45326,7 +45320,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1863,
+    "No": 1861,
     "Check": "714-295589-003Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45349,7 +45343,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1864,
+    "No": 1862,
     "Check": "714-292764-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45373,7 +45367,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1865,
+    "No": 1863,
     "Check": "714-248231-004Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45395,7 +45389,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1866,
+    "No": 1864,
     "Check": "714-248229-003Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45417,7 +45411,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1867,
+    "No": 1865,
     "Check": "714-248226-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45438,7 +45432,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1868,
+    "No": 1866,
     "Check": "714-308937-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45459,7 +45453,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1869,
+    "No": 1867,
     "Check": "713-210640-710Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45480,7 +45474,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1870,
+    "No": 1868,
     "Check": "15-273408-00Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45501,7 +45495,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1871,
+    "No": 1869,
     "Check": "714-316119-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45525,7 +45519,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1872,
+    "No": 1870,
     "Check": "718-299787-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45546,7 +45540,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1873,
+    "No": 1871,
     "Check": "714-228184-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45567,7 +45561,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1874,
+    "No": 1872,
     "Check": "714-224970-018Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45588,7 +45582,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1875,
+    "No": 1873,
     "Check": "713-300318-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45609,7 +45603,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1876,
+    "No": 1874,
     "Check": "714-271493-008Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45632,7 +45626,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1877,
+    "No": 1875,
     "Check": "714-286604-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45655,7 +45649,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1878,
+    "No": 1876,
     "Check": "718-299787-001Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45676,7 +45670,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1879,
+    "No": 1877,
     "Check": "714-308127-200Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-01",
@@ -45697,7 +45691,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1880,
+    "No": 1878,
     "Check": "687-119673-003Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-03",
@@ -45718,7 +45712,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1881,
+    "No": 1879,
     "Check": "687-044016-023Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-03",
@@ -45739,7 +45733,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1882,
+    "No": 1880,
     "Check": "687-044016-005Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-03",
@@ -45760,7 +45754,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1883,
+    "No": 1881,
     "Check": "718-A46268-245Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-03",
@@ -45781,7 +45775,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1884,
+    "No": 1882,
     "Check": "719-441437-085Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-03",
@@ -45802,7 +45796,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1885,
+    "No": 1883,
     "Check": "687-119673-007Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-03",
@@ -45823,7 +45817,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1886,
+    "No": 1884,
     "Check": "718-A46268-275Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20250404-03",
@@ -45844,7 +45838,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1887,
+    "No": 1885,
     "Check": "714-083009-011Texon PBXSheet Metal",
     "Type": "FA",
     "Part Number": "714-083009-011",
@@ -45864,7 +45858,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1888,
+    "No": 1886,
     "Check": "714-083010-011Texon PBXSheet Metal",
     "Type": "FA",
     "Part Number": "714-083010-011",
@@ -45884,7 +45878,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1889,
+    "No": 1887,
     "Check": "714-082889-002Texon PBXSheet Metal",
     "Type": "FA",
     "Part Number": "714-082889-002",
@@ -45907,7 +45901,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1890,
+    "No": 1888,
     "Check": "714-082890-001Texon PBXSheet Metal",
     "Type": "FA",
     "Part Number": "714-082890-001",
@@ -45930,7 +45924,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1891,
+    "No": 1889,
     "Check": "714-082865-021Texon PBXSheet Metal",
     "Type": "FA",
     "Part Number": "714-082865-021",
@@ -45953,7 +45947,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1892,
+    "No": 1890,
     "Check": "714-082889-585Texon PBXSheet Metal",
     "Type": "FA",
     "Part Number": "714-082889-585",
@@ -45974,7 +45968,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1893,
+    "No": 1891,
     "Check": "853-082890-586Texon PBXSheet Metal",
     "Type": "FA",
     "Part Number": "853-082890-586",
@@ -45994,7 +45988,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1894,
+    "No": 1892,
     "Check": "713-A12915-002Texon PBXSheet Metal",
     "Type": "FA",
     "Part Number": "713-A12915-002",
@@ -46015,7 +46009,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1895,
+    "No": 1893,
     "Check": "715-067402-002LAMMachining",
     "Type": "FA",
     "PO Number": 4502965290,
@@ -46044,7 +46038,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1896,
+    "No": 1894,
     "Check": "02038100-502CurieSheet Metal",
     "Type": "FA",
     "PO Number": "2959447",
@@ -46071,7 +46065,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1897,
+    "No": 1895,
     "Check": "714-336910-003GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO231228002",
@@ -46098,7 +46092,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1898,
+    "No": 1896,
     "Check": "714-336911-003GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO231228002",
@@ -46125,7 +46119,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1899,
+    "No": 1897,
     "Check": "714-A34973-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO231228002",
@@ -46152,7 +46146,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1900,
+    "No": 1898,
     "Check": "714-339033-312GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO231228002",
@@ -46179,7 +46173,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1901,
+    "No": 1899,
     "Check": "714-339033-010GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO231228002",
@@ -46206,7 +46200,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1902,
+    "No": 1900,
     "Check": "714-332613-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO231228002",
@@ -46233,7 +46227,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1903,
+    "No": 1901,
     "Check": "839-140704-311GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO230710006",
@@ -46260,7 +46254,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1904,
+    "No": 1902,
     "Check": "714-139403-411GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO231228002",
@@ -46287,7 +46281,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1905,
+    "No": 1903,
     "Check": "839-220981-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO231228002",
@@ -46314,7 +46308,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1906,
+    "No": 1904,
     "Check": "714-220984-007GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO231228002",
@@ -46341,7 +46335,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1907,
+    "No": 1905,
     "Check": "714-221495-003GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240130005",
@@ -46368,7 +46362,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1908,
+    "No": 1906,
     "Check": "714-220984-008GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240130005",
@@ -46395,7 +46389,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1909,
+    "No": 1907,
     "Check": "718-142127-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404027",
@@ -46422,7 +46416,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1910,
+    "No": 1908,
     "Check": "714-118802-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46449,7 +46443,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1911,
+    "No": 1909,
     "Check": "714-174738-007GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46476,7 +46470,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1912,
+    "No": 1910,
     "Check": "839-112640-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46503,7 +46497,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1913,
+    "No": 1911,
     "Check": "714-174339-006GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46530,7 +46524,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1914,
+    "No": 1912,
     "Check": "714-174506-005GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46557,7 +46551,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1915,
+    "No": 1913,
     "Check": "714-174579-006GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46584,7 +46578,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1916,
+    "No": 1914,
     "Check": "714-174581-005GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46611,7 +46605,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1917,
+    "No": 1915,
     "Check": "714-308559-003GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46638,7 +46632,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1918,
+    "No": 1916,
     "Check": "714-174584-004GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46665,7 +46659,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1919,
+    "No": 1917,
     "Check": "714-174586-004GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46692,7 +46686,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1920,
+    "No": 1918,
     "Check": "714-174602-004GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46719,7 +46713,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1921,
+    "No": 1919,
     "Check": "714-294167-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46746,7 +46740,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1922,
+    "No": 1920,
     "Check": "714-294167-003GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46773,7 +46767,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1923,
+    "No": 1921,
     "Check": "714-294168-029GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240404026",
@@ -46800,7 +46794,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1924,
+    "No": 1922,
     "Check": "714-116882-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240611004",
@@ -46827,7 +46821,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1925,
+    "No": 1923,
     "Check": "714-116884-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240611004",
@@ -46854,7 +46848,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1926,
+    "No": 1924,
     "Check": "714-116886-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240611004",
@@ -46881,7 +46875,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1927,
+    "No": 1925,
     "Check": "714-116887-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240611004",
@@ -46908,7 +46902,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1928,
+    "No": 1926,
     "Check": "714-116888-004GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240611004",
@@ -46935,7 +46929,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1929,
+    "No": 1927,
     "Check": "714-116889-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240611004",
@@ -46962,7 +46956,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1930,
+    "No": 1928,
     "Check": "714-116894-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240611004",
@@ -46989,7 +46983,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1931,
+    "No": 1929,
     "Check": "714-146162-600GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240611004",
@@ -47016,7 +47010,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1932,
+    "No": 1930,
     "Check": "714-146392-610GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240611004",
@@ -47043,7 +47037,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1933,
+    "No": 1931,
     "Check": "714-146817-610GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240611004",
@@ -47070,7 +47064,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1934,
+    "No": 1932,
     "Check": "714-147243-610GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240611004",
@@ -47097,7 +47091,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1935,
+    "No": 1933,
     "Check": "715-114856-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240611004",
@@ -47124,7 +47118,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1936,
+    "No": 1934,
     "Check": "714-A57238-010GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240712008",
@@ -47151,7 +47145,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1937,
+    "No": 1935,
     "Check": "714-A61205-020GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240712008",
@@ -47178,7 +47172,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1938,
+    "No": 1936,
     "Check": "714-116782-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -47205,7 +47199,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1939,
+    "No": 1937,
     "Check": "714-095488-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -47232,7 +47226,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1940,
+    "No": 1938,
     "Check": "714-105166-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -47259,7 +47253,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1941,
+    "No": 1939,
     "Check": "714-105179-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -47286,7 +47280,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1942,
+    "No": 1940,
     "Check": "714-111878-700GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -47313,7 +47307,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1943,
+    "No": 1941,
     "Check": "714-111879-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -47340,7 +47334,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1944,
+    "No": 1942,
     "Check": "714-116803-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -47367,7 +47361,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1945,
+    "No": 1943,
     "Check": "714-116794-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -47394,7 +47388,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1946,
+    "No": 1944,
     "Check": "15-315550-00GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO241118003",
@@ -47421,7 +47415,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1947,
+    "No": 1945,
     "Check": "15-315552-00GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO241118003",
@@ -47448,7 +47442,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1948,
+    "No": 1946,
     "Check": "839-200914-004GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO241217029",
@@ -47476,7 +47470,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1949,
+    "No": 1947,
     "Check": "839-200914-007GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO241217029",
@@ -47504,7 +47498,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1950,
+    "No": 1948,
     "Check": "839-200914-100GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO241217029",
@@ -47532,7 +47526,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1951,
+    "No": 1949,
     "Check": "718-344490-003GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO241217029",
@@ -47560,7 +47554,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1952,
+    "No": 1950,
     "Check": "718-344574-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO241217029",
@@ -47588,7 +47582,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1953,
+    "No": 1951,
     "Check": "839-260439-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO241217029",
@@ -47616,7 +47610,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1954,
+    "No": 1952,
     "Check": "718-219462-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO241217029",
@@ -47644,7 +47638,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1955,
+    "No": 1953,
     "Check": "718-345596-012GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240223026",
@@ -47671,7 +47665,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1956,
+    "No": 1954,
     "Check": "718-345596-013GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240223026",
@@ -47698,7 +47692,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1957,
+    "No": 1955,
     "Check": "718-345596-014GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240223026",
@@ -47725,7 +47719,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1958,
+    "No": 1956,
     "Check": "718-A13145-012GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240223026",
@@ -47752,7 +47746,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1959,
+    "No": 1957,
     "Check": "718-A13145-022GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240223026",
@@ -47779,7 +47773,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1960,
+    "No": 1958,
     "Check": "718-A13145-032GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240223026",
@@ -47806,7 +47800,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1961,
+    "No": 1959,
     "Check": "718-A22221-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240223026",
@@ -47833,7 +47827,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1962,
+    "No": 1960,
     "Check": "718-A22221-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240223026",
@@ -47860,7 +47854,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1963,
+    "No": 1961,
     "Check": "718-A22221-003GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240223026",
@@ -47887,7 +47881,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1964,
+    "No": 1962,
     "Check": "718-345596-002GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240306038",
@@ -47914,7 +47908,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1965,
+    "No": 1963,
     "Check": "718-345596-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240306038",
@@ -47941,7 +47935,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1966,
+    "No": 1964,
     "Check": "718-345596-003GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240306038",
@@ -47968,7 +47962,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1967,
+    "No": 1965,
     "Check": "718-345596-011GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240306038",
@@ -47995,7 +47989,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1968,
+    "No": 1966,
     "Check": "718-A20215-007GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO240306038",
@@ -48022,7 +48016,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1969,
+    "No": 1967,
     "Check": "714-198357-001HwaseongMachining",
     "Type": "FA",
     "PO Number": "PO241120L-01",
@@ -48051,7 +48045,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1970,
+    "No": 1968,
     "Check": "714-105166-002HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -48079,7 +48073,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1971,
+    "No": 1969,
     "Check": "714-105179-002HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -48107,7 +48101,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1972,
+    "No": 1970,
     "Check": "714-111878-700HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -48135,7 +48129,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1973,
+    "No": 1971,
     "Check": "714-111879-001HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -48163,7 +48157,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1974,
+    "No": 1972,
     "Check": "714-116780-002HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -48191,7 +48185,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1975,
+    "No": 1973,
     "Check": "714-116781-002HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -48219,7 +48213,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1976,
+    "No": 1974,
     "Check": "714-116811-001HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -48247,7 +48241,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1977,
+    "No": 1975,
     "Check": "714-116884-003HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -48275,7 +48269,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1978,
+    "No": 1976,
     "Check": "714-195178-600HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -48303,7 +48297,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1979,
+    "No": 1977,
     "Check": "714-195265-601HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -48331,7 +48325,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1980,
+    "No": 1978,
     "Check": "714-195266-601HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO240607L-01",
@@ -48359,7 +48353,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1981,
+    "No": 1979,
     "Check": "714-294061-002HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO241120L-01",
@@ -48388,7 +48382,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1982,
+    "No": 1980,
     "Check": "15-385841-02HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO241120L-01",
@@ -48417,7 +48411,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1983,
+    "No": 1981,
     "Check": "17-461174-00HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO241120L-01",
@@ -48446,7 +48440,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1984,
+    "No": 1982,
     "Check": "17-382918-00HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO241120L-01",
@@ -48475,7 +48469,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1985,
+    "No": 1983,
     "Check": "714-183844-001HwaseongSheet Metal",
     "Type": "FA",
     "PO Number": "PO241120L-01",
@@ -48504,7 +48498,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1986,
+    "No": 1984,
     "Check": "715-A39794-613LAMMachining",
     "Type": "FA",
     "PO Number": 4700817483,
@@ -48532,7 +48526,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1987,
+    "No": 1985,
     "Check": "853-015790-002LAMMachining",
     "Type": "FA",
     "PO Number": 4502981076,
@@ -48560,7 +48554,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1988,
+    "No": 1986,
     "Check": "02-408979-00LAMMachining",
     "Type": "FA",
     "PO Number": 4503017745,
@@ -48589,7 +48583,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1989,
+    "No": 1987,
     "Check": "713-B75426-001LAMPlastic",
     "Type": "FA",
     "PO Number": 4700833881,
@@ -48616,7 +48610,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1990,
+    "No": 1988,
     "Check": "713-B75426-002LAMPlastic",
     "Type": "FA",
     "PO Number": 4700833881,
@@ -48643,7 +48637,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1991,
+    "No": 1989,
     "Check": "713-B75426-003LAMPlastic",
     "Type": "FA",
     "PO Number": 4700833881,
@@ -48670,7 +48664,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1992,
+    "No": 1990,
     "Check": "713-B69354-690LAMPlastic",
     "Type": "FA",
     "PO Number": 4502993816,
@@ -48697,7 +48691,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1993,
+    "No": 1991,
     "Check": "713-B69354-990LAMPlastic",
     "Type": "FA",
     "PO Number": 4502993816,
@@ -48724,7 +48718,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1994,
+    "No": 1992,
     "Check": "713-B76049-005LAMPlastic",
     "Type": "FA",
     "PO Number": 4700844761,
@@ -48751,7 +48745,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1995,
+    "No": 1993,
     "Check": "713-B76049-004LAMPlastic",
     "Type": "FA",
     "PO Number": 4700844761,
@@ -48778,7 +48772,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1996,
+    "No": 1994,
     "Check": "713-B77316-001LAMPlastic",
     "Type": "FA",
     "PO Number": 4503052805,
@@ -48805,7 +48799,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1997,
+    "No": 1995,
     "Check": "713-B82095-002LAMPlastic",
     "Type": "FA",
     "PO Number": 4503052805,
@@ -48832,7 +48826,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1998,
+    "No": 1996,
     "Check": "713-B85289-001LAMPlastic",
     "Type": "FA",
     "PO Number": 4503052805,
@@ -48859,7 +48853,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1999,
+    "No": 1997,
     "Check": "713-B85289-002LAMPlastic",
     "Type": "FA",
     "PO Number": 4503052805,
@@ -48886,7 +48880,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2000,
+    "No": 1998,
     "Check": "713-B85289-003LAMPlastic",
     "Type": "FA",
     "PO Number": 4503052805,
@@ -48913,7 +48907,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2001,
+    "No": 1999,
     "Check": "713-B62356-002LAMPlastic",
     "Type": "FA",
     "PO Number": 4503052805,
@@ -48940,7 +48934,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2002,
+    "No": 2000,
     "Check": "713-B88960-001LAMPlastic",
     "Type": "FA",
     "PO Number": 4503052805,
@@ -48968,7 +48962,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2003,
+    "No": 2001,
     "Check": "853-B42423-001LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4700781354,
@@ -48996,7 +48990,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2004,
+    "No": 2002,
     "Check": "839-B43675-001LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4700771739,
@@ -49024,7 +49018,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2005,
+    "No": 2003,
     "Check": "839-B43674-001LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4700771739,
@@ -49052,7 +49046,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2006,
+    "No": 2004,
     "Check": "857-B04409-001LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4700781354,
@@ -49081,7 +49075,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2007,
+    "No": 2005,
     "Check": "714-A36991-003LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4502983486,
@@ -49109,7 +49103,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2008,
+    "No": 2006,
     "Check": "839-B32734-001LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4700775391,
@@ -49137,7 +49131,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2009,
+    "No": 2007,
     "Check": "839-B32735-002LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4700775391,
@@ -49165,7 +49159,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2010,
+    "No": 2008,
     "Check": "839-B42361-002LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4700769250,
@@ -49193,7 +49187,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2011,
+    "No": 2009,
     "Check": "853-A37814-111LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4503024025,
@@ -49222,7 +49216,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2012,
+    "No": 2010,
     "Check": "1014847MattsonMachining",
     "Type": "FA",
     "PO Number": 6100000884,
@@ -49250,7 +49244,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2013,
+    "No": 2011,
     "Check": "839-B14237-002Texon PBXSheet Metal",
     "Type": "FA",
     "PO Number": "PBX20241114-01",
@@ -49279,7 +49273,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2014,
+    "No": 2012,
     "Check": "715-A41341-121LAMMachining",
     "Type": "FA",
     "PO Number": 4503118633,
@@ -49299,7 +49293,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2015,
+    "No": 2013,
     "Check": "715-A41341-122LAMMachining",
     "Type": "FA",
     "PO Number": 4503118634,
@@ -49319,7 +49313,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2016,
+    "No": 2014,
     "Check": "715-A41333-122LAMMachining",
     "Type": "FA",
     "PO Number": 4503118626,
@@ -49339,7 +49333,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2017,
+    "No": 2015,
     "Check": "715-011611-001LAMMachining",
     "Type": "FA",
     "PO Number": 4503115760,
@@ -49358,7 +49352,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2018,
+    "No": 2016,
     "Check": "715-194887-001LAMMachining",
     "Type": "FA",
     "PO Number": 4503115760,
@@ -49377,7 +49371,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2019,
+    "No": 2017,
     "Check": "1029360MattsonMachining",
     "Type": "FA",
     "PO Number": 6100001074,
@@ -49397,7 +49391,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2020,
+    "No": 2018,
     "Check": "303-18007-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100001074,
@@ -49417,7 +49411,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2021,
+    "No": 2019,
     "Check": "303-22337-00MattsonMachining",
     "Type": "FA",
     "PO Number": 6100001074,
@@ -49437,7 +49431,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2022,
+    "No": 2020,
     "Check": "839-130885-001LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4503067055,
@@ -49466,7 +49460,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2023,
+    "No": 2021,
     "Check": "853-145535-002LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4503067695,
@@ -49495,7 +49489,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2024,
+    "No": 2022,
     "Check": "853-224862-003LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4503067696,
@@ -49524,7 +49518,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2025,
+    "No": 2023,
     "Check": "714-073562-006LAMSheet Metal",
     "Type": "FA",
     "PO Number": 4503116660,
@@ -49542,7 +49536,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2026,
+    "No": 2024,
     "Check": "714-040035-024GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO250423017",
@@ -49560,7 +49554,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2027,
+    "No": 2025,
     "Check": "714-A72348-001GUMISheet Metal",
     "Type": "FA",
     "PO Number": "PO250423017",
@@ -49575,6 +49569,633 @@
     "Customer need date": 45852,
     "Requirements": "FAIR",
     "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2026,
+    "Check": "853-267823-001LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "853-267823-001",
+    "REV": "A",
+    "Description": "ASSY,TOOL,CUP REBUILD,QD,300MM",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2027,
+    "Check": "71-426738-00LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "71-426738-00",
+    "REV": "A",
+    "Description": "FIXTURE,GO/NO-GO,SNUBBER,CUP,SBR-XT",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2028,
+    "Check": "71-143819-00LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "71-143819-00",
+    "REV": "A",
+    "Description": "FXTR,2 POST TBEAM MAPPER,SETUP",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2029,
+    "Check": "524-164296-001LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "524-164296-001",
+    "REV": "B",
+    "Description": "FIXTURE,TEACH,RBT,VORTEX ALIGNER",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2030,
+    "Check": "71-136440-00LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "71-136440-00",
+    "REV": "B",
+    "Description": "WAFER,TEACH,ANNEAL ROBOT,300MM",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2031,
+    "Check": "02-423028-00LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "02-423028-00",
+    "REV": "A",
+    "Description": "ASSY,PED INTERFACE,LIFT,FOCUS,VXL SSM",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2032,
+    "Check": "71-300057-00LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "71-300057-00",
+    "REV": "A",
+    "Description": "FIXTURE,HIGH THRU,OPT ALGN",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2033,
+    "Check": "853-157771-006LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "853-157771-006",
+    "REV": "A",
+    "Description": "ASSY,FXTR,WEIR LEVELING,IRIS/FUSION",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2034,
+    "Check": "15-362468-00LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "15-362468-00",
+    "REV": "B",
+    "Description": "MOUNT,OPTICAL SWITCH,SMI CONNECTOR",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2035,
+    "Check": "713-157771-005LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "713-157771-005",
+    "REV": "C",
+    "Description": "FXTR,WEIR LEVELING,NEXT AND EXTREME",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2036,
+    "Check": "15-424182-00LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "15-424182-00",
+    "REV": "A",
+    "Description": "GUIDE,SLEEVE,O2 PROBE SEAL,SBR-XT",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2037,
+    "Check": "853-157771-005LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "853-157771-005",
+    "REV": "B",
+    "Description": "ASSY,FXTR,WEIR LEVELING,NEXT AND EXTREME",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2038,
+    "Check": "15-399610-00LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "15-399610-00",
+    "REV": "01",
+    "Description": "PLATE,ADPTR,C1 SAC FM,FLTR LAST,SBOM5",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2039,
+    "Check": "713-157771-006LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "713-157771-006",
+    "REV": "C",
+    "Description": "FXTR,WEIR WALL LEVELING,IRIS/FUSION",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2040,
+    "Check": "15-425670-06LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "15-425670-06",
+    "REV": "A",
+    "Description": "WSHR,FLAT,CRUSH,.180\",O2 PROBE SEAL,SBR-",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2041,
+    "Check": "16-417977-00LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "16-417977-00",
+    "REV": "03",
+    "Description": "RSVR,ATM SAC VENT,CELLS 1&2,SBR-XT",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2042,
+    "Check": "713-202752-001LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "713-202752-001",
+    "REV": "B",
+    "Description": "COV,DC CONN,FUSION",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2043,
+    "Check": "853-269720-002LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "853-269720-002",
+    "REV": "A",
+    "Description": "ASSY,2DRY CTMT,4L,SENSED,I12",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2044,
+    "Check": "839-199490-001LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4503120795,
+    "Part Number": "839-199490-001",
+    "REV": "A",
+    "Description": "SHIELD,CDM,PEBR",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45769,
+    "Customer need date": 46030,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2045,
+    "Check": "713-B91841-001LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4700873304,
+    "Part Number": "713-B91841-001",
+    "REV": "A",
+    "Description": "PL,HRVA,3DI,C4B-S,TYPE 1",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "C1",
+    "CE": "Y",
+    "PO received date": 45771,
+    "Customer need date": 45786,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2046,
+    "Check": "713-B91841-002LAMPlastic",
+    "Type": "FA",
+    "PO Number": 4700873304,
+    "Part Number": "713-B91841-002",
+    "REV": "A",
+    "Description": "PL,HRVA,3DI,C4B-S,TYPE 2",
+    "Customer": "LAM",
+    "Commodity": "Plastic",
+    "Critical": "C1",
+    "CE": "Y",
+    "PO received date": 45771,
+    "Customer need date": 45786,
+    "Requirements": "LAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2047,
+    "Check": "714-231254-011GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO241128031",
+    "Part Number": "714-231254-011",
+    "REV": "D",
+    "Description": "BRKT, 24V PS,RSD CEFEM",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45772,
+    "Customer need date": 45802,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "Cancel",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2048,
+    "Check": "714-310587-014GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO241128031",
+    "Part Number": "714-310587-014",
+    "REV": "A",
+    "Description": "BAR,BUS, MPD CEFEM UPS 2",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45772,
+    "Customer need date": 45802,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "Cancel",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2049,
+    "Check": "714-310587-022GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO241128031",
+    "Part Number": "714-310587-022",
+    "REV": "A",
+    "Description": "BAR,BUS, MPD CEFEM UPS 1",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45772,
+    "Customer need date": 45802,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "Cancel",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2050,
+    "Check": "714-A22013-002GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO241128031",
+    "Part Number": "714-A22013-002",
+    "REV": "B",
+    "Description": "ENCL,LPB,RT ACCESS,CEFEM",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45772,
+    "Customer need date": 45802,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "Cancel",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2051,
+    "Check": "714-A23513-002GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO241128031",
+    "Part Number": "714-A23513-002",
+    "REV": "A",
+    "Description": "BRKT,MTG,CB,LPB",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45772,
+    "Customer need date": 45802,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "Cancel",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2052,
+    "Check": "714-A23655-002GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO241128031",
+    "Part Number": "714-A23655-002",
+    "REV": "A",
+    "Description": "DOOR,LPB,CEFEM",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45772,
+    "Customer need date": 45802,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "Cancel",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2053,
+    "Check": "714-A24008-001GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO241128031",
+    "Part Number": "714-A24008-001",
+    "REV": "A",
+    "Description": "COV,WIREWAY,RS ACCESS,CEFEM",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45772,
+    "Customer need date": 45802,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "Cancel",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2054,
+    "Check": "714-A24176-002GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO241128031",
+    "Part Number": "714-A24176-002",
+    "REV": "A",
+    "Description": "PNL,CB,DEAD FRONT,LPB,CEFEM",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45772,
+    "Customer need date": 45802,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "Cancel",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2055,
+    "Check": "714-A25767-002GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO241128031",
+    "Part Number": "714-A25767-002",
+    "REV": "B",
+    "Description": "PNL,PUSHBUTTON,CEFEM,LPB",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45772,
+    "Customer need date": 45802,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "Cancel",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2056,
+    "Check": "714-A28918-002GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO241128031",
+    "Part Number": "714-A28918-002",
+    "REV": "B",
+    "Description": "PNL,MTG,24V INTERCONNECT,CEFEM",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45772,
+    "Customer need date": 45802,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "Cancel",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2057,
+    "Check": "714-A41581-002GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO241128031",
+    "Part Number": "714-A41581-002",
+    "REV": "A",
+    "Description": "BRKT,CONNECTOR MTG,LPB",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45772,
+    "Customer need date": 45802,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "Cancel",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2058,
+    "Check": "715-A29514-001GUMISheet Metal",
+    "Type": "FA",
+    "PO Number": "PO241128031",
+    "Part Number": "715-A29514-001",
+    "REV": "A",
+    "Description": "BRACE,SHIPPING,RSD LPB",
+    "Customer": "GUMI",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45772,
+    "Customer need date": 45802,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   }
 ]
