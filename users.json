@@ -48,6 +48,12 @@
     "role": "user"
   },
     {
+    "name": "Thang",
+    "email": "Thang@gmail.com",
+    "password": "Thang123",
+    "role": "user"
+  },
+    {
     "name": "Phuoc",
     "email": "Phuoc@gmail.com",
     "password": "Phuoc123",
