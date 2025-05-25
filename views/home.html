@@ -1505,28 +1505,8 @@ function updateTable(data, reset) {
         tr.append(`<td>${row['Customer'] || ''}</td>`);
         tr.append(`<td>${row['Commodity'] || ''}</td>`);
         tr.append(`<td>${row['Production Status'] || ''}</td>`);
-        
-        let partPicValue = row['Part Pictures'] || '';
-        let partPicContent = partPicValue; 
-        if (typeof partPicValue === 'string') {
-            if (partPicValue.toLowerCase().startsWith('http')) {
-                partPicContent = `<a href="${partPicValue}" target="_blank">Link</a>`;
-            } else if (partPicValue.trim().toUpperCase() === 'OK' || partPicValue.trim() === '') {
-                partPicContent = partNumberValue; 
-            }
-        }
-        tr.append(`<td>${partPicContent}</td>`);
-
-        let pkgPicValue = row['Packaging Pictures'] || '';
-        let pkgPicContent = pkgPicValue; 
-        if (typeof pkgPicValue === 'string') {
-            if (pkgPicValue.toLowerCase().startsWith('http')) {
-                pkgPicContent = `<a href="${pkgPicValue}" target="_blank">Link</a>`;
-            } else if (pkgPicValue.trim().toUpperCase() === 'OK' || pkgPicValue.trim() === '') {
-                pkgPicContent = partNumberValue; 
-            }
-        }
-        tr.append(`<td>${pkgPicContent}</td>`);
+        tr.append(`<td>${row['Part Pictures'] || ''}</td>`);
+        tr.append(`<td>${row['Packaging Pictures'] || ''}</td>`);
 
         tr.append(`<td>${row['Critical'] || ''}</td>`);
         tr.append(`<td>${row['CE'] || ''}</td>`);
