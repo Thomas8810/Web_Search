@@ -70,10 +70,14 @@
             border-radius: 4px;
             text-decoration: none;
             font-weight: bold;
-            transition: background 0.3s;
+            transition: background 0.4s ease-in-out, transform 0.4s ease-in-out; /* Mượt hơn */
         }
         .tasks-link:hover {
             background: #0056b3;
+            transform: scale(1.02); /* Thêm hiệu ứng hover */
+        }
+        .tasks-link:active {
+            transform: scale(0.98); /* Thêm hiệu ứng active */
         }
         .header h1 { margin: 0; font-size: 28px; color: white; }
         .header p { margin: 5px 0 0; font-size: 16px; color: #ddd; }
@@ -92,10 +96,14 @@
           border-radius: 3px;
           background: #ff8c00;
           color: white;
-          transition: background 0.3s;
+          transition: background 0.4s ease-in-out, transform 0.4s ease-in-out; /* Mượt hơn */
         }
         .language-switcher button:hover {
           background: #ff6500;
+          transform: scale(1.02); /* Thêm hiệu ứng hover */
+        }
+        .language-switcher button:active {
+            transform: scale(0.98); /* Thêm hiệu ứng active */
         }
         /* Khối chứa các tiêu chí lọc */
         .filter-bar {
@@ -164,8 +172,14 @@
           border: none;
           border-radius: 4px;
           cursor: pointer;
-          transition: 0.3s;
+          transition: background 0.4s ease-in-out, transform 0.4s ease-in-out; /* Mượt hơn */
           margin: 3px;
+        }
+        .action-bar button:hover {
+            transform: scale(1.02); /* Thêm hiệu ứng hover */
+        }
+        .action-bar button:active {
+            transform: scale(0.98); /* Thêm hiệu ứng active */
         }
         .filter-actions button {
           background: linear-gradient(45deg, #ff8c00, #ff4500);
@@ -845,7 +859,9 @@
                 "total_rows": "Total rows: {{count}} / {{total}}",
                 "developer": "Developer: Nguyễn Văn Đạo",
                 "date_from": "From Date:",
-                "date_to": "To Date:"
+                "date_to": "To Date:",
+                "no_image_found": "No image found for Part Number \"{{partNumber}}\" (ERP: {{erpCode}}).",
+                "no_erp_code": "No image for Part Number \"{{partNumber}}\". (Missing ERP-CODE)"
               }
             },
             ko: {
@@ -868,7 +884,9 @@
                 "total_rows": "총 행: {{count}} / {{total}}",
                 "developer": "개발자: Nguyễn Văn Đạo",
                 "date_from": "시작 날짜:",
-                "date_to": "종료 날짜:"
+                "date_to": "종료 날짜:",
+                "no_image_found": "부품 번호 \"{{partNumber}}\" (ERP: {{erpCode}})에 대한 이미지를 찾을 수 없습니다.",
+                "no_erp_code": "부품 번호 \"{{partNumber}}\"에 대한 이미지가 없습니다. (ERP-CODE 누락)"
               }
             },
             vi: {
@@ -891,7 +909,9 @@
                 "total_rows": "Tổng số dòng: {{count}} / {{total}}",
                 "developer": "Người phát triển: Nguyễn Văn Đạo",
                 "date_from": "Từ ngày:",
-                "date_to": "Đến ngày:"
+                "date_to": "Đến ngày:",
+                "no_image_found": "Ảnh cho Part Number \"{{partNumber}}\" (ERP: {{erpCode}}) không tồn tại.",
+                "no_erp_code": "Không có ảnh cho Part Number \"{{partNumber}}\". (Thiếu ERP-CODE)"
               }
             }
           }
@@ -969,18 +989,18 @@
             if (typeof val === 'number') {
                 let date = new Date(Date.UTC(1899, 11, 30 + val)); 
                 if (!isNaN(date)) {
-                    const yyyy = date.getUTCFullYear();
-                    const mm = String(date.getUTCMonth() + 1).padStart(2, '0');
-                    const dd = String(date.getUTCDate()).padStart(2, '0');
-                    return `${yyyy}-${mm}-${dd}`;
+                    const year = date.getUTCFullYear();
+                    const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+                    const day = String(date.getUTCDate()).padStart(2, '0');
+                    return `${year}-${month}-${day}`;
                 }
             } else if (typeof val === 'string') {
                 const parsed = new Date(val);
                 if (!isNaN(parsed)) {
-                    const yyyy = parsed.getFullYear(); 
-                    const mm = String(parsed.getMonth() + 1).padStart(2, '0');
-                    const dd = String(parsed.getDate()).padStart(2, '0');
-                    return `${yyyy}-${mm}-${dd}`;
+                    const year = parsed.getFullYear(); 
+                    const month = String(parsed.getMonth() + 1).padStart(2, '0');
+                    const day = String(parsed.getDate()).padStart(2, '0');
+                    return `${year}-${month}-${day}`;
                 }
             }
             return val; 
@@ -1254,7 +1274,7 @@
                             $thisImage.attr('src', highQualityUrl);
                         } else {
                             console.warn("Không tìm thấy URL ảnh chất lượng cao.");
-                            popupText.text('Lỗi: Không có URL ảnh lớn.').show();
+                            popupText.text(i18next.t('no_image_found', { partNumber: imagePopup.data('current-part-number') || 'N/A', erpCode: imagePopup.data('current-erp') || 'N/A' })).show();
                             popupSpinner.hide();
                             // $thisImage.show(); // Hiện lại ảnh cũ nếu có lỗi
                         }
@@ -1265,7 +1285,7 @@
                             $thisImage.attr('src', thumbnailUrl);
                         } else {
                             console.warn("Không tìm thấy URL ảnh thumbnail.");
-                            popupText.text('Lỗi: Không có URL ảnh thumbnail.').show();
+                            popupText.text(i18next.t('no_image_found', { partNumber: imagePopup.data('current-part-number') || 'N/A', erpCode: imagePopup.data('current-erp') || 'N/A' })).show();
                             popupSpinner.hide();
                             // $thisImage.show(); // Hiện lại ảnh cũ nếu có lỗi
                         }
@@ -1478,7 +1498,7 @@ function updateTable(data, reset) {
                     if (expectedErp && ($(this).attr('src') === '' || ($(this).attr('src') && $(this).attr('src').includes(expectedErp)))) {
                         popupSpinner.hide(); // Ẩn spinner khi có lỗi
                         $(this).hide();
-                        popupText.text(`Ảnh cho Part Number "${pn}" (ERP: ${expectedErp}) không tồn tại.`).show();
+                        popupText.text(i18next.t('no_image_found', { partNumber: pn, erpCode: expectedErp })).show();
                         if (imagePopup.is(':hidden')) {
                             imagePopup.css({ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }).show();
                         }
@@ -1492,7 +1512,7 @@ function updateTable(data, reset) {
             } else { // Không có ERP-CODE
                 popupSpinner.hide();
                 popupImg.hide();
-                popupText.text(`Không có ảnh cho Part Number "${currentPartNumberValueFromRow}". (Thiếu ERP-CODE)`).show();
+                popupText.text(i18next.t('no_erp_code', { partNumber: currentPartNumberValueFromRow })).show();
                 imagePopup.css({ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }).show();
             }
         });
@@ -1603,18 +1623,25 @@ function updateTable(data, reset) {
           $.each(rows, function(index, row) {
             $('#results-table tbody').append(row);
           });
+
+          // Cập nhật lại cột "No" sau khi sắp xếp
+          $('#results-table tbody tr').each(function(index) {
+            $(this).find('td:first-child').text(index + 1);
+          });
         }
         $(document).on('click', '#results-table th', function () {
             const col = $(this).data('column');
-            if (!col) return;
+            if (!col || col === "No") return; // Bỏ qua cột "No" khi sắp xếp
 
             const currentOrder = $(this).data('order') || 'asc';
             const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
 
             $('#results-table th').each(function () {
-                $(this).data('order', null);
-                const text = $(this).text().replace(/[▲▼]/g, '').trim();
-                $(this).text(text);
+                if ($(this).data('column') !== "No") { // Chỉ reset mũi tên cho các cột khác "No"
+                    $(this).data('order', null);
+                    const text = $(this).text().replace(/[▲▼]/g, '').trim();
+                    $(this).text(text);
+                }
             });
 
             const arrow = newOrder === 'asc' ? ' ▲' : ' ▼';
@@ -1637,9 +1664,9 @@ function updateTable(data, reset) {
             </div>
             <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 15px;">
-                <button id="btnCapture" style="padding:10px 14px; font-size:14px; flex:1 0 40%;">📸 Chụp &amp; Quét</button>
-                <button id="btnApplyOcrFilter" style="padding:10px 14px; font-size:14px; flex:1 0 40%;">✅ Lọc</button>
-                <button id="btnCloseCamera" style="padding:10px 14px; font-size:14px; flex:1 0 40%;">❌ Đóng</button>
+                <button id="btnCapture" style="padding:10px 14px; font-size:14px; flex:1 0 40%; transition: background 0.4s ease-in-out, transform 0.4s ease-in-out;">📸 Chụp &amp; Quét</button>
+                <button id="btnApplyOcrFilter" style="padding:10px 14px; font-size:14px; flex:1 0 40%; transition: background 0.4s ease-in-out, transform 0.4s ease-in-out;">✅ Lọc</button>
+                <button id="btnCloseCamera" style="padding:10px 14px; font-size:14px; flex:1 0 40%; transition: background 0.4s ease-in-out, transform 0.4s ease-in-out;">❌ Đóng</button>
             </div>
             <input id="ocrInput" type="text" placeholder="Kết quả OCR..." style="margin-top:10px; width:100%; padding:8px; font-size:14px;"/>
             <p id="ocrStatus" style="font-size:14px; margin-top:10px; margin-bottom: 20px; display: block;">Đang chờ thao tác...</p>
@@ -1876,17 +1903,17 @@ function updateTable(data, reset) {
       clearBtn?.addEventListener('click', revealTableAndSearch);
     });
     </script>
-    <button onclick="toggleHistoryPopup()" style="position: fixed; bottom: 20px; left: 20px; background: #00cc99; color: white; border: none; border-radius: 50%; width: 48px; height: 48px; font-size: 20px; cursor: pointer; z-index: 9999;" title="Lịch sử tìm kiếm">🕘</button>
+    <button onclick="toggleHistoryPopup()" style="position: fixed; bottom: 20px; left: 20px; background: #00cc99; color: white; border: none; border-radius: 50%; width: 48px; height: 48px; font-size: 20px; cursor: pointer; z-index: 9999; transition: background 0.4s ease-in-out, transform 0.4s ease-in-out;" title="Lịch sử tìm kiếm">🕘</button>
     <div id="floating-history-popup" style="display: none; position: fixed; bottom: 80px; left: 20px; background: rgba(30,30,30,0.95); color: white; padding: 16px; border-radius: 12px; width: 300px; max-height: 360px; overflow-y: auto; box-shadow: 0 0 10px rgba(0,0,0,0.5); z-index: 9999;">
         <div style="display: flex; justify-content: space-between; align-items: center;">
             <h4 style="margin: 0;">📜 Lịch sử tìm kiếm</h4>
-            <button onclick="toggleHistoryPopup()" style="background: transparent; color: white; border: none; font-size: 20px; cursor: pointer;">×</button>
+            <button onclick="toggleHistoryPopup()" style="background: transparent; color: white; border: none; font-size: 20px; cursor: pointer; transition: background 0.4s ease-in-out, transform 0.4s ease-in-out;">×</button>
         </div>
         <ul id="searchHistory" style="list-style: none; padding-left: 0; margin: 12px 0;"></ul>
-        <button onclick="clearSearchHistory()" style="margin-top: 8px; background:#cc4444; color:white; padding:6px 12px; border:none; border-radius:6px; cursor:pointer; width:100%;">🗑️ Xóa lịch sử</button>
+        <button onclick="clearSearchHistory()" style="margin-top: 8px; background:#cc4444; color:white; padding:6px 12px; border:none; border-radius:6px; cursor:pointer; width:100%; transition: background 0.4s ease-in-out, transform 0.4s ease-in-out;">🗑️ Xóa lịch sử</button>
     </div>
 
-    <a href="/voice_search" style="position: fixed; bottom: 20px; right: 20px; background: #0066ff; color: white; border: none; border-radius: 50%; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; font-size: 20px; text-decoration: none; z-index: 9999;" title="Tìm kiếm bằng giọng nói">
+    <a href="/voice_search" style="position: fixed; bottom: 20px; right: 20px; background: #0066ff; color: white; border: none; border-radius: 50%; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; font-size: 20px; text-decoration: none; z-index: 9999; transition: background 0.4s ease-in-out, transform 0.4s ease-in-out;" title="Tìm kiếm bằng giọng nói">
       🎤
     </a>
 
@@ -1913,7 +1940,7 @@ function updateTable(data, reset) {
         history.forEach(item => {
           const li = document.createElement("li");
           li.style.marginBottom = "6px";
-          li.innerHTML = `<button onclick="quickSearchFromHistory('${item.partNumber.replace(/'/g, "\\'")}'); navigator.clipboard.writeText('${item.partNumber.replace(/'/g, "\\'")}')" title="Click để tra cứu và sao chép" style="background:#444; color:white; padding:6px 12px; border:none; border-radius:6px; cursor:pointer; width: calc(100% - 70px); text-align:left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.partNumber}</button> <small style="color:#ccc; font-size: 10px;">(${item.time.split(',')[0]})</small>`;
+          li.innerHTML = `<button onclick="quickSearchFromHistory('${item.partNumber.replace(/'/g, "\\'")}'); navigator.clipboard.writeText('${item.partNumber.replace(/'/g, "\\'")}')" title="Click để tra cứu và sao chép" style="background:#444; color:white; padding:6px 12px; border:none; border-radius:6px; cursor:pointer; width: calc(100% - 70px); text-align:left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: background 0.4s ease-in-out, transform 0.4s ease-in-out;">${item.partNumber}</button> <small style="color:#ccc; font-size: 10px;">(${item.time.split(',')[0]})</small>`;
           list.appendChild(li);
         });
       }
