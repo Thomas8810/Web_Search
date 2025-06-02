@@ -2,10 +2,11 @@ name: Convert Google Sheet to JSON
 
 on:
   schedule:
-   # - cron: '0 * * * *'  # Chạy mỗi giờ; điều chỉnh theo nhu cầu
-    - cron: '0 0 * * *'   # Chạy vào 7 giờ sáng theo giờ Việt Nam (0:00 UTC)
-    - cron: '0 5 * * *'   # Chạy vào 12 giờ trưa theo giờ Việt Nam (5:00 UTC)
-  workflow_dispatch:       # Cho phép chạy thủ công
+    # Chạy vào 8 giờ 30 sáng theo giờ Việt Nam (1:30 UTC)
+    - cron: '30 1 * * *'
+    # Chạy vào 12 giờ trưa theo giờ Việt Nam (5:00 UTC)
+    - cron: '0 5 * * *'
+  workflow_dispatch: # Cho phép chạy thủ công
 
 jobs:
   convert:
@@ -28,7 +29,7 @@ jobs:
           wget -O book1.xlsx "https://docs.google.com/spreadsheets/d/1mMiVqnAE_y5uEH8MS7zk5BAF6w1P50Br/export?format=xlsx"
           echo "Converting Excel to JSON..."
           node -e "const xlsx = require('xlsx'); const fs = require('fs'); const workbook = xlsx.readFile('book1.xlsx'); let allData = []; workbook.SheetNames.forEach(sheetName => { const sheet = workbook.Sheets[sheetName]; const jsonData = xlsx.utils.sheet_to_json(sheet).map(row => Object.assign({}, row, { Sheet: sheetName })); allData = allData.concat(jsonData); }); fs.writeFileSync('data.json', JSON.stringify(allData, null, 2)); console.log('Conversion done.');"
-      
+
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
