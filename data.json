@@ -24970,14 +24970,15 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Datasheet form": "OK",
-    "FAIR Data": "FQC",
+    "FAIR Data": "OK",
     "COC": "OK",
     "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa check mill (A1008)",
-    "Approval Status": "On going",
+    "Submit date": 45827,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -25105,11 +25106,16 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
-    "FAIR Data": "FQC",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45827,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -26880,10 +26886,16 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45827,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -28928,11 +28940,16 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
-    "FAIR Data": "FQC",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45827,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -31464,11 +31481,16 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
-    "FAIR Data": "FQC",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45827,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -48010,7 +48032,8 @@
     "PO received date": 45729,
     "Customer need date": 45796,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "575-305086-M1743G (3 set) & 575-305086-M8930G (3 set)",
     "Approval Status": "On going",
@@ -48031,7 +48054,8 @@
     "PO received date": 45729,
     "Customer need date": 45796,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "575-305086-M1743G (3 set) & 575-305086-M8930G (3 set)",
     "Approval Status": "On going",
@@ -48052,7 +48076,8 @@
     "PO received date": 45729,
     "Customer need date": 45796,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "575-305086-M1743G (3 set) & 575-305086-M8930G (3 set)",
     "Approval Status": "On going",
@@ -54484,11 +54509,18 @@
     "PO received date": 45782,
     "Customer need date": 45845,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 2": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 45827,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -54506,10 +54538,18 @@
     "PO received date": 45782,
     "Customer need date": 45845,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 2": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 45827,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -54527,11 +54567,18 @@
     "PO received date": 45782,
     "Customer need date": 45845,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 2": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 45827,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -55643,10 +55690,18 @@
     "PO received date": 45787,
     "Customer need date": "2025-05-23",
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45827,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -58232,9 +58287,18 @@
     "PO received date": "-",
     "Customer need date": "-",
     "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 2": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
+    "Submit date": 45827,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -59432,7 +59496,7 @@
     "Customer need date": 45807,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Production Status": "Finish Good",
+    "Production Status": "Existed in WH",
     "Remark 2": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -60098,7 +60162,8 @@
     "PO received date": 45812,
     "Customer need date": 45800,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 2": "Thắng took the drawing",
     "Approval Status": "On going",
@@ -60261,7 +60326,8 @@
     "PO received date": 45812,
     "Customer need date": 45800,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 2": "Thắng took the drawing",
     "Approval Status": "On going",
@@ -60880,7 +60946,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 45820,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -60909,7 +60975,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 45820,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -60938,7 +61004,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 45820,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -61690,6 +61756,24 @@
   },
   {
     "No": 2396,
+    "Check": "687-148174-007-07Texon PBXSheet Metal",
+    "ERP-CODE": "No code",
+    "PO Number": "PO: 20250617",
+    "Part Number": "687-148174-007-07",
+    "REV": "A ",
+    "Description": "DUCT,WIRE (1 X 2) IN,445MM",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "PO received date": 45827,
+    "Customer need date": 45852,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2397,
     "Check": "687-119673-003-12Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-02",
@@ -61707,7 +61791,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2397,
+    "No": 2398,
     "Check": "687-119673-003-13Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-02",
@@ -61725,7 +61809,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2398,
+    "No": 2399,
     "Check": "687-119673-003-14Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-02",
@@ -61743,7 +61827,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2399,
+    "No": 2400,
     "Check": "687-119673-003-15Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-02",
@@ -61761,7 +61845,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2400,
+    "No": 2401,
     "Check": "687-119673-003-16Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-02",
@@ -61779,7 +61863,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2401,
+    "No": 2402,
     "Check": "687-119673-003-17Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-02",
@@ -61797,7 +61881,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2402,
+    "No": 2403,
     "Check": "687-148174-017-01Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-02",
@@ -61815,7 +61899,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2403,
+    "No": 2404,
     "Check": "687-119673-005-02Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-02",
@@ -61833,7 +61917,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2404,
+    "No": 2405,
     "Check": "714-301328-005Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -61852,7 +61936,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2405,
+    "No": 2406,
     "Check": "714-301661-320Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -61871,7 +61955,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2406,
+    "No": 2407,
     "Check": "714-301661-220Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -61890,7 +61974,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2407,
+    "No": 2408,
     "Check": "714-301661-120Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -61909,7 +61993,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2408,
+    "No": 2409,
     "Check": "714-305196-003Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -61928,7 +62012,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2409,
+    "No": 2410,
     "Check": "714-305586-004Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -61947,7 +62031,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2410,
+    "No": 2411,
     "Check": "718-A38408-001Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -61966,7 +62050,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2411,
+    "No": 2412,
     "Check": "714-305324-002Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -61985,7 +62069,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2412,
+    "No": 2413,
     "Check": "718-322759-024Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62004,7 +62088,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2413,
+    "No": 2414,
     "Check": "714-300927-011Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62023,7 +62107,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2414,
+    "No": 2415,
     "Check": "714-332963-001Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62042,7 +62126,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2415,
+    "No": 2416,
     "Check": "839-255867-013Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62061,7 +62145,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2416,
+    "No": 2417,
     "Check": "714-256212-011Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62080,7 +62164,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2417,
+    "No": 2418,
     "Check": "714-314693-001Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62099,7 +62183,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2418,
+    "No": 2419,
     "Check": "714-306302-003Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62118,7 +62202,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2419,
+    "No": 2420,
     "Check": "839-308123-004Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62137,7 +62221,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2420,
+    "No": 2421,
     "Check": "714-308135-001Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62156,7 +62240,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2421,
+    "No": 2422,
     "Check": "839-308123-005Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62175,7 +62259,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2422,
+    "No": 2423,
     "Check": "714-259713-001Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62194,7 +62278,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2423,
+    "No": 2424,
     "Check": "714-306273-003Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62213,7 +62297,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2424,
+    "No": 2425,
     "Check": "714-305984-003Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62232,7 +62316,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2425,
+    "No": 2426,
     "Check": "714-305986-002Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62251,7 +62335,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2426,
+    "No": 2427,
     "Check": "714-305987-002Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62270,7 +62354,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2427,
+    "No": 2428,
     "Check": "714-305756-002Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62289,7 +62373,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2428,
+    "No": 2429,
     "Check": "714-301661-101Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62308,7 +62392,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2429,
+    "No": 2430,
     "Check": "714-301661-201Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62327,7 +62411,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2430,
+    "No": 2431,
     "Check": "714-301661-301Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62346,7 +62430,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2431,
+    "No": 2432,
     "Check": "714-301661-311Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62365,7 +62449,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2432,
+    "No": 2433,
     "Check": "714-301661-211Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62384,7 +62468,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2433,
+    "No": 2434,
     "Check": "714-301661-111Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62403,7 +62487,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2434,
+    "No": 2435,
     "Check": "714-305291-009Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62422,7 +62506,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2435,
+    "No": 2436,
     "Check": "714-306464-003Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62441,7 +62525,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2436,
+    "No": 2437,
     "Check": "718-301661-300Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62460,7 +62544,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2437,
+    "No": 2438,
     "Check": "718-301661-200Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62479,7 +62563,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2438,
+    "No": 2439,
     "Check": "718-301661-100Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62498,7 +62582,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2439,
+    "No": 2440,
     "Check": "718-301661-310Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62517,7 +62601,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2440,
+    "No": 2441,
     "Check": "718-301661-210Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62536,7 +62620,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2441,
+    "No": 2442,
     "Check": "718-301661-110Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62555,7 +62639,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2442,
+    "No": 2443,
     "Check": "718-301661-120Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62574,7 +62658,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2443,
+    "No": 2444,
     "Check": "718-301661-220Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62593,7 +62677,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2444,
+    "No": 2445,
     "Check": "718-301661-320Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62612,7 +62696,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2445,
+    "No": 2446,
     "Check": "714-309003-003Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62631,7 +62715,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2446,
+    "No": 2447,
     "Check": "714-313816-002Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62650,7 +62734,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2447,
+    "No": 2448,
     "Check": "715-309084-002Texon PBXSheet Metal",
     "ERP-CODE": "EUPAR017100",
     "PO Number": "PBX20250617-01",
@@ -62670,7 +62754,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2448,
+    "No": 2449,
     "Check": "715-309085-012Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62689,7 +62773,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2449,
+    "No": 2450,
     "Check": "718-261091-011Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62708,7 +62792,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2450,
+    "No": 2451,
     "Check": "718-A30726-001Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62727,7 +62811,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2451,
+    "No": 2452,
     "Check": "718-A34467-001Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62746,7 +62830,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2452,
+    "No": 2453,
     "Check": "718-A34467-002Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62765,7 +62849,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2453,
+    "No": 2454,
     "Check": "687-044016-008Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62784,7 +62868,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2454,
+    "No": 2455,
     "Check": "687-119673-003Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62803,7 +62887,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2455,
+    "No": 2456,
     "Check": "687-148174-014Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62822,7 +62906,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2456,
+    "No": 2457,
     "Check": "687-044016-007Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62841,7 +62925,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2457,
+    "No": 2458,
     "Check": "714-301661-001Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62860,7 +62944,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2458,
+    "No": 2459,
     "Check": "839-121582-018Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62879,7 +62963,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2459,
+    "No": 2460,
     "Check": "839-121582-004Texon PBXSheet Metal",
     "ERP-CODE": "EUOAR024200",
     "PO Number": "PBX20250617-01",
@@ -62899,7 +62983,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2460,
+    "No": 2461,
     "Check": "687-044016-013Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62918,7 +63002,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2461,
+    "No": 2462,
     "Check": "687-119673-004Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62937,7 +63021,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2462,
+    "No": 2463,
     "Check": "714-305747-001Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62956,7 +63040,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2463,
+    "No": 2464,
     "Check": "718-322759-015Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62975,7 +63059,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2464,
+    "No": 2465,
     "Check": "687-044016-008-02Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -62993,7 +63077,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2465,
+    "No": 2466,
     "Check": "687-044016-008-03Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63011,7 +63095,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2466,
+    "No": 2467,
     "Check": "687-044016-013-02Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63029,7 +63113,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2467,
+    "No": 2468,
     "Check": "687-044016-013-03Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63047,7 +63131,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2468,
+    "No": 2469,
     "Check": "687-044016-013-04Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63065,7 +63149,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2469,
+    "No": 2470,
     "Check": "687-119673-003-10Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63083,7 +63167,25 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2470,
+    "No": 2471,
+    "Check": "687-119673-003-18Texon PBXSheet Metal",
+    "ERP-CODE": "No code",
+    "PO Number": "PO: 20250617",
+    "Part Number": "687-119673-003-18",
+    "REV": "A ",
+    "Description": "COV,DUCT,WRG,TYPE C, 1 IN,445MM",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "PO received date": 45825,
+    "Customer need date": 45852,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2472,
     "Check": "687-119673-003-11Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63101,7 +63203,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2471,
+    "No": 2473,
     "Check": "687-119673-004-03Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63119,7 +63221,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2472,
+    "No": 2474,
     "Check": "687-119673-004-04Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63137,7 +63239,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2473,
+    "No": 2475,
     "Check": "687-119673-004-05Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63155,7 +63257,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2474,
+    "No": 2476,
     "Check": "687-119673-004-06Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63173,7 +63275,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2475,
+    "No": 2477,
     "Check": "687-119673-004-07Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63191,7 +63293,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2476,
+    "No": 2478,
     "Check": "687-119673-004-08Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63209,7 +63311,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2477,
+    "No": 2479,
     "Check": "687-148174-014-01Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63227,7 +63329,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2478,
+    "No": 2480,
     "Check": "687-148174-014-02Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63245,7 +63347,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2479,
+    "No": 2481,
     "Check": "687-044016-007-01Texon PBXSheet Metal",
     "ERP-CODE": "No code",
     "PO Number": "PBX20250617-01",
@@ -63256,6 +63358,42 @@
     "Commodity": "Sheet Metal",
     "Critical": "NC",
     "PO received date": 45825,
+    "Customer need date": 45852,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2482,
+    "Check": "714-262798-001Texon PBXSheet Metal",
+    "ERP-CODE": "No code",
+    "PO Number": "PO: 20250617",
+    "Part Number": "714-262798-001",
+    "REV": "D ",
+    "Description": "PL,FR,CA/TUBE,VDP AUX BOX               ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "PO received date": 45827,
+    "Customer need date": 45852,
+    "Requirements": "FAIR",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2483,
+    "Check": "714-259930-001Texon PBXSheet Metal",
+    "ERP-CODE": "No code",
+    "PO Number": "PO: 20250617",
+    "Part Number": "714-259930-001",
+    "REV": "A ",
+    "Description": "BRKT,ANGLE,SLOTTED                      ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "PO received date": 45827,
     "Customer need date": 45852,
     "Requirements": "FAIR",
     "Remark 2": "Chưa lấy bản vẽ",
