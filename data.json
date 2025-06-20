@@ -45146,7 +45146,8 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -48185,7 +48186,8 @@
     "PO received date": 45729,
     "Customer need date": 45796,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "575-305086-M1743G (3 set) & 575-305086-M8930G (3 set)",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -55560,7 +55562,8 @@
     "PO received date": 45787,
     "Customer need date": "2025-05-23",
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -57150,7 +57153,8 @@
     "Bubble Drawings": "OK",
     "Datasheet form": "OK",
     "COC": "OK",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 2": "Thắng took the drawing",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -60184,7 +60188,8 @@
     "PO received date": 45812,
     "Customer need date": 45800,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 2": "Thắng took the drawing",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -60635,7 +60640,8 @@
     "PO received date": 45812,
     "Customer need date": 45800,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 2": "Thắng took the drawing",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
