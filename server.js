@@ -7,6 +7,7 @@ const { createClient } = require('@supabase/supabase-js');
 const multer = require('multer');
 
 const app = express();
+const activeUsers = new Map(); // Map dạng { username => lastSeenTime }
 const port = process.env.PORT || 3000;
 
 // ----------------------- COOKIE-SESSION -----------------------
@@ -15,7 +16,28 @@ app.use(cookieSession({
   keys: ['your-very-secret-key-CHANGE-THIS-PLEASE'], // **QUAN TRỌNG:** Thay đổi chuỗi bí mật này!
   maxAge: 24 * 60 * 60 * 1000 // 24 hours
 }));
+// Theo dõi hoạt động người dùng
+app.use((req, res, next) => {
+  if (req.session && req.session.user) {
+    activeUsers.set(req.session.user.name, Date.now());
+  }
+  next();
+});
 
+// API cho admin xem ai đang online
+app.get('/api/active-users', isAdmin, (req, res) => {
+  const now = Date.now();
+  const threshold = 2 * 60 * 1000; // trong 2 phút
+  const online = [];
+
+  activeUsers.forEach((lastSeen, name) => {
+    if (now - lastSeen < threshold) {
+      online.push(name);
+    }
+  });
+
+  res.json({ success: true, users: online });
+});
 // ----------------------- PARSE DATA -----------------------
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
