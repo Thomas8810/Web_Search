@@ -637,6 +637,7 @@
                     <button onclick="changeLanguage('ko')">Ko</button>
                 </div>
             </div>
+<div id="admin-online-users" style="margin-top:10px; color: yellow; font-size: 14px; display: none;"></div>
 
             <div class="filter-bar">
                 <div class="filter-block" id="filter-block-project">
@@ -1993,5 +1994,36 @@
       }
       window.addEventListener("DOMContentLoaded", renderSearchHistory);
     </script>
+    <script>
+function fetchCurrentUserAndShowOnlineList() {
+  fetch('/api/me')
+    .then(res => res.json())
+    .then(data => {
+      if (data.success && data.user.role === 'admin') {
+        document.getElementById('admin-online-users').style.display = 'block';
+        fetchOnlineUsers();
+        setInterval(fetchOnlineUsers, 30000);
+      }
+    });
+}
+
+function fetchOnlineUsers() {
+  fetch('/api/active-users')
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        const container = document.getElementById('admin-online-users');
+        if (data.users.length > 0) {
+          container.innerHTML = "👥 <b>Đang hoạt động:</b> " + data.users.join(', ');
+        } else {
+          container.innerHTML = "Không có ai đang online.";
+        }
+      }
+    });
+}
+
+fetchCurrentUserAndShowOnlineList();
+</script>
+
 </body>
 </html>
