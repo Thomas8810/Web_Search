@@ -27641,7 +27641,9 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -27780,7 +27782,9 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -28540,6 +28544,7 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -34780,6 +34785,7 @@
     "Bubble Drawings": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -36645,6 +36651,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -43372,7 +43379,9 @@
     "PO received date": 45649,
     "Customer need date": 45667,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -43784,7 +43793,8 @@
     "PO received date": 45716,
     "Customer need date": 46030,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -45678,9 +45688,18 @@
     "PO received date": 45741,
     "Customer need date": 45829,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45861,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -47949,6 +47968,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -48353,10 +48373,18 @@
     "PO received date": 45710,
     "Customer need date": 45722,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45861,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -48374,10 +48402,18 @@
     "PO received date": 45710,
     "Customer need date": 45722,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45861,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -48494,6 +48530,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 2": "Không có bản 2D",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -65492,10 +65529,18 @@
     "PO received date": 45828,
     "Customer need date": 45881,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 2": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 45861,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -65533,11 +65578,18 @@
     "PO received date": 45828,
     "Customer need date": 45881,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 2": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 45860,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -69622,9 +69674,18 @@
     "PO received date": 45846,
     "Customer need date": 45859,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 2": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
+    "Submit date": 45860,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -70482,7 +70543,8 @@
     "PO received date": 45849,
     "Customer need date": 45862,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 2": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -70502,7 +70564,8 @@
     "PO received date": 45849,
     "Customer need date": 45862,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 2": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -71067,7 +71130,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1621,
+    "No": 2753,
     "Check": "839-272117-005LAMPlastic",
     "ERP-CODE": "EUPAR010100",
     "PO Number": 4503048396,
@@ -71099,7 +71162,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2754,
     "Check": "839-272117-006LAMPlastic",
     "ERP-CODE": "EUPAR010200",
     "PO Number": 4503048396,
@@ -71131,9 +71194,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2755,
     "Check": "17-273572-00LAMSheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR141900",
     "PO Number": 4503169837,
     "Part Number": "17-273572-00",
     "REV": "B",
@@ -71151,9 +71214,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2756,
     "Check": "714-327891-001GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR077700",
     "PO Number": "PO250716029",
     "Part Number": "714-327891-001",
     "REV": "C",
@@ -71171,9 +71234,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2757,
     "Check": "714-327900-001GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR084100",
     "PO Number": "PO250716029",
     "Part Number": "714-327900-001",
     "REV": "B",
@@ -71191,9 +71254,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2758,
     "Check": "714-308127-200GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPBR099100",
     "PO Number": "PO250716029",
     "Part Number": "714-308127-200",
     "REV": "D",
@@ -71210,9 +71273,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2759,
     "Check": "31-184687-00GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR049500",
     "PO Number": "PO250716029",
     "Part Number": "31-184687-00",
     "REV": "A",
@@ -71230,9 +71293,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2760,
     "Check": "714-A20215-007GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR142000",
     "PO Number": "PO250716029",
     "Part Number": "714-A20215-007",
     "REV": "A",
@@ -71250,9 +71313,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2761,
     "Check": "714-A27015-006GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR142100",
     "PO Number": "PO250716029",
     "Part Number": "714-A27015-006",
     "REV": "A",
@@ -71270,9 +71333,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2762,
     "Check": "715-287659-001GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR085700",
     "PO Number": "PO250716029",
     "Part Number": "715-287659-001",
     "REV": "A",
@@ -71290,9 +71353,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2763,
     "Check": "714-A34701-016GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR142200",
     "PO Number": "PO250716029",
     "Part Number": "714-A34701-016",
     "REV": "A",
@@ -71310,9 +71373,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2764,
     "Check": "714-A21202-022GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR099100",
     "PO Number": "PO250716029",
     "Part Number": "714-A21202-022",
     "REV": "A",
@@ -71330,9 +71393,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2765,
     "Check": "714-187910-001GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR119900",
     "PO Number": "PO250716029",
     "Part Number": "714-187910-001",
     "REV": "B",
@@ -71350,9 +71413,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2766,
     "Check": "714-187913-001GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR120000",
     "PO Number": "PO250716029",
     "Part Number": "714-187913-001",
     "REV": "A",
@@ -71370,9 +71433,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2767,
     "Check": "714-240435-001GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR120600",
     "PO Number": "PO250716029",
     "Part Number": "714-240435-001",
     "REV": "A",
@@ -71390,9 +71453,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2768,
     "Check": "714-247626-001GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR120700",
     "PO Number": "PO250716029",
     "Part Number": "714-247626-001",
     "REV": "C",
@@ -71410,9 +71473,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2769,
     "Check": "714-247627-001GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR100000",
     "PO Number": "PO250716029",
     "Part Number": "714-247627-001",
     "REV": "B",
@@ -71430,9 +71493,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2770,
     "Check": "714-263462-700GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR100100",
     "PO Number": "PO250716029",
     "Part Number": "714-263462-700",
     "REV": "A",
@@ -71450,9 +71513,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2771,
     "Check": "714-263462-701GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR100200",
     "PO Number": "PO250716029",
     "Part Number": "714-263462-701",
     "REV": "A",
@@ -71470,9 +71533,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2772,
     "Check": "714-266525-002GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR081300",
     "PO Number": "PO250716029",
     "Part Number": "714-266525-002",
     "REV": "B",
@@ -71490,9 +71553,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2773,
     "Check": "714-242751-002GUMISheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR095100",
     "PO Number": "PO250716029",
     "Part Number": "714-242751-002",
     "REV": "B",
@@ -71510,9 +71573,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2774,
     "Check": "714-A23814-006LAMSheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR142500",
     "PO Number": 4503181295,
     "Part Number": "714-A23814-006",
     "REV": "A",
@@ -71529,9 +71592,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2775,
     "Check": "714-A69029-001LAMSheet Metal",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR142400",
     "PO Number": 4503186350,
     "Part Number": "714-A69029-001",
     "REV": "A",
@@ -71548,9 +71611,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2776,
     "Check": "713-B99689-001LAMPlastic",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR142600",
     "PO Number": 4700894229,
     "Part Number": "713-B99689-001",
     "REV": "A",
@@ -71567,7 +71630,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2777,
     "Check": "02-430483-00LAMSheet Metal",
     "ERP-CODE": "No Code",
     "PO Number": 4503186281,
@@ -71587,7 +71650,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2778,
     "Check": "02-430484-00LAMSheet Metal",
     "ERP-CODE": "No Code",
     "PO Number": 4503186281,
@@ -71607,7 +71670,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2779,
     "Check": "17-370519-00LAMSheet Metal",
     "ERP-CODE": "No Code",
     "PO Number": 4503186281,
@@ -71627,7 +71690,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2780,
     "Check": "714-312056-002LAMSheet Metal",
     "ERP-CODE": "No Code",
     "PO Number": 4503186281,
@@ -71647,7 +71710,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2781,
     "Check": "714-134975-002LAMSheet Metal",
     "ERP-CODE": "No Code",
     "PO Number": 4503186350,
@@ -71667,7 +71730,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2782,
     "Check": "839-A05059-120LAMSheet Metal",
     "ERP-CODE": "No Code",
     "PO Number": 4503186393,
@@ -71687,7 +71750,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2783,
     "Check": "839-A05059-121LAMSheet Metal",
     "ERP-CODE": "No Code",
     "PO Number": 4503186393,
@@ -71707,7 +71770,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2784,
     "Check": "839-A05059-122LAMSheet Metal",
     "ERP-CODE": "No Code",
     "PO Number": 4503186393,
@@ -71727,7 +71790,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2785,
     "Check": "839-A05059-123LAMSheet Metal",
     "ERP-CODE": "No Code",
     "PO Number": 4503186393,
@@ -71747,7 +71810,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2786,
     "Check": "853-A41986-001LAMSheet Metal",
     "ERP-CODE": "No Code",
     "PO Number": 4503186393,
@@ -71767,7 +71830,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2787,
     "Check": "853-A41986-003LAMSheet Metal",
     "ERP-CODE": "No Code",
     "PO Number": 4503186393,
@@ -71787,7 +71850,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1622,
+    "No": 2788,
     "Check": "839-232341-014LAMSheet Metal",
     "ERP-CODE": "No Code",
     "PO Number": 4503187062,
@@ -71800,6 +71863,146 @@
     "CE": "Y",
     "PO received date": 45859,
     "Customer need date": 45894,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2789,
+    "Check": "17-10515-00LAMSheet Metal",
+    "ERP-CODE": "No Code",
+    "PO Number": 4503181485,
+    "Part Number": "17-10515-00",
+    "REV": "C",
+    "Description": "STRAP, SHUNT CAPACITOR, C2",
+    "Customer": "LAM",
+    "Commodity": "Sheet Metal",
+    "Critical": "C4",
+    "CE": "",
+    "PO received date": 45860,
+    "Customer need date": 45868,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2790,
+    "Check": "714-176918-001LAMSheet Metal",
+    "ERP-CODE": "No Code",
+    "PO Number": 4503181485,
+    "Part Number": "714-176918-001",
+    "REV": "B",
+    "Description": "STRAP,GND,TOP,ION SOURCE,ICE",
+    "Customer": "LAM",
+    "Commodity": "Sheet Metal",
+    "Critical": "C4",
+    "CE": "",
+    "PO received date": 45860,
+    "Customer need date": 45868,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2791,
+    "Check": "857-A31366-001LAMSheet Metal",
+    "ERP-CODE": "No Code",
+    "PO Number": 4503187757,
+    "Part Number": "857-A31366-001",
+    "REV": "A",
+    "Description": "KIT,BKT,GB MNG",
+    "Customer": "LAM",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45860,
+    "Customer need date": 45894,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2792,
+    "Check": "714-312055-002LAMSheet Metal",
+    "ERP-CODE": "No Code",
+    "PO Number": 4503187757,
+    "Part Number": "714-312055-002",
+    "REV": "A",
+    "Description": "BRKT,MT,MRCC,LWR RF",
+    "Customer": "LAM",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45860,
+    "Customer need date": 45894,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2793,
+    "Check": "839-A14667-004LAMSheet Metal",
+    "ERP-CODE": "No Code",
+    "PO Number": 4503187757,
+    "Part Number": "839-A14667-004",
+    "REV": "A",
+    "Description": "WLDMT,BRKT,MTG,CONTROLLER",
+    "Customer": "LAM",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45860,
+    "Customer need date": 45894,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2794,
+    "Check": "839-233322-004LAMSheet Metal",
+    "ERP-CODE": "No Code",
+    "PO Number": 4503187757,
+    "Part Number": "839-233322-004",
+    "REV": "B",
+    "Description": "WLDMT,CASTER SUPPORT,SHORT",
+    "Customer": "LAM",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 45860,
+    "Customer need date": 45894,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2795,
+    "Check": "714-A11621-115LAMSheet Metal",
+    "ERP-CODE": "No Code",
+    "PO Number": 4503189734,
+    "Part Number": "714-A11621-115",
+    "REV": "A",
+    "Description": "BRKT,MANF,RF RACK",
+    "Customer": "LAM",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "",
+    "PO received date": 45860,
+    "Customer need date": 45901,
     "Requirements": "FAIR",
     "Part Pictures": "-",
     "Remark 2": "Chưa lấy bản vẽ",
