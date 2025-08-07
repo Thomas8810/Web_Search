@@ -58216,11 +58216,18 @@
     "PO received date": 45728,
     "Customer need date": 45781,
     "Requirements": "FAIR",
-    "FAIR Data": "FQC",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45875,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -58318,7 +58325,7 @@
     "Customer need date": 45800,
     "Requirements": "FAIR",
     "Bubble Drawings": "OK",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 2": "Thắng took the drawing",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -64880,7 +64887,8 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -66061,10 +66069,20 @@
     "PO received date": 45767,
     "Customer need date": 2958465,
     "Requirements": "LAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "LAIR data": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Test reports / evidences": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45875,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -67639,10 +67657,18 @@
     "PO received date": 45769,
     "Customer need date": 46030,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45875,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -67854,10 +67880,18 @@
     "PO received date": 45769,
     "Customer need date": 46030,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45875,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -67875,10 +67909,18 @@
     "PO received date": 45769,
     "Customer need date": 46030,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45875,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -72003,7 +72045,8 @@
     "PO received date": 45825,
     "Customer need date": 45852,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -72801,6 +72844,7 @@
     "PO received date": 45825,
     "Customer need date": 45852,
     "Requirements": "FAIR",
+    "FAIR Data": "FQC",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
@@ -73762,7 +73806,7 @@
   {
     "No": 2839,
     "Check": "17-275174-00BLAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR144900",
     "PO Number": 4503192307,
     "Part Number": "17-275174-00",
     "REV": "B",
@@ -73782,7 +73826,7 @@
   {
     "No": 2840,
     "Check": "M01T-E0122567-0101LAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR145100",
     "PO Number": 4700896241,
     "Part Number": "M01T-E0122567-01",
     "REV": "01",
@@ -73802,7 +73846,7 @@
   {
     "No": 2841,
     "Check": "15-160847-00BLAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR145000",
     "PO Number": 4503192052,
     "Part Number": "15-160847-00",
     "REV": "B",
@@ -73822,7 +73866,7 @@
   {
     "No": 2842,
     "Check": "718-100049-024AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR144800",
     "PO Number": "PO2507240018",
     "Part Number": "718-100049-024",
     "REV": "A",
@@ -73873,7 +73917,7 @@
   {
     "No": 2844,
     "Check": "853-A53314-002ALAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR145300",
     "PO Number": 4503186281,
     "Part Number": "853-A53314-002",
     "REV": "A",
@@ -73893,7 +73937,7 @@
   {
     "No": 2845,
     "Check": "17-378751-00BLAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR145200",
     "PO Number": 4503192249,
     "Part Number": "17-378751-00",
     "REV": "B",
@@ -73913,7 +73957,7 @@
   {
     "No": 2846,
     "Check": "17-282908-00ALAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR145800",
     "PO Number": 4503194876,
     "Part Number": "17-282908-00",
     "REV": "A",
@@ -73933,7 +73977,7 @@
   {
     "No": 2847,
     "Check": "715-127006-001BLAMMachiningLAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146900",
     "PO Number": 4503194083,
     "Part Number": "715-127006-001",
     "REV": "B",
@@ -73953,7 +73997,7 @@
   {
     "No": 2848,
     "Check": "715-127006-001BLAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146900",
     "PO Number": 4503194083,
     "Part Number": "715-127006-001",
     "REV": "B",
@@ -73973,7 +74017,7 @@
   {
     "No": 2849,
     "Check": "715-127007-001DLAMMachiningLAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR147000",
     "PO Number": 4503194083,
     "Part Number": "715-127007-001",
     "REV": "D",
@@ -73993,7 +74037,7 @@
   {
     "No": 2850,
     "Check": "715-127007-001DLAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR147000",
     "PO Number": 4503194083,
     "Part Number": "715-127007-001",
     "REV": "D",
@@ -74013,7 +74057,7 @@
   {
     "No": 2851,
     "Check": "715-315902-001DLAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146500",
     "PO Number": 4503194083,
     "Part Number": "715-315902-001",
     "REV": "D",
@@ -74033,7 +74077,7 @@
   {
     "No": 2852,
     "Check": "715-011123-001ALAMMachiningLAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146800",
     "PO Number": 4503194083,
     "Part Number": "715-011123-001",
     "REV": "A",
@@ -74053,7 +74097,7 @@
   {
     "No": 2853,
     "Check": "715-011123-001ALAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146800",
     "PO Number": 4503194083,
     "Part Number": "715-011123-001",
     "REV": "A",
@@ -74073,7 +74117,7 @@
   {
     "No": 2854,
     "Check": "715-015216-001ALAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146000",
     "PO Number": 4503194083,
     "Part Number": "715-015216-001",
     "REV": "A",
@@ -74093,7 +74137,7 @@
   {
     "No": 2855,
     "Check": "715-330779-001BLAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146700",
     "PO Number": 4503194083,
     "Part Number": "715-330779-001",
     "REV": "B",
@@ -74113,7 +74157,7 @@
   {
     "No": 2856,
     "Check": "715-057939-002ALAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146200",
     "PO Number": 4503194084,
     "Part Number": "715-057939-002",
     "REV": "A",
@@ -74133,7 +74177,7 @@
   {
     "No": 2857,
     "Check": "715-324979-003ELAMMachiningLAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146600",
     "PO Number": 4503194084,
     "Part Number": "715-324979-003",
     "REV": "E",
@@ -74153,7 +74197,7 @@
   {
     "No": 2858,
     "Check": "715-324979-003ELAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146600",
     "PO Number": 4503194084,
     "Part Number": "715-324979-003",
     "REV": "E",
@@ -74173,7 +74217,7 @@
   {
     "No": 2859,
     "Check": "715-011017-001BLAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR145900",
     "PO Number": 4503194084,
     "Part Number": "715-011017-001",
     "REV": "B",
@@ -74193,7 +74237,7 @@
   {
     "No": 2860,
     "Check": "715-034842-001ALAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146100",
     "PO Number": 4503194084,
     "Part Number": "715-034842-001",
     "REV": "A",
@@ -74213,7 +74257,7 @@
   {
     "No": 2861,
     "Check": "715-081256-001ALAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146300",
     "PO Number": 4503194084,
     "Part Number": "715-081256-001",
     "REV": "A",
@@ -74233,7 +74277,7 @@
   {
     "No": 2862,
     "Check": "715-081273-001ALAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR146400",
     "PO Number": 4503194084,
     "Part Number": "715-081273-001",
     "REV": "A",
@@ -74253,7 +74297,7 @@
   {
     "No": 2863,
     "Check": "714-319696-015CEFEM VNSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR019200",
     "PO Number": "EFEM20250730-01\t\t",
     "Part Number": "714-319696-015",
     "REV": "C",
@@ -74272,7 +74316,7 @@
   {
     "No": 2864,
     "Check": "714-187908-003EGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR092900",
     "PO Number": "PO250731030",
     "Part Number": "714-187908-003",
     "REV": "E",
@@ -74291,7 +74335,7 @@
   {
     "No": 2865,
     "Check": "714-A25959-002AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR147100",
     "PO Number": "PO250731030",
     "Part Number": "714-A25959-002",
     "REV": "A",
@@ -74309,7 +74353,7 @@
   {
     "No": 2866,
     "Check": "714-B43883-002AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR147200",
     "PO Number": "PO250731030",
     "Part Number": "714-B43883-002",
     "REV": "A",
@@ -74327,7 +74371,7 @@
   {
     "No": 2867,
     "Check": "714-B43883-003AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR147300",
     "PO Number": "PO250731030",
     "Part Number": "714-B43883-003",
     "REV": "A",
@@ -74345,7 +74389,7 @@
   {
     "No": 2868,
     "Check": "715-211448-001BGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR147400",
     "PO Number": "PO250731030",
     "Part Number": "715-211448-001",
     "REV": "B",
@@ -74364,7 +74408,7 @@
   {
     "No": 2869,
     "Check": "17-418029-00AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR044900",
     "PO Number": "PO250731030",
     "Part Number": "17-418029-00",
     "REV": "A",
@@ -74385,7 +74429,7 @@
   {
     "No": 2870,
     "Check": "714-200799-004AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR091700",
     "PO Number": "PO250731030",
     "Part Number": "714-200799-004",
     "REV": "A",
@@ -74404,7 +74448,7 @@
   {
     "No": 2871,
     "Check": "714-202162-005AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR089700",
     "PO Number": "PO250731030",
     "Part Number": "714-202162-005",
     "REV": "A",
@@ -74423,7 +74467,7 @@
   {
     "No": 2872,
     "Check": "714-204762-004AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR104800",
     "PO Number": "PO250731030",
     "Part Number": "714-204762-004",
     "REV": "A",
@@ -74442,7 +74486,7 @@
   {
     "No": 2873,
     "Check": "714-209191-003AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR089800",
     "PO Number": "PO250731030",
     "Part Number": "714-209191-003",
     "REV": "A",
@@ -74461,7 +74505,7 @@
   {
     "No": 2874,
     "Check": "714-229201-007AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR093000",
     "PO Number": "PO250731030",
     "Part Number": "714-229201-007",
     "REV": "A",
@@ -74480,7 +74524,7 @@
   {
     "No": 2875,
     "Check": "714-229206-003AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR080900",
     "PO Number": "PO250731030",
     "Part Number": "714-229206-003",
     "REV": "A",
@@ -74499,7 +74543,7 @@
   {
     "No": 2876,
     "Check": "714-229829-003AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR093100",
     "PO Number": "PO250731030",
     "Part Number": "714-229829-003",
     "REV": "A",
@@ -74518,7 +74562,7 @@
   {
     "No": 2877,
     "Check": "714-229834-003AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR091900",
     "PO Number": "PO250731030",
     "Part Number": "714-229834-003",
     "REV": "A",
@@ -74537,7 +74581,7 @@
   {
     "No": 2878,
     "Check": "714-229852-003AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR105000",
     "PO Number": "PO250731030",
     "Part Number": "714-229852-003",
     "REV": "A",
@@ -74556,7 +74600,7 @@
   {
     "No": 2879,
     "Check": "714-229862-004AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR092000",
     "PO Number": "PO250731030",
     "Part Number": "714-229862-004",
     "REV": "A",
@@ -74575,7 +74619,7 @@
   {
     "No": 2880,
     "Check": "714-229869-004AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR107900",
     "PO Number": "PO250731030",
     "Part Number": "714-229869-004",
     "REV": "A",
@@ -74594,7 +74638,7 @@
   {
     "No": 2881,
     "Check": "714-229870-004AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR108000",
     "PO Number": "PO250731030",
     "Part Number": "714-229870-004",
     "REV": "A",
@@ -74613,7 +74657,7 @@
   {
     "No": 2882,
     "Check": "714-233441-002AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR106300",
     "PO Number": "PO250731030",
     "Part Number": "714-233441-002",
     "REV": "A",
@@ -74632,7 +74676,7 @@
   {
     "No": 2883,
     "Check": "714-A47076-002AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR081700",
     "PO Number": "PO250731030",
     "Part Number": "714-A47076-002",
     "REV": "A",
@@ -74651,7 +74695,7 @@
   {
     "No": 2884,
     "Check": "714-A47079-002AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR103400",
     "PO Number": "PO250731030",
     "Part Number": "714-A47079-002",
     "REV": "A",
@@ -74670,7 +74714,7 @@
   {
     "No": 2885,
     "Check": "715-A76753-001BGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR089500",
     "PO Number": "PO250731030",
     "Part Number": "715-A76753-001",
     "REV": "B",
@@ -74689,7 +74733,7 @@
   {
     "No": 2886,
     "Check": "17-279250-00BLAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR147500",
     "PO Number": 4503194732,
     "Part Number": "17-279250-00",
     "REV": "B",
@@ -74807,7 +74851,7 @@
   {
     "No": 2892,
     "Check": "714-207004-004BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR110600",
     "PO Number": "PO250731030",
     "Part Number": "714-207004-004",
     "REV": "B",
@@ -74826,7 +74870,7 @@
   {
     "No": 2893,
     "Check": "839-064081-805AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR092800",
     "PO Number": "PO250804027",
     "Part Number": "839-064081-805",
     "REV": "A",
@@ -74845,7 +74889,7 @@
   {
     "No": 2894,
     "Check": "839-064081-803BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR104000",
     "PO Number": "PO250804027",
     "Part Number": "839-064081-803",
     "REV": "B",
@@ -74864,7 +74908,7 @@
   {
     "No": 2895,
     "Check": "714-494767-601CGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR094500",
     "PO Number": "PO250804027",
     "Part Number": "714-494767-601",
     "REV": "C",
@@ -74883,7 +74927,7 @@
   {
     "No": 2896,
     "Check": "714-A41351-201AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR076500",
     "PO Number": "PO250804027",
     "Part Number": "714-A41351-201",
     "REV": "A",
@@ -74902,7 +74946,7 @@
   {
     "No": 2897,
     "Check": "714-A38944-206AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR077100",
     "PO Number": "PO250804027",
     "Part Number": "714-A38944-206",
     "REV": "A",
@@ -74921,7 +74965,7 @@
   {
     "No": 2898,
     "Check": "714-A35918-005AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR077800",
     "PO Number": "PO250804027",
     "Part Number": "714-A35918-005",
     "REV": "A",
@@ -74940,7 +74984,7 @@
   {
     "No": 2899,
     "Check": "714-A38944-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR077900",
     "PO Number": "PO250804027",
     "Part Number": "714-A38944-001",
     "REV": "A",
@@ -74959,7 +75003,7 @@
   {
     "No": 2900,
     "Check": "839-111954-021BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR086000",
     "PO Number": "PO250804027",
     "Part Number": "839-111954-021",
     "REV": "B",
@@ -74978,7 +75022,7 @@
   {
     "No": 2901,
     "Check": "714-116034-802CGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR107400",
     "PO Number": "PO250804027",
     "Part Number": "714-116034-802",
     "REV": "C",
@@ -74997,7 +75041,7 @@
   {
     "No": 2902,
     "Check": "714-A38944-002AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR079400",
     "PO Number": "PO250804027",
     "Part Number": "714-A38944-002",
     "REV": "A",
@@ -75016,7 +75060,7 @@
   {
     "No": 2903,
     "Check": "714-077907-020BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR076600",
     "PO Number": "PO250804027",
     "Part Number": "714-077907-020",
     "REV": "B",
@@ -75035,7 +75079,7 @@
   {
     "No": 2904,
     "Check": "714-A87095-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR083800",
     "PO Number": "PO250804027",
     "Part Number": "714-A87095-001",
     "REV": "A",
@@ -75054,7 +75098,7 @@
   {
     "No": 2905,
     "Check": "714-064058-899AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR102500",
     "PO Number": "PO250804027",
     "Part Number": "714-064058-899",
     "REV": "A",
@@ -75073,7 +75117,7 @@
   {
     "No": 2906,
     "Check": "714-A37187-010AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR083100",
     "PO Number": "PO250804027",
     "Part Number": "714-A37187-010",
     "REV": "A",
@@ -75092,7 +75136,7 @@
   {
     "No": 2907,
     "Check": "714-086133-001CGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR115600",
     "PO Number": "PO250804027",
     "Part Number": "714-086133-001",
     "REV": "C",
@@ -75111,7 +75155,7 @@
   {
     "No": 2908,
     "Check": "714-A69780-020CGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR091500",
     "PO Number": "PO250804027",
     "Part Number": "714-A69780-020",
     "REV": "C",
@@ -75130,7 +75174,7 @@
   {
     "No": 2909,
     "Check": "714-115875-699AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR111400",
     "PO Number": "PO250804027",
     "Part Number": "714-115875-699",
     "REV": "A",
@@ -75149,7 +75193,7 @@
   {
     "No": 2910,
     "Check": "839-B28438-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR088800",
     "PO Number": "PO250804027",
     "Part Number": "839-B28438-001",
     "REV": "A",
@@ -75168,7 +75212,7 @@
   {
     "No": 2911,
     "Check": "714-304832-003BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR090400",
     "PO Number": "PO250804027",
     "Part Number": "714-304832-003",
     "REV": "B",
@@ -75187,7 +75231,7 @@
   {
     "No": 2912,
     "Check": "714-124371-001BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR105700",
     "PO Number": "PO250804027",
     "Part Number": "714-124371-001",
     "REV": "B",
@@ -75206,7 +75250,7 @@
   {
     "No": 2913,
     "Check": "714-A69780-120CGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR089100",
     "PO Number": "PO250804027",
     "Part Number": "714-A69780-120",
     "REV": "C",
@@ -75225,7 +75269,7 @@
   {
     "No": 2914,
     "Check": "714-385806-003AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR112100",
     "PO Number": "PO250804027",
     "Part Number": "714-385806-003",
     "REV": "A",
@@ -75244,7 +75288,7 @@
   {
     "No": 2915,
     "Check": "714-255210-801AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR115900",
     "PO Number": "PO250804027",
     "Part Number": "714-255210-801",
     "REV": "A",
@@ -75265,7 +75309,7 @@
   {
     "No": 2916,
     "Check": "714-A69780-110CGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR092300",
     "PO Number": "PO250804027",
     "Part Number": "714-A69780-110",
     "REV": "C",
@@ -75284,7 +75328,7 @@
   {
     "No": 2917,
     "Check": "714-A13609-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR091100",
     "PO Number": "PO250804027",
     "Part Number": "714-A13609-001",
     "REV": "A",
@@ -75303,7 +75347,7 @@
   {
     "No": 2918,
     "Check": "714-124370-451BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR105600",
     "PO Number": "PO250804027",
     "Part Number": "714-124370-451",
     "REV": "B",
@@ -75322,7 +75366,7 @@
   {
     "No": 2919,
     "Check": "714-304011-004BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR093300",
     "PO Number": "PO250804027",
     "Part Number": "714-304011-004",
     "REV": "B",
@@ -75341,7 +75385,7 @@
   {
     "No": 2920,
     "Check": "714-A11982-002AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR114000",
     "PO Number": "PO250804027",
     "Part Number": "714-A11982-002",
     "REV": "A",
@@ -75360,7 +75404,7 @@
   {
     "No": 2921,
     "Check": "714-491832-630AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR112200",
     "PO Number": "PO250804027",
     "Part Number": "714-491832-630",
     "REV": "A",
@@ -75379,7 +75423,7 @@
   {
     "No": 2922,
     "Check": "714-307028-001BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR078100",
     "PO Number": "PO250804027",
     "Part Number": "714-307028-001",
     "REV": "B",
@@ -75398,7 +75442,7 @@
   {
     "No": 2923,
     "Check": "714-064229-002AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR133000",
     "PO Number": "PO250804027",
     "Part Number": "714-064229-002",
     "REV": "A",
@@ -75417,7 +75461,7 @@
   {
     "No": 2924,
     "Check": "714-A80822-003AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR094200",
     "PO Number": "PO250804027",
     "Part Number": "714-A80822-003",
     "REV": "A",
@@ -75436,7 +75480,7 @@
   {
     "No": 2925,
     "Check": "714-329202-002BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR090700",
     "PO Number": "PO250804027",
     "Part Number": "714-329202-002",
     "REV": "B",
@@ -75455,7 +75499,7 @@
   {
     "No": 2926,
     "Check": "714-329204-001DGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR093500",
     "PO Number": "PO250804027",
     "Part Number": "714-329204-001",
     "REV": "D",
@@ -75474,7 +75518,7 @@
   {
     "No": 2927,
     "Check": "714-286757-200DGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR105100",
     "PO Number": "PO250804027",
     "Part Number": "714-286757-200",
     "REV": "D",
@@ -75493,7 +75537,7 @@
   {
     "No": 2928,
     "Check": "714-327891-005BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR092200",
     "PO Number": "PO250804027",
     "Part Number": "714-327891-005",
     "REV": "B",
@@ -75512,7 +75556,7 @@
   {
     "No": 2929,
     "Check": "714-336912-350AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR114300",
     "PO Number": "PO250804027",
     "Part Number": "714-336912-350",
     "REV": "A",
@@ -75531,7 +75575,7 @@
   {
     "No": 2930,
     "Check": "714-A74184-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR093900",
     "PO Number": "PO250804027",
     "Part Number": "714-A74184-001",
     "REV": "A",
@@ -75550,7 +75594,7 @@
   {
     "No": 2931,
     "Check": "714-A74213-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR103700",
     "PO Number": "PO250804027",
     "Part Number": "714-A74213-001",
     "REV": "A",
@@ -75569,7 +75613,7 @@
   {
     "No": 2932,
     "Check": "714-A74272-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR089000",
     "PO Number": "PO250804027",
     "Part Number": "714-A74272-001",
     "REV": "A",
@@ -75588,7 +75632,7 @@
   {
     "No": 2933,
     "Check": "714-A75089-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR103800",
     "PO Number": "PO250804027",
     "Part Number": "714-A75089-001",
     "REV": "A",
@@ -75607,7 +75651,7 @@
   {
     "No": 2934,
     "Check": "714-A75281-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR094000",
     "PO Number": "PO250804027",
     "Part Number": "714-A75281-001",
     "REV": "A",
@@ -75626,7 +75670,7 @@
   {
     "No": 2935,
     "Check": "714-A75942-001BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR106700",
     "PO Number": "PO250804027",
     "Part Number": "714-A75942-001",
     "REV": "B",
@@ -75645,7 +75689,7 @@
   {
     "No": 2936,
     "Check": "714-A75970-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR094100",
     "PO Number": "PO250804027",
     "Part Number": "714-A75970-001",
     "REV": "A",
@@ -75664,7 +75708,7 @@
   {
     "No": 2937,
     "Check": "714-A75971-001BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR092400",
     "PO Number": "PO250804027",
     "Part Number": "714-A75971-001",
     "REV": "B",
@@ -75683,7 +75727,7 @@
   {
     "No": 2938,
     "Check": "714-A75972-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR091600",
     "PO Number": "PO250804027",
     "Part Number": "714-A75972-001",
     "REV": "A",
@@ -75702,7 +75746,7 @@
   {
     "No": 2939,
     "Check": "714-A85660-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR094300",
     "PO Number": "PO250804027",
     "Part Number": "714-A85660-001",
     "REV": "A",
@@ -75721,7 +75765,7 @@
   {
     "No": 2940,
     "Check": "714-A87319-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR103900",
     "PO Number": "PO250804027",
     "Part Number": "714-A87319-001",
     "REV": "A",
@@ -75740,7 +75784,7 @@
   {
     "No": 2941,
     "Check": "714-A87332-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR088900",
     "PO Number": "PO250804027",
     "Part Number": "714-A87332-001",
     "REV": "A",
@@ -75759,7 +75803,7 @@
   {
     "No": 2942,
     "Check": "714-A87357-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR092500",
     "PO Number": "PO250804027",
     "Part Number": "714-A87357-001",
     "REV": "A",
@@ -75778,7 +75822,7 @@
   {
     "No": 2943,
     "Check": "714-A94025-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR106800",
     "PO Number": "PO250804027",
     "Part Number": "714-A94025-001",
     "REV": "A",
@@ -75797,7 +75841,7 @@
   {
     "No": 2944,
     "Check": "715-A76986-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR098400",
     "PO Number": "PO250804027",
     "Part Number": "715-A76986-001",
     "REV": "A",
@@ -75816,7 +75860,7 @@
   {
     "No": 2945,
     "Check": "714-326554-001CGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR106500",
     "PO Number": "PO250804027",
     "Part Number": "714-326554-001",
     "REV": "C",
@@ -75835,7 +75879,7 @@
   {
     "No": 2946,
     "Check": "714-231577-001BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR110900",
     "PO Number": "PO250804027",
     "Part Number": "714-231577-001",
     "REV": "B",
@@ -75854,7 +75898,7 @@
   {
     "No": 2947,
     "Check": "714-323722-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR103300",
     "PO Number": "PO250804027",
     "Part Number": "714-323722-001",
     "REV": "A",
@@ -75873,7 +75917,7 @@
   {
     "No": 2948,
     "Check": "17-190774-00BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR109900",
     "PO Number": "PO250804027",
     "Part Number": "17-190774-00",
     "REV": "B",
@@ -75892,7 +75936,7 @@
   {
     "No": 2949,
     "Check": "714-327900-005BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR081400",
     "PO Number": "PO250804027",
     "Part Number": "714-327900-005",
     "REV": "B",
@@ -75911,7 +75955,7 @@
   {
     "No": 2950,
     "Check": "17-458796-00AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR110100",
     "PO Number": "PO250804027",
     "Part Number": "17-458796-00",
     "REV": "A",
@@ -75930,7 +75974,7 @@
   {
     "No": 2951,
     "Check": "714-319975-002BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR082000",
     "PO Number": "PO250804027",
     "Part Number": "714-319975-002",
     "REV": "B",
@@ -75949,7 +75993,7 @@
   {
     "No": 2952,
     "Check": "719-240436-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR092700",
     "PO Number": "PO250804027",
     "Part Number": "719-240436-001",
     "REV": "A",
@@ -75968,7 +76012,7 @@
   {
     "No": 2953,
     "Check": "714-A78532-001BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR108900",
     "PO Number": "PO250804027",
     "Part Number": "714-A78532-001",
     "REV": "B",
@@ -75987,7 +76031,7 @@
   {
     "No": 2954,
     "Check": "714-251411-001BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR102900",
     "PO Number": "PO250804027",
     "Part Number": "714-251411-001",
     "REV": "B",
@@ -76006,7 +76050,7 @@
   {
     "No": 2955,
     "Check": "714-286907-008CGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR079600",
     "PO Number": "PO250804027",
     "Part Number": "714-286907-008",
     "REV": "C",
@@ -76025,7 +76069,7 @@
   {
     "No": 2956,
     "Check": "714-A74600-003AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR083000",
     "PO Number": "PO250804027",
     "Part Number": "714-A74600-003",
     "REV": "A",
@@ -76044,7 +76088,7 @@
   {
     "No": 2957,
     "Check": "714-291094-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR090200",
     "PO Number": "PO250804027",
     "Part Number": "714-291094-001",
     "REV": "A",
@@ -76063,7 +76107,7 @@
   {
     "No": 2958,
     "Check": "714-A34701-015AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR089300",
     "PO Number": "PO250804027",
     "Part Number": "714-A34701-015",
     "REV": "A",
@@ -76082,7 +76126,7 @@
   {
     "No": 2959,
     "Check": "714-257726-003AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR084000",
     "PO Number": "PO250804027",
     "Part Number": "714-257726-003",
     "REV": "A",
@@ -76101,7 +76145,7 @@
   {
     "No": 2960,
     "Check": "714-291397-010AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR092100",
     "PO Number": "PO250804027",
     "Part Number": "714-291397-010",
     "REV": "A",
@@ -76120,7 +76164,7 @@
   {
     "No": 2961,
     "Check": "17-355747-00EGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR084600",
     "PO Number": "PO250804027",
     "Part Number": "17-355747-00",
     "REV": "E",
@@ -76139,7 +76183,7 @@
   {
     "No": 2962,
     "Check": "714-174738-008AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR106000",
     "PO Number": "PO250804027",
     "Part Number": "714-174738-008",
     "REV": "A",
@@ -76158,7 +76202,7 @@
   {
     "No": 2963,
     "Check": "714-294167-011AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR095600",
     "PO Number": "PO250804027",
     "Part Number": "714-294167-011",
     "REV": "A",
@@ -76177,7 +76221,7 @@
   {
     "No": 2964,
     "Check": "714-209422-001BGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR115800",
     "PO Number": "PO250804027",
     "Part Number": "714-209422-001",
     "REV": "B",
@@ -76196,7 +76240,7 @@
   {
     "No": 2965,
     "Check": "714-309119-004AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR090500",
     "PO Number": "PO250804027",
     "Part Number": "714-309119-004",
     "REV": "A",
@@ -76215,7 +76259,7 @@
   {
     "No": 2966,
     "Check": "718-A41292-002AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR047300",
     "PO Number": "PO250804027",
     "Part Number": "718-A41292-002",
     "REV": "A",
@@ -76236,7 +76280,7 @@
   {
     "No": 2967,
     "Check": "714-308559-005AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR081900",
     "PO Number": "PO250804027",
     "Part Number": "714-308559-005",
     "REV": "A",
@@ -76255,7 +76299,7 @@
   {
     "No": 2968,
     "Check": "718-A41292-001AGUMI Sheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR047200",
     "PO Number": "PO250804027",
     "Part Number": "718-A41292-001",
     "REV": "A",
@@ -76316,7 +76360,7 @@
   {
     "No": 2971,
     "Check": "713-C01815-001ALAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR147600",
     "PO Number": 4700898689,
     "Part Number": "713-C01815-001",
     "REV": "A",
@@ -76334,9 +76378,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2971,
+    "No": 2972,
     "Check": "714-A63320-003DLAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR124600",
     "PO Number": 4503166696,
     "Part Number": "714-A63320-003",
     "REV": "D",
@@ -76354,9 +76398,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2971,
+    "No": 2973,
     "Check": "715-B88241-001ALAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR124500",
     "PO Number": 4503166694,
     "Part Number": "715-B88241-001",
     "REV": "A",
@@ -76374,9 +76418,9 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2971,
+    "No": 2974,
     "Check": "714-B33494-001ALAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR124300",
     "PO Number": 4503166694,
     "Part Number": "714-B33494-001",
     "REV": "A",
@@ -76388,15 +76432,16 @@
     "PO received date": 45833,
     "Customer need date": 45905,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 2": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2971,
+    "No": 2975,
     "Check": "714-B33495-001ALAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR124400",
     "PO Number": 4503166694,
     "Part Number": "714-B33495-001",
     "REV": "A",
@@ -76410,6 +76455,26 @@
     "Requirements": "FAIR",
     "Part Pictures": "-",
     "Production Status": "Finish Good",
+    "Remark 2": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 2976,
+    "Check": "853-A41986-002BLAMSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": 4503200999,
+    "Part Number": "853-A41986-002",
+    "REV": "B",
+    "Description": "ASSY,HT SHIELD,VIEW PORT,SIDE 2",
+    "Customer": "LAM",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45875,
+    "Customer need date": 45901,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 2": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
