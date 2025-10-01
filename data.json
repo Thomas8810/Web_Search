@@ -57502,7 +57502,9 @@
     "Bubble Drawings": "OK",
     "Datasheet form": "OK",
     "COC": "OK",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -59304,7 +59306,8 @@
     "Bubble Drawings": "OK",
     "Datasheet form": "OK",
     "COC": "OK",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
@@ -59357,12 +59360,15 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Datasheet form": "OK",
+    "FAIR Data": "OK",
     "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 45930,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -64067,6 +64073,7 @@
     "COC": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -65044,12 +65051,18 @@
     "PO received date": 45812,
     "Customer need date": 45800,
     "Requirements": "FAIR",
-    "FAIR Data": "FQC",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Thắng took the drawing",
-    "Approval Status": "On going",
+    "Submit date": 45930,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -67108,7 +67121,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 45928,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -67204,7 +67217,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 45928,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -67333,7 +67346,8 @@
     "PO received date": 45638,
     "Customer need date": 45731,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -70649,7 +70663,7 @@
     "Customer need date": 45874,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -71494,11 +71508,18 @@
     "PO received date": 45835,
     "Customer need date": 45884,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 45930,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -73438,7 +73459,8 @@
     "PO received date": "-",
     "Customer need date": "-",
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Lên Ver/Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -77316,6 +77338,7 @@
     "COC": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -77410,6 +77433,7 @@
     "COC": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -78954,6 +78978,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -79000,11 +79025,15 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Datasheet form": "OK",
+    "FAIR Data": "OK",
     "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45930,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -79048,11 +79077,15 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Datasheet form": "OK",
+    "FAIR Data": "OK",
     "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45930,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -79211,11 +79244,15 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Datasheet form": "OK",
+    "FAIR Data": "OK",
     "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45930,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -94501,7 +94538,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -95278,7 +95315,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3736,
+    "No": 3737,
     "Check": "17-163330-00ALAMSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": 4503240341,
@@ -95298,7 +95335,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3736,
+    "No": 3738,
     "Check": "853-B54972-003ALAMMachiningFAIR",
     "ERP-CODE": "No Code",
     "PO Number": 4700912921,
@@ -95319,7 +95356,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3738,
+    "No": 3739,
     "Check": "714-014199-002BGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95339,7 +95376,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3739,
+    "No": 3740,
     "Check": "714-016581-001AGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95359,7 +95396,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3740,
+    "No": 3741,
     "Check": "714-019970-001CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95379,7 +95416,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3741,
+    "No": 3742,
     "Check": "714-046884-004BGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95399,7 +95436,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3742,
+    "No": 3743,
     "Check": "714-046885-002AGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95419,7 +95456,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3743,
+    "No": 3744,
     "Check": "714-047385-001BGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95439,7 +95476,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3744,
+    "No": 3745,
     "Check": "714-047386-001CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95459,7 +95496,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3745,
+    "No": 3746,
     "Check": "714-047629-004CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95479,7 +95516,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3746,
+    "No": 3747,
     "Check": "714-047748-002AGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95499,7 +95536,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3747,
+    "No": 3748,
     "Check": "714-048171-001CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95519,7 +95556,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3748,
+    "No": 3749,
     "Check": "714-048172-001BGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95539,7 +95576,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3749,
+    "No": 3750,
     "Check": "714-051812-001BGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95559,7 +95596,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3750,
+    "No": 3751,
     "Check": "714-051825-001DGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95579,7 +95616,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3751,
+    "No": 3752,
     "Check": "714-057664-001CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95599,7 +95636,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3752,
+    "No": 3753,
     "Check": "714-057666-002CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95619,7 +95656,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3753,
+    "No": 3754,
     "Check": "714-059328-002CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95639,7 +95676,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3754,
+    "No": 3755,
     "Check": "715-010893-001CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95659,7 +95696,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3755,
+    "No": 3756,
     "Check": "715-027845-051BGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95679,7 +95716,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3756,
+    "No": 3757,
     "Check": "715-051597-001GGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95699,7 +95736,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3757,
+    "No": 3758,
     "Check": "715-051611-001BGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95719,7 +95756,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3758,
+    "No": 3759,
     "Check": "715-051612-001CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95739,7 +95776,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3759,
+    "No": 3760,
     "Check": "715-051613-001CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95759,7 +95796,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3760,
+    "No": 3761,
     "Check": "715-051615-001CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95779,7 +95816,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3761,
+    "No": 3762,
     "Check": "715-051634-001CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95799,7 +95836,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3762,
+    "No": 3763,
     "Check": "715-102860-002AGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95819,7 +95856,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3763,
+    "No": 3764,
     "Check": "715-B02860-001AGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
@@ -95839,7 +95876,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3764,
+    "No": 3765,
     "Check": "839-014199-001CGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250929003",
