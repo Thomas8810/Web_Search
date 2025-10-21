@@ -4,16 +4,20 @@ const path = require("path");
 const cookieSession = require("cookie-session");
 const multer = require("multer");
 
-// ⚠️ Đường dẫn phải lùi 1 cấp (vì file này nằm trong /api/)
-const { loadDataFromFile, loadUsersData, cachedData, headerOrder } = require("../utils/fileUtils");
+const sessionMiddleware = require("../middleware/session");
+const { loadDataFromFile, loadUsersData } = require("../utils/fileUtils");
 
+// ✅ Gọi loadDataFromFile và loadUsersData TRƯỚC khi require các routes
+loadDataFromFile();
+loadUsersData();
+
+// ⚠️ Sau đó mới import các route
 const authRoutes = require("../routes/authRoutes");
 const taskRoutes = require("../routes/taskRoutes");
 const commentRoutes = require("../routes/commentRoutes");
 const attachmentRoutes = require("../routes/attachmentRoutes");
 const dataRoutes = require("../routes/dataRoutes");
 const activeUsersRoutes = require("../routes/activeUsersRoutes");
-const sessionMiddleware = require("../middleware/session");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -25,10 +29,6 @@ app.use(cookieSession(sessionMiddleware));
 
 // ⚠️ Lùi 1 cấp để trỏ đúng thư mục “public”
 app.use(express.static(path.join(__dirname, "../public")));
-
-// Tải dữ liệu khi khởi động server
-loadDataFromFile();
-loadUsersData();
 
 // Routes chính
 app.use("/api", authRoutes);
@@ -43,7 +43,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../public", "login.html"));
 });
 
-// ⚙️ Khởi động server (local test)
+// ⚙️ Chỉ listen khi chạy local
 if (require.main === module) {
   app.listen(port, () => {
     console.log(`✅ Server running locally on port ${port}`);
