@@ -1,6 +1,6 @@
 {
   "name": "web-tra-cuu",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Web tra cứu có chức năng đăng nhập và phân quyền",
   "main": "server.js",
   "scripts": {
@@ -13,6 +13,6 @@
     "xlsx": "^0.18.5",
     "nodemailer": "^6.9.1",
     "@supabase/supabase-js": "^2.0.0",
-    "multer": "^1.4.4-lts.1"
+    "multer": "^1.4.4"
   }
 }
