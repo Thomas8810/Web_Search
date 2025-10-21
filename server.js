@@ -13,9 +13,12 @@ const port = process.env.PORT || 3000;
 // ----------------------- COOKIE-SESSION -----------------------
 app.use(cookieSession({
   name: 'session',
-  keys: ['your-very-secret-key-CHANGE-THIS-PLEASE'], // **QUAN TRỌNG:** Thay đổi chuỗi bí mật này!
-  maxAge: 24 * 60 * 60 * 1000 // 24 hours
+  keys: [process.env.SESSION_KEY],
+  maxAge: 24 * 60 * 60 * 1000, // 1 ngày
+  sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+  secure: process.env.NODE_ENV === 'production' // bật secure cookie khi deploy Vercel
 }));
+
 // Theo dõi hoạt động người dùng
 app.use((req, res, next) => {
   if (req.session && req.session.user) {
