@@ -34,5 +34,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../public", "login.html"));
 });
 
-// ⚠️ Quan trọng: export app, KHÔNG listen
-module.exports = app;
+// ✅ Vercel Free Plan: export function thay vì app
+module.exports = (req, res) => {
+  return app(req, res);
+};
