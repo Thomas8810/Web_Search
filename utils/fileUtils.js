@@ -7,7 +7,7 @@ let headerOrder = [];
 
 function loadDataFromFile() {
   try {
-    const filePath = path.resolve(__dirname, "../../data.json"); // ✅ chính xác
+    const filePath = path.resolve(__dirname, "../data/data.json"); // ✅ đường dẫn mới
     cachedData = JSON.parse(fs.readFileSync(filePath, "utf8"));
     if (cachedData.length > 0) {
       const headerSet = new Set();
@@ -22,7 +22,7 @@ function loadDataFromFile() {
 
 function loadUsersData() {
   try {
-    const filePath = path.resolve(__dirname, "../../users.json"); // ✅ chính xác
+    const filePath = path.resolve(__dirname, "../data/users.json"); // ✅ đường dẫn mới
     usersData = JSON.parse(fs.readFileSync(filePath, "utf8"));
     console.log(`✅ Loaded ${usersData.length} users from users.json`);
   } catch (err) {
@@ -31,4 +31,3 @@ function loadUsersData() {
 }
 
 module.exports = { loadDataFromFile, loadUsersData, cachedData, usersData, headerOrder };
-
