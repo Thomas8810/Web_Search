@@ -15,14 +15,11 @@ const activeUsersRoutes = require("../routes/activeUsersRoutes");
 
 const app = express();
 
-// ✅ Không cần app.listen(), Vercel tự chạy
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieSession(sessionMiddleware));
-
 app.use(express.static(path.join(__dirname, "../public")));
 
-// Tải dữ liệu khi function khởi tạo
 loadDataFromFile();
 loadUsersData();
 
@@ -37,4 +34,5 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../public", "login.html"));
 });
 
-module.exports = app; // ✅ Bắt buộc phải export app
+// ⚠️ Quan trọng: export app, KHÔNG listen
+module.exports = app;
