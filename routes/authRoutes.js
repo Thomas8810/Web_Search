@@ -17,21 +17,30 @@ router.get("/api/me", (req, res) => {
 // API: Đăng nhập
 router.post("/login", (req, res) => {
   const { identifier, password } = req.body;
+
+  console.log("📩 Yêu cầu đăng nhập:", { identifier, password });
+  console.log("📦 Danh sách người dùng:", usersData.length);
+
   if (!identifier || !password)
     return res.json({ success: false, message: "Thiếu tên hoặc mật khẩu" });
 
-  const user = usersData.find(
-    (u) =>
-      (u.email && u.email.toLowerCase() === identifier.toLowerCase()) ||
-      (u.name && u.name.toLowerCase() === identifier.toLowerCase())
-  );
+  const cleanIdentifier = identifier.trim().toLowerCase();
+  const cleanPassword = password.trim();
+
+  const user = usersData.find((u) => {
+    const email = u.email?.trim().toLowerCase();
+    const name = u.name?.trim().toLowerCase();
+    return email === cleanIdentifier || name === cleanIdentifier;
+  });
 
   if (!user)
     return res.json({ success: false, message: "Không tìm thấy người dùng" });
-  if (user.password !== password)
+  if (user.password !== cleanPassword)
     return res.json({ success: false, message: "Sai mật khẩu" });
 
   req.session.user = { name: user.name, email: user.email, role: user.role };
+  console.log("✅ Đăng nhập thành công:", req.session.user);
+
   res.json({ success: true, message: "Đăng nhập thành công", user: req.session.user });
 });
 
