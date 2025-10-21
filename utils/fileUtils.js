@@ -7,7 +7,7 @@ let headerOrder = [];
 
 function loadDataFromFile() {
   try {
-    const filePath = path.join(__dirname, "../../data/data.json");
+    const filePath = path.resolve(__dirname, "../../data/data.json"); // ✅ chính xác
     cachedData = JSON.parse(fs.readFileSync(filePath, "utf8"));
     if (cachedData.length > 0) {
       const headerSet = new Set();
@@ -22,7 +22,7 @@ function loadDataFromFile() {
 
 function loadUsersData() {
   try {
-    const filePath = path.join(__dirname, "../../data/users.json");
+    const filePath = path.resolve(__dirname, "../../data/users.json"); // ✅ chính xác
     usersData = JSON.parse(fs.readFileSync(filePath, "utf8"));
     console.log(`✅ Loaded ${usersData.length} users from users.json`);
   } catch (err) {
