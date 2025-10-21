@@ -1,11 +1,14 @@
 const fs = require("fs");
+const path = require("path");
+
 let cachedData = [];
 let usersData = [];
 let headerOrder = [];
 
 function loadDataFromFile() {
   try {
-    cachedData = require("../data.json");
+    const filePath = path.join(__dirname, "../../data/data.json");
+    cachedData = JSON.parse(fs.readFileSync(filePath, "utf8"));
     if (cachedData.length > 0) {
       const headerSet = new Set();
       cachedData.forEach(row => Object.keys(row).forEach(k => headerSet.add(k)));
@@ -19,7 +22,8 @@ function loadDataFromFile() {
 
 function loadUsersData() {
   try {
-    usersData = require("../users.json");
+    const filePath = path.join(__dirname, "../../data/users.json");
+    usersData = JSON.parse(fs.readFileSync(filePath, "utf8"));
     console.log(`✅ Loaded ${usersData.length} users from users.json`);
   } catch (err) {
     console.error("❌ Error loading users.json:", err.message);
