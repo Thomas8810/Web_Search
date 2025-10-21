@@ -628,16 +628,16 @@ app.get('/export', isAuthenticated, (req, res) => {
 });
 
 // ----------------------- START SERVER -----------------------
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-  if (!supabaseUrl || !supabaseKey) {
-    console.warn("*****************************************************************");
-    console.warn("WARNING: Supabase URL or Key not configured in environment variables.");
-    console.warn("Supabase-dependent features (like Tasks page) will not work correctly.");
-    console.warn("Please set SUPABASE_URL and SUPABASE_KEY in your Vercel project settings.");
-    console.warn("*****************************************************************");
-  }
-});
+//app.listen(port, () => {
+//  console.log(`Server is running on port ${port}`);
+ // if (!supabaseUrl || !supabaseKey) {
+ //   console.warn("*****************************************************************");
+//    console.warn("WARNING: Supabase URL or Key not configured in environment variables.");
+ //   console.warn("Supabase-dependent features (like Tasks page) will not work correctly.");
+ //   console.warn("Please set SUPABASE_URL and SUPABASE_KEY in your Vercel project settings.");
+ //   console.warn("*****************************************************************");
+//  }
+//});
 
 // Export the Express API
 module.exports = app;
