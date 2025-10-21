@@ -1,20 +1,17 @@
 const express = require("express");
 const path = require("path");
 const router = express.Router();
-const fileUtils = require("../utils/fileUtils"); // ✅ Import nguyên module
+const fileUtils = require("../utils/fileUtils");
 
-// Trang login
 router.get("/login.html", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "public", "login.html"));
 });
 
-// API: Kiểm tra trạng thái đăng nhập
 router.get("/api/me", (req, res) => {
   if (!req.session.user) return res.json({ success: false });
   res.json({ success: true, user: req.session.user });
 });
 
-// API: Đăng nhập
 router.post("/login", (req, res) => {
   const identifier =
     req.body.identifier || req.body.username || req.body.email || "";
@@ -26,12 +23,25 @@ router.post("/login", (req, res) => {
   if (!identifier || !password)
     return res.json({ success: false, message: "Thiếu tên hoặc mật khẩu" });
 
-  const cleanIdentifier = identifier.trim().toLowerCase();
+  // 🔍 Làm sạch kỹ để loại bỏ BOM hoặc ký tự ẩn
+  const cleanIdentifier = identifier
+    .normalize("NFKC")
+    .replace(/[^\x20-\x7EÀ-ỹ]/g, "")
+    .trim()
+    .toLowerCase();
   const cleanPassword = password.trim();
 
   const user = fileUtils.usersData.find((u) => {
-    const email = u.email?.trim().toLowerCase();
-    const name = u.name?.trim().toLowerCase();
+    const email = u.email
+      ?.normalize("NFKC")
+      .replace(/[^\x20-\x7EÀ-ỹ]/g, "")
+      .trim()
+      .toLowerCase();
+    const name = u.name
+      ?.normalize("NFKC")
+      .replace(/[^\x20-\x7EÀ-ỹ]/g, "")
+      .trim()
+      .toLowerCase();
     return email === cleanIdentifier || name === cleanIdentifier;
   });
 
@@ -55,7 +65,6 @@ router.post("/login", (req, res) => {
   });
 });
 
-// API: Đăng xuất
 router.get("/logout", (req, res) => {
   req.session = null;
   res.redirect("/login.html");
