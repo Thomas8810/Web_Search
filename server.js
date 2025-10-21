@@ -1,3 +1,4 @@
+console.log("✅ SERVER LOADED ON VERCEL");
 require('dotenv').config();
 const express = require('express');
 const fs = require('fs'); // Vẫn giữ lại fs phòng trường hợp dùng cho việc khác, nhưng không dùng cho data.json và users.json nữa
