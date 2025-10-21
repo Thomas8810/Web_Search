@@ -1,6 +1,6 @@
 {
   "name": "web-tra-cuu",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Web tra cứu có chức năng đăng nhập và phân quyền",
   "main": "server.js",
   "scripts": {
