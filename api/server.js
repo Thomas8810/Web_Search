@@ -31,7 +31,7 @@ loadDataFromFile();
 loadUsersData();
 
 // Routes chính
-app.use("/", authRoutes);
+app.use("/api", authRoutes);
 app.use("/api/tasks", taskRoutes);
 app.use("/api/comments", commentRoutes);
 app.use("/api/attachments", attachmentRoutes);
