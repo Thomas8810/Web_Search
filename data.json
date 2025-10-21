@@ -81798,7 +81798,8 @@
     "PO received date": 45920,
     "Customer need date": 45897,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -84367,7 +84368,8 @@
     "PO received date": 45904,
     "Customer need date": 45992,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
@@ -98335,7 +98337,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3835,
+    "No": 3836,
     "Check": "15-276071-00AGUMISheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO251016105",
@@ -98355,7 +98357,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3835,
+    "No": 3837,
     "Check": "714-324305-002ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251020-01",
@@ -98375,7 +98377,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3835,
+    "No": 3838,
     "Check": "714-324307-003BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251020-01",
@@ -98395,7 +98397,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3835,
+    "No": 3839,
     "Check": "714-327220-003ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251020-01",
@@ -98415,7 +98417,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3835,
+    "No": 3840,
     "Check": "714-333961-002ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251020-01",
@@ -98435,7 +98437,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3835,
+    "No": 3841,
     "Check": "714-337107-003ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251020-01",
@@ -98455,7 +98457,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 3835,
+    "No": 3842,
     "Check": "714-337921-015BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251020-01",
