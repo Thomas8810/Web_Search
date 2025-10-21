@@ -44,9 +44,11 @@ app.get("/", (req, res) => {
 });
 
 // ⚙️ Khởi động server (local test)
-app.listen(port, () => {
-  console.log(`✅ Server running on port ${port}`);
-});
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`✅ Server running locally on port ${port}`);
+  });
+}
 
 // ⚠️ BẮT BUỘC: export app để Vercel chạy được
 module.exports = app;
