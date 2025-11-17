@@ -11,22 +11,10 @@
     "password": "Long2025@",
     "role": "user"
   },
-  {
-    "name": "Tam",
-    "email": "Tam@gmail.com",
-    "password": "Tam2025@",
-    "role": "user"
-  },
     {
-    "name": "Hoang",
+    "name": "Hoangg",
     "email": "Hoang@gmail.com",
-    "password": "Hoang2025@",
-    "role": "user"
-  },
-    {
-    "name": "Hanh",
-    "email": "Hanh@gmail.com",
-    "password": "Hanh2025@",
+    "password": "Hoangg@1",
     "role": "user"
   }
 ]
