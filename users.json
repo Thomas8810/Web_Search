@@ -6,45 +6,15 @@
     "role": "admin"
   },
     {
-    "name": "Thiet",
-    "email": "thiet@gmail.com",
-    "password": "Thiet2025@",
-    "role": "user"
-  },
-    {
-    "name": "Son",
-    "email": "Son@gmail.com",
-    "password": "Son2025@",
-    "role": "user"
-  },
-  {
-    "name": "Hai",
-    "email": "Hai@gmail.com",
-    "password": "Hai2025@",
-    "role": "user"
-  },
-    {
     "name": "Long",
     "email": "Long@gmail.com",
     "password": "Long2025@",
-    "role": "user"
-  },
-      {
-    "name": "SongJisub",
-    "email": "SongJisub@gmail.com",
-    "password": "123",
     "role": "user"
   },
   {
     "name": "Tam",
     "email": "Tam@gmail.com",
     "password": "Tam2025@",
-    "role": "user"
-  },
-    {
-    "name": "Phuoc",
-    "email": "Phuoc@gmail.com",
-    "password": "Phuoc2025@",
     "role": "user"
   },
     {
