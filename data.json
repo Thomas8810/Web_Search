@@ -71007,7 +71007,7 @@
     "PO received date": 45849,
     "Customer need date": 45868,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
@@ -80579,10 +80579,18 @@
     "PO received date": 45874,
     "Customer need date": 45931,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45977,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -81608,11 +81616,18 @@
     "PO received date": 45888,
     "Customer need date": 45943,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 45977,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -81708,11 +81723,18 @@
     "PO received date": 45888,
     "Customer need date": 45943,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 45977,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -86247,11 +86269,18 @@
     "PO received date": 45904,
     "Customer need date": 45992,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 45977,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -88228,7 +88257,7 @@
   {
     "No": 3290,
     "Check": "715-A08777-020BHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR223200",
     "PO Number": "PO250904L-04",
     "Part Number": "715-A08777-020",
     "REV": "B",
@@ -88248,7 +88277,7 @@
   {
     "No": 3291,
     "Check": "715-A08780-001AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR223300",
     "PO Number": "PO250904L-04",
     "Part Number": "715-A08780-001",
     "REV": "A",
@@ -88288,7 +88317,7 @@
   {
     "No": 3293,
     "Check": "715-A08780-020BHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR223400",
     "PO Number": "PO250904L-04",
     "Part Number": "715-A08780-020",
     "REV": "B",
@@ -88308,7 +88337,7 @@
   {
     "No": 3294,
     "Check": "715-A08924-010AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR222400",
     "PO Number": "PO250904L-04",
     "Part Number": "715-A08924-010",
     "REV": "A",
@@ -88328,7 +88357,7 @@
   {
     "No": 3295,
     "Check": "715-A08924-030AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR222500",
     "PO Number": "PO250904L-04",
     "Part Number": "715-A08924-030",
     "REV": "A",
@@ -88408,7 +88437,7 @@
   {
     "No": 3299,
     "Check": "857-B55966-001AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR222300",
     "PO Number": "PO250904L-05",
     "Part Number": "857-B55966-001",
     "REV": "A",
@@ -88468,7 +88497,7 @@
   {
     "No": 3302,
     "Check": "15-398677-00AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR220800",
     "PO Number": "PO250904L-06",
     "Part Number": "15-398677-00",
     "REV": "A",
@@ -88488,7 +88517,7 @@
   {
     "No": 3303,
     "Check": "16-146515-01AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR222600",
     "PO Number": "PO250904L-06",
     "Part Number": "16-146515-01",
     "REV": "A",
@@ -88508,7 +88537,7 @@
   {
     "No": 3304,
     "Check": "515-B58915-001AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR222700",
     "PO Number": "PO250904L-06",
     "Part Number": "515-B58915-001",
     "REV": "A",
@@ -88528,7 +88557,7 @@
   {
     "No": 3305,
     "Check": "715-B13728-002BHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR223500",
     "PO Number": "PO250904L-06",
     "Part Number": "715-B13728-002",
     "REV": "B",
@@ -88848,11 +88877,18 @@
     "PO received date": 45908,
     "Customer need date": 45992,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 45977,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -89384,7 +89420,7 @@
   {
     "No": 3343,
     "Check": "715-103941-600CHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR221400",
     "PO Number": "PO250904L-04",
     "Part Number": "715-103941-600",
     "REV": "C",
@@ -90235,7 +90271,7 @@
   {
     "No": 3385,
     "Check": "713-311577-100BHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR222800",
     "PO Number": "PO250909L-02",
     "Part Number": "713-311577-100",
     "REV": "B",
@@ -90375,7 +90411,7 @@
   {
     "No": 3392,
     "Check": "715-324724-002AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR223100",
     "PO Number": "PO250909L-02",
     "Part Number": "715-324724-002",
     "REV": "A",
@@ -90395,7 +90431,7 @@
   {
     "No": 3393,
     "Check": "715-311186-010AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR223000",
     "PO Number": "PO250909L-02",
     "Part Number": "715-311186-010",
     "REV": "A",
@@ -90535,7 +90571,7 @@
   {
     "No": 3400,
     "Check": "715-000765-811AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR222900",
     "PO Number": "PO250909L-02",
     "Part Number": "715-000765-811",
     "REV": "A",
@@ -95630,7 +95666,7 @@
   {
     "No": 3652,
     "Check": "853-313383-003AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR221800",
     "PO Number": "PO250909L-03",
     "Part Number": "853-313383-003",
     "REV": "A",
@@ -98427,11 +98463,18 @@
     "PO received date": 45936,
     "Customer need date": 45960,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 45977,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -98594,11 +98637,18 @@
     "PO received date": 45940,
     "Customer need date": 45985,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 45977,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -98745,11 +98795,18 @@
     "PO received date": 45940,
     "Customer need date": 45985,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 45977,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -100267,7 +100324,7 @@
   {
     "No": 3871,
     "Check": "839-323221-001CLAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR222100",
     "PO Number": 4503270555,
     "Part Number": "839-323221-001",
     "REV": "C",
@@ -100288,7 +100345,7 @@
   {
     "No": 3872,
     "Check": "713-259876-001ALAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR221900",
     "PO Number": 4503270555,
     "Part Number": "713-259876-001",
     "REV": "A",
@@ -100309,7 +100366,7 @@
   {
     "No": 3873,
     "Check": "853-202957-001ALAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR224800",
     "PO Number": 4503270555,
     "Part Number": "853-202957-001",
     "REV": "A",
@@ -100372,7 +100429,7 @@
   {
     "No": 3876,
     "Check": "71-363742-00ALAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR222000",
     "PO Number": 4503270555,
     "Part Number": "71-363742-00",
     "REV": "A",
@@ -100393,7 +100450,7 @@
   {
     "No": 3877,
     "Check": "02-349540-00BLAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR224500",
     "PO Number": 4503270555,
     "Part Number": "02-349540-00",
     "REV": "B",
@@ -100414,7 +100471,7 @@
   {
     "No": 3878,
     "Check": "16-348423-00BLAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR224700",
     "PO Number": 4503270555,
     "Part Number": "16-348423-00",
     "REV": "B",
@@ -100781,7 +100838,7 @@
   {
     "No": 3896,
     "Check": "715-155892-005AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR220600",
     "PO Number": "PO251031030",
     "Part Number": "715-155892-005",
     "REV": "A",
@@ -100801,7 +100858,7 @@
   {
     "No": 3897,
     "Check": "714-B75626-001CGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR220400",
     "PO Number": "PO251031030",
     "Part Number": "714-B75626-001",
     "REV": "C",
@@ -100821,7 +100878,7 @@
   {
     "No": 3898,
     "Check": "15-420649-003GUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR220500",
     "PO Number": "PO251031030",
     "Part Number": "15-420649-00",
     "REV": 3,
@@ -101081,7 +101138,7 @@
   {
     "No": 3911,
     "Check": "714-195099-001CLAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR221000",
     "PO Number": 4503282141,
     "Part Number": "714-195099-001",
     "REV": "C",
@@ -101101,7 +101158,7 @@
   {
     "No": 3912,
     "Check": "839-247220-003CLAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR221100",
     "PO Number": 4503282141,
     "Part Number": "839-247220-003",
     "REV": "C",
@@ -101121,7 +101178,7 @@
   {
     "No": 3913,
     "Check": "853-195070-001BLAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR221200",
     "PO Number": 4503282141,
     "Part Number": "853-195070-001",
     "REV": "B",
@@ -101141,7 +101198,7 @@
   {
     "No": 3914,
     "Check": "853-195250-001BLAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR221300",
     "PO Number": 4503283817,
     "Part Number": "853-195250-001",
     "REV": "B",
@@ -101161,7 +101218,7 @@
   {
     "No": 3915,
     "Check": "714-A37342-201ALAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR220900",
     "PO Number": 4503282162,
     "Part Number": "714-A37342-201",
     "REV": "A",
@@ -101202,7 +101259,7 @@
   {
     "No": 3917,
     "Check": "853-058377-034ALAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR225000",
     "PO Number": 4503272028,
     "Part Number": "853-058377-034",
     "REV": "A",
@@ -101222,7 +101279,7 @@
   {
     "No": 3918,
     "Check": "853-058377-027ALAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR224900",
     "PO Number": 4503272028,
     "Part Number": "853-058377-027",
     "REV": "A",
@@ -101383,7 +101440,7 @@
   {
     "No": 3926,
     "Check": "714-B67117-002ALAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR226200",
     "PO Number": 4503285231,
     "Part Number": "714-B67117-002",
     "REV": "A",
@@ -101403,7 +101460,7 @@
   {
     "No": 3927,
     "Check": "715-B30780-001ALAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR222200",
     "PO Number": 4503286235,
     "Part Number": "715-B30780-001",
     "REV": "A",
@@ -101424,7 +101481,7 @@
   {
     "No": 3928,
     "Check": "853-B46078-010ALAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR223900",
     "PO Number": 4503286297,
     "Part Number": "853-B46078-010",
     "REV": "A",
@@ -101445,7 +101502,7 @@
   {
     "No": 3929,
     "Check": "853-B46078-020ALAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR224000",
     "PO Number": 4503286297,
     "Part Number": "853-B46078-020",
     "REV": "A",
@@ -101466,7 +101523,7 @@
   {
     "No": 3930,
     "Check": "714-082352-004AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR224400",
     "PO Number": "PO251107076",
     "Part Number": "714-082352-004",
     "REV": "A",
@@ -101486,7 +101543,7 @@
   {
     "No": 3931,
     "Check": "714-310587-002DGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR224300",
     "PO Number": "PO251107076",
     "Part Number": "714-310587-002",
     "REV": "D",
@@ -101506,7 +101563,7 @@
   {
     "No": 3932,
     "Check": "714-310587-003CGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR224100",
     "PO Number": "PO251107076",
     "Part Number": "714-310587-003",
     "REV": "C",
@@ -101526,7 +101583,7 @@
   {
     "No": 3933,
     "Check": "714-310587-001DGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR224200",
     "PO Number": "PO251107076",
     "Part Number": "714-310587-001",
     "REV": "D",
@@ -101546,7 +101603,7 @@
   {
     "No": 3934,
     "Check": "714-260308-033CLAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUOAR077600",
     "PO Number": 4503287877,
     "Part Number": "714-260308-033",
     "REV": "C",
@@ -101566,7 +101623,7 @@
   {
     "No": 3935,
     "Check": "715-261751-201GLAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR223800",
     "PO Number": 4503287741,
     "Part Number": "715-261751-201",
     "REV": "G",
@@ -101587,7 +101644,7 @@
   {
     "No": 3936,
     "Check": "713-C11589-001ALAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR225600",
     "PO Number": 4700925599,
     "Part Number": "713-C11589-001",
     "REV": "A",
@@ -101608,7 +101665,7 @@
   {
     "No": 3937,
     "Check": "713-C11794-001ALAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR225700",
     "PO Number": 4700925599,
     "Part Number": "713-C11794-001",
     "REV": "A",
@@ -101629,7 +101686,7 @@
   {
     "No": 3938,
     "Check": "713-C12196-001ALAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR225800",
     "PO Number": 4700925599,
     "Part Number": "713-C12196-001",
     "REV": "A",
@@ -101650,7 +101707,7 @@
   {
     "No": 3939,
     "Check": "713-C12197-001ALAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR225900",
     "PO Number": 4700925599,
     "Part Number": "713-C12197-001",
     "REV": "A",
@@ -101671,7 +101728,7 @@
   {
     "No": 3940,
     "Check": "853-B92561-001ALAMPlasticFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR226100",
     "PO Number": 4503289112,
     "Part Number": "853-B92561-001",
     "REV": "A",
@@ -101692,7 +101749,7 @@
   {
     "No": 3941,
     "Check": "715-238377-001DLAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR207700",
     "PO Number": 4503289205,
     "Part Number": "715-238377-001",
     "REV": "D",
@@ -101713,7 +101770,7 @@
   {
     "No": 3942,
     "Check": "15-459081-00ELAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR206100",
     "PO Number": 4503289205,
     "Part Number": "15-459081-00",
     "REV": "E",
@@ -101755,7 +101812,7 @@
   {
     "No": 3944,
     "Check": "15-138850-00ALAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR203800",
     "PO Number": 4503289205,
     "Part Number": "15-138850-00",
     "REV": "A",
@@ -101776,7 +101833,7 @@
   {
     "No": 3945,
     "Check": "715-A02132-002ALAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR208500",
     "PO Number": 4503289205,
     "Part Number": "715-A02132-002",
     "REV": "A",
@@ -101797,7 +101854,7 @@
   {
     "No": 3946,
     "Check": "714-242290-001AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR075800",
     "PO Number": "PO251113103",
     "Part Number": "714-242290-001",
     "REV": "A",
@@ -101837,7 +101894,7 @@
   {
     "No": 3948,
     "Check": "714-259713-001BGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPBR295100",
     "PO Number": "PO251113103",
     "Part Number": "714-259713-001",
     "REV": "B",
