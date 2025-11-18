@@ -62972,10 +62972,16 @@
     "Requirements": "FAIR",
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45978,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -63412,11 +63418,18 @@
     "PO received date": 45812,
     "Customer need date": 45800,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Thắng took the drawing",
-    "Approval Status": "On going",
+    "Submit date": 45978,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -76345,7 +76358,8 @@
     "PO received date": 45853,
     "Customer need date": 45884,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
@@ -79852,11 +79866,15 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Datasheet form": "OK",
+    "FAIR Data": "OK",
     "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 45978,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -84897,7 +84915,7 @@
     "Part Pictures": "-",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -84918,7 +84936,7 @@
     "Part Pictures": "-",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -84939,7 +84957,7 @@
     "Part Pictures": "-",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -84960,7 +84978,7 @@
     "Part Pictures": "-",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -84981,7 +84999,7 @@
     "Part Pictures": "-",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -85031,7 +85049,7 @@
     "Part Pictures": "-",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -86924,7 +86942,8 @@
     "PO received date": 45904,
     "Customer need date": 45992,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
@@ -87343,11 +87362,18 @@
     "PO received date": 45905,
     "Customer need date": 45960,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 45978,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -88114,11 +88140,18 @@
     "PO received date": 45905,
     "Customer need date": 46021,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 45978,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -88164,7 +88197,7 @@
   {
     "No": 3285,
     "Check": "714-B68692-003AHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR226600",
     "PO Number": "PO250904L-04",
     "Part Number": "714-B68692-003",
     "REV": "A",
@@ -88184,7 +88217,7 @@
   {
     "No": 3286,
     "Check": "715-197978-002EHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR226800",
     "PO Number": "PO250904L-04",
     "Part Number": "715-197978-002",
     "REV": "E",
@@ -88224,7 +88257,7 @@
   {
     "No": 3288,
     "Check": "715-A08777-001BHwaseongSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR226700",
     "PO Number": "PO250904L-04",
     "Part Number": "715-A08777-001",
     "REV": "B",
@@ -89650,7 +89683,7 @@
     "PO received date": 45910,
     "Customer need date": 45936,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
@@ -93851,11 +93884,18 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 45978,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -101802,7 +101842,7 @@
   {
     "No": 3943,
     "Check": "715-171106-001BLAMMachiningFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR226900",
     "PO Number": 4503289205,
     "Part Number": "715-171106-001",
     "REV": "B",
@@ -101885,7 +101925,7 @@
   {
     "No": 3947,
     "Check": "714-306080-004AGUMISheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUPAR226500",
     "PO Number": "PO251113103",
     "Part Number": "714-306080-004",
     "REV": "A",
@@ -101929,6 +101969,27 @@
     "Production Status": "Finish Good",
     "Submit date": 45975,
     "Approval Status": "Submitted",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 3949,
+    "Check": "715-044854-002KYonginMachiningFAIR",
+    "ERP-CODE": "EUOAR077700",
+    "PO Number": "PO251112042",
+    "Part Number": "715-044854-002",
+    "REV": "K",
+    "Description": "CHMBR,2300 STRIP45",
+    "Customer": "Yongin",
+    "Commodity": "Machining",
+    "Critical": "CV",
+    "CE": "N",
+    "PO received date": 45978,
+    "Customer need date": 46055,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "PIC": "B8",
+    "Approval Status": "On going",
     "Sheet": "Detailed listed"
   }
 ]
