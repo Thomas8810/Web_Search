@@ -16,5 +16,17 @@
     "email": "Hoang@gmail.com",
     "password": "Hoangg@1",
     "role": "user"
-  }
+  },
+    {
+    "name": "Tam",
+    "email": "Tam@gmail.com",
+    "password": "Tam112@",
+    "role": "user"
+  },
+    {
+    "name": "Hanh",
+    "email": "Hanh@gmail.com",
+    "password": "Hanh111@",
+    "role": "user"
+    }
 ]
