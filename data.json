@@ -38484,7 +38484,6 @@
     "COC": "OK",
     "BOM": "OK",
     "Part Pictures": "-",
-    "Remark 1": "Thiếu paint",
     "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
@@ -70254,11 +70253,19 @@
     "PO received date": 45862,
     "Customer need date": 46239,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
     "PIC": "B8",
-    "Approval Status": "On going",
+    "Submit date": 46009,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -72713,10 +72720,18 @@
     "PO received date": 45859,
     "Customer need date": 45894,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46017,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -72756,6 +72771,7 @@
     "Requirements": "FAIR",
     "Bubble Drawings": "OK",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -79659,7 +79675,7 @@
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Sai vật liệu",
+    "Remark 1": "Sai vật liệu 202-100836-002 (YS<=36ksi)",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -83330,10 +83346,18 @@
     "PO received date": 45920,
     "Customer need date": 45897,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 46017,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -85322,11 +85346,19 @@
     "PO received date": 45903,
     "Customer need date": 45943,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
     "PIC": "B8",
-    "Approval Status": "On going",
+    "Submit date": 45926,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -85665,6 +85697,7 @@
     "Customer need date": 45992,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -86384,10 +86417,18 @@
     "PO received date": 45904,
     "Customer need date": 45992,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 46017,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -86434,7 +86475,8 @@
     "PO received date": 45904,
     "Customer need date": 45992,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -86723,7 +86765,8 @@
     "PO received date": 45904,
     "Customer need date": 45992,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -90739,7 +90782,9 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -91543,7 +91588,9 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -93098,7 +93145,8 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -93562,7 +93610,8 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -93713,11 +93762,18 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46017,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -94024,11 +94080,18 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46017,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -95914,11 +95977,18 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46017,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -96034,7 +96104,8 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -96589,7 +96660,9 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -101511,11 +101584,18 @@
     "PO received date": 45950,
     "Customer need date": 45991,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 46017,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -101916,6 +101996,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -101939,6 +102020,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
+    "PIC": "Sai vật liệu ASTM A1011 CS Type B",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -102249,11 +102331,19 @@
     "PO received date": 45961,
     "Customer need date": 45982,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
     "PIC": "B8",
-    "Approval Status": "On going",
+    "Submit date": 45993,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -103700,6 +103790,7 @@
     "Customer need date": 45985,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
     "PIC": "B8",
     "Approval Status": "On going",
@@ -106680,6 +106771,7 @@
     "Customer need date": 46024,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
     "PIC": "B8",
     "Approval Status": "On going",
@@ -106793,27 +106885,6 @@
   },
   {
     "No": 4077,
-    "Check+G2B1:H2": "713-B95068-005ALAMPlasticFAIR",
-    "ERP-CODE": "EUPAR239600",
-    "PO Number": 4700934000,
-    "Part Number": "713-B95068-005",
-    "REV": "A",
-    "Description": "PL,HRVA,3DI SYNC,TIV1,16 DIE,TYPE 5",
-    "Customer": "LAM",
-    "Commodity": "Plastic",
-    "Critical": "C1",
-    "CE": "N",
-    "PO received date": 46004,
-    "Customer need date": 46022,
-    "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "PIC": "B8",
-    "Approval Status": "On going",
-    "Sheet": "Detailed listed"
-  },
-  {
-    "No": 4078,
     "Check+G2B1:H2": "713-B67656-001ALAMPlasticFAIR",
     "ERP-CODE": "EUPAR240500",
     "PO Number": 4700933953,
@@ -106834,7 +106905,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4079,
+    "No": 4078,
     "Check+G2B1:H2": "714-089367-108BLAMSheet MetalFAIR",
     "ERP-CODE": "EUPAR241200",
     "PO Number": 4503313564,
@@ -106854,7 +106925,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4080,
+    "No": 4079,
     "Check+G2B1:H2": "839-B42361-003BLAMSheet MetalFAIR",
     "ERP-CODE": "EUPAR075400",
     "PO Number": 4503313905,
@@ -106874,7 +106945,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4081,
+    "No": 4080,
     "Check+G2B1:H2": "714-A41996-001AEFEM VNSheet MetalFAIR",
     "ERP-CODE": "EUPAR213700",
     "PO Number": "POV2512170007",
@@ -106893,7 +106964,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4082,
+    "No": 4081,
     "Check+G2B1:H2": "714-A42079-001AEFEM VNSheet MetalFAIR",
     "ERP-CODE": "EUPAR213800",
     "PO Number": "POV2512170007",
@@ -106912,7 +106983,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4083,
+    "No": 4082,
     "Check+G2B1:H2": "714-A42107-001AEFEM VNSheet MetalFAIR",
     "ERP-CODE": "EUPAR213900",
     "PO Number": "POV2512170007",
@@ -106931,7 +107002,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4084,
+    "No": 4083,
     "Check+G2B1:H2": "714-B21801-001AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR245300",
     "PO Number": "PO251219016",
@@ -106951,7 +107022,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4085,
+    "No": 4084,
     "Check+G2B1:H2": "714-319960-002CGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR078500",
     "PO Number": "PO251219016",
@@ -106971,7 +107042,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4086,
+    "No": 4085,
     "Check+G2B1:H2": "714-A09624-001AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR244600",
     "PO Number": "PO251219019",
@@ -106991,7 +107062,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4087,
+    "No": 4086,
     "Check+G2B1:H2": "714-A40705-010AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR244700",
     "PO Number": "PO251219019",
@@ -107011,7 +107082,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4088,
+    "No": 4087,
     "Check+G2B1:H2": "714-A40705-050AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR245000",
     "PO Number": "PO251219019",
@@ -107031,7 +107102,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4089,
+    "No": 4088,
     "Check+G2B1:H2": "714-A40705-060AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR245100",
     "PO Number": "PO251219019",
@@ -107051,7 +107122,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4090,
+    "No": 4089,
     "Check+G2B1:H2": "714-A08871-001AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR245600",
     "PO Number": "PO251219019",
@@ -107071,7 +107142,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4091,
+    "No": 4090,
     "Check+G2B1:H2": "714-A40705-071AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR245700",
     "PO Number": "PO251219019",
@@ -107091,7 +107162,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4092,
+    "No": 4091,
     "Check+G2B1:H2": "715-286870-001AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPBR097200",
     "PO Number": "PO251219019",
@@ -107112,7 +107183,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4093,
+    "No": 4092,
     "Check+G2B1:H2": "714-A40705-030BGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR244800",
     "PO Number": "PO251219019",
@@ -107132,7 +107203,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4094,
+    "No": 4093,
     "Check+G2B1:H2": "714-A40705-080AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR245200",
     "PO Number": "PO251219019",
@@ -107152,7 +107223,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4095,
+    "No": 4094,
     "Check+G2B1:H2": "714-A40705-040BGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR244900",
     "PO Number": "PO251219019",
@@ -107172,7 +107243,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4096,
+    "No": 4095,
     "Check+G2B1:H2": "714-A40705-090AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR244400",
     "PO Number": "PO251219019",
@@ -107192,7 +107263,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4097,
+    "No": 4096,
     "Check+G2B1:H2": "715-A82824-001AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR244100",
     "PO Number": "PO251219019",
@@ -107212,7 +107283,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4098,
+    "No": 4097,
     "Check+G2B1:H2": "714-A40705-020AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR244300",
     "PO Number": "PO251219019",
@@ -107232,7 +107303,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4099,
+    "No": 4098,
     "Check+G2B1:H2": "715-258168-002CGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR244200",
     "PO Number": "PO251219019",
@@ -107252,7 +107323,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4100,
+    "No": 4099,
     "Check+G2B1:H2": "714-A40705-001CGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR244500",
     "PO Number": "PO251219019",
@@ -107272,7 +107343,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4101,
+    "No": 4100,
     "Check+G2B1:H2": "839-A40705-001AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR244000",
     "PO Number": "PO251219019",
@@ -107292,7 +107363,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4102,
+    "No": 4101,
     "Check+G2B1:H2": "714-255867-002AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR113700",
     "PO Number": "PO251219019",
@@ -107312,7 +107383,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4103,
+    "No": 4102,
     "Check+G2B1:H2": "714-B13341-004AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR114400",
     "PO Number": "PO251219019",
@@ -107332,7 +107403,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4104,
+    "No": 4103,
     "Check+G2B1:H2": "839-255867-014AGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR106900",
     "PO Number": "PO251219019",
@@ -107352,7 +107423,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4105,
+    "No": 4104,
     "Check+G2B1:H2": "714-144156-102BLAMSheet MetalFAIR",
     "ERP-CODE": "EUPAR246200",
     "PO Number": 4503321811,
@@ -107372,7 +107443,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4106,
+    "No": 4105,
     "Check+G2B1:H2": "714-085140-001CGUMISheet MetalFAIR",
     "ERP-CODE": "EUOAR044500",
     "PO Number": "PO251222036",
@@ -107392,7 +107463,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4107,
+    "No": 4106,
     "Check+G2B1:H2": "713-B98323-001ALAMPlasticFAIR",
     "ERP-CODE": "No Code",
     "PO Number": 4700937203,
@@ -107413,7 +107484,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4108,
+    "No": 4107,
     "Check+G2B1:H2": "713-198486-004ALAMPlasticFAIR",
     "ERP-CODE": "No Code",
     "PO Number": 4700937458,
@@ -107434,7 +107505,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4109,
+    "No": 4108,
     "Check+G2B1:H2": "714-042119-002ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107454,7 +107525,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4110,
+    "No": 4109,
     "Check+G2B1:H2": "839-C07988-001ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107474,7 +107545,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4111,
+    "No": 4110,
     "Check+G2B1:H2": "714-064058-901BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107494,7 +107565,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4112,
+    "No": 4111,
     "Check+G2B1:H2": "714-115875-520BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107514,7 +107585,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4113,
+    "No": 4112,
     "Check+G2B1:H2": "714-115875-699ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107534,7 +107605,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4114,
+    "No": 4113,
     "Check+G2B1:H2": "839-C10172-001ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107554,7 +107625,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4115,
+    "No": 4114,
     "Check+G2B1:H2": "714-115876-522ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107574,7 +107645,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4116,
+    "No": 4115,
     "Check+G2B1:H2": "714-116034-812ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107594,7 +107665,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4117,
+    "No": 4116,
     "Check+G2B1:H2": "714-236166-005CTexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107614,7 +107685,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4118,
+    "No": 4117,
     "Check+G2B1:H2": "714-255210-100ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107634,7 +107705,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4119,
+    "No": 4118,
     "Check+G2B1:H2": "714-255210-801ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107654,7 +107725,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4120,
+    "No": 4119,
     "Check+G2B1:H2": "714-306781-002ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107674,7 +107745,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4121,
+    "No": 4120,
     "Check+G2B1:H2": "714-318137-819ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107694,7 +107765,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4122,
+    "No": 4121,
     "Check+G2B1:H2": "718-043334-001ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107714,7 +107785,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4123,
+    "No": 4122,
     "Check+G2B1:H2": "719-064080-509ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107734,7 +107805,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4124,
+    "No": 4123,
     "Check+G2B1:H2": "719-064080-510BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107754,7 +107825,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4125,
+    "No": 4124,
     "Check+G2B1:H2": "719-064080-801ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107774,7 +107845,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4126,
+    "No": 4125,
     "Check+G2B1:H2": "839-064081-803BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107794,7 +107865,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4127,
+    "No": 4126,
     "Check+G2B1:H2": "839-064081-001ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107814,7 +107885,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4128,
+    "No": 4127,
     "Check+G2B1:H2": "715-A69780-002CTexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107834,7 +107905,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4129,
+    "No": 4128,
     "Check+G2B1:H2": "715-A69780-001BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107854,7 +107925,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4130,
+    "No": 4129,
     "Check+G2B1:H2": "718-234997-012ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107874,7 +107945,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4131,
+    "No": 4130,
     "Check+G2B1:H2": "714-C07980-001ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107894,7 +107965,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4132,
+    "No": 4131,
     "Check+G2B1:H2": "714-B51652-001ATexon PBXSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20251224-01",
@@ -107910,6 +107981,326 @@
     "Requirements": "FAIR",
     "Part Pictures": "-",
     "Remark 1": "GUMI",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4132,
+    "Check+G2B1:H2": "714-251411-001BEFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-03",
+    "Part Number": "714-251411-001",
+    "REV": "B",
+    "Description": "BRKT,SMOKE DETECTOR                     ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46055,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4133,
+    "Check+G2B1:H2": "524-A46886-058A EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-058",
+    "REV": "A ",
+    "Description": "SPRT,SLDR,TV,INSTL,FXTR                 ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4134,
+    "Check+G2B1:H2": "524-A46886-036B EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-036",
+    "REV": "B ",
+    "Description": "BRKT,MT,SLDR/LVL,ADJ,TV,INSTL,FXTR      ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4135,
+    "Check+G2B1:H2": "524-A46886-048A EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-048",
+    "REV": "A ",
+    "Description": "BRKT,LCK,SLDR,TV INSTL FXTR             ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4136,
+    "Check+G2B1:H2": "524-A46886-037B EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-037",
+    "REV": "B ",
+    "Description": "BRKT,HLDR,TV,INSTL FXTR                 ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4137,
+    "Check+G2B1:H2": "524-A46886-045A EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-045",
+    "REV": "A ",
+    "Description": "PL,LVL,ADJ,BTM,TV,INSTL FXTR            ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4138,
+    "Check+G2B1:H2": "524-A46886-057A EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-057",
+    "REV": "A ",
+    "Description": "BRKT,MT,CNTR,WT                         ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4139,
+    "Check+G2B1:H2": "524-A46886-043A EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-043",
+    "REV": "A ",
+    "Description": "BLK,CTR,WT,TV,INSTL,FXTR                ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4140,
+    "Check+G2B1:H2": "524-A46886-017A EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-017",
+    "REV": "A ",
+    "Description": "MOD,THD,SHAFT,HLDR,TV,INSTL,FXTR        ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4141,
+    "Check+G2B1:H2": "524-A46886-030A EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-030",
+    "REV": "A ",
+    "Description": "WLDMT,OUTRIGGER JACK,TV,INSTL,FXTR      ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4142,
+    "Check+G2B1:H2": "524-A46886-049A EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-049",
+    "REV": "A ",
+    "Description": "SPCR,JACK,TV,INSTL,FXTR                 ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4143,
+    "Check+G2B1:H2": "524-A46886-052A EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-052",
+    "REV": "A ",
+    "Description": "PIN,ALIGN,JACK BOT, TV,INSTL FXTR       ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4144,
+    "Check+G2B1:H2": "524-A46886-055A EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-055",
+    "REV": "A ",
+    "Description": "PIN,ALIGN,JACK TOP,TV,INSTL FXTR        ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4145,
+    "Check+G2B1:H2": "524-A46886-056B EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-A46886-056",
+    "REV": "B ",
+    "Description": "HD,SWIVEL JACK TV,INSTL,FXTR            ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4146,
+    "Check+G2B1:H2": "715-A35419-001A EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "715-A35419-001",
+    "REV": "A ",
+    "Description": "SPRT,JACK WHEEL EXTND                   ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4147,
+    "Check+G2B1:H2": "524-B98632-001A EFEM VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20251225-04",
+    "Part Number": "524-B98632-001",
+    "REV": "A ",
+    "Description": "ROD, POSITION SHAFT JACK                ",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46017,
+    "Customer need date": 46048,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   }
