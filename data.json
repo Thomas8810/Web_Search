@@ -65223,6 +65223,7 @@
     "COC": "OK",
     "BOM": "OK",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -65355,7 +65356,7 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Part Pictures": "-",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -70096,10 +70097,18 @@
     "PO received date": 45769,
     "Customer need date": 46030,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "PIC": "B8",
-    "Approval Status": "On going",
+    "Submit date": 46028,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -72160,7 +72169,7 @@
     "PO received date": 45835,
     "Customer need date": 45884,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -73218,7 +73227,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
+    "Remark 1": "Wait approve PR",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -80747,11 +80756,15 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Datasheet form": "OK",
+    "FAIR Data": "OK",
     "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 46028,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -85079,6 +85092,7 @@
     "Customer need date": 45897,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -85169,7 +85183,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46024,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -86184,6 +86198,7 @@
     "Customer need date": 45992,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -90414,7 +90429,7 @@
     "PO received date": 45910,
     "Customer need date": 45936,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -90434,7 +90449,7 @@
     "PO received date": 45910,
     "Customer need date": 45936,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -90808,7 +90823,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46025,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -90917,7 +90932,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46025,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -91375,7 +91390,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46024,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -91746,7 +91761,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46024,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -92448,7 +92463,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46024,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -92595,7 +92610,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46026,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -93335,7 +93350,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46025,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -93815,7 +93830,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46025,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -93933,7 +93948,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46026,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -94058,7 +94073,9 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -94138,7 +94155,9 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -94586,6 +94605,7 @@
     "Customer need date": 45946,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -95967,7 +95987,8 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
@@ -96017,11 +96038,18 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46028,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -96371,11 +96399,18 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46028,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -97129,6 +97164,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -97148,7 +97184,9 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -98037,11 +98075,18 @@
     "PO received date": 45916,
     "Customer need date": 45992,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46028,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -102057,7 +102102,8 @@
     "PO received date": 45950,
     "Customer need date": 45991,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -103295,11 +103341,18 @@
     "PO received date": 45961,
     "Customer need date": 45978,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46028,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -103357,7 +103410,8 @@
     "PO received date": 45961,
     "Customer need date": 45992,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -103825,10 +103879,10 @@
   },
   {
     "No": 3918,
-    "Check+G2B1:H2": " 718-264953-004DAvalonSheet MetalFAIR",
+    "Check+G2B1:H2": "718-264953-004DAvalonSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": 2200080716,
-    "Part Number": " 718-264953-004",
+    "Part Number": "718-264953-004",
     "REV": "D",
     "Description": "MOD,BUSBAR,534112,L1",
     "Customer": "Avalon",
@@ -103845,10 +103899,10 @@
   },
   {
     "No": 3919,
-    "Check+G2B1:H2": " 718-264955-004DAvalonSheet MetalFAIR",
+    "Check+G2B1:H2": "718-264955-004DAvalonSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": 2200080716,
-    "Part Number": " 718-264955-004",
+    "Part Number": "718-264955-004",
     "REV": "D",
     "Description": "MOD,BUSBAR,534112,L2",
     "Customer": "Avalon",
@@ -103865,10 +103919,10 @@
   },
   {
     "No": 3920,
-    "Check+G2B1:H2": " 718-264956-004DAvalonSheet MetalFAIR",
+    "Check+G2B1:H2": "718-264956-004DAvalonSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": 2200080716,
-    "Part Number": " 718-264956-004",
+    "Part Number": "718-264956-004",
     "REV": "D",
     "Description": "MOD,BUSBAR,534112,L3",
     "Customer": "Avalon",
@@ -107312,6 +107366,7 @@
     "Customer need date": 46031,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
     "PIC": "B8",
     "Approval Status": "On going",
@@ -107333,6 +107388,7 @@
     "Customer need date": 46031,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
     "PIC": "B8",
     "Approval Status": "On going",
@@ -109247,6 +109303,27 @@
     "Requirements": "FAIR",
     "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4173,
+    "Check+G2B1:H2": "715-342995-032B LAMMachiningFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "C260105-001",
+    "Part Number": "715-342995-032",
+    "REV": "B ",
+    "Description": "RING,WDO,EDG,HTR",
+    "Customer": "LAM",
+    "Commodity": "Machining",
+    "Critical": "CV",
+    "CE": "N",
+    "PO received date": 46028,
+    "Customer need date": 46142,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "PIC": "B8",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   }
