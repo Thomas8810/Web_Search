@@ -79445,10 +79445,18 @@
     "PO received date": 45874,
     "Customer need date": 45931,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 46049,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -84609,11 +84617,18 @@
     "PO received date": 45975,
     "Customer need date": 45897,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46049,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -84711,10 +84726,18 @@
     "PO received date": 45975,
     "Customer need date": 45897,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 46049,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -91325,6 +91348,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -91557,11 +91581,18 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46049,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -91650,11 +91681,18 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46049,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -92549,7 +92587,9 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -93950,7 +93990,9 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -94821,7 +94863,8 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -97026,11 +97069,18 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46049,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -98351,7 +98401,9 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -104231,7 +104283,8 @@
     "PO received date": 45961,
     "Customer need date": 45992,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
@@ -104557,7 +104610,8 @@
     "PO received date": 46031,
     "Customer need date": 45966,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -107598,7 +107652,9 @@
     "PO received date": 45988,
     "Customer need date": 46006,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -107887,7 +107943,8 @@
     "PO received date": 45988,
     "Customer need date": 46006,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -111116,26 +111173,6 @@
   },
   {
     "No": 4211,
-    "Check+G2B1:H2": "853-A23687-100AEFEM VNSheet MetalFAIR",
-    "ERP-CODE": "EUQAR004400",
-    "PO Number": "POV2601160019",
-    "Part Number": "853-A23687-100",
-    "REV": "A",
-    "Description": "DOOR ASSY,ACCESS,DEP CEFEM",
-    "Customer": "EFEM VN",
-    "Commodity": "Sheet Metal",
-    "Critical": "NC",
-    "CE": "N",
-    "PO received date": "2026-03-13",
-    "Customer need date": 46044,
-    "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
-    "Sheet": "Detailed listed"
-  },
-  {
-    "No": 4212,
     "Check+G2B1:H2": "713-C20053-001ALAMPlasticFAIR",
     "ERP-CODE": "EUQAR016400",
     "PO Number": 4700943931,
@@ -111156,7 +111193,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4213,
+    "No": 4212,
     "Check+G2B1:H2": "713-C20052-001ALAMPlasticFAIR",
     "ERP-CODE": "EUQAR016600",
     "PO Number": 4700943931,
@@ -111177,7 +111214,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4214,
+    "No": 4213,
     "Check+G2B1:H2": "713-C19522-001ALAMPlasticFAIR",
     "ERP-CODE": "EUQAR016300",
     "PO Number": 4700943931,
@@ -111198,7 +111235,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4215,
+    "No": 4214,
     "Check+G2B1:H2": "713-C20108-001ALAMPlasticFAIR",
     "ERP-CODE": "EUQAR016500",
     "PO Number": 4700943940,
@@ -111219,7 +111256,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4216,
+    "No": 4215,
     "Check+G2B1:H2": "853-A19448-001ALAMPlasticFAIR",
     "ERP-CODE": "EUQAR016700",
     "PO Number": 4503340986,
@@ -111240,7 +111277,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4217,
+    "No": 4216,
     "Check+G2B1:H2": "713-030836-003EVAA VNSheet MetalFAIR",
     "ERP-CODE": "EUPBR320100",
     "PO Number": "PBX20260121-03",
@@ -111260,7 +111297,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4218,
+    "No": 4217,
     "Check+G2B1:H2": "839-C10474-001-LAMFrameFAIR",
     "ERP-CODE": "No Code",
     "PO Number": 4700944036,
@@ -111280,7 +111317,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4219,
+    "No": 4218,
     "Check+G2B1:H2": "839-C13030-001-LAMFrameFAIR",
     "ERP-CODE": "No Code",
     "PO Number": 4700944036,
@@ -111300,7 +111337,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4220,
+    "No": 4219,
     "Check+G2B1:H2": "714-262713-003AEMA VNSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20260122-01",
@@ -111320,7 +111357,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4221,
+    "No": 4220,
     "Check+G2B1:H2": "718-044170-006AEMA VNSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20260123-01",
@@ -111340,7 +111377,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4222,
+    "No": 4221,
     "Check+G2B1:H2": "715-048940-008CEMA VNSheet MetalFAIR",
     "ERP-CODE": "EUPBR110700",
     "PO Number": "PBX20260123-01",
@@ -111360,7 +111397,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4223,
+    "No": 4222,
     "Check+G2B1:H2": "714-046087-008AEMA VNSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20260123-01",
@@ -111380,7 +111417,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4224,
+    "No": 4223,
     "Check+G2B1:H2": "715-A35419-003BEMA VNSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PBX20260123-01",
@@ -111400,7 +111437,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4225,
+    "No": 4224,
     "Check+G2B1:H2": "714-B75231-012ALAMSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": 4503343928,
@@ -111420,7 +111457,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4226,
+    "No": 4225,
     "Check+G2B1:H2": "714-341331-100BLAMSheet MetalFAIR",
     "ERP-CODE": "EUQAR016900",
     "PO Number": 4503343928,
@@ -111440,7 +111477,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4227,
+    "No": 4226,
     "Check+G2B1:H2": "714-B75231-013ALAMSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": 4503343928,
@@ -111460,7 +111497,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4228,
+    "No": 4227,
     "Check+G2B1:H2": "714-B75231-011ALAMSheet MetalFAIR",
     "ERP-CODE": "EUQAR017100",
     "PO Number": 4503343928,
