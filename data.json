@@ -66830,7 +66830,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46064,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -84306,6 +84306,7 @@
     "Customer need date": 45897,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -84777,6 +84778,7 @@
     "Customer need date": 45897,
     "Requirements": "FAIR",
     "Part Pictures": "-",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -84914,7 +84916,9 @@
     "PO received date": 45975,
     "Customer need date": 45897,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không có bản tổng",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -89429,7 +89433,9 @@
     "PO received date": 45905,
     "Customer need date": 46021,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -93775,7 +93781,9 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -109879,6 +109887,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -110902,7 +110911,9 @@
     "PO received date": 46017,
     "Customer need date": 46048,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -115240,7 +115251,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1227,
+    "No": 4344,
     "Check+G2B1:H2": "713-035255-002BVAA VNSheet MetalFAIR",
     "ERP-CODE": "EUOBR167800",
     "PO Number": "PBX20260117-02",
@@ -115266,6 +115277,25 @@
     "Production Status": "Finish Good",
     "Submit date": 46079,
     "Approval Status": "Submitted",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4345,
+    "Check+G2B1:H2": "714-316587-012ELAMSheet MetalFAIR",
+    "ERP-CODE": "EUPAR126300",
+    "PO Number": 4503377380,
+    "Part Number": "714-316587-012",
+    "REV": "E",
+    "Description": "PNL,FR,ENCL,HE,RF",
+    "Customer": "LAM",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46080,
+    "Customer need date": 46142,
+    "Requirements": "FAIR",
+    "Remark 1": "Lên Ver/Chưa lấy bản vẽ",
+    "Approval Status": "On going",
     "Sheet": "Detailed listed"
   }
 ]
