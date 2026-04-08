@@ -84304,7 +84304,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46115,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -90532,7 +90532,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46118,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -92289,7 +92289,7 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -93503,10 +93503,10 @@
   },
   {
     "No": 3411,
-    "Check+G2B1:H2": "714-A10302-001 BHwaseongSheet MetalFAIR",
+    "Check+G2B1:H2": "714-A10302-001BHwaseongSheet MetalFAIR",
     "ERP-CODE": "No Code",
     "PO Number": "PO250909L-03",
-    "Part Number": "714-A10302-001 ",
+    "Part Number": "714-A10302-001",
     "REV": "B",
     "Description": "RFRB,BRKT, SHPNG, SECUREMENT, EFEM",
     "Customer": "Hwaseong",
@@ -93527,7 +93527,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46115,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -96075,7 +96075,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46116,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -96298,7 +96298,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46118,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -107597,7 +107597,7 @@
     "PO received date": 45981,
     "Customer need date": 46040,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -107617,7 +107617,7 @@
     "PO received date": 45981,
     "Customer need date": 46040,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -107686,7 +107686,7 @@
     "PO received date": 45981,
     "Customer need date": 46040,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -116835,9 +116835,17 @@
     "PO received date": 46081,
     "Customer need date": 46081,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 1": "LAM",
-    "Approval Status": "On going",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Submit date": 46119,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -118709,7 +118717,7 @@
     "Production Status": "Finish Good",
     "Remark 1": "Sent to B8 submit",
     "Submit date": 46113,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -118739,7 +118747,7 @@
     "Production Status": "Finish Good",
     "Remark 1": "Sent to B8 submit",
     "Submit date": 46113,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -118817,10 +118825,19 @@
     "PO received date": 46098,
     "Customer need date": 46120,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "PIC": "B8",
-    "Approval Status": "On going",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
+    "Remark 1": "Sent to B8 submit",
+    "Submit date": 46119,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -118850,7 +118867,7 @@
     "Production Status": "Finish Good",
     "Remark 1": "Sent to B8 submit",
     "Submit date": 46113,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -118928,10 +118945,19 @@
     "PO received date": 46098,
     "Customer need date": 46120,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "PIC": "B8",
-    "Approval Status": "On going",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
+    "Remark 1": "Sent to B8 submit",
+    "Submit date": 46119,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -118961,7 +118987,7 @@
     "Production Status": "Finish Good",
     "Remark 1": "Sent to B8 submit",
     "Submit date": 46113,
-    "Approval Status": "Submitted",
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -119195,9 +119221,18 @@
     "PO received date": 46100,
     "Customer need date": 46139,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Remark 1": "853-B15113-313",
+    "Submit date": 46119,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -119215,9 +119250,18 @@
     "PO received date": 46100,
     "Customer need date": 46139,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 1": "GUMI",
-    "Approval Status": "On going",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Remark 1": "853-B15113-313",
+    "Submit date": 46119,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -119235,9 +119279,18 @@
     "PO received date": 46100,
     "Customer need date": 46139,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Remark 1": "853-B15113-313",
+    "Submit date": 46119,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -121587,7 +121640,8 @@
     "PO received date": 46116,
     "Customer need date": 46142,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Hwaseong",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -121898,7 +121952,7 @@
   },
   {
     "No": 4584,
-    "Check+G2B1:H2": "713-C28731-001ALAMPlastic",
+    "Check+G2B1:H2": "713-C28731-001ALAMPlasticFAIR",
     "ERP-CODE": "No Code",
     "PO Number": 4700967889,
     "Part Number": "713-C28731-001",
@@ -121910,9 +121964,30 @@
     "CE": "N",
     "PO received date": 46118,
     "Customer need date": 46139,
+    "Requirements": "FAIR",
     "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "PIC": "B8",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 4585,
+    "Check+G2B1:H2": "02-279354-00GHwaseongMachiningFAIR",
+    "ERP-CODE": "EUPAR121100",
+    "PO Number": "PO2604020047",
+    "Part Number": "02-279354-00",
+    "REV": "G",
+    "Description": "ASSY,LID,WTS TM W/VIEWPORTS,300MM",
+    "Customer": "Hwaseong",
+    "Commodity": "Machining",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45822,
+    "Customer need date": 45856,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   }
