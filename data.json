@@ -90754,11 +90754,18 @@
     "PO received date": 45905,
     "Customer need date": 46021,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "No Have Drawing (Wait Sales ask customer)",
-    "Approval Status": "On going",
+    "Submit date": 46179,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -91718,11 +91725,18 @@
     "PO received date": 45909,
     "Customer need date": 45936,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46179,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -114432,11 +114446,18 @@
     "PO received date": 46029,
     "Customer need date": 46069,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46179,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -128519,10 +128540,18 @@
     "PO received date": 46150,
     "Customer need date": 46161,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 46179,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -132036,7 +132065,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4961,
+    "No": 4960,
     "Check+G2B1:H2": "853-B13103-001ALAMSheet MetalFAIR",
     "ERP-CODE": "No code",
     "PO Number": 4503472581,
@@ -132055,7 +132084,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4785,
+    "No": 4961,
     "Check+G2B1:H2": "714-255210-001BGUMISheet MetalFAIR",
     "ERP-CODE": "EUOAR029400",
     "PO Number": "PO260529045",
@@ -132077,7 +132106,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4609,
+    "No": 4962,
     "Check+G2B1:H2": "718-A58294-001-TUDGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR081200",
     "PO Number": "PO260529068",
@@ -132098,7 +132127,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4610,
+    "No": 4963,
     "Check+G2B1:H2": "718-A58295-001-TUEGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR081100",
     "PO Number": "PO260529068",
@@ -132119,7 +132148,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4611,
+    "No": 4964,
     "Check+G2B1:H2": "718-A58296-001-TUDGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR081000",
     "PO Number": "PO260529068",
@@ -132140,7 +132169,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4612,
+    "No": 4965,
     "Check+G2B1:H2": "718-A57273-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR081900",
     "PO Number": "PO260529068",
@@ -132161,7 +132190,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4613,
+    "No": 4966,
     "Check+G2B1:H2": "718-A57289-002-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR086500",
     "PO Number": "PO260529068",
@@ -132182,7 +132211,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4614,
+    "No": 4967,
     "Check+G2B1:H2": "718-A57269-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR081700",
     "PO Number": "PO260529068",
@@ -132203,7 +132232,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4615,
+    "No": 4968,
     "Check+G2B1:H2": "718-A57287-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR086400",
     "PO Number": "PO260529068",
@@ -132224,7 +132253,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4616,
+    "No": 4969,
     "Check+G2B1:H2": "718-A57284-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR086300",
     "PO Number": "PO260529068",
@@ -132245,7 +132274,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4617,
+    "No": 4970,
     "Check+G2B1:H2": "718-A57285-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR086200",
     "PO Number": "PO260529068",
@@ -132266,7 +132295,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4618,
+    "No": 4971,
     "Check+G2B1:H2": "718-A57281-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR082400",
     "PO Number": "PO260529068",
@@ -132287,7 +132316,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4619,
+    "No": 4972,
     "Check+G2B1:H2": "718-A57277-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR082000",
     "PO Number": "PO260529068",
@@ -132308,7 +132337,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4620,
+    "No": 4973,
     "Check+G2B1:H2": "718-A57268-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR080600",
     "PO Number": "PO260529068",
@@ -132329,7 +132358,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4621,
+    "No": 4974,
     "Check+G2B1:H2": "718-A57283-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR082600",
     "PO Number": "PO260529068",
@@ -132350,7 +132379,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4622,
+    "No": 4975,
     "Check+G2B1:H2": "718-A57280-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR082300",
     "PO Number": "PO260529068",
@@ -132371,7 +132400,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4623,
+    "No": 4976,
     "Check+G2B1:H2": "718-A57279-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR082200",
     "PO Number": "PO260529068",
@@ -132392,7 +132421,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4624,
+    "No": 4977,
     "Check+G2B1:H2": "718-A57290-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR086100",
     "PO Number": "PO260529068",
@@ -132413,7 +132442,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4625,
+    "No": 4978,
     "Check+G2B1:H2": "718-A57278-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR082100",
     "PO Number": "PO260529068",
@@ -132434,7 +132463,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4626,
+    "No": 4979,
     "Check+G2B1:H2": "718-A57286-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR086000",
     "PO Number": "PO260529068",
@@ -132455,7 +132484,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4627,
+    "No": 4980,
     "Check+G2B1:H2": "718-A57288-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR085900",
     "PO Number": "PO260529068",
@@ -132476,7 +132505,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4628,
+    "No": 4981,
     "Check+G2B1:H2": "718-A57282-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR082500",
     "PO Number": "PO260529068",
@@ -132497,7 +132526,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4629,
+    "No": 4982,
     "Check+G2B1:H2": "718-A57270-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR081800",
     "PO Number": "PO260529068",
@@ -132518,7 +132547,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4630,
+    "No": 4983,
     "Check+G2B1:H2": "718-A58304-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR087100",
     "PO Number": "PO260529068",
@@ -132539,7 +132568,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4631,
+    "No": 4984,
     "Check+G2B1:H2": "718-A58305-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR086800",
     "PO Number": "PO260529068",
@@ -132560,7 +132589,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4632,
+    "No": 4985,
     "Check+G2B1:H2": "718-A58306-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR087000",
     "PO Number": "PO260529068",
@@ -132581,7 +132610,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4633,
+    "No": 4986,
     "Check+G2B1:H2": "718-A58327-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR086700",
     "PO Number": "PO260529068",
@@ -132602,7 +132631,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4634,
+    "No": 4987,
     "Check+G2B1:H2": "718-A58330-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR086900",
     "PO Number": "PO260529068",
@@ -132623,7 +132652,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4635,
+    "No": 4988,
     "Check+G2B1:H2": "718-A58331-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR086600",
     "PO Number": "PO260529068",
@@ -132644,7 +132673,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4636,
+    "No": 4989,
     "Check+G2B1:H2": "718-A57240-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR080000",
     "PO Number": "PO260529068",
@@ -132665,7 +132694,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4637,
+    "No": 4990,
     "Check+G2B1:H2": "718-A57242-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR080100",
     "PO Number": "PO260529068",
@@ -132686,7 +132715,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4638,
+    "No": 4991,
     "Check+G2B1:H2": "718-A57243-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR080200",
     "PO Number": "PO260529068",
@@ -132707,7 +132736,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4639,
+    "No": 4992,
     "Check+G2B1:H2": "718-A57244-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR080300",
     "PO Number": "PO260529068",
@@ -132728,7 +132757,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4640,
+    "No": 4993,
     "Check+G2B1:H2": "718-A57245-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR080400",
     "PO Number": "PO260529068",
@@ -132749,7 +132778,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4641,
+    "No": 4994,
     "Check+G2B1:H2": "718-A57246-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR080500",
     "PO Number": "PO260529068",
@@ -132770,7 +132799,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4642,
+    "No": 4995,
     "Check+G2B1:H2": "718-A57236-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR079700",
     "PO Number": "PO260529068",
@@ -132791,7 +132820,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4643,
+    "No": 4996,
     "Check+G2B1:H2": "718-A57237-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR079800",
     "PO Number": "PO260529068",
@@ -132812,7 +132841,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4644,
+    "No": 4997,
     "Check+G2B1:H2": "718-A57239-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR079900",
     "PO Number": "PO260529068",
@@ -132833,7 +132862,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4645,
+    "No": 4998,
     "Check+G2B1:H2": "718-A57362-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR085800",
     "PO Number": "PO260529068",
@@ -132854,7 +132883,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4646,
+    "No": 4999,
     "Check+G2B1:H2": "718-A57350-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR085700",
     "PO Number": "PO260529068",
@@ -132875,7 +132904,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4647,
+    "No": 5000,
     "Check+G2B1:H2": "718-A57360-002-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR085600",
     "PO Number": "PO260529068",
@@ -132896,7 +132925,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4648,
+    "No": 5001,
     "Check+G2B1:H2": "718-A57365-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR085500",
     "PO Number": "PO260529068",
@@ -132917,7 +132946,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4649,
+    "No": 5002,
     "Check+G2B1:H2": "718-A57351-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR085400",
     "PO Number": "PO260529068",
@@ -132938,7 +132967,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4650,
+    "No": 5003,
     "Check+G2B1:H2": "718-A57352-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR085300",
     "PO Number": "PO260529068",
@@ -132959,7 +132988,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4651,
+    "No": 5004,
     "Check+G2B1:H2": "718-A57356-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR085200",
     "PO Number": "PO260529068",
@@ -132980,7 +133009,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4652,
+    "No": 5005,
     "Check+G2B1:H2": "718-A57355-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR085100",
     "PO Number": "PO260529068",
@@ -133001,7 +133030,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4653,
+    "No": 5006,
     "Check+G2B1:H2": "718-A57354-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR085000",
     "PO Number": "PO260529068",
@@ -133022,7 +133051,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4654,
+    "No": 5007,
     "Check+G2B1:H2": "718-A57366-001-TUDGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR084900",
     "PO Number": "PO260529068",
@@ -133043,7 +133072,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4655,
+    "No": 5008,
     "Check+G2B1:H2": "718-A57357-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR084800",
     "PO Number": "PO260529068",
@@ -133064,7 +133093,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4656,
+    "No": 5009,
     "Check+G2B1:H2": "718-A57361-002-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR084700",
     "PO Number": "PO260529068",
@@ -133085,7 +133114,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4657,
+    "No": 5010,
     "Check+G2B1:H2": "718-A57358-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR084600",
     "PO Number": "PO260529068",
@@ -133106,7 +133135,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4658,
+    "No": 5011,
     "Check+G2B1:H2": "718-A57364-002-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR084500",
     "PO Number": "PO260529068",
@@ -133127,7 +133156,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4659,
+    "No": 5012,
     "Check+G2B1:H2": "718-A57363-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR084400",
     "PO Number": "PO260529068",
@@ -133148,7 +133177,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4660,
+    "No": 5013,
     "Check+G2B1:H2": "718-A57353-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR084300",
     "PO Number": "PO260529068",
@@ -133169,7 +133198,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4661,
+    "No": 5014,
     "Check+G2B1:H2": "718-A57359-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR084200",
     "PO Number": "PO260529068",
@@ -133190,7 +133219,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4662,
+    "No": 5015,
     "Check+G2B1:H2": "718-A57367-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR084100",
     "PO Number": "PO260529068",
@@ -133211,7 +133240,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4663,
+    "No": 5016,
     "Check+G2B1:H2": "718-A58290-003-TUAGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR080900",
     "PO Number": "PO260529068",
@@ -133232,7 +133261,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4664,
+    "No": 5017,
     "Check+G2B1:H2": "718-A58291-004-TUAGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR080800",
     "PO Number": "PO260529068",
@@ -133253,7 +133282,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4665,
+    "No": 5018,
     "Check+G2B1:H2": "718-A58293-003-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR080700",
     "PO Number": "PO260529068",
@@ -133274,7 +133303,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4666,
+    "No": 5019,
     "Check+G2B1:H2": "718-A58341-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR084000",
     "PO Number": "PO260529068",
@@ -133295,7 +133324,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4667,
+    "No": 5020,
     "Check+G2B1:H2": "718-A58342-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR083900",
     "PO Number": "PO260529068",
@@ -133316,7 +133345,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4668,
+    "No": 5021,
     "Check+G2B1:H2": "718-A58343-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR083800",
     "PO Number": "PO260529068",
@@ -133337,7 +133366,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4669,
+    "No": 5022,
     "Check+G2B1:H2": "718-A58344-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR083700",
     "PO Number": "PO260529068",
@@ -133358,7 +133387,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4670,
+    "No": 5023,
     "Check+G2B1:H2": "718-A58345-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR082700",
     "PO Number": "PO260529068",
@@ -133379,7 +133408,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4671,
+    "No": 5024,
     "Check+G2B1:H2": "718-A58346-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR082800",
     "PO Number": "PO260529068",
@@ -133400,7 +133429,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4672,
+    "No": 5025,
     "Check+G2B1:H2": "718-A58347-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR082900",
     "PO Number": "PO260529068",
@@ -133421,7 +133450,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4673,
+    "No": 5026,
     "Check+G2B1:H2": "718-A58348-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR083000",
     "PO Number": "PO260529068",
@@ -133442,7 +133471,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4674,
+    "No": 5027,
     "Check+G2B1:H2": "718-A58349-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR083100",
     "PO Number": "PO260529068",
@@ -133463,7 +133492,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4675,
+    "No": 5028,
     "Check+G2B1:H2": "718-A58350-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR083200",
     "PO Number": "PO260529068",
@@ -133484,7 +133513,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4676,
+    "No": 5029,
     "Check+G2B1:H2": "718-A58351-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR083300",
     "PO Number": "PO260529068",
@@ -133505,7 +133534,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4677,
+    "No": 5030,
     "Check+G2B1:H2": "718-A58352-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR083400",
     "PO Number": "PO260529068",
@@ -133526,7 +133555,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4678,
+    "No": 5031,
     "Check+G2B1:H2": "718-A60901-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR083500",
     "PO Number": "PO260529068",
@@ -133547,7 +133576,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4679,
+    "No": 5032,
     "Check+G2B1:H2": "718-A60902-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR083600",
     "PO Number": "PO260529068",
@@ -133568,7 +133597,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4680,
+    "No": 5033,
     "Check+G2B1:H2": "718-A60903-001-TUCGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR081600",
     "PO Number": "PO260529068",
@@ -133589,7 +133618,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4681,
+    "No": 5034,
     "Check+G2B1:H2": "718-A58336-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR081500",
     "PO Number": "PO260529068",
@@ -133610,7 +133639,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4682,
+    "No": 5035,
     "Check+G2B1:H2": "718-A58338-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR081400",
     "PO Number": "PO260529068",
@@ -133631,7 +133660,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4683,
+    "No": 5036,
     "Check+G2B1:H2": "718-A58337-001-TUBGUMISheet MetalFAIR",
     "ERP-CODE": "EUQAR081300",
     "PO Number": "PO260529068",
@@ -133652,7 +133681,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4684,
+    "No": 5037,
     "Check+G2B1:H2": "714-258410-100CEFEM VNSheet MetalFAIR",
     "ERP-CODE": "EUOAR055300",
     "PO Number": "POV2605300005",
@@ -133672,7 +133701,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4685,
+    "No": 5038,
     "Check+G2B1:H2": "713-032098-402BLAMPlasticFAIR",
     "ERP-CODE": "EUOBR168600",
     "PO Number": 4503477921,
@@ -133694,7 +133723,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4686,
+    "No": 5039,
     "Check+G2B1:H2": "713-032098-411BLAMPlasticFAIR",
     "ERP-CODE": "EUOBR169400",
     "PO Number": 4503477921,
@@ -133715,7 +133744,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4687,
+    "No": 5040,
     "Check+G2B1:H2": "714-285766-002BGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR076000",
     "PO Number": "PO250626043",
@@ -133735,7 +133764,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4688,
+    "No": 5041,
     "Check+G2B1:H2": "839-285763-004BGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR057100",
     "PO Number": "PO250513012",
@@ -133755,7 +133784,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4689,
+    "No": 5042,
     "Check+G2B1:H2": "839-285763-003BGUMISheet MetalFAIR",
     "ERP-CODE": "EUPAR057000",
     "PO Number": "PO250429011",
@@ -133775,7 +133804,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1310,
+    "No": 5043,
     "Check+G2B1:H2": "714-A16504-001BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUOBR250300",
     "PO Number": "PBX20260507-02",
@@ -133796,7 +133825,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1311,
+    "No": 5044,
     "Check+G2B1:H2": "714-A16786-002CTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUOBR258800",
     "PO Number": "PBX20260507-02",
@@ -133816,7 +133845,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 113,
+    "No": 5045,
     "Check+G2B1:H2": "714-255210-002CTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUOAR052000",
     "PO Number": "PO231228002",
@@ -133837,7 +133866,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 114,
+    "No": 5046,
     "Check+G2B1:H2": "853-C11456-101ALAMSheet MetalFAIR",
     "ERP-CODE": "No code",
     "PO Number": 4503482468,
@@ -133850,6 +133879,86 @@
     "CE": "-",
     "PO received date": 46177,
     "Customer need date": 46261,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5047,
+    "Check+G2B1:H2": "714-344281-200BEFEM VNSheet MetalFAIR",
+    "ERP-CODE": "EUOAR060000",
+    "PO Number": "POV2605200014",
+    "Part Number": "714-344281-200",
+    "REV": "B",
+    "Description": "COV,CNRPST,MIDDLE,LEFT EMO,CEFEM",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 46179,
+    "Customer need date": "2026-08-26",
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Hwaseong",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5048,
+    "Check+G2B1:H2": "714-A90851-110AEFEM VNSheet MetalFAIR",
+    "ERP-CODE": "EUOAR063700",
+    "PO Number": "POV2605200014",
+    "Part Number": "714-A90851-110",
+    "REV": "A",
+    "Description": "STOP,BUMP,BR,RIGHT,IDW ERGO UI",
+    "Customer": "EFEM VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46179,
+    "Customer need date": "2026-09-29",
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Hwaseong",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5049,
+    "Check+G2B1:H2": "714-A36070-003A EMA VNSheet MetalFAIR",
+    "ERP-CODE": "No code",
+    "PO Number": "PBX20260605-02",
+    "Part Number": "714-A36070-003",
+    "REV": "A ",
+    "Description": "BRKT,SUP,UPPER MANIFOLD                 ",
+    "Customer": "EMA VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46179,
+    "Customer need date": 46202,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5050,
+    "Check+G2B1:H2": "714-340849-110A EMA VNSheet MetalFAIR",
+    "ERP-CODE": "No code",
+    "PO Number": "PBX20260605-02",
+    "Part Number": "714-340849-110",
+    "REV": "A ",
+    "Description": "BRKT,DRIP TRAY,WATER MANF               ",
+    "Customer": "EMA VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46179,
+    "Customer need date": 46202,
     "Requirements": "FAIR",
     "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
