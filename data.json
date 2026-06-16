@@ -117761,11 +117761,18 @@
     "PO received date": 46077,
     "Customer need date": 46111,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46189,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -122266,10 +122273,18 @@
     "PO received date": 46102,
     "Customer need date": 46129,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Production Status": "Finish Good",
+    "Submit date": 46189,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -135603,7 +135618,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4417,
+    "No": 5125,
     "Check+G2B1:H2": "16-155069-00ECelesticaSheet MetalFAIR",
     "ERP-CODE": "EUOAR073100",
     "PO Number": 9230077943,
@@ -135629,6 +135644,26 @@
     "Production Status": "Finish Good",
     "Submit date": 46188,
     "Approval Status": "Submitted",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5126,
+    "Check+G2B1:H2": "715-182215-001AEFEM VNMachiningFAIR",
+    "ERP-CODE": "EUPAR006100",
+    "PO Number": "POV2606150015",
+    "Part Number": "715-182215-001",
+    "REV": "A",
+    "Description": "PIN,GUIDE,PASS-THRU,MACH 1 PLUS",
+    "Customer": "EFEM VN",
+    "Commodity": "Machining",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 45638,
+    "Customer need date": 45731,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Hwaseong",
+    "Approval Status": "On going",
     "Sheet": "Detailed listed"
   }
 ]
