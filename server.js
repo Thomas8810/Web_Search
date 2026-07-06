@@ -502,7 +502,7 @@ function convertYYYYMMDDToExcelSerial(yyyymmdd) {
 app.get('/search', isAuthenticated, (req, res) => {
   let results = [...cachedData];
   const params = req.query;
-  const dateColumns = ['PO received date', 'Customer need date', 'Submit date'];
+  const dateColumns = ['PO received date', 'Customer need date', 'Submit date', 'Approved date'];
 
   for (const key in params) {
     if (key !== 'limit' && key !== 'offset' && params[key]) {
@@ -552,7 +552,7 @@ app.get('/search', isAuthenticated, (req, res) => {
 app.get('/export', isAuthenticated, (req, res) => {
   let results = [...cachedData];
   const params = req.query;
-  const dateColumns = ['PO received date', 'Customer need date', 'Submit date'];
+  const dateColumns = ['PO received date', 'Customer need date', 'Submit date', 'Approved date'];
 
   for (const key in params) {
     if (params[key]) { 
