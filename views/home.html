@@ -846,6 +846,7 @@
                     <th data-column="Remark 1">Remark 1</option>
                     <th data-column="PIC">PIC</option>
                     <th data-column="Submit date">Submit date</option>
+                    <th data-column="Approved date">Approved date</th>
                     <th data-column="Reject comments">Reject comments</option>
                 </tr></thead>
                 <tbody>
@@ -1586,6 +1587,7 @@
                 tr.append(`<td>${row['Remark 1'] || ''}</td>`);
                 tr.append(`<td>${row['PIC'] || ''}</td>`);
                 tr.append(`<td>${formatExcelDate(row['Submit date'])}</td>`);
+                tr.append(`<td>${formatExcelDate(row['Approved date'])}</td>`);
                 tr.append(`<td>${row['Reject comments'] || ''}</td>`);
 
                 tbody.append(tr);
@@ -1608,7 +1610,7 @@
             const table = document.getElementById('results-table');
             const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent.trim());
             const rows = Array.from(table.querySelectorAll('tbody tr'));
-            const dateColumns = ['PO received date', 'Customer need date', 'Submit date'];
+            const dateColumns = ['PO received date', 'Customer need date', 'Submit date', 'Approved date'];
 
             const data = rows.map(tr => {
                 const cells = Array.from(tr.querySelectorAll('td'));
@@ -1642,7 +1644,7 @@
           let colIndex = getColumnIndex(column);
           if (colIndex === -1) return;
 
-          const isDateColumn = ['PO received date', 'Customer need date', 'Submit date'].includes(column);
+          const isDateColumn = ['PO received date', 'Customer need date', 'Submit date', 'Approved date'].includes(column);
 
           rows.sort(function(a, b) {
             let valA = $(a).children('td').eq(colIndex).text().toUpperCase();
