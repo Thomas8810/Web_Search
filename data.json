@@ -17058,6 +17058,8 @@
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Remark 1": "Submit to Gumi",
+    "Submit date": 45552,
+    "Approved date": 45552,
     "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
@@ -75528,7 +75530,7 @@
     "Customer need date": 45881,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa đánh số",
+    "Remark 1": "Thảo làm",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -75547,7 +75549,7 @@
     "PO received date": 45849,
     "Customer need date": 45884,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -92394,7 +92396,8 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46214,
-    "Approval Status": "Submitted",
+    "Approved date": 46216,
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -106819,11 +106822,18 @@
     "PO received date": 45946,
     "Customer need date": 45952,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46216,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -119828,11 +119838,18 @@
     "PO received date": 46077,
     "Customer need date": 46108,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Lên Ver/Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 46216,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -133873,7 +133890,8 @@
     "PO received date": 46169,
     "Customer need date": 46230,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -138982,11 +139000,18 @@
     "PO received date": 46197,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 46216,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -139004,11 +139029,18 @@
     "PO received date": 46197,
     "Customer need date": 46203,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 46216,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -140782,7 +140814,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2743,
+    "No": 5222,
     "Check+G2B1:H2": "714-262798-001ETexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUPBR308900",
     "PO Number": "PO:20250617",
@@ -140796,13 +140828,14 @@
     "PO received date": 45827,
     "Customer need date": 45852,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Lên Ver/Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2749,
+    "No": 5223,
     "Check+G2B1:H2": "714-301661-101BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUPBR299700",
     "PO Number": "PBX20250617-01",
@@ -140822,7 +140855,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2750,
+    "No": 5224,
     "Check+G2B1:H2": "714-301661-111BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUPBR300200",
     "PO Number": "PBX20250617-01",
@@ -140842,7 +140875,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2752,
+    "No": 5225,
     "Check+G2B1:H2": "714-301661-201BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUPBR299800",
     "PO Number": "PBX20250617-01",
@@ -140862,7 +140895,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2753,
+    "No": 5226,
     "Check+G2B1:H2": "714-301661-211BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUPBR300100",
     "PO Number": "PBX20250617-01",
@@ -140882,7 +140915,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2755,
+    "No": 5227,
     "Check+G2B1:H2": "714-301661-301BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUPBR299900",
     "PO Number": "PBX20250617-01",
@@ -140902,7 +140935,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2756,
+    "No": 5228,
     "Check+G2B1:H2": "714-301661-311BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUPBR300000",
     "PO Number": "PBX20250617-01",
@@ -140922,7 +140955,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2758,
+    "No": 5229,
     "Check+G2B1:H2": "714-305196-003CTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUPBR295500",
     "PO Number": "PBX20250618-01",
@@ -140942,7 +140975,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2759,
+    "No": 5230,
     "Check+G2B1:H2": "714-305291-009BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUPBR300300",
     "PO Number": "PBX20250617-01",
@@ -140962,7 +140995,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2774,
+    "No": 5231,
     "Check+G2B1:H2": "714-332963-001BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUPBR297300",
     "PO Number": "PBX20250617-01",
@@ -140982,7 +141015,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 4881,
+    "No": 5232,
     "Check+G2B1:H2": "714-B95194-056CTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUQBR218500",
     "PO Number": "PBX20260527-ME01",
@@ -141002,7 +141035,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2809,
+    "No": 5233,
     "Check+G2B1:H2": "718-A38408-001BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUPBR296300",
     "PO Number": "PBX20250617-01",
@@ -141022,7 +141055,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 1344,
+    "No": 5234,
     "Check+G2B1:H2": "839-121582-004DTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUOAR024200",
     "PO Number": "PBX20250313-01",
@@ -141042,7 +141075,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2814,
+    "No": 5235,
     "Check+G2B1:H2": "839-121582-018BTexon PBXSheet MetalFAIR",
     "ERP-CODE": "EUPBR304400",
     "PO Number": "PBX20250617-01",
@@ -141062,7 +141095,7 @@
     "Sheet": "Detailed listed"
   },
   {
-    "No": 2784,
+    "No": 5236,
     "Check+G2B1:H2": "715-035009-002CVAA VNMachiningFAIR",
     "ERP-CODE": "EUPBR321000",
     "PO Number": "VAA-250712-01",
@@ -141078,6 +141111,25 @@
     "Requirements": "FAIR",
     "Part Pictures": "-",
     "Remark 1": "Lên Ver/Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5237,
+    "Check+G2B1:H2": "853-A25583-001ALAMSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": 4503424464,
+    "Part Number": "853-A25583-001",
+    "REV": "A",
+    "Description": "ASSY,DOOR,REAR END,CORRIDOR,V2.2",
+    "Customer": "LAM",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46216,
+    "Customer need date": 46216,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   }
