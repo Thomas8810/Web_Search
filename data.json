@@ -133687,11 +133687,18 @@
     "PO received date": 46169,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46227,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -133709,10 +133716,18 @@
     "PO received date": 46169,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Production Status": "Finish Good",
+    "Submit date": 46227,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -133997,11 +134012,18 @@
     "PO received date": 46169,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46227,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -134142,11 +134164,18 @@
     "PO received date": 46169,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Không thấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 46227,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -141712,6 +141741,7 @@
     "PO received date": 46218,
     "Customer need date": 46235,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141731,6 +141761,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141750,6 +141781,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141769,6 +141801,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141788,6 +141821,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141807,6 +141841,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141826,6 +141861,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141845,6 +141881,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141864,6 +141901,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141883,6 +141921,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141902,6 +141941,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141921,6 +141961,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141940,6 +141981,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141959,6 +142001,7 @@
     "PO received date": 46226,
     "Customer need date": 46229,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141978,6 +142021,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141997,6 +142041,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142016,6 +142061,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142035,6 +142081,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142054,6 +142101,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142073,6 +142121,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142092,6 +142141,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142111,6 +142161,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142130,6 +142181,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142149,6 +142201,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142168,6 +142221,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142187,6 +142241,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142206,6 +142261,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142225,6 +142281,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142244,6 +142301,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142263,6 +142321,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142282,6 +142341,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142301,6 +142361,7 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142320,6 +142381,7 @@
     "PO received date": 0,
     "Customer need date": 0,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142339,6 +142401,7 @@
     "PO received date": 0,
     "Customer need date": 0,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142358,6 +142421,7 @@
     "PO received date": 0,
     "Customer need date": 0,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142377,6 +142441,7 @@
     "PO received date": 45691,
     "Customer need date": 45907,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142396,6 +142461,7 @@
     "PO received date": 46128,
     "Customer need date": 46167,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142415,6 +142481,7 @@
     "PO received date": 46128,
     "Customer need date": 46167,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142434,6 +142501,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142453,6 +142521,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142472,6 +142541,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142491,6 +142561,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142510,6 +142581,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142529,6 +142601,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142548,6 +142621,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142567,6 +142641,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142586,6 +142661,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142605,6 +142681,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142624,6 +142701,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142643,6 +142721,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142662,6 +142741,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142681,6 +142761,7 @@
     "PO received date": 46128,
     "Customer need date": 46167,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142700,6 +142781,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142719,6 +142801,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142738,6 +142821,7 @@
     "PO received date": 46156,
     "Customer need date": 46195,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142757,6 +142841,7 @@
     "PO received date": 45784,
     "Customer need date": 45787,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142776,6 +142861,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142795,6 +142881,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142814,6 +142901,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142833,6 +142921,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142852,6 +142941,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142871,6 +142961,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142890,6 +142981,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142909,6 +143001,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142928,6 +143021,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142947,6 +143041,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142966,6 +143061,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -142985,6 +143081,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143004,6 +143101,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143023,6 +143121,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143042,6 +143141,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143061,6 +143161,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143080,6 +143181,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143099,6 +143201,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143118,6 +143221,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143137,6 +143241,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143156,6 +143261,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143175,6 +143281,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143194,6 +143301,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143213,6 +143321,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143232,6 +143341,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143251,6 +143361,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143270,6 +143381,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143289,6 +143401,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143308,6 +143421,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143327,6 +143441,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143346,6 +143461,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143365,6 +143481,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143384,6 +143501,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143403,6 +143521,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143422,6 +143541,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143441,6 +143561,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143460,6 +143581,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143479,6 +143601,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143498,6 +143621,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143517,6 +143641,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143536,6 +143661,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143555,6 +143681,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143574,6 +143701,7 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143593,6 +143721,7 @@
     "PO received date": 46175,
     "Customer need date": 46209,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143612,6 +143741,7 @@
     "PO received date": 46175,
     "Customer need date": 46209,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143631,6 +143761,7 @@
     "PO received date": 45700,
     "Customer need date": 45754,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143650,6 +143781,7 @@
     "PO received date": 46185,
     "Customer need date": 46223,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143669,6 +143801,367 @@
     "PO received date": 46185,
     "Customer need date": 46223,
     "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5348,
+    "Check+G2B1:H2": "15-254067-00BTexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "15-254067-00",
+    "REV": "B",
+    "Description": "DOOR,MINI CB,C3VCTR,F47 LPB             ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5349,
+    "Check+G2B1:H2": "15-254547-00ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "15-254547-00",
+    "REV": "A",
+    "Description": "COVER,CONVENIENCE OUTLET                ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5350,
+    "Check+G2B1:H2": "15-255430-00BTexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "15-255430-00",
+    "REV": "B",
+    "Description": "COVER,CON 4,CLEAR,VCTR F47 LPB          ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5351,
+    "Check+G2B1:H2": "15-291902-00BTexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "15-291902-00",
+    "REV": "B",
+    "Description": "COVER,LPB, RELAYS,FRONT,CLEAR           ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5352,
+    "Check+G2B1:H2": "15-395555-00ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "15-395555-00",
+    "REV": "A",
+    "Description": "SHIELD,NEUTRAL BUS,C3VCTR               ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5353,
+    "Check+G2B1:H2": "673-266695-001-01ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-17",
+    "Part Number": "673-266695-001-01",
+    "REV": "A",
+    "Description": "COV,TB,53.3W X 18.1MM HGT, PVC, L 20.2MM",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46236,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5354,
+    "Check+G2B1:H2": "714-177575-015ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "714-177575-015",
+    "REV": "A",
+    "Description": "ENCL,LPB,AMPDS + HTP + SMK DETECT       ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5355,
+    "Check+G2B1:H2": "714-341675-214AVAA VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-08",
+    "Part Number": "714-341675-214",
+    "REV": "A",
+    "Description": "PNL,FBR OPTC                            ",
+    "Customer": "VAA VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5356,
+    "Check+G2B1:H2": "714-A85621-001ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "714-A85621-001",
+    "REV": "A",
+    "Description": "PNL, MNTG, CON1, LPB, VCTR              ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5357,
+    "Check+G2B1:H2": "714-B57446-002ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "714-B57446-002",
+    "REV": "A",
+    "Description": "BRKT,MOUNT,PS2                          ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5358,
+    "Check+G2B1:H2": "715-339152-110CVAA VNSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-08",
+    "Part Number": "715-339152-110",
+    "REV": "C",
+    "Description": "BRKT,TOP END,LIFT                       ",
+    "Customer": "VAA VN",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "Y",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5359,
+    "Check+G2B1:H2": "718-313737-003ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "718-313737-003",
+    "REV": "A",
+    "Description": "MOD,RAIL,DIN,7.5 MM WIDTH,9.5 LG        ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5360,
+    "Check+G2B1:H2": "718-A85731-012ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "718-A85731-012",
+    "REV": "A",
+    "Description": "MOD,FLEXIBUSBAR,CB1:L2 TO CON2:T2       ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5361,
+    "Check+G2B1:H2": "718-A85731-013ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "718-A85731-013",
+    "REV": "A",
+    "Description": "MOD,FLEXIBUSBAR,CB1:L3 TO CON2:T3       ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5362,
+    "Check+G2B1:H2": "718-A85731-014ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "718-A85731-014",
+    "REV": "A",
+    "Description": "MOD,FLEXIBUSBAR,CON2:L1 TO TB1:2A       ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5363,
+    "Check+G2B1:H2": "718-A85731-015ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "718-A85731-015",
+    "REV": "A",
+    "Description": "MOD,FLEXIBUSBAR,CON2:L2 TO TB1:3A       ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5364,
+    "Check+G2B1:H2": "718-A85731-016ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "718-A85731-016",
+    "REV": "A",
+    "Description": "MOD,FLEXIBUSBAR,CON2:L3 TO TB1:5A       ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5365,
+    "Check+G2B1:H2": "718-A85731-017ATexon PBXSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PBX20260724-15",
+    "Part Number": "718-A85731-017",
+    "REV": "A",
+    "Description": "MOD,FLEXIBUSBAR,CB1:L1 TO CON2:T1       ",
+    "Customer": "Texon PBX",
+    "Commodity": "Sheet Metal",
+    "Critical": "-",
+    "CE": "-",
+    "PO received date": 46227,
+    "Customer need date": 46257,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
