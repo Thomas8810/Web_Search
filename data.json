@@ -110827,7 +110827,7 @@
     "No": 3961,
     "Check+G2B1:H2": "839-B32734-005ALAMFrameFAIR",
     "ERP-CODE": "EUPAR236600",
-    "PO Number": 4503207613,
+    "PO Number": 4700931181,
     "Part Number": "839-B32734-005",
     "REV": "A",
     "Description": "KIT,ASSY,BIAS/HELIUM,CART",
@@ -110856,7 +110856,7 @@
     "No": 3962,
     "Check+G2B1:H2": "839-B32735-006ALAMFrameFAIR",
     "ERP-CODE": "EUPAR235900",
-    "PO Number": 4503207609,
+    "PO Number": 4700931181,
     "Part Number": "839-B32735-006",
     "REV": "A",
     "Description": "KIT,ASSY,BIAS/HELIUM,CART",
@@ -129701,7 +129701,8 @@
     "PO received date": 46136,
     "Customer need date": 46226,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Lên Ver/Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -135087,10 +135088,18 @@
     "PO received date": 46169,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Không thấy bản vẽ",
-    "Approval Status": "On going",
+    "Production Status": "Finish Good",
+    "Submit date": 46241,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -135108,10 +135117,18 @@
     "PO received date": 46169,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Không thấy bản vẽ",
-    "Approval Status": "On going",
+    "Production Status": "Finish Good",
+    "Submit date": 46241,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -135129,10 +135146,18 @@
     "PO received date": 46169,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Không thấy bản vẽ",
-    "Approval Status": "On going",
+    "Production Status": "Finish Good",
+    "Submit date": 46241,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -137864,7 +137889,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -137885,7 +137910,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -137906,7 +137931,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -137927,7 +137952,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -137948,7 +137973,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -137968,7 +137993,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -137989,7 +138014,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138030,7 +138055,6 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138051,7 +138075,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138071,7 +138095,7 @@
     "Customer need date": 46203,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138092,7 +138116,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138112,7 +138136,7 @@
     "Customer need date": 46203,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138133,7 +138157,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138154,7 +138178,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138174,7 +138198,7 @@
     "Customer need date": 46203,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138194,7 +138218,7 @@
     "Customer need date": 46203,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138214,7 +138238,7 @@
     "Customer need date": 46203,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138235,7 +138259,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138255,7 +138279,7 @@
     "Customer need date": 46203,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138275,7 +138299,7 @@
     "Customer need date": 46203,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138354,7 +138378,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138374,7 +138398,7 @@
     "Customer need date": 46203,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138394,7 +138418,7 @@
     "Customer need date": 46203,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138413,8 +138437,9 @@
     "PO received date": 46184,
     "Customer need date": 46203,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138493,7 +138518,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138513,7 +138538,7 @@
     "Customer need date": 46203,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138534,7 +138559,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138555,7 +138580,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138574,8 +138599,9 @@
     "PO received date": 46184,
     "Customer need date": 46203,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138595,7 +138621,7 @@
     "Customer need date": 46203,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138616,7 +138642,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138637,7 +138663,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138658,7 +138684,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138679,7 +138705,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138700,7 +138726,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138719,8 +138745,9 @@
     "PO received date": 46184,
     "Customer need date": 46203,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -138790,7 +138817,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -139249,7 +139276,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -139387,7 +139414,6 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -139798,7 +139824,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140066,7 +140092,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140086,7 +140112,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140106,7 +140132,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140126,7 +140152,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140146,7 +140172,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140166,7 +140192,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140186,7 +140212,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140206,7 +140232,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140226,7 +140252,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140246,7 +140272,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140266,7 +140292,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140286,7 +140312,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140306,7 +140332,6 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140326,7 +140351,6 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140346,7 +140370,6 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140555,7 +140578,6 @@
     "Customer need date": 46218,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140575,7 +140597,6 @@
     "Customer need date": 46218,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140597,7 +140618,6 @@
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -140791,7 +140811,6 @@
     "Customer need date": 45852,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141014,7 +141033,6 @@
     "Customer need date": 45852,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141034,7 +141052,6 @@
     "Customer need date": 45852,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141054,7 +141071,6 @@
     "Customer need date": 45852,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141190,7 +141206,6 @@
     "Customer need date": 45852,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141239,7 +141254,6 @@
     "Customer need date": 45852,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141259,7 +141273,6 @@
     "Customer need date": 45852,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141309,7 +141322,6 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141358,7 +141370,6 @@
     "Customer need date": 45852,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141407,7 +141418,6 @@
     "Customer need date": 45852,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141458,7 +141468,6 @@
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141478,7 +141487,6 @@
     "Customer need date": 45852,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141520,7 +141528,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141540,7 +141548,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141560,7 +141568,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141580,7 +141588,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141600,7 +141608,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141620,7 +141628,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141640,7 +141648,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141660,7 +141668,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141680,7 +141688,6 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141700,7 +141707,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -141720,7 +141727,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142131,7 +142138,7 @@
     "Customer need date": 46235,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142306,7 +142313,6 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142327,7 +142333,6 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142348,7 +142353,6 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142398,7 +142402,6 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142506,7 +142509,6 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142527,7 +142529,6 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142548,7 +142549,6 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142569,7 +142569,6 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142589,7 +142588,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142609,7 +142608,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142629,7 +142628,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142649,7 +142648,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142670,7 +142669,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142692,7 +142691,7 @@
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142741,7 +142740,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142821,10 +142820,15 @@
     "FAIR Cover sheet": "OK",
     "Bubble Drawings": "OK",
     "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 46241,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -142842,11 +142846,18 @@
     "PO received date": 46191,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa lấy bản vẽ",
-    "Approval Status": "On going",
+    "Submit date": 46241,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -142865,7 +142876,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142885,7 +142896,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142934,7 +142945,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142954,7 +142965,7 @@
     "Customer need date": 46230,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -142995,7 +143006,7 @@
     "Customer need date": 0,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -143015,7 +143026,7 @@
     "Customer need date": 0,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -143035,7 +143046,7 @@
     "Customer need date": 0,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -143055,7 +143066,7 @@
     "Customer need date": 45907,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -143391,7 +143402,8 @@
     "PO received date": 46128,
     "Customer need date": 46167,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -143474,7 +143486,6 @@
     "Customer need date": 45787,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -143816,7 +143827,8 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -144351,7 +144363,8 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -144392,7 +144405,8 @@
     "PO received date": 46206,
     "Customer need date": 46244,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Gumi",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -144492,7 +144506,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144512,7 +144526,7 @@
     "Customer need date": 46223,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144532,7 +144546,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144552,7 +144566,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144572,7 +144586,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144592,7 +144606,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144612,7 +144626,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144632,7 +144646,7 @@
     "Customer need date": 46236,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144652,7 +144666,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144692,7 +144706,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144712,7 +144726,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144752,7 +144766,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144772,7 +144786,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144792,7 +144806,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144812,7 +144826,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144832,7 +144846,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144852,7 +144866,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -144872,7 +144886,7 @@
     "Customer need date": 46257,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145282,7 +145296,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145302,7 +145316,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145322,7 +145336,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145342,7 +145356,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145362,7 +145376,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145382,7 +145396,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145402,7 +145416,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145422,7 +145436,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145442,7 +145456,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145462,7 +145476,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145503,7 +145517,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145523,7 +145537,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145543,7 +145557,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145563,7 +145577,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145583,7 +145597,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -145603,7 +145617,7 @@
     "Customer need date": 46258,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146041,7 +146055,7 @@
     "Customer need date": 46272,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146186,7 +146200,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146206,7 +146220,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146226,7 +146240,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146246,7 +146260,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146266,7 +146280,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146286,7 +146300,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146306,7 +146320,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146326,7 +146340,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146346,7 +146360,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146366,7 +146380,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146386,7 +146400,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146406,7 +146420,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146426,7 +146440,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146446,7 +146460,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146566,7 +146580,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146586,7 +146600,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146606,7 +146620,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146626,7 +146640,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146646,7 +146660,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146666,7 +146680,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146686,7 +146700,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146706,7 +146720,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146726,7 +146740,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146746,7 +146760,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146766,7 +146780,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146786,7 +146800,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146806,7 +146820,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146826,7 +146840,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146846,7 +146860,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146866,7 +146880,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146886,7 +146900,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146906,7 +146920,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146926,7 +146940,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146946,7 +146960,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146966,7 +146980,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -146986,7 +147000,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147006,7 +147020,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147026,7 +147040,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147046,7 +147060,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147066,7 +147080,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147086,7 +147100,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147106,7 +147120,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147126,7 +147140,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147146,7 +147160,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147166,7 +147180,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147186,7 +147200,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147206,7 +147220,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147226,7 +147240,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147246,7 +147260,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147266,7 +147280,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147286,7 +147300,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147306,7 +147320,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147326,7 +147340,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147346,7 +147360,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147366,7 +147380,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147386,7 +147400,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147406,7 +147420,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147426,7 +147440,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147446,7 +147460,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147466,7 +147480,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147486,7 +147500,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147506,7 +147520,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147526,7 +147540,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147546,7 +147560,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147566,7 +147580,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147586,7 +147600,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147606,7 +147620,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147626,7 +147640,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147646,7 +147660,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147666,7 +147680,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147686,7 +147700,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147706,7 +147720,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147726,7 +147740,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147746,7 +147760,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147766,7 +147780,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147786,7 +147800,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147806,7 +147820,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147826,7 +147840,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147846,7 +147860,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147866,7 +147880,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147886,7 +147900,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147906,7 +147920,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147926,7 +147940,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147946,7 +147960,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147966,7 +147980,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -147986,7 +148000,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148006,7 +148020,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148026,7 +148040,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148046,7 +148060,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148066,7 +148080,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148086,7 +148100,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148106,7 +148120,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148126,7 +148140,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148146,7 +148160,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148166,7 +148180,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148186,7 +148200,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148206,7 +148220,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148226,7 +148240,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148246,7 +148260,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148266,7 +148280,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148286,7 +148300,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148306,7 +148320,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148326,7 +148340,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148346,7 +148360,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148366,7 +148380,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148386,7 +148400,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148406,7 +148420,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148426,7 +148440,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148446,7 +148460,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148466,7 +148480,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148486,7 +148500,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148506,7 +148520,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148526,7 +148540,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148546,7 +148560,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148566,7 +148580,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148586,7 +148600,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148606,7 +148620,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148626,7 +148640,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148646,7 +148660,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148666,7 +148680,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148686,7 +148700,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148706,7 +148720,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148726,7 +148740,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148746,7 +148760,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148766,7 +148780,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148786,7 +148800,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148806,7 +148820,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148826,7 +148840,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148846,7 +148860,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148866,7 +148880,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148886,7 +148900,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148906,7 +148920,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148926,7 +148940,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148946,7 +148960,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148966,7 +148980,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -148986,7 +149000,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149006,7 +149020,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149026,7 +149040,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149046,7 +149060,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149066,7 +149080,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149086,7 +149100,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149106,7 +149120,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149126,7 +149140,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149146,7 +149160,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149166,7 +149180,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149186,7 +149200,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149206,7 +149220,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149226,7 +149240,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149246,7 +149260,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149266,7 +149280,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149286,7 +149300,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149306,7 +149320,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149326,7 +149340,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149346,7 +149360,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149366,7 +149380,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149386,7 +149400,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149406,7 +149420,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149426,7 +149440,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149446,7 +149460,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149466,7 +149480,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -149486,7 +149500,7 @@
     "Customer need date": 46265,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa lấy bản vẽ",
+    "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   }
