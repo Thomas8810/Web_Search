@@ -82062,10 +82062,18 @@
     "PO received date": 45874,
     "Customer need date": 45931,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Approval Status": "On going",
+    "Submit date": 46258,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -91158,7 +91166,7 @@
     "Customer need date": 45932,
     "Requirements": "FAIR",
     "Part Pictures": "-",
-    "Remark 1": "Chưa đánh số",
+    "Remark 1": "Thảo làm",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
   },
@@ -123061,6 +123069,7 @@
     "Customer need date": 46153,
     "Requirements": "FAIR",
     "Part Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -127082,6 +127091,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Hwaseong",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -127440,6 +127450,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -127461,6 +127472,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -131579,6 +131591,7 @@
     "Customer need date": 46233,
     "Requirements": "FAIR",
     "Part Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -131718,7 +131731,8 @@
     "PO received date": 46150,
     "Customer need date": 46249,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Long làm",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -132498,6 +132512,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Hwaseong",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -133167,6 +133182,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -133186,7 +133202,9 @@
     "PO received date": 46169,
     "Customer need date": 46188,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -134285,11 +134303,18 @@
     "PO received date": 46169,
     "Customer need date": 46230,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Submit date": 46258,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -138521,10 +138546,18 @@
     "PO received date": 46184,
     "Customer need date": 46203,
     "Requirements": "FAIR",
+    "FAIR Cover sheet": "OK",
+    "Bubble Drawings": "OK",
+    "Datasheet form": "OK",
+    "FAIR Data": "OK",
+    "COC": "OK",
+    "BOM": "OK",
+    "Mill": "OK",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
-    "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Production Status": "Finish Good",
+    "Submit date": 46258,
+    "Approval Status": "Submitted",
     "Sheet": "Detailed listed"
   },
   {
@@ -142359,7 +142392,8 @@
     "PO received date": 46211,
     "Customer need date": 46223,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -147636,7 +147670,7 @@
   {
     "No": 5466,
     "Check+G2B1:H2": "718-A26871-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR336000",
     "PO Number": "PBX20260803-24",
     "Part Number": "718-A26871-002",
     "REV": "B",
@@ -147656,7 +147690,7 @@
   {
     "No": 5467,
     "Check+G2B1:H2": "718-A26873-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR336100",
     "PO Number": "PBX20260803-24",
     "Part Number": "718-A26873-002",
     "REV": "B",
@@ -147676,7 +147710,7 @@
   {
     "No": 5468,
     "Check+G2B1:H2": "718-A26874-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR336200",
     "PO Number": "PBX20260803-24",
     "Part Number": "718-A26874-002",
     "REV": "B",
@@ -147996,7 +148030,7 @@
   {
     "No": 5484,
     "Check+G2B1:H2": "714-A15257-005ATexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR335000",
     "PO Number": "PBX20260628-02",
     "Part Number": "714-A15257-005",
     "REV": "A",
@@ -148016,7 +148050,7 @@
   {
     "No": 5485,
     "Check+G2B1:H2": "714-A15773-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR335100",
     "PO Number": "PBX20260804-01",
     "Part Number": "714-A15773-001",
     "REV": "B",
@@ -148076,7 +148110,7 @@
   {
     "No": 5488,
     "Check+G2B1:H2": "714-A16725-010ATexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR335200",
     "PO Number": "PBX20260804-01",
     "Part Number": "714-A16725-010",
     "REV": "A",
@@ -148236,7 +148270,7 @@
   {
     "No": 5496,
     "Check+G2B1:H2": "718-A17564-002CTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR331700",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A17564-002",
     "REV": "C",
@@ -148256,7 +148290,7 @@
   {
     "No": 5497,
     "Check+G2B1:H2": "718-A17565-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR331800",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A17565-001",
     "REV": "B",
@@ -148276,7 +148310,7 @@
   {
     "No": 5498,
     "Check+G2B1:H2": "718-A17566-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR331900",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A17566-001",
     "REV": "B",
@@ -148296,7 +148330,7 @@
   {
     "No": 5499,
     "Check+G2B1:H2": "718-A17567-002CTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR332000",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A17567-002",
     "REV": "C",
@@ -148316,7 +148350,7 @@
   {
     "No": 5500,
     "Check+G2B1:H2": "718-A17568-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR332100",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A17568-001",
     "REV": "B",
@@ -148336,7 +148370,7 @@
   {
     "No": 5501,
     "Check+G2B1:H2": "718-A17569-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR332200",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A17569-001",
     "REV": "B",
@@ -151936,7 +151970,7 @@
   {
     "No": 5681,
     "Check+G2B1:H2": "718-A26854-001CTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR330000",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26854-001",
     "REV": "C",
@@ -151956,7 +151990,7 @@
   {
     "No": 5682,
     "Check+G2B1:H2": "718-A26855-001CTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR330100",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26855-001",
     "REV": "C",
@@ -151976,7 +152010,7 @@
   {
     "No": 5683,
     "Check+G2B1:H2": "718-A26856-001CTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR330200",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26856-001",
     "REV": "C",
@@ -151996,7 +152030,7 @@
   {
     "No": 5684,
     "Check+G2B1:H2": "718-A26857-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR330300",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26857-001",
     "REV": "B",
@@ -152036,7 +152070,7 @@
   {
     "No": 5686,
     "Check+G2B1:H2": "718-A26859-002ATexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR330400",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26859-002",
     "REV": "A",
@@ -152056,7 +152090,7 @@
   {
     "No": 5687,
     "Check+G2B1:H2": "718-A26860-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR330500",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26860-001",
     "REV": "B",
@@ -152076,7 +152110,7 @@
   {
     "No": 5688,
     "Check+G2B1:H2": "718-A26862-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR330600",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26862-001",
     "REV": "B",
@@ -152096,7 +152130,7 @@
   {
     "No": 5689,
     "Check+G2B1:H2": "718-A26863-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR330700",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26863-001",
     "REV": "B",
@@ -152116,7 +152150,7 @@
   {
     "No": 5690,
     "Check+G2B1:H2": "718-A26864-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR330800",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26864-001",
     "REV": "B",
@@ -152216,7 +152250,7 @@
   {
     "No": 5695,
     "Check+G2B1:H2": "718-A26867-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR335500",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26867-002",
     "REV": "B",
@@ -152256,7 +152290,7 @@
   {
     "No": 5697,
     "Check+G2B1:H2": "718-A26868-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR335600",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26868-002",
     "REV": "B",
@@ -152276,7 +152310,7 @@
   {
     "No": 5698,
     "Check+G2B1:H2": "718-A26868-003BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR330900",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26868-003",
     "REV": "B",
@@ -152296,7 +152330,7 @@
   {
     "No": 5699,
     "Check+G2B1:H2": "718-A26868-004BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR335700",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26868-004",
     "REV": "B",
@@ -152316,7 +152350,7 @@
   {
     "No": 5700,
     "Check+G2B1:H2": "718-A26869-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR335800",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26869-002",
     "REV": "B",
@@ -152336,7 +152370,7 @@
   {
     "No": 5701,
     "Check+G2B1:H2": "718-A26869-003BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR331000",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26869-003",
     "REV": "B",
@@ -152356,7 +152390,7 @@
   {
     "No": 5702,
     "Check+G2B1:H2": "718-A26870-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR335900",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26870-002",
     "REV": "B",
@@ -152376,7 +152410,7 @@
   {
     "No": 5703,
     "Check+G2B1:H2": "718-A26870-003BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR331100",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26870-003",
     "REV": "B",
@@ -152396,7 +152430,7 @@
   {
     "No": 5704,
     "Check+G2B1:H2": "718-A26875-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR336300",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26875-002",
     "REV": "B",
@@ -152416,7 +152450,7 @@
   {
     "No": 5705,
     "Check+G2B1:H2": "718-A26876-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR336400",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26876-002",
     "REV": "B",
@@ -152436,7 +152470,7 @@
   {
     "No": 5706,
     "Check+G2B1:H2": "718-A26876-004BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR336500",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26876-004",
     "REV": "B",
@@ -152456,7 +152490,7 @@
   {
     "No": 5707,
     "Check+G2B1:H2": "718-A26877-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR336600",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26877-002",
     "REV": "B",
@@ -152476,7 +152510,7 @@
   {
     "No": 5708,
     "Check+G2B1:H2": "718-A26877-004BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR336700",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26877-004",
     "REV": "B",
@@ -152496,7 +152530,7 @@
   {
     "No": 5709,
     "Check+G2B1:H2": "718-A26878-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR339800",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26878-002",
     "REV": "B",
@@ -152516,7 +152550,7 @@
   {
     "No": 5710,
     "Check+G2B1:H2": "718-A26879-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR339900",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26879-002",
     "REV": "B",
@@ -152536,7 +152570,7 @@
   {
     "No": 5711,
     "Check+G2B1:H2": "718-A26885-002BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR336800",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A26885-002",
     "REV": "B",
@@ -152556,7 +152590,7 @@
   {
     "No": 5712,
     "Check+G2B1:H2": "718-A33185-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR336900",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33185-001",
     "REV": "B",
@@ -152576,7 +152610,7 @@
   {
     "No": 5713,
     "Check+G2B1:H2": "718-A33186-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR337000",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33186-001",
     "REV": "B",
@@ -152596,7 +152630,7 @@
   {
     "No": 5714,
     "Check+G2B1:H2": "718-A33187-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR340000",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33187-001",
     "REV": "B",
@@ -152616,7 +152650,7 @@
   {
     "No": 5715,
     "Check+G2B1:H2": "718-A33188-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR337100",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33188-001",
     "REV": "B",
@@ -152636,7 +152670,7 @@
   {
     "No": 5716,
     "Check+G2B1:H2": "718-A33189-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR337200",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33189-001",
     "REV": "B",
@@ -152656,7 +152690,7 @@
   {
     "No": 5717,
     "Check+G2B1:H2": "718-A33190-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR337300",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33190-001",
     "REV": "B",
@@ -152676,7 +152710,7 @@
   {
     "No": 5718,
     "Check+G2B1:H2": "718-A33191-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR337400",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33191-001",
     "REV": "B",
@@ -152696,7 +152730,7 @@
   {
     "No": 5719,
     "Check+G2B1:H2": "718-A33192-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR337500",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33192-001",
     "REV": "B",
@@ -152716,7 +152750,7 @@
   {
     "No": 5720,
     "Check+G2B1:H2": "718-A33193-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR337600",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33193-001",
     "REV": "B",
@@ -152736,7 +152770,7 @@
   {
     "No": 5721,
     "Check+G2B1:H2": "718-A33196-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR337700",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33196-001",
     "REV": "B",
@@ -152756,7 +152790,7 @@
   {
     "No": 5722,
     "Check+G2B1:H2": "718-A33198-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR337800",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33198-001",
     "REV": "B",
@@ -152776,7 +152810,7 @@
   {
     "No": 5723,
     "Check+G2B1:H2": "718-A33199-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR337900",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33199-001",
     "REV": "B",
@@ -152816,7 +152850,7 @@
   {
     "No": 5725,
     "Check+G2B1:H2": "718-A33206-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR338000",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33206-001",
     "REV": "B",
@@ -152836,7 +152870,7 @@
   {
     "No": 5726,
     "Check+G2B1:H2": "718-A33208-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR338100",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33208-001",
     "REV": "B",
@@ -152856,7 +152890,7 @@
   {
     "No": 5727,
     "Check+G2B1:H2": "718-A33209-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR338200",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33209-001",
     "REV": "B",
@@ -152876,7 +152910,7 @@
   {
     "No": 5728,
     "Check+G2B1:H2": "718-A33210-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR338300",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33210-001",
     "REV": "B",
@@ -152896,7 +152930,7 @@
   {
     "No": 5729,
     "Check+G2B1:H2": "718-A33213-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR338400",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33213-001",
     "REV": "B",
@@ -152916,7 +152950,7 @@
   {
     "No": 5730,
     "Check+G2B1:H2": "718-A33214-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR338500",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33214-001",
     "REV": "B",
@@ -152936,7 +152970,7 @@
   {
     "No": 5731,
     "Check+G2B1:H2": "718-A33216-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR338600",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33216-001",
     "REV": "B",
@@ -152956,7 +152990,7 @@
   {
     "No": 5732,
     "Check+G2B1:H2": "718-A33217-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR338700",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33217-001",
     "REV": "B",
@@ -152976,7 +153010,7 @@
   {
     "No": 5733,
     "Check+G2B1:H2": "718-A33218-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR333200",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33218-001",
     "REV": "B",
@@ -152996,7 +153030,7 @@
   {
     "No": 5734,
     "Check+G2B1:H2": "718-A33219-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR333300",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33219-001",
     "REV": "B",
@@ -153016,7 +153050,7 @@
   {
     "No": 5735,
     "Check+G2B1:H2": "718-A33230-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR333400",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33230-001",
     "REV": "B",
@@ -153036,7 +153070,7 @@
   {
     "No": 5736,
     "Check+G2B1:H2": "718-A33231-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR333500",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33231-001",
     "REV": "B",
@@ -153056,7 +153090,7 @@
   {
     "No": 5737,
     "Check+G2B1:H2": "718-A33232-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR333600",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33232-001",
     "REV": "B",
@@ -153076,7 +153110,7 @@
   {
     "No": 5738,
     "Check+G2B1:H2": "718-A33234-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR333700",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33234-001",
     "REV": "B",
@@ -153096,7 +153130,7 @@
   {
     "No": 5739,
     "Check+G2B1:H2": "718-A33240-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR333800",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33240-001",
     "REV": "B",
@@ -153116,7 +153150,7 @@
   {
     "No": 5740,
     "Check+G2B1:H2": "718-A33241-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR333900",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33241-001",
     "REV": "B",
@@ -153136,7 +153170,7 @@
   {
     "No": 5741,
     "Check+G2B1:H2": "718-A33242-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR334000",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33242-001",
     "REV": "B",
@@ -153156,7 +153190,7 @@
   {
     "No": 5742,
     "Check+G2B1:H2": "718-A33243-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR334100",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33243-001",
     "REV": "B",
@@ -153176,7 +153210,7 @@
   {
     "No": 5743,
     "Check+G2B1:H2": "718-A33244-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR338800",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33244-001",
     "REV": "B",
@@ -153196,7 +153230,7 @@
   {
     "No": 5744,
     "Check+G2B1:H2": "718-A33245-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR338900",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33245-001",
     "REV": "B",
@@ -153216,7 +153250,7 @@
   {
     "No": 5745,
     "Check+G2B1:H2": "718-A33246-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR339000",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33246-001",
     "REV": "B",
@@ -153236,7 +153270,7 @@
   {
     "No": 5746,
     "Check+G2B1:H2": "718-A33247-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR339100",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33247-001",
     "REV": "B",
@@ -153256,7 +153290,7 @@
   {
     "No": 5747,
     "Check+G2B1:H2": "718-A33248-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR339200",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33248-001",
     "REV": "B",
@@ -153276,7 +153310,7 @@
   {
     "No": 5748,
     "Check+G2B1:H2": "718-A33249-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR339300",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33249-001",
     "REV": "B",
@@ -153296,7 +153330,7 @@
   {
     "No": 5749,
     "Check+G2B1:H2": "718-A33250-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR339400",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33250-001",
     "REV": "B",
@@ -153316,7 +153350,7 @@
   {
     "No": 5750,
     "Check+G2B1:H2": "718-A33251-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR339500",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33251-001",
     "REV": "B",
@@ -153336,7 +153370,7 @@
   {
     "No": 5751,
     "Check+G2B1:H2": "718-A33252-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR339600",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33252-001",
     "REV": "B",
@@ -153356,7 +153390,7 @@
   {
     "No": 5752,
     "Check+G2B1:H2": "718-A33253-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR339700",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33253-001",
     "REV": "B",
@@ -153376,7 +153410,7 @@
   {
     "No": 5753,
     "Check+G2B1:H2": "718-A33254-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR329000",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33254-001",
     "REV": "B",
@@ -153396,7 +153430,7 @@
   {
     "No": 5754,
     "Check+G2B1:H2": "718-A33256-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR329100",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33256-001",
     "REV": "B",
@@ -153416,7 +153450,7 @@
   {
     "No": 5755,
     "Check+G2B1:H2": "718-A33257-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR329200",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33257-001",
     "REV": "B",
@@ -153436,7 +153470,7 @@
   {
     "No": 5756,
     "Check+G2B1:H2": "718-A33258-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR329300",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33258-001",
     "REV": "B",
@@ -153456,7 +153490,7 @@
   {
     "No": 5757,
     "Check+G2B1:H2": "718-A33259-002CTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR327600",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33259-002",
     "REV": "C",
@@ -153476,7 +153510,7 @@
   {
     "No": 5758,
     "Check+G2B1:H2": "718-A33260-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR328000",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33260-001",
     "REV": "B",
@@ -153496,7 +153530,7 @@
   {
     "No": 5759,
     "Check+G2B1:H2": "718-A33261-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR327700",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33261-001",
     "REV": "B",
@@ -153516,7 +153550,7 @@
   {
     "No": 5760,
     "Check+G2B1:H2": "718-A33262-002CTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR328100",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33262-002",
     "REV": "C",
@@ -153536,7 +153570,7 @@
   {
     "No": 5761,
     "Check+G2B1:H2": "718-A33263-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR327900",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33263-001",
     "REV": "B",
@@ -153556,7 +153590,7 @@
   {
     "No": 5762,
     "Check+G2B1:H2": "718-A33264-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR327800",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33264-001",
     "REV": "B",
@@ -153576,7 +153610,7 @@
   {
     "No": 5763,
     "Check+G2B1:H2": "718-A33265-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR329400",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33265-001",
     "REV": "B",
@@ -153596,7 +153630,7 @@
   {
     "No": 5764,
     "Check+G2B1:H2": "718-A33266-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR329500",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33266-001",
     "REV": "B",
@@ -153616,7 +153650,7 @@
   {
     "No": 5765,
     "Check+G2B1:H2": "718-A33267-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR329600",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A33267-001",
     "REV": "B",
@@ -153636,7 +153670,7 @@
   {
     "No": 5766,
     "Check+G2B1:H2": "718-A34660-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR329700",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A34660-001",
     "REV": "B",
@@ -153656,7 +153690,7 @@
   {
     "No": 5767,
     "Check+G2B1:H2": "718-A34661-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR329800",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A34661-001",
     "REV": "B",
@@ -153676,7 +153710,7 @@
   {
     "No": 5768,
     "Check+G2B1:H2": "718-A34662-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR329900",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A34662-001",
     "REV": "B",
@@ -153696,7 +153730,7 @@
   {
     "No": 5769,
     "Check+G2B1:H2": "718-A34663-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR332300",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A34663-001",
     "REV": "B",
@@ -153716,7 +153750,7 @@
   {
     "No": 5770,
     "Check+G2B1:H2": "718-A34664-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR332400",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A34664-001",
     "REV": "B",
@@ -153736,7 +153770,7 @@
   {
     "No": 5771,
     "Check+G2B1:H2": "718-A34665-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR332500",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A34665-001",
     "REV": "B",
@@ -153756,7 +153790,7 @@
   {
     "No": 5772,
     "Check+G2B1:H2": "718-A34666-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR332600",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A34666-001",
     "REV": "B",
@@ -153776,7 +153810,7 @@
   {
     "No": 5773,
     "Check+G2B1:H2": "718-A34668-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR332700",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A34668-001",
     "REV": "B",
@@ -153796,7 +153830,7 @@
   {
     "No": 5774,
     "Check+G2B1:H2": "718-A34669-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR332800",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A34669-001",
     "REV": "B",
@@ -153816,7 +153850,7 @@
   {
     "No": 5775,
     "Check+G2B1:H2": "718-A34670-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR332900",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A34670-001",
     "REV": "B",
@@ -153836,7 +153870,7 @@
   {
     "No": 5776,
     "Check+G2B1:H2": "718-A34671-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR333000",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A34671-001",
     "REV": "B",
@@ -153856,7 +153890,7 @@
   {
     "No": 5777,
     "Check+G2B1:H2": "718-A34672-001BTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR333100",
     "PO Number": "PBX20260806-01",
     "Part Number": "718-A34672-001",
     "REV": "B",
@@ -153956,7 +153990,7 @@
   {
     "No": 5782,
     "Check+G2B1:H2": "714-A23814-111ALAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR335300",
     "PO Number": 4503576930,
     "Part Number": "714-A23814-111",
     "REV": "A",
@@ -153976,7 +154010,7 @@
   {
     "No": 5783,
     "Check+G2B1:H2": "714-B60421-001ALAMSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR335400",
     "PO Number": 4503577092,
     "Part Number": "714-B60421-001",
     "REV": "A",
@@ -154116,7 +154150,7 @@
   {
     "No": 5790,
     "Check+G2B1:H2": "31-193763-00-01CTexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR334800",
     "PO Number": "PBX20260512-09",
     "Part Number": "31-193763-00-01",
     "REV": "C",
@@ -154136,7 +154170,7 @@
   {
     "No": 5791,
     "Check+G2B1:H2": "687-044016-005-08ATexon PBXSheet MetalFAIR",
-    "ERP-CODE": "No Code",
+    "ERP-CODE": "EUQBR334900",
     "PO Number": "PBX20260815-01",
     "Part Number": "687-044016-005-08",
     "REV": "A",
