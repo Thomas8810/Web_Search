@@ -94226,7 +94226,7 @@
     "PO received date": 45910,
     "Customer need date": 45936,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Long làm",
     "Approval Status": "On going",
@@ -99067,7 +99067,8 @@
     "PO received date": 45910,
     "Customer need date": 45946,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
@@ -122535,7 +122536,8 @@
     "PO received date": 46094,
     "Customer need date": 46118,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -141095,7 +141097,8 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46295,
-    "Approval Status": "Submitted",
+    "Approved date": 46310,
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -150279,7 +150282,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150319,7 +150323,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150339,7 +150344,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150359,7 +150365,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150419,7 +150426,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150599,7 +150607,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150719,7 +150728,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150899,7 +150909,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150939,7 +150950,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150979,7 +150991,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151159,7 +151172,8 @@
     "PO received date": 46241,
     "Customer need date": 46265,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151179,7 +151193,8 @@
     "PO received date": 46241,
     "Customer need date": 46265,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151199,7 +151214,8 @@
     "PO received date": 46241,
     "Customer need date": 46265,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151239,7 +151255,8 @@
     "PO received date": 46241,
     "Customer need date": 46265,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151259,7 +151276,8 @@
     "PO received date": 46241,
     "Customer need date": 46265,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151987,7 +152005,8 @@
     "PO received date": 46241,
     "Customer need date": 46265,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -152114,7 +152133,8 @@
     "PO received date": 46241,
     "Customer need date": 46265,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -152393,7 +152413,8 @@
     "PO received date": 46241,
     "Customer need date": 46265,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -152501,7 +152522,8 @@
     "PO received date": 46241,
     "Customer need date": 46265,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -154465,7 +154487,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -154677,7 +154700,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -154783,7 +154807,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -154843,7 +154868,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -154883,7 +154909,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -155096,7 +155123,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -155116,7 +155144,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -155287,7 +155316,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -155307,7 +155337,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -155448,7 +155479,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -155596,7 +155628,8 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
