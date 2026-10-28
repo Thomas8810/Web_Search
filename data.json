@@ -73105,7 +73105,7 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Long check. Paint not Qual (202-010816-002 Primer P-92 + Coat 1010-710)",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -75471,7 +75471,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "-",
     "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -75491,7 +75491,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "-",
     "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -75511,7 +75511,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "-",
     "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -75553,7 +75553,7 @@
     "Part Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Thảo làm. Waiting for information from the sale",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -75574,7 +75574,7 @@
     "Part Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Thảo làm. Waiting for information from the sale",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -75595,7 +75595,7 @@
     "Part Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Thảo làm. Waiting for information from the sale",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -84025,7 +84025,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "-",
     "Remark 1": "Chưa đánh số",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -91639,7 +91639,8 @@
     "PO received date": 45905,
     "Customer need date": 45960,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa đánh số",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -94248,7 +94249,8 @@
     "Packaging Pictures": "OK",
     "Production Status": "Finish Good",
     "Submit date": 46316,
-    "Approval Status": "Submitted",
+    "Approved date": 46321,
+    "Approval Status": "Approved",
     "Sheet": "Detailed listed"
   },
   {
@@ -131937,7 +131939,7 @@
     "Part Pictures": "OK",
     "Production Status": "Finish Good",
     "Remark 1": "Long",
-    "Approval Status": "On going",
+    "Approval Status": "Cancel",
     "Sheet": "Detailed listed"
   },
   {
@@ -150413,7 +150415,7 @@
     "PO received date": 46241,
     "Customer need date": 46279,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150435,6 +150437,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150456,6 +150459,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150477,6 +150481,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150520,6 +150525,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150541,6 +150547,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150562,6 +150569,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150582,6 +150590,7 @@
     "Customer need date": 46279,
     "Requirements": "FAIR",
     "Part Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150603,6 +150612,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150624,6 +150634,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150667,6 +150678,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150754,6 +150766,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150775,6 +150788,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150818,6 +150832,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150839,6 +150854,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150860,6 +150876,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150881,6 +150898,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150902,6 +150920,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150923,6 +150942,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150944,6 +150964,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -150965,6 +150986,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151008,6 +151030,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151050,6 +151073,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151137,6 +151161,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151158,6 +151183,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151179,6 +151205,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151200,6 +151227,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151221,6 +151249,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151242,6 +151271,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151263,6 +151293,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151284,6 +151315,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151327,6 +151359,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151414,6 +151447,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151435,6 +151469,7 @@
     "Requirements": "FAIR",
     "Part Pictures": "OK",
     "Packaging Pictures": "OK",
+    "Production Status": "Finish Good",
     "Remark 1": "Không thấy  bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -151534,7 +151569,7 @@
     "PO received date": 46241,
     "Customer need date": 46265,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -156596,7 +156631,8 @@
     "PO received date": 46249,
     "Customer need date": 46258,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
+    "Packaging Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -159317,7 +159353,7 @@
     "PO received date": 46319,
     "Customer need date": 46329,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -159357,7 +159393,7 @@
     "PO received date": 46319,
     "Customer need date": 46329,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -159457,7 +159493,7 @@
     "PO received date": 46319,
     "Customer need date": 46329,
     "Requirements": "FAIR",
-    "Part Pictures": "-",
+    "Part Pictures": "OK",
     "Remark 1": "Chưa lấy bản vẽ",
     "Approval Status": "On going",
     "Sheet": "Detailed listed"
@@ -159576,6 +159612,66 @@
     "CE": "Y",
     "PO received date": 46321,
     "Customer need date": 46360,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5940,
+    "Check+G2B1:H2": "839-268315-031ALAMSheet MetalFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": 4500000001,
+    "Part Number": "839-268315-031",
+    "REV": "A",
+    "Description": "BRKT, PLATING PWR SUPPLY MOUNT",
+    "Customer": "LAM",
+    "Commodity": "Sheet Metal",
+    "Critical": "NC",
+    "CE": "-",
+    "PO received date": 46346,
+    "Customer need date": 46322,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5941,
+    "Check+G2B1:H2": "839-198032-003DHwaseongFrameFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PO261027L-01",
+    "Part Number": "839-198032-003",
+    "REV": "D",
+    "Description": "FR,WELDMENT,CORE MODULE",
+    "Customer": "Hwaseong",
+    "Commodity": "Frame",
+    "Critical": "NC",
+    "CE": "Y",
+    "PO received date": 46402,
+    "Customer need date": 46322,
+    "Requirements": "FAIR",
+    "Part Pictures": "-",
+    "Remark 1": "Chưa lấy bản vẽ",
+    "Approval Status": "On going",
+    "Sheet": "Detailed listed"
+  },
+  {
+    "No": 5942,
+    "Check+G2B1:H2": "839-292349-001GHwaseongFrameFAIR",
+    "ERP-CODE": "No Code",
+    "PO Number": "PO261027L-01",
+    "Part Number": "839-292349-001",
+    "REV": "G",
+    "Description": "FRAME,UPPER RF",
+    "Customer": "Hwaseong",
+    "Commodity": "Frame",
+    "Critical": "NC",
+    "CE": "N",
+    "PO received date": 46402,
+    "Customer need date": 46322,
     "Requirements": "FAIR",
     "Part Pictures": "-",
     "Remark 1": "Chưa lấy bản vẽ",
